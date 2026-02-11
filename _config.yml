@@ -8,12 +8,12 @@ remote_theme: mmistakes/minimal-mistakes
 plugins:
   - jekyll-include-cache
 
-minimal_mistakes_skin: default  # try: air, contrast, neon, dark
+minimal_mistakes_skin: dark  # try: air, contrast, neon, dark
 
 author:
   name: Tsung-Han Yang
-  bio: Physicist | Data Scientist | Researcher
-  location: USA
+  bio: Physicist | Researcher | Data Scientist
+  location: Knoxville, TN
   links:
     - label: GitHub
       icon: fab fa-github
