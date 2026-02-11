@@ -13,16 +13,16 @@
   authors: "T.-H. Yang, G. Shan, Y. Zhang, D. Olds, W. Meier, M. B. Stone, B. C. Sales, A. D. Christianson, and Q. Zhang"
   venue: "J. Am. Chem. Soc. 146, 34374"
   year: 2024
-  date: 2024-12-01
+  date: 2024-12-04
   type: "Journal"
   links:
-    doi: "10.1021/jacs.4cXXXXX"
+    doi: "10.1021/jacs.4c09387"
 
 - title: "Jahn-Teller driven quadrupolar ordering and spin-orbital dimer formation in GaNb<sub>4</sub>Se<sub>8</sub>"
   authors: "T.-H. Yang, T. Chang, Y.-S. Chen, and K. W. Plumb"
   venue: "Phys. Rev. B 109, 144101"
   year: 2024
-  date: 2024-04-10
+  date: 2024-04-03
   type: "Journal"
   links:
     doi: "10.1103/PhysRevB.109.144101"
@@ -31,7 +31,7 @@
   authors: "T.-H. Yang, S. Kawamoto, T. Higo, S. G. Wang, M. B. Stone, J. Neuefeind, J. P. C. Ruff, A. M. M. Abeykoon, Y.-S. Chen, S. Nakatsuji, and K. W. Plumb"
   venue: "Phys. Rev. Research 4, 033123"
   year: 2022
-  date: 2022-08-15
+  date: 2022-08-11
   type: "Journal"
   links:
     doi: "10.1103/PhysRevResearch.4.033123"
@@ -43,16 +43,16 @@
   date: 2015-11-14
   type: "Journal"
   links:
-    doi: "10.1063/1.4935245"
+    doi: "10.1063/1.4935714"
 
 - title: "Spin-Dependent Molecule Symmetry at a Pentacene-Co Spinterface"
   authors: "Y.-H. Chu, C.-H. Hsu, C.-I. Lu, H.-H. Yang, T.-H. Yang, C.-H. Luo, K.-J. Yang, S.-H. Hsu, C.-C. Kaun, G. Hoffmann, and M.-T. Lin"
   venue: "ACS Nano 9, 7027"
   year: 2015
-  date: 2015-06-15
+  date: 2015-06-17
   type: "Journal"
   links:
-    doi: "10.1021/acsnano.5b02135"
+    doi: "10.1021/acsnano.5b03117"
 
 - title: "Digitized Charge Transfer Magnitude Determined by Metal-Organic Coordination Number"
   authors: "H.-H. Yang, Y.-H. Chu, C.-I. Lu, T.-H. Yang, K.-J. Yang, C.-C. Kaun, G. Hoffmann, and M.-T. Lin"
@@ -61,4 +61,4 @@
   date: 2013-03-26
   type: "Journal"
   links:
-    doi: "10.1021/nn305943j"
+    doi: "doi.org/10.1021/nn4003715"
