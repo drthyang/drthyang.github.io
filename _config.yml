@@ -1,20 +1,117 @@
+# Site Settings
 title: Tsung-Han Yang
-description: Research | Data | Materials
+name: "Tsung-Han Yang, Ph.D."
+description: "Postdoctoral Researcher at ORNL | Data Science | Quantum Materials"
 url: "https://thyang-phys.github.io"
-baseurl: ""
+baseurl: "" # Leave blank for root domain
 
+# Theme Settings
 remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: dark 
 
+# Technical Plugins
 plugins:
   - jekyll-include-cache
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
 
-minimal_mistakes_skin: dark  # try: air, contrast, neon, dark
-
+# Site Author Settings (This populates the sidebar)
 author:
-  name: Tsung-Han Yang
-  bio: Physicist | Researcher | Data Scientist
-  location: Knoxville, TN
+  name: "Tsung-Han Yang"
+  avatar: "/assets/images/profile.jpg" # Add a professional headshot here
+  bio: "Postdoctoral Researcher @ ORNL."
+  location: "Knoxville, TN"
   links:
-    - label: GitHub
-      icon: fab fa-github
-      url: https://thyang-phys.github.io
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:your-email@example.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Tsung-Han-Yang"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/your-profile"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/your-profile"
+
+# Defaults for Layouts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: single
+      author_profile: true # Keeps your bio visible on every post
+      read_time: true
+      comments: false
+      share: true
+      related: true
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: single
+      author_profile: true # This fills the empty space on the left!
+
+# Navigation Links (Top Header)
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Tsung-Han-Yang"
+
+---
+# This front matter ensures Jekyll processes the SCSS
+---
+
+/* Define color variables based on the active skin */
+:root {
+  /* Default Light Skin (Air/Contrast) Settings */
+  --pub-bg: #ffffff;
+  --pub-title: #222222;
+  --pub-text: #444444;
+  --pub-accent: #0366d6; /* Professional blue */
+  --pub-border: #eeeeee;
+}
+
+/* Automatically override variables if the dark skin is active */
+[data-theme='dark'], .theme-dark, body.dark-mode {
+  --pub-bg: #1a1a1a;
+  --pub-title: #ffffff;
+  --pub-text: #b0b0b0;
+  --pub-accent: #4facfe; /* Electric blue */
+  --pub-border: #333333;
+}
+
+/* --- REUSABLE PUBLICATION & RESEARCH STYLES --- */
+.pub-row, .research-block {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--pub-border);
+  color: var(--pub-text);
+}
+
+.pub-title, .research-title {
+  color: var(--pub-title);
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: block;
+}
+
+.me-bold {
+  font-weight: 800;
+  color: var(--pub-title);
+  text-decoration: underline;
+  text-decoration-color: var(--pub-accent);
+}
+
+.link-bar a, .project-link {
+  color: var(--pub-accent);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.85rem;
+}

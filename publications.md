@@ -1,10 +1,11 @@
 ---
-title: "Publications"
 layout: single
-permalink: /publications/
-author_profile: true  # This activates the sidebar on the left
-sidebar:
-  nav: "docs"         # This can show a custom menu on the right
+title: "Publications"
+author_profile: true
+toc: true
+toc_label: "Jump to Year"
+toc_icon: "list"
+toc_sticky: true
 ---
 
 {% comment %} 

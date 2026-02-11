@@ -2,6 +2,8 @@
 layout: single
 title: Projects
 permalink: /projects/
+author_profile: true
+classes: wide
 ---
 ### [Project A: Phonon Dynamics in Disordered Systems via RMC](https://github.com/rmc-phonon-dynamics)
 **Methodology:** Developed a high-performance numerical engine to calculate vibrational properties from **Reverse Monte Carlo (RMC)** structural models.
