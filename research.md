@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: splash
 title: "Research"
 author_profile: true
 classes: wide

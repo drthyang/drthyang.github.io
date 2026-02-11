@@ -1,0 +1,24 @@
+/* Target the site title in the navigation bar */
+.site-title {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1 !important;
+  padding: 0.5rem 0;
+}
+
+/* Create the subtitle using CSS */
+.site-title::after {
+  content: "Data Science & Quantum Materials"; /* Change your subtitle text here */
+  display: block;
+  font-size: 0.55em; /* Smaller font */
+  font-weight: 400; /* Lighter weight */
+  color: inherit; /* Matches the theme color */
+  opacity: 0.7; /* Makes it look professional and subtle */
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+
+/* Ensure the logo/title area is wide enough on mobile */
+.masthead__inner-links {
+  margin-left: 20px;
+}

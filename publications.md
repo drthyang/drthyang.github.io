@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: archive
 title: "Publications"
 author_profile: true
 classes: wide
