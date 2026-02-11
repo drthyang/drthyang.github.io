@@ -1,7 +1,7 @@
 ---
 layout: single
-title: Projects
-permalink: /projects/
+title: Research
+permalink: /research/
 ---
 
 ## Project A
