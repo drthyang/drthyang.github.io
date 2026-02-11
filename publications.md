@@ -2,10 +2,7 @@
 layout: single
 title: "Publications"
 author_profile: true
-toc: true
-toc_label: "Jump to Year"
-toc_icon: "list"
-toc_sticky: true
+classes: wide
 ---
 
 {% comment %} 

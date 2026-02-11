@@ -20,7 +20,7 @@ plugins:
 author:
   name: "Tsung-Han Yang"
   avatar: "/assets/images/profile.jpg" # Add a professional headshot here
-  bio: "Postdoctoral Researcher @ ORNL."
+  bio: "Postdoctoral Researcher @ ORNL <br> PhD in Physics @ Brown University"
   location: "Knoxville, TN"
   links:
     - label: "Email"
