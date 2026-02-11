@@ -1,7 +1,7 @@
 ---
 layout: home
 author_profile: true
-title: Home
+title: "Tsung-Han Yang | Research Portfolio"
 classes: wide
 ---
 

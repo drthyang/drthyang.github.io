@@ -1315,3 +1315,31 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
   .page__hero-caption a { color: #000 !important; }
   /* Hide the following elements on print ========================================================================== */
   .masthead, .toc, .page__share, .page__related, .pagination, .ads, .page__footer, .page__comments-form, .author__avatar, .author__content, .author__urls-wrapper, .nav__list, .sidebar, .adsbygoogle { display: none !important; height: 1px !important; } }
+/* --- 1. THEME-AWARE VARIABLES --- */
+/* These variables allow your custom sections to switch between Light/Dark skins */
+:root { --pub-title: #222222; --pub-text: #444444; --pub-accent: #0366d6; --pub-border: #eeeeee; }
+
+/* Overrides for Dark Skin */
+body.theme--dark, .theme--dark { --pub-title: #ffffff; --pub-text: #b0b0b0; --pub-accent: #4facfe; --pub-border: #333333; }
+
+/* --- 2. THE MASTHEAD SUBTITLE (The Top-Left Fix) --- */
+/* This creates the professional two-line look without breaking SEO */
+.masthead__menu-item.site-title { display: flex !important; flex-direction: column !important; line-height: 1 !important; text-decoration: none !important; font-weight: 800 !important; text-transform: uppercase; /* Makes "RESEARCH PORTFOLIO" look sharp */ }
+
+.masthead__menu-item.site-title::after { content: "Quantum Materials | Data | Optimization"; /* Updated keywords */ display: block !important; font-size: 0.5rem !important; /* Smaller size creates a better hierarchy */ font-weight: 400 !important; text-transform: none; /* Keeps the keywords clean and readable */ letter-spacing: 0.5px; opacity: 0.8; margin-top: 5px; color: inherit; }
+
+/* --- 3. REUSABLE PUBLICATION & RESEARCH STYLES --- */
+.pub-row, .research-block { display: flex; gap: 30px; margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--pub-border); color: var(--pub-text); }
+
+.pub-title, .research-title { color: var(--pub-title); font-weight: bold; font-size: 1.1rem; display: block; }
+
+.me-bold { font-weight: 800; color: var(--pub-title); text-decoration: underline; text-decoration-color: var(--pub-accent); }
+
+.link-bar a, .project-link { color: var(--pub-accent); font-weight: 600; text-decoration: none; font-size: 0.85rem; }
+
+/* --- 4. FORMATTING FIXES --- */
+/* Fixes for chemical subscripts in titles */
+sub { font-size: 70%; line-height: 0; position: relative; vertical-align: baseline; bottom: -0.2em; }
+
+/* Responsive fix: Stacks year/content on mobile */
+@media (max-width: 768px) { .pub-row { flex-direction: column; gap: 10px; } }
