@@ -1,3 +1,4 @@
-title: Tsung-Han Yang
-description: Research | Data | Materials
-theme: minima   # optional; remove if you write your own layout
+theme: minima
+remote_theme: mmistakes/minimal-mistakes
+plugins:
+  - jekyll-include-cache
