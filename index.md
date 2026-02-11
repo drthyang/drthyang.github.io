@@ -1,7 +1,5 @@
 ---
-layout: default
+layout: home
+author_profile: true
 title: Home
 ---
-
-# Hello
-This site runs on Jekyll + GitHub Pages.
