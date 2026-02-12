@@ -1,7 +1,7 @@
 ---
-layout: home
+layout: single
 author_profile: true
-title: "Home"
+#title: "Home"
 classes: wide
 ---
 
@@ -127,7 +127,7 @@ classes: wide
 
 /* Figure Styling */
   .project-figure {
-    width: 60%;
+    width: 100%;
     max-width: 600px; /* Limits size on big screens */
     border-radius: 8px; /* Soft rounded corners */
     box-shadow: 0 4px 12px rgba(0,0,0,0.3); /* Subtle depth */
@@ -153,7 +153,7 @@ classes: wide
       <span class="tech-tag">Quantum Materials</span>
     </div>
     
-    <img src="/assets/images/CoSn/ToC_JACS.png" alt="Local Symmetry Breaking Plot" class="project-figure">
+    <img src="/assets/images/ToC_JACS.png" alt="Local Symmetry Breaking Plot" class="project-figure">
     <div class="figure-caption">Figure 1: Local symmetry breaking driven by a magnetic transition in Fe-doped CoSn.</div>
 
     <div class="project-summary">
@@ -203,7 +203,9 @@ classes: wide
       <h2 class="project-title">Exotic Quantum Phase in Lacunar Spinels</h2>
       <span class="tech-tag">Quantum Materials</span>
     </div>
-    
+    <img src="/assets/images/PRR_GTS.png" alt="Disorder-order transition" class="project-figure">
+    <div class="figure-caption">Figure 3: Disorder-order transition in GaTa<sub>4</sub>Se<sub>8</sub>.</div>
+
     <div class="project-summary">
       Built a Python-based computational framework using <strong>Reverse Monte Carlo (RMC)</strong> to reconstruct vibrational spectra from static scattering data. Solved inverse problems to extract dynamical properties from noisy experimental datasets.
     </div>

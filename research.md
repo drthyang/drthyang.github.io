@@ -138,6 +138,29 @@ classes: wide
   <div class="project-card">
     <div class="project-content">
       <div class="project-header">
+        <span class="project-title">Topological Transport Driven by Short-Range Disorder</span>
+        <div class="project-links-wrapper">
+          <a href="/publications/" class="project-link">View Papers</a>
+        </div>
+      </div>
+      <p class="project-description">
+        Demonstrating that short-range magnetic correlations significantly influence the topological properties and anomalous Hall effect in Mn<sub>3</sub>Sn. We resolve this physics by combining neutron total scattering with Reverse Monte Carlo (RMC) modeling and magnetic PDF (mPDF) analysis.
+      </p>
+      <div class="project-tags">
+        <span class="tag">Neutron Scattering</span>
+        <span class="tag">Short-range Disorder</span>
+        <span class="tag">Topological Physics</span>
+        <span class="tag">ORNL</span>
+      </div>
+    </div>
+    <div class="project-figure">
+      <img src="/assets/images/PRL_Mn3Sn.png" alt="Weyl Semimetal Structure">
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-content">
+      <div class="project-header">
         <span class="project-title">Emergent Topological Phenomena</span>
         <div class="project-links-wrapper">
           <a href="/publications/" class="project-link">View Papers</a>
@@ -153,7 +176,7 @@ classes: wide
       </div>
     </div>
     <div class="project-figure">
-      <img src="/assets/images/placeholder_topological.png" alt="Weyl Semimetal Structure">
+      <img src="/assets/images/ToC_JACS.png" alt="Weyl Semimetal Structure">
     </div>
   </div>
 
@@ -200,7 +223,7 @@ classes: wide
       </div>
     </div>
     <div class="project-figure">
-      <img src="/assets/images/placeholder_spinel.png" alt="Cluster Mott Insulator">
+      <img src="/assets/images/PRR_GTS.png" alt="Cluster Mott Insulator">
     </div>
   </div>
 
