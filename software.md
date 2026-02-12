@@ -1,72 +1,101 @@
 ---
 layout: single
-title: "Software & Open Source"
+title: "Packages & Tools"
 author_profile: true
 classes: wide
 ---
 
 <style>
-  /* CSS for the Project Grid */
-  .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+  /* Single Column Layout */
+  .software-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Space between projects */
     margin-top: 2rem;
   }
 
-  .project-card {
+  .software-card {
     background: #fff;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    padding: 20px;
+    padding: 25px;
+    display: flex; /* Makes content side-by-side */
+    gap: 25px;
+    align-items: flex-start;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
 
-  /* Hover Effect for Interactivity */
-  .project-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  .software-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     border-color: #4facfe;
   }
 
-  .project-header {
+  /* Left Side: Text Content */
+  .software-content {
+    flex: 1; /* Takes up remaining space */
+  }
+
+  /* Right Side: Figure/Image */
+  .software-figure {
+    flex: 0 0 300px; /* Fixed width of 300px for images */
+    height: 180px;   /* Fixed height to keep it uniform */
+    background-color: #f5f7fa; /* Placeholder gray background */
+    border-radius: 6px;
+    border: 1px solid #eee;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .software-figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills the box without stretching */
+  }
+
+  /* Header & Title */
+  .software-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     border-bottom: 1px solid #f0f0f0;
     padding-bottom: 10px;
   }
 
-  .project-title {
-    font-size: 1.2rem;
+  .software-title {
+    font-size: 1.3rem;
     font-weight: 700;
-    color: #333;
+    color: #222;
   }
 
-  .project-link {
+  .software-link {
     font-size: 0.85rem;
     color: #4facfe;
     text-decoration: none;
     font-weight: 600;
     border: 1px solid #4facfe;
-    padding: 2px 8px;
+    padding: 4px 10px;
     border-radius: 4px;
+    transition: all 0.2s;
   }
 
-  .project-link:hover {
+  .software-link:hover {
     background: #4facfe;
     color: #fff;
   }
 
-  .project-description {
-    font-size: 0.95rem;
-    color: #666;
-    line-height: 1.5;
+  .software-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
     margin-bottom: 15px;
   }
 
-  .project-tags {
+  /* Tags */
+  .software-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
@@ -74,65 +103,92 @@ classes: wide
 
   .tag {
     font-size: 0.75rem;
-    background: #f5f7fa;
-    color: #555;
-    padding: 3px 8px;
-    border-radius: 4px;
-    border: 1px solid #e1e4e8;
+    background: #f0f4f8;
+    color: #444;
+    padding: 4px 10px;
+    border-radius: 12px;
+    border: 1px solid #d1d9e6;
+    font-weight: 500;
+  }
+
+  /* Mobile Responsive: Stack them vertically on small screens */
+  @media (max-width: 768px) {
+    .software-card { flex-direction: column-reverse; } /* Image on top */
+    .software-figure { flex: none; width: 100%; height: 200px; }
   }
 </style>
 
-<div class="project-grid">
+<div class="software-container">
 
-  <div class="project-card">
-    <div class="project-header">
-      <span class="project-title">RMCprofile Post-Processing</span>
-      <a href="https://github.com/Tsung-Han-Yang/your-repo-name" class="project-link">GitHub</a>
+  <div class="software-card">
+    <div class="software-content">
+      <div class="software-header">
+        <span class="software-title">RMC Phonon Dynamics</span>
+        <a href="https://github.com/Tsung-Han-Yang/rmc-phonon-dynamics" class="software-link">GitHub</a>
+      </div>
+      <p class="software-description">
+        A computational framework for extracting phonon density of states (DOS) and vibrational spectra directly from Reverse Monte Carlo structural models. By operating without symmetry constraints, this algorithm robustly characterizes dynamics in disordered systems where traditional lattice methods fail.
+      </p>
+      <div class="software-tags">
+        <span class="tag">Python</span><span class="tag">Lattice Dynamics</span><span class="tag">Scattering</span>
+      </div>
     </div>
-    <p class="project-description">
+    <div class="software-figure">
+      <img src="/assets/images/phonon_dos_placeholder.png" alt="Phonon DOS">
+    </div>
+  </div>
+
+  <div class="software-card">
+    <div class="software-content">
+      <div class="software-header">
+        <span class="software-title">RMCprofile Post-Processing</span>
+        <a href="https://github.com/Tsung-Han-Yang/your-repo-name" class="software-link">GitHub</a>
+      </div>
+      <p class="software-description">
         A comprehensive post-processing suite for RMCprofile simulations. Automates the visualization of model fits for PDF, S(Q), and Bragg profiles, while tracking simulation convergence diagnostics. Includes an interactive 3D viewer for exploring real-space atomic density distributions.
-    </p>
-    <div class="project-tags">
-      <span class="tag">Python</span><span class="tag">RMCprofile</span><span class="tag">Data Analysis</span>
+      </p>
+      <div class="software-tags">
+        <span class="tag">Python</span><span class="tag">RMCprofile</span><span class="tag">Data Analysis</span>
+      </div>
+    </div>
+    <div class="software-figure">
+      <img src="/assets/images/rmc_plot_placeholder.png" alt="RMC Fits">
     </div>
   </div>
 
-  <div class="project-card">
-    <div class="project-header">
-      <span class="project-title">RMC Phonon Dynamics</span>
-      <a href="https://github.com/Tsung-Han-Yang/rmc-phonon-dynamics" class="project-link">GitHub</a>
+  <div class="software-card">
+    <div class="software-content">
+      <div class="software-header">
+        <span class="software-title">Magnetic Pair Distribution Function</span>
+        <a href="https://github.com/Tsung-Han-Yang/mPDF-analysis-visualization" class="software-link">GitHub</a>
+      </div>
+      <p class="software-description">
+        Rigorous analytical framework for extracting short-range magnetic correlations from total neutron scattering data using mPDF. Successfully resolves local magnetic structures in quantum materials where traditional Bragg diffraction fails to capture disorder.
+      </p>
+      <div class="software-tags">
+        <span class="tag">Python</span><span class="tag">mPDF</span><span class="tag">Magnetism</span>
+      </div>
     </div>
-    <p class="project-description">
-      Computational framework for extracting phonon density of states (DOS) and vibrational spectra directly from Reverse Monte Carlo structural models. Bridges the gap between static structure and dynamic properties.
-    </p>
-    <div class="project-tags">
-      <span class="tag">Python</span><span class="tag">Lattice Dynamics</span><span class="tag">Scattering</span>
-    </div>
-  </div>
-
-  <div class="project-card">
-    <div class="project-header">
-      <span class="project-title">Magnetic Pair Distribution Function Tools</span>
-      <a href="https://github.com/Tsung-Han-Yang/mPDF-analysis-visualization" class="project-link">GitHub</a>
-    </div>
-    <p class="project-description">
-      Developed and implemented a rigorous analytical framework to extract short-range magnetic correlations from total neutron scattering data using the magnetic Pair Distribution Function (mPDF) technique. Utilizing Benjamin Frandsen’s mPDF Python package, this project successfully resolved local magnetic structures in quantum materials where traditional Bragg diffraction failed to capture short-range disorder.
-    </p>
-    <div class="project-tags">
-      <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Scikit-learn</span>
+    <div class="software-figure">
+      <img src="/assets/images/mpdf_placeholder.png" alt="Magnetic PDF">
     </div>
   </div>
 
-  <div class="project-card">
-    <div class="project-header">
-      <span class="project-title">marketlab</span>
-      <a href="https://github.com/Tsung-Han-Yang/marketlab" class="project-link">GitHub</a>
+  <div class="software-card">
+    <div class="software-content">
+      <div class="software-header">
+        <span class="software-title">marketlab</span>
+        <a href="https://github.com/Tsung-Han-Yang/marketlab" class="software-link">GitHub</a>
+      </div>
+      <p class="software-description">
+        A Python-based toolkit for financial time-series analysis. Implements technical indicators and visualization for stock market data using modern data science libraries.
+      </p>
+      <div class="software-tags">
+        <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Scikit-learn</span>
+      </div>
     </div>
-    <p class="project-description">
-      A Python-based toolkit for financial time-series analysis. Implements technical indicators and visualization for stock market data using modern data science libraries.
-    </p>
-    <div class="project-tags">
-      <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Scikit-learn</span>
+    <div class="software-figure">
+      <img src="/assets/images/stock_plot_placeholder.png" alt="Market Analysis">
     </div>
   </div>
 
