@@ -138,7 +138,7 @@ classes: wide
   <div class="project-card">
     <div class="project-content">
       <div class="project-header">
-        <span class="project-title">Topological Transport Driven by Short-Range Disorder</span>
+        <span class="project-title">Topological Transport Driven by Correlated Disorder</span>
         <div class="project-links-wrapper">
           <a href="/publications/" class="project-link">View Papers</a>
         </div>
