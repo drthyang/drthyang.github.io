@@ -93,3 +93,11 @@ sub {
     gap: 10px; 
   }
 }
+
+/* Fix spacing for two-line title */
+.site-title {
+  line-height: 1.2;      /* Brings the lines closer together */
+  display: inline-block; /* Ensures it behaves like a block of text */
+  text-align: left;      /* Aligns the text cleanly */
+  padding-top: 4px;      /* Adjust vertical alignment if needed */
+}
