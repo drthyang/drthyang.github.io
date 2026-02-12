@@ -19,22 +19,22 @@ plugins:
 # Site Author Settings (This populates the sidebar)
 author:
   name: "Tsung-Han Yang"
-  avatar: "/assets/images/profile.jpg" # Add a professional headshot here
+  avatar: "/assets/images/Tsung-Han_photo.png" 
   bio: "Postdoctoral Researcher @ ORNL <br> PhD in Physics @ Brown University"
   location: "Knoxville, TN"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:your-email@example.com"
+      url: "mailto:thyang.careers@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/Tsung-Han-Yang"
+      url: "https://github.com/thyang-phys"
     # - label: "Google Scholar"
     #   icon: "fas fa-fw fa-graduation-cap"
     #   url: "https://scholar.google.com/your-profile"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/your-profile"
+      url: "https://www.linkedin.com/in/thyang-profile"
 
 # Defaults for Layouts
 defaults:
