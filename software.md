@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: splash
 title: "Packages & Tools"
 author_profile: true
 classes: wide
@@ -15,8 +15,8 @@ classes: wide
   }
 
   .software-card {
-    background: #fff;
-    border: 1px solid #e0e0e0;
+    /* background: #fff; */
+    border: 1px solid #333;
     border-radius: 8px;
     padding: 25px;
     display: flex; /* Makes content side-by-side */
@@ -68,7 +68,7 @@ classes: wide
   .software-title {
     font-size: 1.3rem;
     font-weight: 700;
-    color: #222;
+    color: #ffffff;
   }
 
   .software-link {
@@ -89,26 +89,26 @@ classes: wide
 
   .software-description {
     font-size: 1rem;
-    color: #555;
+    color: #b0b0b0;
     line-height: 1.6;
     margin-bottom: 15px;
   }
 
-  /* Tags */
-  .software-tags {
+  /* Tag Styling (Kept exactly as you liked) */
+  .project-tags {
     display: flex;
-    flex-wrap: wrap;
     gap: 8px;
+    flex-wrap: wrap;
+    margin-top: auto; /* Pushes tags to bottom if needed */
   }
 
   .tag {
     font-size: 0.75rem;
-    background: #f0f4f8;
-    color: #444;
+    background: #222;
+    color: #888;
     padding: 4px 10px;
-    border-radius: 12px;
-    border: 1px solid #d1d9e6;
-    font-weight: 500;
+    border-radius: 4px;
+    border: 1px solid #444;
   }
 
   /* Mobile Responsive: Stack them vertically on small screens */
@@ -141,7 +141,7 @@ classes: wide
   <div class="software-card">
     <div class="software-content">
       <div class="software-header">
-        <span class="software-title">RMCprofile Post-Processing</span>
+        <span class="software-title">RMCprofile Atomic Density</span>
         <a href="https://github.com/Tsung-Han-Yang/your-repo-name" class="software-link">GitHub</a>
       </div>
       <p class="software-description">

@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: splash
 title: "Projects"
 permalink: /projects/
 author_profile: true
@@ -31,8 +31,9 @@ classes: wide
   }
 
   .header-subtitle {
+    margin-top: 20px;
     font-size: 0.85rem;
-    color: #666;
+    color: #e0e0e0;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 500;
