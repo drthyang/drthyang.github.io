@@ -6,6 +6,8 @@ description: "Postdoctoral Researcher at ORNL | Data Science | Quantum Materials
 url: "https://thyang-phys.github.io"
 baseurl: ""
 
+permalink: pretty
+
 # Theme Settings
 remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: dark 
