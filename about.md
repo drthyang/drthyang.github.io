@@ -15,6 +15,11 @@ classes: wide
     color: #b0b0b0;
   }
 
+.about-container p {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
   /* Section Headings */
   .about-header {
     font-size: 1.5rem;
@@ -94,3 +99,4 @@ classes: wide
   </ul>
 
 </div>
+

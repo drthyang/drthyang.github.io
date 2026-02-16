@@ -1,7 +1,60 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-02-16T15:48:19-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Tsung-Han Yang</title><subtitle>Postdoctoral Researcher at ORNL | Data Science | Quantum Materials</subtitle><author><name>Tsung-Han Yang</name></author><entry><title type="html">Topology and Disorder, Friends or Foes?</title><link href="http://localhost:4000/quantum%20materials/data%20science/2026/02/16/mn3sn/" rel="alternate" type="text/html" title="Topology and Disorder, Friends or Foes?" /><published>2026-02-16T00:00:00-05:00</published><updated>2026-02-16T00:00:00-05:00</updated><id>http://localhost:4000/quantum%20materials/data%20science/2026/02/16/mn3sn</id><content type="html" xml:base="http://localhost:4000/quantum%20materials/data%20science/2026/02/16/mn3sn/"><![CDATA[<h2 id="introduction">Introduction</h2>
-<p>Topological properties rely on the symmetry of electronic and magnetic degrees of freedom.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-02-16T16:04:41-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Tsung-Han Yang</title><subtitle>Postdoctoral Researcher at ORNL | Data Science | Quantum Materials</subtitle><author><name>Tsung-Han Yang</name></author><entry><title type="html">Hidden in Plain Sight: How Magnetism Breaks Local Symmetry in Kagome Metals</title><link href="http://localhost:4000/research/condensed%20matter/2026/02/16/CoSn/" rel="alternate" type="text/html" title="Hidden in Plain Sight: How Magnetism Breaks Local Symmetry in Kagome Metals" /><published>2026-02-16T00:00:00-05:00</published><updated>2026-02-16T00:00:00-05:00</updated><id>http://localhost:4000/research/condensed%20matter/2026/02/16/CoSn</id><content type="html" xml:base="http://localhost:4000/research/condensed%20matter/2026/02/16/CoSn/"><![CDATA[<p>[cite_start]<strong>Kagome-lattice metals</strong> like CoSn and FeSn have recently become a hot topic in condensed matter physics[cite: 45]. [cite_start]Their unique geometry—a network of corner-sharing triangles—hosts electronic “flat bands” and topological phases that promise exciting new physical properties[cite: 19, 45, 52].</p>
 
-<h2 id="references">References</h2>]]></content><author><name>Tsung-Han Yang</name></author><category term="Quantum Materials" /><category term="Data Science" /><category term="topology" /><category term="quantum" /><summary type="html"><![CDATA[A short summary of what this post is about.]]></summary></entry><entry><title type="html">How a short-range disorder changes the bulk properties?</title><link href="http://localhost:4000/quantum%20materials/data%20science/2026/01/20/CoSn/" rel="alternate" type="text/html" title="How a short-range disorder changes the bulk properties?" /><published>2026-01-20T00:00:00-05:00</published><updated>2026-01-20T00:00:00-05:00</updated><id>http://localhost:4000/quantum%20materials/data%20science/2026/01/20/CoSn</id><content type="html" xml:base="http://localhost:4000/quantum%20materials/data%20science/2026/01/20/CoSn/"><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>[cite_start]However, our understanding of these materials has largely relied on their <strong>average crystal structure</strong>—the long-range, periodic arrangement of atoms[cite: 20, 55]. [cite_start]In our recent paper published in the <em>Journal of the American Chemical Society</em>, we reveal that this global picture might be missing crucial details hidden at the local scale[cite: 21, 56].</p>
+
+<blockquote>
+  <p>[cite_start]<strong>Key Finding:</strong> We report a Fe-doping induced co-emergence of antiferromagnetic (AFM) order and local symmetry breaking in $(Co_{0.45}Fe_{0.55})Sn$[cite: 21, 106].</p>
+</blockquote>
+
+<h2 id="1-the-average-picture-hexagonal-and-magnetic">1. The “Average” Picture: Hexagonal and Magnetic</h2>
+
+<p>[cite_start]Using <strong>neutron diffraction</strong>, we first looked at the long-range order of the material[cite: 100]. [cite_start]We confirmed that below the Neél temperature ($T_N \approx 140$ K), the material develops an <strong>A-type antiferromagnetic (AFM) order</strong>[cite: 21, 108].</p>
+
+<p>[cite_start]In this state, the magnetic moments on the Kagome layer align ferromagnetically within the plane but stack antiferromagnetically along the <em>c</em>-axis[cite: 21].</p>
+
+<p><strong>Figure 1:</strong> <em>The average crystal structure and magnetic order.</em>
+<img src="/assets/images/figure1.png" alt="Average Structure" />
+<em>(Note: Replace with Figure 1 from your paper showing the P6/mmm symmetry)</em></p>
+
+<p>[cite_start]Globally, the crystal structure appears to remain stable in its hexagonal <strong>$P6/mmm$</strong> symmetry[cite: 196, 201]. [cite_start]If we only looked at standard diffraction, we would think the lattice is perfectly hexagonal down to the lowest temperatures[cite: 202, 203].</p>
+
+<h2 id="2-the-local-picture-hidden-orthorhombic-distortion">2. The “Local” Picture: Hidden Orthorhombic Distortion</h2>
+
+<p>[cite_start]To see what was happening at the atomic scale, we employed <strong>Synchrotron X-ray Pair Distribution Function (PDF)</strong> analysis and <strong>Reverse Monte Carlo (RMC)</strong> modeling[cite: 111, 119]. [cite_start]Unlike standard diffraction, PDF allows us to see local deviations from the average structure[cite: 43].</p>
+
+<p>[cite_start]We discovered that below $T_N$, the <em>local</em> symmetry breaks from hexagonal to <strong>orthorhombic ($Cmmm$)</strong>[cite: 107].</p>
+
+<p>[cite_start]This distortion is subtle—long-range diffraction averages it out—but it represents a fundamental instability in the lattice that “turns on” only when the magnetic order sets in[cite: 109, 296].</p>
+
+<h2 id="3-the-mechanism-sn2-atoms-on-the-move">3. The Mechanism: Sn(2) Atoms on the Move</h2>
+
+<p>What drives this local symmetry breaking? [cite_start]Our analysis points to the <strong>Sn(2) atoms</strong> located in the honeycomb layers sandwiched between the magnetic Kagome layers[cite: 107, 418].</p>
+
+<p>[cite_start]RMC modeling reveals that these Sn(2) atoms shift off-axis, moving perpendicular to the crystalline $a/b$ direction[cite: 107]. [cite_start]This displacement creates locally varied bond lengths and angles between the magnetic metal ions (Co/Fe) and the Sn(2) atoms[cite: 110].</p>
+
+<p><strong>Figure 2:</strong> <em>Local distortion motif showing the displacement of Sn(2) atoms.</em>
+<img src="/assets/images/figure6.png" alt="Local Distortion" />
+<em>(Note: Replace with Figure 6 from your paper)</em></p>
+
+<p>[cite_start]We argue that this structural distortion has a <strong>magnetic origin</strong>[cite: 38]. [cite_start]The out-of-plane magnetic exchange interaction ($J_c$)—which couples the magnetic layers via the $M-Sn(2)-M$ pathway—likely drives these local displacements to stabilize the AFM ground state[cite: 38, 502, 507].</p>
+
+<h2 id="why-this-matters">Why This Matters</h2>
+
+<p>[cite_start]This study highlights a strong, previously overlooked coupling between <strong>spin and lattice degrees of freedom</strong> in Kagome metals[cite: 504].</p>
+
+<p>[cite_start]Theoretical calculations for these materials often assume a perfect hexagonal lattice[cite: 55]. [cite_start]However, the existence of local orthorhombic distortions could significantly impact the electronic band structure, potentially altering the behavior of the much-sought-after flat bands[cite: 508].</p>
+
+<p>[cite_start]By combining neutron diffraction (to see the “average” structure) with total scattering (to see the “local” structure), we can unveil hidden complexities in functional materials that standard techniques might miss[cite: 106].</p>
+
+<hr />
+<p><em>For more details, read our full paper: <a href="https://doi.org/10.1021/jacs.4c09387">Simultaneous Development of Antiferromagnetism and Local Symmetry Breaking in a Kagome Magnet (Co0.45Fe0.55)Sn</a>.</em></p>
+
+<style>
+  .page__content p {
+    text-align: justify;
+    text-justify: inter-word; /* Improves spacing for readability */
+  }
+</style>]]></content><author><name>Tsung-Han Yang</name></author><category term="Research" /><category term="Condensed Matter" /><category term="Kagome Lattice" /><category term="Neutron Diffraction" /><category term="PDF Analysis" /><category term="Magnetism" /><summary type="html"><![CDATA[We discovered a hidden local symmetry breaking in the Kagome magnet (Co,Fe)Sn that co-emerges with antiferromagnetism, challenging the standard understanding of these topological materials.]]></summary></entry><entry><title type="html">Topology and Disorder, Friends or Foes?</title><link href="http://localhost:4000/quantum%20materials/data%20science/2026/02/16/mn3sn/" rel="alternate" type="text/html" title="Topology and Disorder, Friends or Foes?" /><published>2026-02-16T00:00:00-05:00</published><updated>2026-02-16T00:00:00-05:00</updated><id>http://localhost:4000/quantum%20materials/data%20science/2026/02/16/mn3sn</id><content type="html" xml:base="http://localhost:4000/quantum%20materials/data%20science/2026/02/16/mn3sn/"><![CDATA[<h2 id="introduction">Introduction</h2>
 <p>Topological properties rely on the symmetry of electronic and magnetic degrees of freedom.</p>
 
 <h2 id="references">References</h2>]]></content><author><name>Tsung-Han Yang</name></author><category term="Quantum Materials" /><category term="Data Science" /><category term="topology" /><category term="quantum" /><summary type="html"><![CDATA[A short summary of what this post is about.]]></summary></entry></feed>
