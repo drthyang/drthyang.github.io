@@ -1,15 +1,14 @@
 ---
 layout: splash
-title: "Projects"
-permalink: /projects/
+title: "Learning Notes"
 author_profile: true
 classes: wide
 ---
 
-<div class="section-header">
+<!-- <div class="section-header"> -->
   <!-- <h1 class="header">Projects</h1> -->
-  <span class="header-subtitle">Machine Learning • Data Science • Quantum Computing</span>
-</div>
+  <!-- <span class="header-subtitle">Machine Learning • Data Science • Quantum Computing</span>
+</div> -->
 
 <style>
   /* --- Header Styling --- */

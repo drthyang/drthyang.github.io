@@ -5,8 +5,8 @@ main:
     url: /research/
   - title: "Packages & Tools"
     url: /software/
-  - title: "Projects"
-    url: /projects/       
+  - title: "Learning Notes"
+    url: /learning-notes/
   - title: "Publications"
     url: /publications/    
   - title: "CV"
