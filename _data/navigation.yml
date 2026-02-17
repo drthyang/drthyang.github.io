@@ -1,13 +1,13 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Blog"
-    url: /blog/
   - title: "Research"
     url: /research/
   - title: "Packages & Tools"
     url: /software/
-  - title: "Learning Notes"
+  - title: "Posts"
+    url: /blog/
+  - title: "Notes"
     url: /learning-notes/
   - title: "Publications"
     url: /publications/    

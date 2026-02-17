@@ -3,6 +3,10 @@ layout: splash
 title: "Learning Notes"
 author_profile: true
 classes: wide
+header:
+  overlay_image: /assets/images/museum-of-new-zealand-te-papa-tongarewa-S0rMoSd-VyI-unsplash.jpg  # Replace with your image path
+  overlay_filter: 0.5 # Darkens image by 50% so white text pops
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 ---
 
 <!-- <div class="section-header"> -->

@@ -3,6 +3,10 @@ layout: splash
 title: "Research"
 author_profile: true
 classes: wide
+header:
+  overlay_image: /assets/images/maria-oleacu-M-TI91UdTxs-unsplash.jpg
+  overlay_filter: 0.0
+  caption: "Photo by [Maria Oleacu](https://unsplash.com/@mari_oleacu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/a-black-and-white-photo-of-sand-and-water-M-TI91UdTxs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 ---
 
 <style>

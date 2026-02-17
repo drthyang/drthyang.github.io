@@ -1345,3 +1345,9 @@ sub { font-size: 70%; line-height: 0; position: relative; vertical-align: baseli
 @media (max-width: 768px) { .pub-row { flex-direction: column; gap: 10px; } }
 /* Fix spacing for two-line title */
 .site-title { line-height: 1.2; /* Brings the lines closer together */ display: inline-block; /* Ensures it behaves like a block of text */ text-align: left; /* Aligns the text cleanly */ padding-top: 4px; /* Adjust vertical alignment if needed */ }
+
+.page__hero--overlay .page__title { font-size: 1.8rem; font-weight: 600; }
+
+.page__hero--overlay .page__lead { font-size: 1.2rem; }
+
+.page__hero--overlay { padding: 2.0rem 0; /* makes banner less tall */ }

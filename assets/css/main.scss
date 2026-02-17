@@ -101,3 +101,17 @@ sub {
   text-align: left;      /* Aligns the text cleanly */
   padding-top: 4px;      /* Adjust vertical alignment if needed */
 }
+
+
+.page__hero--overlay .page__title {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.page__hero--overlay .page__lead {
+  font-size: 1.2rem;
+}
+
+.page__hero--overlay {
+  padding: 2.0rem 0;   /* makes banner less tall */
+}
