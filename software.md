@@ -3,6 +3,10 @@ layout: splash
 title: "Packages & Tools"
 author_profile: true
 classes: wide
+header:
+  overlay_image: /assets/images/josh-redd-u_RiRTA_TtY-unsplash.jpg
+  overlay_filter: 0.0
+  caption: "Photo by [Josh Redd](https://unsplash.com/@joshredd?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/gold-and-black-leather-textile-u_RiRTA_TtY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 ---
 
 <style>
