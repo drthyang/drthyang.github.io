@@ -3,7 +3,7 @@ title: "Tsung-Han Yang"  # Keeps the browser tab clean
 masthead_title: "Research Portfolio <br> <span style='font-size:0.7em; font-weight:normal;'>Data Science • Algorithms • Quantum Materials</span>"
 name: "Tsung-Han Yang, Ph.D."
 description: "Postdoctoral Researcher at ORNL | Data Science | Quantum Materials"
-url: "https://thyang-phys.github.io"
+url: "https://drthyang.github.io"
 baseurl: ""
 
 permalink: pretty
@@ -35,7 +35,7 @@ author:
       url: "mailto:thyang.careers@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/thyang-phys"
+      url: "https://github.com/drthyang"
     # - label: "Google Scholar"
     #   icon: "fas fa-fw fa-graduation-cap"
     #   url: "https://scholar.google.com/your-profile"
@@ -67,4 +67,4 @@ footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/Tsung-Han-Yang"
+      url: "https://github.com/drthyang"

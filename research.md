@@ -1,6 +1,6 @@
 ---
 layout: splash
-title: "Research"
+title: "Quantum Materials"
 author_profile: true
 classes: wide
 header:

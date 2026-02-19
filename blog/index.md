@@ -3,6 +3,7 @@ title: "Research Notes & Blog"
 layout: home
 permalink: /blog/
 author_profile: true
+classes: wide
 entries_layout: list
 header:
   overlay_image: /assets/images/jakob-owens-WnPZeEbya50-unsplash.jpg

@@ -47,10 +47,11 @@ classes: wide
 <div class="hero-summary">
   <h1 class="hero-title">Bridging Physics & Computation</h1>
   <p class="hero-subtitle">Postdoctoral Research Fellow @ Oak Ridge National Laboratory</p>
+  
   <p style="font-size: 1.1rem; line-height: 1.6; color: #b0b0b0;">
-    I develop computational frameworks to uncover the hidden dynamics of <strong>quantum materials</strong>. 
-    By combining <strong>neutron scattering</strong> expertise with <strong>high-performance software</strong>, 
-    I translate complex physical phenomena into predictive numerical models.
+    I stand at the intersection of <strong>experimental physics</strong> and <strong>computational engineering</strong>. 
+    By integrating <strong>multi-modal scattering</strong> (Neutron/X-ray) with <strong>advanced statistical analytics</strong>, 
+    I decode the hidden behaviors of complex systems to <strong>transform noisy experimental data into predictive physical models</strong>.
   </p>
 </div>
 
