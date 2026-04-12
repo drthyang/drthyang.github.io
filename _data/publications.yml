@@ -1,11 +1,11 @@
 - title: "Intrinsic Topological Weyl Phase Transition Induced by a Magnetostructural Transformation in a Kagome Magnet"
   authors: "T.-H. Yang, S. Okamoto, D. A. Tennant, M. A. McGuire, and Q. Zhang"
-  venue: "Nature Communications (Under Review)"
+  venue: "Nature Communications (in press)"
   year: 2026
-  date: 2026-01-01
-  type: "Preprint"
+  date: 2026-04-11
+  type: "Journal"
   links:
-    doi: ""
+    doi: "10.1038/s41467-026-71683-7"
     arxiv: ""
     pdf: ""
 
@@ -17,6 +17,8 @@
   type: "Journal"
   links:
     doi: "10.1021/jacs.4c09387"
+    arxiv: ""
+    pdf: ""
 
 - title: "Jahn-Teller Driven Quadrupolar Ordering and Spin-orbital Dimer Formation in GaNb<sub>4</sub>Se<sub>8</sub>"
   authors: "T.-H. Yang, T. Chang, Y.-S. Chen, and K. W. Plumb"
@@ -26,6 +28,8 @@
   type: "Journal"
   links:
     doi: "10.1103/PhysRevB.109.144101"
+    arxiv: ""
+    pdf: ""
 
 - title: "Bond Ordering and Molecular Spin-orbital Fluctuations in the Cluster Mott Insulator GaTa<sub>4</sub>Se<sub>8</sub>"
   authors: "T.-H. Yang, S. Kawamoto, T. Higo, S. G. Wang, M. B. Stone, J. Neuefeind, J. P. C. Ruff, A. M. M. Abeykoon, Y.-S. Chen, S. Nakatsuji, and K. W. Plumb"
@@ -35,6 +39,8 @@
   type: "Journal"
   links:
     doi: "10.1103/PhysRevResearch.4.033123"
+    arxiv: ""
+    pdf: ""
 
 - title: "Tuning Molecule-Substrate Coupling via Deposition of Metal Adatoms"
   authors: "H.-H. Yang, H.-H. Tsai, C.-F. Ying, T.-H. Yang, C.-C. Kaun, C.-H. Chen, and M.-T. Lin"
@@ -44,6 +50,8 @@
   type: "Journal"
   links:
     doi: "10.1063/1.4935714"
+    arxiv: ""
+    pdf: ""
 
 - title: "Spin-Dependent Molecule Symmetry at a Pentacene-Co Spinterface"
   authors: "Y.-H. Chu, C.-H. Hsu, C.-I. Lu, H.-H. Yang, T.-H. Yang, C.-H. Luo, K.-J. Yang, S.-H. Hsu, C.-C. Kaun, G. Hoffmann, and M.-T. Lin"
@@ -53,6 +61,8 @@
   type: "Journal"
   links:
     doi: "10.1021/acsnano.5b03117"
+    arxiv: ""
+    pdf: ""
 
 - title: "Digitized Charge Transfer Magnitude Determined by Metal-Organic Coordination Number"
   authors: "H.-H. Yang, Y.-H. Chu, C.-I. Lu, T.-H. Yang, K.-J. Yang, C.-C. Kaun, G. Hoffmann, and M.-T. Lin"
@@ -61,4 +71,6 @@
   date: 2013-03-26
   type: "Journal"
   links:
-    doi: "doi.org/10.1021/nn4003715"
+    doi: "10.1021/nn4003715"
+    arxiv: ""
+    pdf: ""
