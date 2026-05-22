@@ -128,7 +128,7 @@ header:
     <div class="software-content">
       <div class="software-header">
         <span class="software-title">RMC Phonon Dynamics</span>
-        <a href="https://github.com/Tsung-Han-Yang/rmc-phonon-dynamics" class="software-link">GitHub</a>
+        <a href="https://github.com/drthyang/rmc-phonon-dynamics.git" class="software-link">GitHub</a>
       </div>
       <p class="software-description">
         A computational framework for extracting phonon density of states (DOS) and vibrational spectra directly from Reverse Monte Carlo structural models. By operating without symmetry constraints, this algorithm robustly characterizes dynamics in disordered systems where traditional lattice methods fail.
@@ -146,7 +146,7 @@ header:
     <div class="software-content">
       <div class="software-header">
         <span class="software-title">RMCprofile Atomic Density</span>
-        <a href="https://github.com/Tsung-Han-Yang/your-repo-name" class="software-link">GitHub</a>
+        <a href="https://github.com/drthyang/rmc-toolkits.git" class="software-link">GitHub</a>
       </div>
       <p class="software-description">
         A comprehensive post-processing suite for RMCprofile simulations. Automates the visualization of model fits for PDF, S(Q), and Bragg profiles, while tracking simulation convergence diagnostics. Includes an interactive 3D viewer for exploring real-space atomic density distributions.
@@ -167,7 +167,9 @@ header:
         <a href="https://github.com/Tsung-Han-Yang/mPDF-analysis-visualization" class="software-link">GitHub</a>
       </div>
       <p class="software-description">
-        Rigorous analytical framework for extracting short-range magnetic correlations from total neutron scattering data using mPDF. Successfully resolves local magnetic structures in quantum materials where traditional Bragg diffraction fails to capture disorder.
+        A rigorous analytical framework for extracting short-range magnetic correlations from total neutron scattering data. This project extends the <code>diffpy.mpdf</code> package (developed by 
+        <a href="https://doi.org/10.1107/S1600576722007257" target="_blank">Dr. Benjamin Frandsen</a>) 
+        into a modular system for streamlined calculations.
       </p>
       <div class="software-tags">
         <span class="tag">Python</span><span class="tag">mPDF</span><span class="tag">Magnetism</span>
