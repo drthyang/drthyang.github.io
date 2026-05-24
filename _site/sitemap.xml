@@ -29,4 +29,10 @@
 <url>
 <loc>http://localhost:4000/software/</loc>
 </url>
+<url>
+<loc>http://localhost:4000/CLAUDE/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/TODO/</loc>
+</url>
 </urlset>
