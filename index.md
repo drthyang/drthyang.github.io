@@ -119,11 +119,11 @@ classes: wide
 <div class="focus-grid">
   <div class="focus-card">
     <strong>Roles I am building toward</strong>
-    <span>Materials scientist, experimental physicist, neutron scattering scientist, and quantum materials research roles.</span>
+    <span>Materials scientist, experimental physicist, neutron scattering scientist, and quantum materials R&D roles in advanced characterization, scattering user facilities, and materials informatics-adjacent teams.</span>
   </div>
   <div class="focus-card">
     <strong>Technical strengths</strong>
-    <span>Material growth, synchrotron/neutron scattering, local-structure analysis, RMC modeling, and reproducible data workflows.</span>
+    <span>Material growth, synchrotron/neutron scattering, local-structure analysis, RMC modeling, numerical methods, and reproducible Python/C++ data workflows.</span>
   </div>
   <div class="focus-card">
     <strong>Industry translation</strong>
@@ -148,7 +148,7 @@ classes: wide
 
   <div class="core-card">
     <h3><i class="fas fa-code"></i> Computational Analysis</h3>
-    <p>Using Python/C++ tools to analyze scattering data, refine atomistic models, and interpret local structure and dynamics.</p>
+    <p>Building advanced Python/C++ workflows to analyze scattering data, refine atomistic models, and interpret local structure and dynamics.</p>
     <div class="tag-container">
       <span class="mini-tag">C++17</span>
       <span class="mini-tag">Python (HPC)</span>
@@ -162,9 +162,9 @@ classes: wide
 <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 3rem 0;">
 
 ### Recent Highlights
-* **[Publication]** First-author work on a magnetostructural Weyl phase transition — **Nature Communications (2026)**
-* **[Research]** Local symmetry breaking and antiferromagnetism in kagome metals — **JACS (2024)**
-* **[Tools]** Python/C++ analysis workflows for RMC modeling, local structure, phonon dynamics, and magnetic correlations.
+* **[Publication]** First-author **Nature Communications (2026)** work linking a magnetostructural transformation to Weyl physics in Mn<sub>3</sub>Sn.
+* **[Research]** **JACS (2024)** study revealing coupled antiferromagnetism and local symmetry breaking in kagome (Fe,Co)Sn.
+* **[Tools]** Advanced Python/C++ analysis workflows for RMC modeling, local structure, phonon dynamics, and magnetic correlations.
 
 <p align="center" style="margin-top: 4rem;">
   <a href="/assets/resume.pdf" class="btn btn--primary">Download Full CV</a>

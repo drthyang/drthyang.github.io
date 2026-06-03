@@ -203,7 +203,7 @@ header:
         </div>
         <div class="detail-item">
           <span class="detail-label">Algorithm:</span>
-          <span>Implemented <strong>Force Constant Matrix (Hessian)</strong> construction for large-scale disordered supercells, utilizing Finite Displacement Methods to derive the dynamical matrix.</span>
+          <span>Implemented <strong>Force Constant Matrix (Hessian)</strong> construction for large-scale disordered supercells, using finite-displacement methods, sparse numerical workflows, and Python/C++ kernels.</span>
         </div>
         <div class="detail-item">
           <span class="detail-label">Challenge:</span>
@@ -242,7 +242,7 @@ header:
         </div>
          <div class="detail-item">
           <span class="detail-label">Features:</span>
-          <span>Includes fit diagnostics, model-comparison plots, local-structure summaries, and reusable analysis patterns for scattering-informed materials research.</span>
+          <span>Includes fit diagnostics, model-comparison plots, local-structure summaries, and reusable Python analysis patterns for scattering-informed materials research.</span>
         </div>
       </div>
 
@@ -250,6 +250,7 @@ header:
         <span class="tech-tag">Python</span>
         <span class="tech-tag">Neutron Scattering</span>
         <span class="tech-tag">Matplotlib</span>
+        <span class="tech-tag">Model Validation</span>
         <span class="tech-tag">Materials Modeling</span>
       </div>
     </div>

@@ -78,10 +78,10 @@ classes: wide
 
   <div class="about-header">Industry Direction</div>
   <p>
-    I am targeting roles where a deep experimental materials background becomes an industrial advantage: <strong>materials scientist</strong>, <strong>experimental physicist</strong>, <strong>neutron scattering scientist</strong>, and <strong>quantum materials researcher</strong>. I am especially interested in problems that connect material growth, characterization, atomistic interpretation, and structure-property relationships.
+    I am targeting roles where a deep experimental materials background becomes an industrial advantage: <strong>materials scientist</strong>, <strong>experimental physicist</strong>, <strong>neutron scattering scientist</strong>, and <strong>quantum materials researcher</strong>. I am especially interested in quantum materials, advanced characterization, scattering user facilities, semiconductor and functional-materials R&D, and materials informatics-adjacent teams that need both hands-on experimental judgment and strong computational analysis.
   </p>
   <p>
-    My day-to-day work has trained me to move across the full materials research loop: grow or prepare samples, design scattering experiments, analyze complex signals, validate physical models, and communicate the result clearly.
+    My day-to-day work has trained me to move across the full materials research loop: grow or prepare samples, design scattering experiments, analyze complex signals with advanced computational tools, validate physical models, and communicate the result clearly.
   </p>
 
   <div class="about-header">Research & Technology</div>
@@ -89,7 +89,7 @@ classes: wide
     My academic work focuses on <strong>Quantum Materials</strong>, especially kagome magnets and cluster Mott systems such as Mn<sub>3</sub>Sn, (Fe,Co)Sn, and GaTa<sub>4</sub>Se<sub>8</sub>. I study how local disorder, magnetic correlations, and lattice distortions drive phenomena such as anomalous Hall transport, local symmetry breaking, and topological phase transitions.
   </p>
   <p>
-    I specialize in <strong>Reverse Monte Carlo (RMC)</strong> modeling and have developed open-source Python/C++ frameworks to reconstruct phonon dynamics from static experimental data.
+    I specialize in <strong>Reverse Monte Carlo (RMC)</strong> modeling and have developed open-source Python/C++ frameworks to reconstruct phonon dynamics and magnetic correlations from static experimental data.
   </p>
 
   <div class="about-header">Current Focus: Quantum Materials & Scattering</div>
@@ -110,6 +110,7 @@ classes: wide
       <span class="skill-tag">Git</span>
       <span class="skill-tag">Packaging</span>
       <span class="skill-tag">Reproducible Workflows</span>
+      <span class="skill-tag">Scientific Software Design</span>
     </div>
   </div>
   <div class="skill-group">
@@ -122,6 +123,7 @@ classes: wide
       <span class="skill-tag">Monte Carlo Simulation</span>
       <span class="skill-tag">Bayesian Optimization</span>
       <span class="skill-tag">Materials Data Analysis</span>
+      <span class="skill-tag">Model Validation</span>
     </div>
   </div>
   <div class="skill-group">
@@ -133,6 +135,7 @@ classes: wide
       <span class="skill-tag">Signal Extraction</span>
       <span class="skill-tag">Neutron Scattering</span>
       <span class="skill-tag">RMC Modeling</span>
+      <span class="skill-tag">Scattering Data Reduction</span>
     </div>
   </div>
 

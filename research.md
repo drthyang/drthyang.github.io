@@ -148,13 +148,13 @@ header:
         </div>
       </div>
       <p class="project-description">
-        Demonstrating that short-range magnetic correlations significantly influence the topological properties and anomalous Hall effect in Mn<sub>3</sub>Sn. We resolve this physics by combining neutron total scattering with Reverse Monte Carlo (RMC) modeling and magnetic PDF (mPDF) analysis.
+        Demonstrating that short-range magnetic correlations significantly influence the topological properties and anomalous Hall effect in Mn<sub>3</sub>Sn. My contribution connects neutron total scattering, RMC modeling, and magnetic PDF analysis to resolve how local correlations shape transport.
       </p>
       <div class="project-tags">
         <span class="tag">Neutron Scattering</span>
+        <span class="tag">mPDF Analysis</span>
+        <span class="tag">RMC Modeling</span>
         <span class="tag">Short-range Disorder</span>
-        <span class="tag">Topological Physics</span>
-        <span class="tag">ORNL</span>
       </div>
     </div>
     <div class="project-figure">
@@ -171,12 +171,13 @@ header:
         </div>
       </div>
       <p class="project-description">
-        Investigating magnetostructural transformations in Mn<sub>3</sub>Sn and Mn<sub>3</sub>Ga to induce intrinsic Weyl phase transitions and anomalous Hall effects. We utilize advanced neutron scattering to map magnetic domains under strain.
+        Investigating magnetostructural transformations in Mn<sub>3</sub>Sn and Mn<sub>3</sub>Ga that induce intrinsic Weyl phase transitions and anomalous Hall effects. This work combines quantum-material synthesis and characterization with neutron scattering and symmetry analysis.
       </p>
       <div class="project-tags">
         <span class="tag">Neutron Scattering</span>
+        <span class="tag">Material Characterization</span>
+        <span class="tag">Magnetostructural Coupling</span>
         <span class="tag">Topological Physics</span>
-        <span class="tag">ORNL</span>
       </div>
     </div>
     <div class="project-figure">
@@ -194,13 +195,13 @@ header:
         </div>
       </div>
       <p class="project-description">
-        Extracting dynamic information from static total scattering data using <strong>Reverse Monte Carlo (RMC)</strong>. This framework reconstructs the phonon density of states (DOS) by refining atomic configurations against PDF and $S(Q)$ data.
+        Extracting dynamic information from static total scattering data using <strong>Reverse Monte Carlo (RMC)</strong>. I developed Python/C++ analysis workflows that refine atomistic configurations against PDF and $S(Q)$ data, then reconstruct phonon density of states and vibrational spectra.
       </p>
       <div class="project-tags">
         <span class="tag">RMC Modeling</span>
-        <span class="tag">Lattice Dynamics</span>
-        <span class="tag">Neutron Scattering</span>
         <span class="tag">Python/C++</span>
+        <span class="tag">Total Scattering</span>
+        <span class="tag">Lattice Dynamics</span>
       </div>
     </div>
     <div class="project-figure">
@@ -217,7 +218,7 @@ header:
         </div>
       </div>
       <p class="project-description">
-        Investigating molecular spin-orbital fluctuations and Jahn-Teller driven ordering in cluster Mott insulators. This work identifies local symmetry breaking in GaTa<sub>4</sub>Se<sub>8</sub> using total scattering techniques.
+        Investigating molecular spin-orbital fluctuations and Jahn-Teller driven ordering in cluster Mott insulators. This work uses total scattering and local-structure analysis to identify hidden symmetry breaking in GaTa<sub>4</sub>Se<sub>8</sub>.
       </p>
       <div class="project-tags">
         <span class="tag">Molecular Clusters</span>

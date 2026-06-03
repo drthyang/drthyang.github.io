@@ -150,11 +150,11 @@ header:
       </p>
       <ul class="case-list">
         <li><strong>Problem:</strong> infer dynamic information from static total-scattering models of disordered materials.</li>
-        <li><strong>Engineering:</strong> numerical kernels for large supercells, force-constant construction, and reproducible scientific Python workflows.</li>
+        <li><strong>Engineering:</strong> Python/C++ numerical kernels for large supercells, force-constant construction, sparse matrix workflows, and reproducible scientific computing.</li>
         <li><strong>Value:</strong> connects experimental scattering data to predictive atomistic dynamics without relying on ideal crystal symmetry.</li>
       </ul>
       <div class="software-tags">
-        <span class="tag">Python</span><span class="tag">C++ Kernels</span><span class="tag">Numerical Methods</span><span class="tag">Lattice Dynamics</span>
+        <span class="tag">Python</span><span class="tag">C++ Kernels</span><span class="tag">Sparse Methods</span><span class="tag">Lattice Dynamics</span>
       </div>
     </div>
     <div class="software-figure">
@@ -173,11 +173,11 @@ header:
       </p>
       <ul class="case-list">
         <li><strong>Problem:</strong> reduce manual analysis friction across PDF, S(Q), Bragg, and real-space density outputs.</li>
-        <li><strong>Engineering:</strong> scripted plotting, structured diagnostics, and interactive visualization for repeated simulation workflows.</li>
+        <li><strong>Engineering:</strong> scripted plotting, structured diagnostics, automated batch analysis, and interactive visualization for repeated simulation workflows.</li>
         <li><strong>Value:</strong> turns expert-only analysis into a faster and more reproducible pipeline.</li>
       </ul>
       <div class="software-tags">
-        <span class="tag">Python</span><span class="tag">Automation</span><span class="tag">Visualization</span><span class="tag">Data Pipelines</span>
+        <span class="tag">Python</span><span class="tag">Automation</span><span class="tag">Visualization</span><span class="tag">Simulation Pipelines</span>
       </div>
     </div>
     <div class="software-figure">
@@ -198,11 +198,11 @@ header:
       </p>
       <ul class="case-list">
         <li><strong>Problem:</strong> interpret diffuse magnetic signals that are not captured by average-structure diffraction alone.</li>
-        <li><strong>Engineering:</strong> modular analysis scripts, parameterized calculations, and visualization of short-range spin correlations.</li>
+        <li><strong>Engineering:</strong> modular analysis scripts, parameterized calculations, model comparison, and visualization of short-range spin correlations.</li>
         <li><strong>Value:</strong> supports model comparison for complex magnetic disorder in quantum materials.</li>
       </ul>
       <div class="software-tags">
-        <span class="tag">Python</span><span class="tag">mPDF</span><span class="tag">Signal Extraction</span><span class="tag">Modeling</span>
+        <span class="tag">Python</span><span class="tag">mPDF</span><span class="tag">Signal Extraction</span><span class="tag">Model Validation</span>
       </div>
     </div>
     <div class="software-figure">
@@ -221,7 +221,7 @@ header:
       </p>
       <ul class="case-list">
         <li><strong>Problem:</strong> compare multiple experimental signals against candidate structural and magnetic models.</li>
-        <li><strong>Engineering:</strong> Python-based data reduction, fit visualization, model diagnostics, and publication-ready figures.</li>
+        <li><strong>Engineering:</strong> Python-based data reduction, fit visualization, model diagnostics, reusable notebooks/scripts, and publication-ready figures.</li>
         <li><strong>Value:</strong> helps convert scattering measurements into materials mechanisms that are useful for research and development.</li>
       </ul>
       <div class="software-tags">
