@@ -73,12 +73,12 @@ classes: wide
   </p>
   
   <p>
-    My expertise spans quantum material growth, synchrotron and neutron scattering, and local-structure analysis. I use computational tools as part of the experimental workflow: to analyze large-scale scattering data, reconstruct atomistic models, and uncover hidden structure-property relationships in quantum materials.
+    My expertise spans quantum material growth and preparation, synchrotron and neutron scattering, and local-structure analysis. I use computational tools as part of the experimental workflow: to analyze large-scale scattering data, reconstruct atomistic models, and uncover hidden links between local structure, magnetism, lattice dynamics, and electronic transport in quantum materials.
   </p>
 
   <div class="about-header">Industry Direction</div>
   <p>
-    I am targeting roles where a deep experimental materials background becomes an industrial advantage: <strong>materials scientist</strong>, <strong>experimental physicist</strong>, <strong>neutron scattering scientist</strong>, and <strong>quantum materials researcher</strong>. I am especially interested in problems that connect synthesis, characterization, atomistic interpretation, and structure-property relationships.
+    I am targeting roles where a deep experimental materials background becomes an industrial advantage: <strong>materials scientist</strong>, <strong>experimental physicist</strong>, <strong>neutron scattering scientist</strong>, and <strong>quantum materials researcher</strong>. I am especially interested in problems that connect material growth, characterization, atomistic interpretation, and structure-property relationships.
   </p>
   <p>
     My day-to-day work has trained me to move across the full materials research loop: grow or prepare samples, design scattering experiments, analyze complex signals, validate physical models, and communicate the result clearly.
@@ -86,7 +86,7 @@ classes: wide
 
   <div class="about-header">Research & Technology</div>
   <p>
-    My academic work focuses on <strong>Quantum Materials</strong>—specifically, how local disorder drives emergent phenomena like topological phase transitions. To solve these problems, standard software wasn't enough, so I built my own.
+    My academic work focuses on <strong>Quantum Materials</strong>, especially kagome magnets and cluster Mott systems such as Mn<sub>3</sub>Sn, (Fe,Co)Sn, and GaTa<sub>4</sub>Se<sub>8</sub>. I study how local disorder, magnetic correlations, and lattice distortions drive phenomena such as anomalous Hall transport, local symmetry breaking, and topological phase transitions.
   </p>
   <p>
     I specialize in <strong>Reverse Monte Carlo (RMC)</strong> modeling and have developed open-source Python/C++ frameworks to reconstruct phonon dynamics from static experimental data.
@@ -94,7 +94,7 @@ classes: wide
 
   <div class="about-header">Current Focus: Quantum Materials & Scattering</div>
   <p>
-    I am focused on how <strong>local structure</strong>, <strong>correlated disorder</strong>, and <strong>magnetic interactions</strong> shape functional behavior in quantum materials. My core experimental toolkit includes crystal growth, synchrotron scattering, neutron scattering, total scattering, and PDF analysis.
+    I am focused on how <strong>local structure</strong>, <strong>correlated disorder</strong>, and <strong>magnetic interactions</strong> shape anomalous transport, magnetic order, local symmetry breaking, and lattice dynamics in quantum materials. My core experimental toolkit includes material growth and preparation, synchrotron scattering, neutron scattering, total scattering, and PDF analysis.
   </p>
   <p>
     Alongside the experimental work, I develop reusable Python/C++ tools for RMC modeling, phonon dynamics, magnetic pair distribution function analysis, and scattering-informed atomistic model validation.
