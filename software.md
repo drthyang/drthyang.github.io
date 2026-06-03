@@ -97,6 +97,21 @@ header:
     line-height: 1.6;
     margin-bottom: 15px;
   }
+  .case-list {
+    margin: 0 0 16px 0;
+    padding: 0;
+    list-style: none;
+  }
+  .case-list li {
+    color: #b0b0b0;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    margin-bottom: 0.45rem;
+  }
+  .case-list strong {
+    color: #ffffff;
+    margin-right: 4px;
+  }
 
   /* Tag Styling (Kept exactly as you liked) */
   .project-tags {
@@ -131,14 +146,19 @@ header:
         <a href="https://github.com/drthyang/rmc-phonon-dynamics.git" class="software-link">GitHub</a>
       </div>
       <p class="software-description">
-        A computational framework for extracting phonon density of states (DOS) and vibrational spectra directly from Reverse Monte Carlo structural models. By operating without symmetry constraints, this algorithm robustly characterizes dynamics in disordered systems where traditional lattice methods fail.
+        A computational framework for extracting phonon density of states and vibrational spectra directly from Reverse Monte Carlo structural models.
       </p>
+      <ul class="case-list">
+        <li><strong>Problem:</strong> infer dynamic information from static total-scattering models of disordered materials.</li>
+        <li><strong>Engineering:</strong> numerical kernels for large supercells, force-constant construction, and reproducible scientific Python workflows.</li>
+        <li><strong>Value:</strong> connects experimental scattering data to predictive atomistic dynamics without relying on ideal crystal symmetry.</li>
+      </ul>
       <div class="software-tags">
-        <span class="tag">Python</span><span class="tag">Lattice Dynamics</span><span class="tag">Scattering</span>
+        <span class="tag">Python</span><span class="tag">C++ Kernels</span><span class="tag">Numerical Methods</span><span class="tag">Lattice Dynamics</span>
       </div>
     </div>
     <div class="software-figure">
-      <img src="/assets/images/phonon_dos_placeholder.png" alt="Phonon DOS">
+      <img src="/assets/images/phonon-concept.svg" alt="Phonon DOS and vibrational spectra concept">
     </div>
   </div>
 
@@ -149,14 +169,19 @@ header:
         <a href="https://github.com/drthyang/rmc-toolkits.git" class="software-link">GitHub</a>
       </div>
       <p class="software-description">
-        A comprehensive post-processing suite for RMCprofile simulations. Automates the visualization of model fits for PDF, S(Q), and Bragg profiles, while tracking simulation convergence diagnostics. Includes an interactive 3D viewer for exploring real-space atomic density distributions.
+        A post-processing suite for RMCprofile simulations that automates fit visualization, convergence diagnostics, and real-space model inspection.
       </p>
+      <ul class="case-list">
+        <li><strong>Problem:</strong> reduce manual analysis friction across PDF, S(Q), Bragg, and real-space density outputs.</li>
+        <li><strong>Engineering:</strong> scripted plotting, structured diagnostics, and interactive visualization for repeated simulation workflows.</li>
+        <li><strong>Value:</strong> turns expert-only analysis into a faster and more reproducible pipeline.</li>
+      </ul>
       <div class="software-tags">
-        <span class="tag">Python</span><span class="tag">RMCprofile</span><span class="tag">Data Analysis</span>
+        <span class="tag">Python</span><span class="tag">Automation</span><span class="tag">Visualization</span><span class="tag">Data Pipelines</span>
       </div>
     </div>
     <div class="software-figure">
-      <img src="/assets/images/rmc_plot_placeholder.png" alt="RMC Fits">
+      <img src="/assets/images/rmc-fit-dashboard.svg" alt="RMC Fits">
     </div>
   </div>
 
@@ -167,34 +192,44 @@ header:
         <a href="https://github.com/Tsung-Han-Yang/mPDF-analysis-visualization" class="software-link">GitHub</a>
       </div>
       <p class="software-description">
-        A rigorous analytical framework for extracting short-range magnetic correlations from total neutron scattering data. This project extends the <code>diffpy.mpdf</code> package (developed by 
-        <a href="https://doi.org/10.1107/S1600576722007257" target="_blank">Dr. Benjamin Frandsen</a>) 
+        An analytical workflow for extracting short-range magnetic correlations from total neutron scattering data. This project extends the <code>diffpy.mpdf</code> package (developed by 
+        <a href="https://doi.org/10.1107/S1600576722007257" target="_blank" rel="noopener noreferrer">Dr. Benjamin Frandsen</a>) 
         into a modular system for streamlined calculations.
       </p>
+      <ul class="case-list">
+        <li><strong>Problem:</strong> interpret diffuse magnetic signals that are not captured by average-structure diffraction alone.</li>
+        <li><strong>Engineering:</strong> modular analysis scripts, parameterized calculations, and visualization of short-range spin correlations.</li>
+        <li><strong>Value:</strong> supports model comparison for complex magnetic disorder in quantum materials.</li>
+      </ul>
       <div class="software-tags">
-        <span class="tag">Python</span><span class="tag">mPDF</span><span class="tag">Magnetism</span>
+        <span class="tag">Python</span><span class="tag">mPDF</span><span class="tag">Signal Extraction</span><span class="tag">Modeling</span>
       </div>
     </div>
     <div class="software-figure">
-      <img src="/assets/images/mpdf_placeholder.png" alt="Magnetic PDF">
+      <img src="/assets/images/mpdf-correlations.svg" alt="Magnetic PDF">
     </div>
   </div>
 
   <div class="software-card">
     <div class="software-content">
       <div class="software-header">
-        <span class="software-title">marketlab</span>
-        <a href="https://github.com/Tsung-Han-Yang/marketlab" class="software-link">GitHub</a>
+        <span class="software-title">Scattering Data Workflow</span>
+        <a href="/research/" class="software-link">Research</a>
       </div>
       <p class="software-description">
-        A Python-based toolkit for financial time-series analysis. Implements technical indicators and visualization for stock market data using modern data science libraries.
+        A reproducible analysis workflow for connecting neutron and X-ray scattering data with atomistic models of local structure and correlated disorder.
       </p>
+      <ul class="case-list">
+        <li><strong>Problem:</strong> compare multiple experimental signals against candidate structural and magnetic models.</li>
+        <li><strong>Engineering:</strong> Python-based data reduction, fit visualization, model diagnostics, and publication-ready figures.</li>
+        <li><strong>Value:</strong> helps convert scattering measurements into materials mechanisms that are useful for research and development.</li>
+      </ul>
       <div class="software-tags">
-        <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Scikit-learn</span>
+        <span class="tag">Python</span><span class="tag">Neutron Scattering</span><span class="tag">PDF Analysis</span><span class="tag">Materials Modeling</span>
       </div>
     </div>
     <div class="software-figure">
-      <img src="/assets/images/stock_plot_placeholder.png" alt="Market Analysis">
+      <img src="/assets/images/rmc-fit-dashboard.svg" alt="Scattering data workflow dashboard">
     </div>
   </div>
 

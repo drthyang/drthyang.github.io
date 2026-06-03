@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Local orthorhombic distortion concept</title>
+  <desc id="desc">A simplified diagram showing a local atomic displacement hidden inside an average hexagonal lattice.</desc>
+  <rect width="900" height="520" fill="#090d12"/>
+  <rect x="34" y="34" width="832" height="452" rx="18" fill="#111820" stroke="#2d3c48"/>
+  <text x="62" y="82" fill="#ffffff" font-family="Arial, sans-serif" font-size="30" font-weight="700">Hidden Local Symmetry Breaking</text>
+  <g transform="translate(126 130)" stroke="#2d3c48" stroke-width="3">
+    <path d="M0 120 H420 M0 220 H420 M70 40 V300 M210 40 V300 M350 40 V300"/>
+  </g>
+  <g fill="#ffffff">
+    <circle cx="196" cy="250" r="15"/><circle cx="336" cy="250" r="15"/><circle cx="476" cy="250" r="15"/>
+    <circle cx="196" cy="350" r="15"/><circle cx="336" cy="350" r="15"/><circle cx="476" cy="350" r="15"/>
+  </g>
+  <circle cx="336" cy="250" r="26" fill="none" stroke="#4facfe" stroke-width="4"/>
+  <path d="M336 250 C378 221 420 221 462 250" fill="none" stroke="#ffcc66" stroke-width="5"/>
+  <path d="M336 250 l48 -34" stroke="#ffcc66" stroke-width="5" stroke-linecap="round"/>
+  <text x="570" y="205" fill="#b0b0b0" font-family="Arial, sans-serif" font-size="20">Local Sn displacement</text>
+  <text x="570" y="245" fill="#b0b0b0" font-family="Arial, sans-serif" font-size="20">preserves average symmetry</text>
+  <text x="570" y="285" fill="#4facfe" font-family="Arial, sans-serif" font-size="20" font-weight="700">revealed by PDF + RMC</text>
+</svg>

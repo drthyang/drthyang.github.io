@@ -16,7 +16,7 @@
 
 
 <!-- begin _includes/seo.html --><title>About Me - Tsung-Han Yang</title>
-<meta name="description" content="Postdoctoral Researcher at ORNL       Data Science       Quantum Materials">
+<meta name="description" content="Postdoctoral Researcher at ORNL       Quantum Materials       Synchrotron &amp; Neutron Scattering">
 
 
   <meta name="author" content="Tsung-Han Yang">
@@ -27,13 +27,10 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Tsung-Han Yang">
 <meta property="og:title" content="About Me">
-<meta property="og:url" content="http://localhost:4000/about/">
+<meta property="og:url" content="http://localhost:4002/about/">
 
 
-  <meta property="og:description" content="Postdoctoral Researcher at ORNL       Data Science       Quantum Materials">
-
-
-
+  <meta property="og:description" content="Postdoctoral Researcher at ORNL       Quantum Materials       Synchrotron &amp; Neutron Scattering">
 
 
 
@@ -45,7 +42,10 @@
 
 
 
-<link rel="canonical" href="http://localhost:4000/about/">
+
+
+
+<link rel="canonical" href="http://localhost:4002/about/">
 
 
 
@@ -103,7 +103,7 @@
       <nav id="site-nav" class="greedy-nav">
         
         <a class="site-title" href="/">
-          Research Portfolio <br> <span style='font-size:0.7em; font-weight:normal;'>Quantum Materials • Data Science</span>
+          Research Portfolio <br> <span style='font-size:0.7em; font-weight:normal;'>Quantum Materials • Scattering</span>
           </a>
         <ul class="visible-links"><li class="masthead__menu-item">
               <a href="/about/">About</a>
@@ -111,8 +111,6 @@
               <a href="/research/">Research</a>
             </li><li class="masthead__menu-item">
               <a href="/software/">Packages & Tools</a>
-            </li><li class="masthead__menu-item">
-              <a href="/blog/">Posts</a>
             </li><li class="masthead__menu-item">
               <a href="/learning-notes/">Notes</a>
             </li><li class="masthead__menu-item">
@@ -152,7 +150,7 @@
 
   
     <div class="author__avatar">
-      <a href="http://localhost:4000/">
+      <a href="http://localhost:4002/">
         <img src="/assets/images/Tsung-Han_photo.png" alt="Tsung-Han Yang" itemprop="image" class="u-photo">
       </a>
     </div>
@@ -160,7 +158,7 @@
 
   <div class="author__content">
     <h3 class="author__name p-name" itemprop="name">
-      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Tsung-Han Yang</a>
+      <a class="u-url" rel="me" href="http://localhost:4002/" itemprop="url">Tsung-Han Yang</a>
     </h3>
     
       <div class="author__bio p-note" itemprop="description">
@@ -278,7 +276,7 @@
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/about/" itemprop="url">About Me
+            <a href="http://localhost:4002/about/" itemprop="url">About Me
 </a>
           </h1>
           
@@ -324,18 +322,28 @@
   }
   
   .skill-tag {
-    background: #f8f9fa;
-    border: 1px solid #e9ecef;
+    background: rgba(79, 172, 254, 0.08);
+    border: 1px solid rgba(79, 172, 254, 0.35);
     padding: 5px 12px;
     border-radius: 6px;
     font-size: 0.9rem;
-    color: #555;
+    color: #d9ecff;
     font-weight: 500;
+  }
+  .skill-group {
+    margin-bottom: 1.2rem;
+  }
+  .skill-label {
+    display: block;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 0.55rem;
   }
 
   /* Highlight specific words */
   .highlight {
-    color: #0366d6;
+    color: #4facfe;
     font-weight: 600;
   }
 </style>
@@ -343,11 +351,19 @@
 <div class="about-container">
 
   <p>
-    I am a <strong>Computational Physicist</strong> and <strong>Data Scientist</strong> currently working as a Postdoctoral Researcher at <span class="highlight">Oak Ridge National Laboratory (ORNL)</span>.
+    I am an <strong>Experimental Condensed Matter Physicist</strong> and <strong>Quantum Materials Scientist</strong> currently working as a Postdoctoral Researcher at <span class="highlight">Oak Ridge National Laboratory (ORNL)</span>.
   </p>
   
   <p>
-    My expertise lies in extracting signals from noise. Whether analyzing terabytes of neutron scattering data or modeling stochastic market trends, I build <strong>high-performance numerical tools</strong> to uncover hidden structures in complex systems.
+    My expertise spans quantum material growth, synchrotron and neutron scattering, and local-structure analysis. I use computational tools as part of the experimental workflow: to analyze large-scale scattering data, reconstruct atomistic models, and uncover hidden structure-property relationships in quantum materials.
+  </p>
+
+  <div class="about-header">Industry Direction</div>
+  <p>
+    I am targeting roles where a deep experimental materials background becomes an industrial advantage: <strong>materials scientist</strong>, <strong>experimental physicist</strong>, <strong>neutron scattering scientist</strong>, and <strong>quantum materials researcher</strong>. I am especially interested in problems that connect synthesis, characterization, atomistic interpretation, and structure-property relationships.
+  </p>
+  <p>
+    My day-to-day work has trained me to move across the full materials research loop: grow or prepare samples, design scattering experiments, analyze complex signals, validate physical models, and communicate the result clearly.
   </p>
 
   <div class="about-header">Research &amp; Technology</div>
@@ -358,23 +374,48 @@
     I specialize in <strong>Reverse Monte Carlo (RMC)</strong> modeling and have developed open-source Python/C++ frameworks to reconstruct phonon dynamics from static experimental data.
   </p>
 
-  <div class="about-header">Current Focus: Quantitative Finance &amp; ML</div>
+  <div class="about-header">Current Focus: Quantum Materials &amp; Scattering</div>
   <p>
-    I am actively expanding my toolkit into <strong>Machine Learning</strong>, <strong>Data Science</strong>, and <strong>Quantum Computing</strong>. I am fascinated by the parallels between statistical mechanics and financial markets—both are governed by stochastic processes, correlations, and large-scale data analysis.
+    I am focused on how <strong>local structure</strong>, <strong>correlated disorder</strong>, and <strong>magnetic interactions</strong> shape functional behavior in quantum materials. My core experimental toolkit includes crystal growth, synchrotron scattering, neutron scattering, total scattering, and PDF analysis.
   </p>
   <p>
-    I am currently developing <strong>MarketLab</strong>, a Python library for algorithmic trading strategy backtesting, applying the same rigor I use in physics to financial time-series analysis.
+    Alongside the experimental work, I develop reusable Python/C++ tools for RMC modeling, phonon dynamics, magnetic pair distribution function analysis, and scattering-informed atomistic model validation.
   </p>
 
   <div class="about-header">Technical Stack</div>
-  <div class="skill-grid">
-    <span class="skill-tag">Python (Pandas, NumPy, Scikit-learn)</span>
-    <span class="skill-tag">C++</span>
-    <span class="skill-tag">High-Performance Computing (HPC)</span>
-    <span class="skill-tag">Monte Carlo Simulation</span>
-    <span class="skill-tag">Neutron Scattering</span>
-    <span class="skill-tag">Bayesian Optimization</span>
-    <span class="skill-tag">Git / CI/CD</span>
+  <div class="skill-group">
+    <span class="skill-label">Programming &amp; Engineering</span>
+    <div class="skill-grid">
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">C++</span>
+      <span class="skill-tag">Bash</span>
+      <span class="skill-tag">Git</span>
+      <span class="skill-tag">Packaging</span>
+      <span class="skill-tag">Reproducible Workflows</span>
+    </div>
+  </div>
+  <div class="skill-group">
+    <span class="skill-label">Numerical Methods &amp; Materials Informatics</span>
+    <div class="skill-grid">
+      <span class="skill-tag">NumPy</span>
+      <span class="skill-tag">Pandas</span>
+      <span class="skill-tag">SciPy</span>
+      <span class="skill-tag">Scikit-learn</span>
+      <span class="skill-tag">Monte Carlo Simulation</span>
+      <span class="skill-tag">Bayesian Optimization</span>
+      <span class="skill-tag">Materials Data Analysis</span>
+    </div>
+  </div>
+  <div class="skill-group">
+    <span class="skill-label">Scientific Computing</span>
+    <div class="skill-grid">
+      <span class="skill-tag">High-Performance Computing</span>
+      <span class="skill-tag">Inverse Problems</span>
+      <span class="skill-tag">Sparse Linear Algebra</span>
+      <span class="skill-tag">Signal Extraction</span>
+      <span class="skill-tag">Neutron Scattering</span>
+      <span class="skill-tag">RMC Modeling</span>
+    </div>
   </div>
 
   <div class="about-header">Education</div>
@@ -383,7 +424,6 @@
   </ul>
 
 </div>
-
 
         
       </section>
@@ -449,7 +489,7 @@
 </div>
 
 
-<div class="page__footer-copyright">&copy; 2026 <a href="http://localhost:4000">Tsung-Han Yang</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2026 <a href="http://localhost:4002">Tsung-Han Yang</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

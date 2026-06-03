@@ -158,7 +158,7 @@ header:
       </div>
     </div>
     <div class="project-figure">
-      <img src="/assets/images/PRL_Mn3Sn.png" alt="Weyl Semimetal Structure">
+      <img src="/assets/images/prl-mn3sn-concept.svg" alt="Weyl Semimetal Structure">
     </div>
   </div>
 
@@ -189,7 +189,7 @@ header:
       <div class="project-header">
         <span class="project-title">Phonon Spectra from Total Scattering</span>
         <div class="project-links-wrapper">
-          <a href="https://github.com/Tsung-Han-Yang/rmc-phonon-dynamics" class="project-link" target="_blank">View Code</a>
+          <a href="https://github.com/Tsung-Han-Yang/rmc-phonon-dynamics" class="project-link" target="_blank" rel="noopener noreferrer">View Code</a>
           <a href="/publications/" class="project-link">Related Papers</a>
         </div>
       </div>
@@ -204,7 +204,7 @@ header:
       </div>
     </div>
     <div class="project-figure">
-      <img src="/assets/images/placeholder_phonon.png" alt="Phonon DOS Plot">
+      <img src="/assets/images/phonon-concept.svg" alt="Phonon DOS Plot">
     </div>
   </div>
 

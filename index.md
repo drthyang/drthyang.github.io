@@ -13,6 +13,36 @@ classes: wide
   }
   .hero-title { font-size: 2.2rem; font-weight: 800; margin-bottom: 0.5rem; color: #fff; }
   .hero-subtitle { font-size: 1.2rem; color: #4facfe; margin-bottom: 1.5rem; font-weight: 400; }
+  .proof-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 1.5rem;
+  }
+  .proof-item {
+    border: 1px solid rgba(79, 172, 254, 0.45);
+    color: #e8f4ff;
+    background: rgba(79, 172, 254, 0.08);
+    border-radius: 6px;
+    padding: 0.45rem 0.7rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+  }
+  .cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 1.5rem;
+  }
+  .cta-link {
+    border: 1px solid #4facfe;
+    border-radius: 5px;
+    color: #4facfe;
+    padding: 0.55rem 0.85rem;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .cta-link:hover { background: #4facfe; color: #0b0b0b; }
 
   /* Dual Core Grid */
   .core-grid {
@@ -40,43 +70,88 @@ classes: wide
     border-radius: 4px;
     color: #ccc;
   }
+  .focus-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 0 0 3rem 0;
+  }
+  .focus-card {
+    border-left: 3px solid #4facfe;
+    padding: 0.9rem 1rem;
+    background: rgba(255,255,255,0.025);
+  }
+  .focus-card strong { color: #fff; display: block; margin-bottom: 0.35rem; }
+  .focus-card span { color: #b0b0b0; font-size: 0.92rem; line-height: 1.45; }
 
-  @media (max-width: 768px) { .core-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 768px) {
+    .core-grid,
+    .focus-grid { grid-template-columns: 1fr; }
+  }
 </style>
 
 <div class="hero-summary">
-  <h1 class="hero-title">Bridging Physics & Computation</h1>
-  <!-- <p class="hero-subtitle">Postdoctoral Research Fellow @ Oak Ridge National Laboratory</p> -->
+  <h1 class="hero-title">Experimental Quantum Materials Scientist</h1>
+  <p class="hero-subtitle">Crystal growth • synchrotron scattering • neutron scattering • local-structure analysis</p>
   
   <p style="font-size: 1.1rem; line-height: 1.6; color: #b0b0b0;">
-      I bridge the gap between <strong>experimental physics</strong> and <strong>computational engineering</strong>. 
-      By leveraging <strong>multi-modal scattering</strong> and <strong>high-performance analytics</strong>, 
-      I build frameworks that transform noisy experimental data into predictive physical models.
-    
+      I grow and characterize quantum materials to understand how local structure,
+      magnetism, and lattice dynamics shape functional properties. My experimental work
+      uses <strong>synchrotron X-ray scattering</strong>, <strong>neutron scattering</strong>,
+      and <strong>total-scattering/PDF analysis</strong>, supported by Python/C++ tools
+      for RMC modeling, data analysis, and atomistic interpretation.
   </p>
+  <div class="proof-strip">
+    <span class="proof-item">Postdoctoral Researcher @ ORNL</span>
+    <span class="proof-item">Ph.D. Physics @ Brown</span>
+    <span class="proof-item">Crystal Growth & Characterization</span>
+    <span class="proof-item">Synchrotron / Neutron Scattering</span>
+    <span class="proof-item">Python / C++ Analysis Tools</span>
+  </div>
+  <div class="cta-row">
+    <a href="/software/" class="cta-link">Technical Projects</a>
+    <a href="/research/" class="cta-link">Research Portfolio</a>
+    <a href="/publications/" class="cta-link">Publications</a>
+  </div>
+</div>
+
+<div class="focus-grid">
+  <div class="focus-card">
+    <strong>Roles I am building toward</strong>
+    <span>Materials scientist, experimental physicist, neutron scattering scientist, and quantum materials research roles.</span>
+  </div>
+  <div class="focus-card">
+    <strong>Technical strengths</strong>
+    <span>Quantum material synthesis, synchrotron/neutron scattering, local-structure analysis, RMC modeling, and reproducible data workflows.</span>
+  </div>
+  <div class="focus-card">
+    <strong>Industry translation</strong>
+    <span>Connect synthesis, characterization, and modeling to explain structure-property relationships in complex materials.</span>
+  </div>
 </div>
 
 <div class="core-grid">
   <div class="core-card">
     <h3><i class="fas fa-microscope"></i> Quantum Materials</h3>
-    <p>Investigating exotic phases, correlated disorder, and phonon dynamics in topological quantum systems through multi-modal scattering.</p>
+    <p>Growing and characterizing quantum materials to investigate correlated disorder, local symmetry breaking, topology, and phonon dynamics.</p>
     <div class="tag-container">
       <span class="mini-tag">Neutron Scattering</span>
+      <span class="mini-tag">Synchrotron Scattering</span>
+      <span class="mini-tag">Crystal Growth</span>
       <span class="mini-tag">Correlated Disorder</span>
       <span class="mini-tag">Topology</span>
-      <span class="mini-tag">Spin-orbit Coupling</span>
     </div>
     <br>
     <a href="/research/" style="text-decoration: none; font-weight: 600; color: #4facfe;">Explore Research Projects →</a>
   </div>
 
   <div class="core-card">
-    <h3><i class="fas fa-code"></i> Scientific Software</h3>
-    <p>Building robust tools for data inversion (RMC), molecular dynamics, and algorithmic modeling.</p>
+    <h3><i class="fas fa-code"></i> Computational Analysis</h3>
+    <p>Using Python/C++ tools to analyze scattering data, refine atomistic models, and interpret local structure and dynamics.</p>
     <div class="tag-container">
       <span class="mini-tag">C++17</span>
       <span class="mini-tag">Python (HPC)</span>
-      <span class="mini-tag">Machine Learning</span>
+      <span class="mini-tag">Scientific Computing</span>
     </div>
     <br>
     <a href="/software/" style="text-decoration: none; font-weight: 600; color: #4facfe;">View Packages & Tools →</a>
@@ -86,9 +161,9 @@ classes: wide
 <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 3rem 0;">
 
 ### Recent Highlights
-* **[Publication]** *Intrinsic Topological Weyl Phase Transition...* — **Nat. Commun. (2026)**
-* **[Software]** Released v2.1 of `rmc-phonon-dynamics` with improved MPI support.
-* **[Note]** New learning notes on *Bayesian Optimization for Physics*.
+* **[Publication]** First-author work on a magnetostructural Weyl phase transition — **Nature Communications (2026)**
+* **[Research]** Local symmetry breaking and antiferromagnetism in kagome metals — **JACS (2024)**
+* **[Tools]** Python/C++ analysis workflows for RMC modeling, local structure, phonon dynamics, and magnetic correlations.
 
 <p align="center" style="margin-top: 4rem;">
   <a href="/assets/resume.pdf" class="btn btn--primary">Download Full CV</a>

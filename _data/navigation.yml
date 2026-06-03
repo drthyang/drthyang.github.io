@@ -5,8 +5,6 @@ main:
     url: /research/
   - title: "Packages & Tools"
     url: /software/
-  - title: "Posts"
-    url: /blog/
   - title: "Notes"
     url: /learning-notes/
   - title: "Publications"

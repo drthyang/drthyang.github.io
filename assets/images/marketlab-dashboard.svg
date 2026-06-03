@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">MarketLab time-series dashboard</title>
+  <desc id="desc">A dark financial dashboard with candlestick-like bars, indicators, and return diagnostics.</desc>
+  <rect width="900" height="520" fill="#090d12"/>
+  <rect x="28" y="28" width="844" height="464" rx="18" fill="#111820" stroke="#2d3c48"/>
+  <text x="58" y="76" fill="#ffffff" font-family="Arial, sans-serif" font-size="30" font-weight="700">MarketLab Strategy Research</text>
+  <g transform="translate(58 112)">
+    <rect width="530" height="285" rx="12" fill="#0b1117" stroke="#2d3c48"/>
+    <path d="M36 235 H492 M36 35 V235" stroke="#6f7f8f" stroke-width="2"/>
+    <path d="M46 190 C90 174 111 127 152 134 C197 141 203 82 249 91 C305 102 321 167 371 141 C415 119 439 78 486 62" fill="none" stroke="#4facfe" stroke-width="4"/>
+    <path d="M46 211 C102 198 159 198 215 187 C268 176 330 172 486 104" fill="none" stroke="#ffcc66" stroke-width="3"/>
+    <g stroke="#ffffff" stroke-width="3">
+      <path d="M78 160 V204"/><path d="M122 121 V161"/><path d="M166 139 V186"/><path d="M210 96 V141"/>
+      <path d="M254 88 V127"/><path d="M298 119 V164"/><path d="M342 148 V189"/><path d="M386 119 V158"/>
+      <path d="M430 82 V130"/><path d="M474 61 V102"/>
+    </g>
+  </g>
+  <g transform="translate(630 112)">
+    <rect width="220" height="130" rx="12" fill="#0b1117" stroke="#2d3c48"/>
+    <text x="24" y="44" fill="#b0b0b0" font-family="Arial, sans-serif" font-size="18">Sharpe</text>
+    <text x="24" y="92" fill="#4facfe" font-family="Arial, sans-serif" font-size="42" font-weight="700">1.42</text>
+  </g>
+  <g transform="translate(630 266)">
+    <rect width="220" height="131" rx="12" fill="#0b1117" stroke="#2d3c48"/>
+    <path d="M24 92 C54 84 63 38 88 49 C113 60 126 96 153 77 C170 65 183 56 200 58" fill="none" stroke="#ffcc66" stroke-width="4"/>
+    <text x="24" y="115" fill="#b0b0b0" font-family="Arial, sans-serif" font-size="16">drawdown monitor</text>
+  </g>
+</svg>

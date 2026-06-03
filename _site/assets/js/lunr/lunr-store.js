@@ -1,13 +1,13 @@
 var store = [{
         "title": "Hidden in Plain Sight: How Magnetism Breaks Local Symmetry in Kagome Metals",
-        "excerpt":"[cite_start]Kagome-lattice metals like CoSn and FeSn have recently become a hot topic in condensed matter physics[cite: 45]. [cite_start]Their unique geometry—a network of corner-sharing triangles—hosts electronic “flat bands” and topological phases that promise exciting new physical properties[cite: 19, 45, 52]. [cite_start]However, our understanding of these materials has largely relied on their...","categories": ["Research","Condensed Matter"],
+        "excerpt":"Kagome-lattice metals like CoSn and FeSn are compelling because their corner-sharing triangular geometry can host flat bands, strong correlations, and topological electronic states. Much of our understanding of these materials starts from the average crystal structure: the long-range, periodic arrangement of atoms seen by conventional diffraction. In our recent Journal...","categories": ["Research","Condensed Matter"],
         "tags": ["Kagome Lattice","Neutron Diffraction","PDF Analysis","Magnetism"],
         "url": "/research/condensed%20matter/2026/02/16/CoSn/",
-        "teaser": "/assets/images/kagome-teaser.jpg"
+        "teaser": "/assets/images/kagome-average-structure.svg"
       },{
         "title": "Topology and Disorder, Friends or Foes?",
-        "excerpt":"Introduction  Topological properties rely on the symmetry of electronic and magnetic degrees of freedom.   References   ","categories": ["Quantum Materials","Data Science"],
+        "excerpt":"Introduction Topological properties often depend on symmetry, magnetic texture, and spin-orbit coupling. That can make disorder sound like a threat: if local structure or local magnetism deviates from the ideal model, will the topological response disappear? In real quantum materials, the answer is more interesting. Disorder is not always random...","categories": ["Quantum Materials","Materials Science"],
         "tags": ["topology","quantum"],
-        "url": "/quantum%20materials/data%20science/2026/02/16/mn3sn/",
-        "teaser": "/assets/images/my-teaser-image.jpg"
+        "url": "/quantum%20materials/materials%20science/2026/02/16/mn3sn/",
+        "teaser": "/assets/images/prl-mn3sn-concept.svg"
       }]

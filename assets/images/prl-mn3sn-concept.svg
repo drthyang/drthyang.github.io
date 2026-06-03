@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Correlated disorder and topological transport concept</title>
+  <desc id="desc">A dark scientific diagram showing kagome-like magnetic correlations feeding into an anomalous Hall transport curve.</desc>
+  <rect width="900" height="520" fill="#090d12"/>
+  <rect x="32" y="32" width="864" height="456" rx="18" fill="#101820" stroke="#2d3c48"/>
+  <g stroke="#4facfe" stroke-width="3" fill="none" opacity="0.85">
+    <path d="M120 160 L210 110 L300 160 L300 260 L210 310 L120 260 Z"/>
+    <path d="M300 160 L390 110 L480 160 L480 260 L390 310 L300 260 Z"/>
+    <path d="M210 310 L300 260 L390 310 L390 410 L300 460 L210 410 Z"/>
+    <path d="M120 160 L300 160 M210 110 L210 310 M300 260 L480 260 M390 110 L390 410"/>
+  </g>
+  <g fill="#ffffff">
+    <circle cx="120" cy="160" r="11"/><circle cx="210" cy="110" r="11"/><circle cx="300" cy="160" r="11"/>
+    <circle cx="300" cy="260" r="11"/><circle cx="210" cy="310" r="11"/><circle cx="120" cy="260" r="11"/>
+    <circle cx="390" cy="110" r="11"/><circle cx="480" cy="160" r="11"/><circle cx="480" cy="260" r="11"/>
+    <circle cx="390" cy="310" r="11"/><circle cx="390" cy="410" r="11"/><circle cx="300" cy="460" r="11"/>
+    <circle cx="210" cy="410" r="11"/>
+  </g>
+  <g stroke="#ffcc66" stroke-width="5" stroke-linecap="round">
+    <path d="M115 145 l22 -24"/><path d="M205 95 l25 18"/><path d="M307 144 l30 -12"/>
+    <path d="M474 145 l-24 -21"/><path d="M383 296 l-28 18"/><path d="M293 445 l-22 -25"/>
+  </g>
+  <g transform="translate(570 120)">
+    <rect width="250" height="250" rx="12" fill="#0b1117" stroke="#2d3c48"/>
+    <path d="M34 184 C80 170 98 96 133 116 C164 135 164 47 218 45" fill="none" stroke="#4facfe" stroke-width="5"/>
+    <path d="M34 205 H220 M34 36 V205" stroke="#6f7f8f" stroke-width="2"/>
+    <text x="34" y="238" fill="#b0b0b0" font-family="Arial, sans-serif" font-size="18">transport response</text>
+  </g>
+  <text x="58" y="76" fill="#ffffff" font-family="Arial, sans-serif" font-size="30" font-weight="700">Correlated Disorder -> Topological Transport</text>
+  <text x="58" y="112" fill="#b0b0b0" font-family="Arial, sans-serif" font-size="18">Local magnetic correlations mapped from scattering data</text>
+</svg>

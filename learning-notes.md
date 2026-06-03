@@ -4,22 +4,17 @@ title: "Learning Notes"
 author_profile: true
 classes: wide
 header:
-  overlay_image: /assets/images/museum-of-new-zealand-te-papa-tongarewa-S0rMoSd-VyI-unsplash.jpg  # Replace with your image path
+  overlay_image: /assets/images/museum-of-new-zealand-te-papa-tongarewa-S0rMoSd-VyI-unsplash.jpg
   overlay_filter: 0.5 # Darkens image by 50% so white text pops
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 ---
-
-<!-- <div class="section-header"> -->
-  <!-- <h1 class="header">Projects</h1> -->
-  <!-- <span class="header-subtitle">Machine Learning • Data Science • Quantum Computing</span>
-</div> -->
 
 <style>
   /* --- Header Styling --- */
   .section-header {
     margin-bottom: 3rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #333;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -28,7 +23,7 @@ header:
   .header-title {
     font-size: 2.5rem;
     font-weight: 800;
-    color: #222;
+    color: #ffffff;
     margin: 0 0 0.5rem 0;
     line-height: 1.0;
   }
@@ -50,12 +45,12 @@ header:
 
   /* --- Card Styling (Grid Layout) --- */
   .project-card {
-    background: #fff;
-    border: 1px solid #e1e4e8;
-    border-radius: 12px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid #333;
+    border-radius: 8px;
     padding: 30px;
     margin-bottom: 40px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.22);
     display: grid;
     grid-template-columns: 1fr 380px; /* Text takes space | Image fixed width */
     gap: 40px;
@@ -65,7 +60,7 @@ header:
 
   .project-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.35);
     border-color: #4facfe;
   }
 
@@ -88,7 +83,7 @@ header:
   .project-name {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #2c3e50;
+    color: #ffffff;
     margin: 0;
     line-height: 1.3;
   }
@@ -98,8 +93,8 @@ header:
     width: 100%;
     border-radius: 6px;
     overflow: hidden;
-    border: 1px solid #eee;
-    background: #fafafa;
+    border: 1px solid #333;
+    background: #090909;
     min-height: 200px;
     display: flex;
     align-items: center;
@@ -123,7 +118,7 @@ header:
     text-decoration: none;
     border: 1px solid #4facfe;
     padding: 6px 14px;
-    border-radius: 20px;
+    border-radius: 4px;
     transition: all 0.2s ease;
   }
 
@@ -140,14 +135,14 @@ header:
   .detail-item {
     margin-bottom: 0.8rem;
     line-height: 1.6;
-    color: #555;
+    color: #b0b0b0;
     font-size: 0.95rem;
     display: flex; /* Aligns label next to text */
   }
 
   .detail-label {
     font-weight: 700;
-    color: #333;
+    color: #ffffff;
     min-width: 130px; /* Ensures all labels align vertically */
     margin-right: 15px;
     flex-shrink: 0; /* Prevents label from squishing */
@@ -163,11 +158,11 @@ header:
 
   .tech-tag {
     font-size: 0.75rem;
-    background: #f1f8ff;
-    color: #0366d6;
+    background: rgba(79, 172, 254, 0.08);
+    color: #d9ecff;
     padding: 4px 12px;
-    border-radius: 12px;
-    border: 1px solid #c8e1ff;
+    border-radius: 4px;
+    border: 1px solid rgba(79, 172, 254, 0.35);
     font-family: monospace;
     font-weight: 500;
   }
@@ -198,7 +193,7 @@ header:
     <div class="project-content">
       <div class="project-header">
         <h3 class="project-name">Phonon Dynamics in Disordered Systems</h3>
-        <a href="https://github.com/rmc-phonon-dynamics" class="project-link" target="_blank">View on GitHub</a>
+        <a href="https://github.com/drthyang/rmc-phonon-dynamics" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub</a>
       </div>
 
       <div class="project-details">
@@ -229,67 +224,69 @@ header:
     </div>
     
     <div class="project-figure">
-      <img src="/assets/images/placeholder_phonon.png" alt="Phonon Dynamics Visualization">
+      <img src="/assets/images/phonon-concept.svg" alt="Phonon Dynamics Visualization">
     </div>
   </div>
 
   <div class="project-card">
     <div class="project-content">
       <div class="project-header">
-        <h3 class="project-name">MarketLab: Quantitative Finance Toolkit</h3>
-        <a href="https://github.com/Tsung-Han-Yang/marketlab" class="project-link" target="_blank">View on GitHub</a>
+        <h3 class="project-name">Materials Data & Scattering Workflows</h3>
+        <a href="/research/" class="project-link">Research</a>
       </div>
 
       <div class="project-details">
         <div class="detail-item">
           <span class="detail-label">Overview:</span>
-          <span>A modular Python framework for backtesting technical trading strategies and visualizing financial time-series data.</span>
+          <span>A learning and project track for building reproducible Python workflows around neutron scattering, PDF analysis, and atomistic model validation.</span>
         </div>
          <div class="detail-item">
           <span class="detail-label">Features:</span>
-          <span>Includes automated calculating of technical indicators (SMA, RSI, MACD) and an extensible pipeline for testing algorithmic trading signals against historical market data.</span>
+          <span>Includes fit diagnostics, model-comparison plots, local-structure summaries, and reusable analysis patterns for scattering-informed materials research.</span>
         </div>
       </div>
 
       <div class="stack-tags">
-        <span class="tech-tag">Pandas</span>
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">Neutron Scattering</span>
         <span class="tech-tag">Matplotlib</span>
-        <span class="tech-tag">Technical Analysis</span>
+        <span class="tech-tag">Materials Modeling</span>
       </div>
     </div>
     
     <div class="project-figure">
-       <img src="/assets/images/placeholder_market.png" alt="Market Analysis Dashboard">
+       <img src="/assets/images/rmc-fit-dashboard.svg" alt="Materials data workflow dashboard">
     </div>
   </div>
 
   <div class="project-card">
     <div class="project-content">
       <div class="project-header">
-        <h3 class="project-name">Physics-informed Neural Network</h3>
-        <a href="https://github.com/Tsung-Han-Yang/marketlab" class="project-link" target="_blank">View on GitHub</a>
+        <h3 class="project-name">Physics-Informed Neural Networks</h3>
+        <a href="/blog/" class="project-link">Related Notes</a>
       </div>
 
       <div class="project-details">
         <div class="detail-item">
           <span class="detail-label">Overview:</span>
-          <span>A modular Python framework for backtesting technical trading strategies and visualizing financial time-series data.</span>
+          <span>A learning track for solving differential-equation and inverse-problem examples with neural networks constrained by physical residuals.</span>
         </div>
          <div class="detail-item">
-          <span class="detail-label">Features:</span>
-          <span>Includes automated calculating of technical indicators (SMA, RSI, MACD) and an extensible pipeline for testing algorithmic trading signals against historical market data.</span>
+          <span class="detail-label">Focus:</span>
+          <span>Connects scientific modeling habits with modern ML: loss design, parameter inference, uncertainty checks, and physically meaningful validation.</span>
         </div>
       </div>
 
       <div class="stack-tags">
-        <span class="tech-tag">Pandas</span>
-        <span class="tech-tag">Matplotlib</span>
-        <span class="tech-tag">Technical Analysis</span>
+        <span class="tech-tag">PyTorch</span>
+        <span class="tech-tag">Inverse Problems</span>
+        <span class="tech-tag">Scientific ML</span>
+        <span class="tech-tag">Optimization</span>
       </div>
     </div>
     
     <div class="project-figure">
-       <img src="/assets/images/placeholder_market.png" alt="Market Analysis Dashboard">
+       <img src="/assets/images/pinn_concept.svg" alt="Physics-informed neural network concept">
     </div>
   </div>
 
