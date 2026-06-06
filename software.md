@@ -146,12 +146,12 @@ header:
         <a href="https://github.com/drthyang/rmc-phonon-dynamics" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
       <p class="software-description">
-        A computational framework for calculating phonon bands, eigen vectors and inelastic neutron scattering (INS) spectra directly from Reverse Monte Carlo models.
+        A computational framework for calculating phonon bands, eigenvectors, and inelastic neutron scattering spectra directly from Reverse Monte Carlo model ensembles.
       </p>
       <ul class="case-list">
-        <li><strong>Problem:</strong> infer dynamic information from static total-scattering models of disordered materials.</li>
-        <li><strong>Engineering:</strong> Python/C++ numerical kernels for large supercells, GPU acceleration using JAX, real/imaginary kernel splits, and sparse matrix workflows.</li>
-        <li><strong>Value:</strong> connects experimental scattering data to predictive atomistic dynamics with massive speedups over CPU-bound methods.</li>
+        <li><strong>Problem:</strong> Static total-scattering models capture local structural disorder but do not directly provide lattice-dynamical information. The goal is to extract physically meaningful phonon behavior from disordered atomistic configurations constrained by experimental scattering data.</li>
+        <li><strong>Approach:</strong> The framework combines Python/C++ numerical workflows for large-supercell calculations, GPU acceleration with JAX, real/imaginary kernel decomposition, and sparse-matrix-based operations to improve computational efficiency.</li>
+        <li><strong>Value:</strong> It connects total-scattering-derived structural models with phonon dynamics and INS observables, enabling comparison between disordered atomistic models and experimental vibrational spectra with substantially improved computational throughput.</li>
       </ul>
       <div class="software-tags">
         <span class="tag">Python</span><span class="tag">C++ Kernels</span><span class="tag">Sparse Methods</span><span class="tag">Lattice Dynamics</span>
