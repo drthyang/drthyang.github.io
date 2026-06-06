@@ -1,6 +1,6 @@
 ---
 layout: splash
-title: "Quantum Materials"
+title: "Materials R&D & Scientific Computing"
 author_profile: true
 classes: wide
 header:
@@ -142,93 +142,100 @@ header:
   <div class="project-card">
     <div class="project-content">
       <div class="project-header">
-        <span class="project-title">Topological Transport Driven by Correlated Disorder</span>
-        <div class="project-links-wrapper">
-          <a href="/publications/" class="project-link">View Papers</a>
-        </div>
+        <span class="project-title">Advanced Materials R&D</span>
       </div>
       <p class="project-description">
-        Demonstrating that short-range magnetic correlations significantly influence the topological properties and anomalous Hall effect in Mn<sub>3</sub>Sn. My contribution connects neutron total scattering, RMC modeling, and magnetic PDF analysis to resolve how local correlations shape transport.
+        Research on quantum materials, magnetic/topological systems, correlated crystals, thin films, and metal-organic interfaces, with a focus on how microscopic structure and interactions control functional material behavior.
+      </p>
+      <div class="project-tags">
+        <span class="tag">Quantum Materials</span>
+        <span class="tag">Topological Systems</span>
+        <span class="tag">Correlated Crystals</span>
+        <span class="tag">Thin Films</span>
+      </div>
+    </div>
+    <div class="project-figure">
+      <img src="/assets/images/ToC_JACS.png" alt="Advanced Materials">
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-content">
+      <div class="project-header">
+        <span class="project-title">Materials Characterization & Metrology</span>
+      </div>
+      <p class="project-description">
+        Advanced neutron/synchrotron scattering, diffraction, PDF, diffuse scattering, inelastic scattering, STM/SP-STM, and surface characterization under low-temperature, high-pressure, UHV, and specialized sample environments.
       </p>
       <div class="project-tags">
         <span class="tag">Neutron Scattering</span>
-        <span class="tag">mPDF Analysis</span>
+        <span class="tag">Synchrotron</span>
+        <span class="tag">STM/SP-STM</span>
+        <span class="tag">Diffuse Scattering</span>
+      </div>
+    </div>
+    <div class="project-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
+      <span>[Characterization Image]</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-content">
+      <div class="project-header">
+        <span class="project-title">Structure–Property & Defect Analysis</span>
+      </div>
+      <p class="project-description">
+        Analysis of local disorder, lattice distortions, symmetry breaking, interfaces, magnetic order, and short-range correlations to understand performance-relevant material behavior.
+      </p>
+      <div class="project-tags">
+        <span class="tag">Defect Analysis</span>
+        <span class="tag">Local Disorder</span>
+        <span class="tag">Magnetic Order</span>
+        <span class="tag">Symmetry Breaking</span>
+      </div>
+    </div>
+    <div class="project-figure">
+      <img src="/assets/images/PRR_GTS.png" alt="Defect Analysis">
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-content">
+      <div class="project-header">
+        <span class="project-title">Materials Synthesis, Thin Films & Experimental Systems</span>
+      </div>
+      <p class="project-description">
+        Hands-on experience with crystal growth, inert-atmosphere synthesis, MBE thin-film growth, UHV systems, custom sample environments, cryogenic/high-pressure setups, and experimental integration.
+      </p>
+      <div class="project-tags">
+        <span class="tag">MBE</span>
+        <span class="tag">Crystal Growth</span>
+        <span class="tag">UHV Systems</span>
+        <span class="tag">Cryogenics</span>
+      </div>
+    </div>
+    <div class="project-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
+      <span>[Experimental Setup Image]</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-content">
+      <div class="project-header">
+        <span class="project-title">Scientific Computing & Physics-Based Modeling</span>
+      </div>
+      <p class="project-description">
+        Python-based scientific workflows, RMC/PDF modeling, DFT, phonon calculations, magnetic refinement, symmetry analysis, HPC, and reproducible experiment–simulation comparison.
+      </p>
+      <div class="project-tags">
+        <span class="tag">Python</span>
         <span class="tag">RMC Modeling</span>
-        <span class="tag">Short-range Disorder</span>
+        <span class="tag">DFT</span>
+        <span class="tag">HPC</span>
       </div>
     </div>
     <div class="project-figure">
-      <img src="/assets/images/prl-mn3sn-concept.svg" alt="Weyl Semimetal Structure">
-    </div>
-  </div>
-
-  <div class="project-card">
-    <div class="project-content">
-      <div class="project-header">
-        <span class="project-title">Emergent Topological Phenomena</span>
-        <div class="project-links-wrapper">
-          <a href="/publications/" class="project-link">View Papers</a>
-        </div>
-      </div>
-      <p class="project-description">
-        Investigating magnetostructural transformations in Mn<sub>3</sub>Sn and Mn<sub>3</sub>Ga that induce intrinsic Weyl phase transitions and anomalous Hall effects. This work combines quantum-material synthesis and characterization with neutron scattering and symmetry analysis.
-      </p>
-      <div class="project-tags">
-        <span class="tag">Neutron Scattering</span>
-        <span class="tag">Material Characterization</span>
-        <span class="tag">Magnetostructural Coupling</span>
-        <span class="tag">Topological Physics</span>
-      </div>
-    </div>
-    <div class="project-figure">
-      <img src="/assets/images/ToC_JACS.png" alt="Weyl Semimetal Structure">
-    </div>
-  </div>
-
-  <div class="project-card">
-    <div class="project-content">
-      <div class="project-header">
-        <span class="project-title">Phonon Spectra from Total Scattering</span>
-        <div class="project-links-wrapper">
-          <a href="https://github.com/Tsung-Han-Yang/rmc-phonon-dynamics" class="project-link" target="_blank" rel="noopener noreferrer">View Code</a>
-          <a href="/publications/" class="project-link">Related Papers</a>
-        </div>
-      </div>
-      <p class="project-description">
-        Extracting dynamic information from static total scattering data using <strong>Reverse Monte Carlo (RMC)</strong>. I developed Python/C++ analysis workflows that refine atomistic configurations against PDF and $S(Q)$ data, then reconstruct phonon density of states and vibrational spectra.
-      </p>
-      <div class="project-tags">
-        <span class="tag">RMC Modeling</span>
-        <span class="tag">Python/C++</span>
-        <span class="tag">Total Scattering</span>
-        <span class="tag">Lattice Dynamics</span>
-      </div>
-    </div>
-    <div class="project-figure">
-      <img src="/assets/images/phonon-concept.svg" alt="Phonon DOS Plot">
-    </div>
-  </div>
-
-  <div class="project-card">
-    <div class="project-content">
-      <div class="project-header">
-        <span class="project-title">High-Order Spin-Orbit States</span>
-        <div class="project-links-wrapper">
-          <a href="/publications/" class="project-link">View Papers</a>
-        </div>
-      </div>
-      <p class="project-description">
-        Investigating molecular spin-orbital fluctuations and Jahn-Teller driven ordering in cluster Mott insulators. This work uses total scattering and local-structure analysis to identify hidden symmetry breaking in GaTa<sub>4</sub>Se<sub>8</sub>.
-      </p>
-      <div class="project-tags">
-        <span class="tag">Molecular Clusters</span>
-        <span class="tag">Jahn-Teller Effect</span>
-        <span class="tag">PDF Analysis</span>
-        <span class="tag">Neutron Scattering</span>
-      </div>
-    </div>
-    <div class="project-figure">
-      <img src="/assets/images/PRR_GTS.png" alt="Cluster Mott Insulator">
+      <img src="/assets/images/phonon-concept.svg" alt="Scientific Computing">
     </div>
   </div>
 

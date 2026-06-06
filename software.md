@@ -143,15 +143,15 @@ header:
     <div class="software-content">
       <div class="software-header">
         <span class="software-title">RMC Phonon Dynamics</span>
-        <a href="https://github.com/drthyang/rmc-phonon-dynamics.git" class="software-link">GitHub</a>
+        <a href="https://github.com/drthyang/rmc-phonon-dynamics" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
       <p class="software-description">
-        A computational framework for extracting phonon density of states and vibrational spectra directly from Reverse Monte Carlo structural models.
+        A computational framework for extracting phonon density of states and inelastic neutron scattering (INS) spectra directly from Reverse Monte Carlo structural models.
       </p>
       <ul class="case-list">
         <li><strong>Problem:</strong> infer dynamic information from static total-scattering models of disordered materials.</li>
-        <li><strong>Engineering:</strong> Python/C++ numerical kernels for large supercells, force-constant construction, sparse matrix workflows, and reproducible scientific computing.</li>
-        <li><strong>Value:</strong> connects experimental scattering data to predictive atomistic dynamics without relying on ideal crystal symmetry.</li>
+        <li><strong>Engineering:</strong> Python/C++ numerical kernels for large supercells, GPU acceleration using JAX, real/imaginary kernel splits, and sparse matrix workflows.</li>
+        <li><strong>Value:</strong> connects experimental scattering data to predictive atomistic dynamics with massive speedups over CPU-bound methods.</li>
       </ul>
       <div class="software-tags">
         <span class="tag">Python</span><span class="tag">C++ Kernels</span><span class="tag">Sparse Methods</span><span class="tag">Lattice Dynamics</span>
@@ -165,19 +165,42 @@ header:
   <div class="software-card">
     <div class="software-content">
       <div class="software-header">
-        <span class="software-title">RMCprofile Atomic Density</span>
-        <a href="https://github.com/drthyang/rmc-toolkits.git" class="software-link">GitHub</a>
+        <span class="software-title">Neutron Diffuse Toolkit</span>
+        <a href="https://github.com/drthyang/neutron-diffuse" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
       <p class="software-description">
-        A post-processing suite for RMCprofile simulations that automates fit visualization, convergence diagnostics, and real-space model inspection.
+        A Python toolkit for cleaning 3D reciprocal-space neutron diffuse scattering volumes and preparing them for 3D-ΔPDF analysis.
       </p>
       <ul class="case-list">
-        <li><strong>Problem:</strong> reduce manual analysis friction across PDF, S(Q), Bragg, and real-space density outputs.</li>
-        <li><strong>Engineering:</strong> scripted plotting, structured diagnostics, automated batch analysis, and interactive visualization for repeated simulation workflows.</li>
-        <li><strong>Value:</strong> turns expert-only analysis into a faster and more reproducible pipeline.</li>
+        <li><strong>Problem:</strong> isolate weak diffuse signals by systematically removing powder-ring backgrounds and Bragg peaks from raw volumetric scattering data.</li>
+        <li><strong>Engineering:</strong> multi-stage data pipelines, intelligent Bragg punching and backfilling, reciprocal-space masking, and interactive GUI QA viewers.</li>
+        <li><strong>Value:</strong> transforms raw diffuse scattering measurements into clean 3D-ΔPDFs for advanced structural modeling.</li>
       </ul>
       <div class="software-tags">
-        <span class="tag">Python</span><span class="tag">Automation</span><span class="tag">Visualization</span><span class="tag">Simulation Pipelines</span>
+        <span class="tag">Python</span><span class="tag">Neutron Scattering</span><span class="tag">Data Pipeline</span><span class="tag">3D-ΔPDF</span>
+      </div>
+    </div>
+    <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
+      <span>[3D Diffuse Viewer]</span>
+    </div>
+  </div>
+
+  <div class="software-card">
+    <div class="software-content">
+      <div class="software-header">
+        <span class="software-title">RMC Toolkits</span>
+        <a href="https://github.com/drthyang/rmc-toolkits" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+      <p class="software-description">
+        A post-processing suite for RMCprofile simulations featuring 3D atom-position visualization (Mayavi) and an interactive KDE slice viewer for atomic densities.
+      </p>
+      <ul class="case-list">
+        <li><strong>Problem:</strong> reduce manual analysis friction across PDF, S(Q), Bragg, and 3D real-space density outputs.</li>
+        <li><strong>Engineering:</strong> scripted CLI plotting, automated batch diagnostics, and interactive UI for complex spatial density visualization.</li>
+        <li><strong>Value:</strong> turns expert-only RMC analysis into a fast, visual, and highly reproducible pipeline.</li>
+      </ul>
+      <div class="software-tags">
+        <span class="tag">Python</span><span class="tag">Automation</span><span class="tag">Mayavi</span><span class="tag">Simulation Pipelines</span>
       </div>
     </div>
     <div class="software-figure">
@@ -189,7 +212,7 @@ header:
     <div class="software-content">
       <div class="software-header">
         <span class="software-title">Magnetic Pair Distribution Function</span>
-        <a href="https://github.com/Tsung-Han-Yang/mPDF-analysis-visualization" class="software-link">GitHub</a>
+        <a href="https://github.com/drthyang/mPDF-analysis-visualization" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
       <p class="software-description">
         An analytical workflow for extracting short-range magnetic correlations from total neutron scattering data. This project extends the <code>diffpy.mpdf</code> package (developed by 
@@ -207,29 +230,6 @@ header:
     </div>
     <div class="software-figure">
       <img src="/assets/images/mpdf-correlations.svg" alt="Magnetic PDF">
-    </div>
-  </div>
-
-  <div class="software-card">
-    <div class="software-content">
-      <div class="software-header">
-        <span class="software-title">Scattering Data Workflow</span>
-        <a href="/research/" class="software-link">Research</a>
-      </div>
-      <p class="software-description">
-        A reproducible analysis workflow for connecting neutron and X-ray scattering data with atomistic models of local structure and correlated disorder.
-      </p>
-      <ul class="case-list">
-        <li><strong>Problem:</strong> compare multiple experimental signals against candidate structural and magnetic models.</li>
-        <li><strong>Engineering:</strong> Python-based data reduction, fit visualization, model diagnostics, reusable notebooks/scripts, and publication-ready figures.</li>
-        <li><strong>Value:</strong> helps convert scattering measurements into materials mechanisms that are useful for research and development.</li>
-      </ul>
-      <div class="software-tags">
-        <span class="tag">Python</span><span class="tag">Neutron Scattering</span><span class="tag">PDF Analysis</span><span class="tag">Materials Modeling</span>
-      </div>
-    </div>
-    <div class="software-figure">
-      <img src="/assets/images/rmc-fit-dashboard.svg" alt="Scattering data workflow dashboard">
     </div>
   </div>
 
