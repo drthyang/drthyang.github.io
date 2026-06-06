@@ -157,8 +157,8 @@ header:
         <span class="tag">Python</span><span class="tag">C++ Kernels</span><span class="tag">Sparse Methods</span><span class="tag">Lattice Dynamics</span>
       </div>
     </div>
-    <div class="software-figure">
-      <img src="/assets/images/phonon-concept.svg" alt="Phonon DOS and vibrational spectra concept">
+    <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
+      <span>[Phonon DOS Image]</span>
     </div>
   </div>
 
@@ -203,11 +203,12 @@ header:
         <span class="tag">Python</span><span class="tag">Automation</span><span class="tag">Mayavi</span><span class="tag">Simulation Pipelines</span>
       </div>
     </div>
-    <div class="software-figure">
-      <img src="/assets/images/rmc-fit-dashboard.svg" alt="RMC Fits">
+    <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
+      <span>[RMC Fits Image]</span>
     </div>
   </div>
 
+  {% comment %}
   <div class="software-card">
     <div class="software-content">
       <div class="software-header">
@@ -228,9 +229,10 @@ header:
         <span class="tag">Python</span><span class="tag">mPDF</span><span class="tag">Signal Extraction</span><span class="tag">Model Validation</span>
       </div>
     </div>
-    <div class="software-figure">
-      <img src="/assets/images/mpdf-correlations.svg" alt="Magnetic PDF">
+    <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
+      <span>[Magnetic PDF Image]</span>
     </div>
   </div>
+  {% endcomment %}
 
 </div>

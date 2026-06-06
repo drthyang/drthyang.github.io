@@ -132,17 +132,21 @@ classes: wide
 
 <div class="hero-summary">
   <h1 class="hero-title">Experimental & Computational Materials Scientist</h1>
-  <p class="hero-subtitle">Quantum Materials &middot; Advanced Characterization &middot; Scattering & Metrology &middot; Scientific Computing</p>
+  <p class="hero-subtitle">Quantum Materials &middot; Characterization & Metrology &middot; Structure&ndash;Property Analysis &middot; Scientific Computing</p>
   
+  <p style="font-size: 1.1rem; line-height: 1.8; color: #b0b0b0; text-align: justify; text-justify: inter-word; margin-bottom: 1rem;">
+      I am an experimental and computational materials scientist specializing in quantum and functional materials. My work combines neutron and synchrotron scattering, advanced characterization, surface/interface science, and physics-based modeling to understand how structure, disorder, magnetism, interfaces, and defects control material behavior.
+  </p>
   <p style="font-size: 1.1rem; line-height: 1.8; color: #b0b0b0; text-align: justify; text-justify: inter-word; margin-bottom: 0;">
-      I am an experimental physicist and researcher specializing in the design, modeling, and characterization of complex physical systems. My work combines advanced experimental scattering techniques at national user facilities with high-performance numerical simulations, inverse modeling (Reverse Monte Carlo), and scientific software design. I build modular C++ and Python workflows to extract clean signals from high-dimensional, noisy data, enabling predictive modeling of materials dynamics and structure-property relationships.
+      I bring hands-on experience in national-lab experiments, crystal synthesis, STM/MBE surface science, local-structure analysis, Reverse Monte Carlo modeling, DFT, phonon calculations, and Python-based scientific workflows for complex materials data.
   </p>
 
   <div class="target-roles-banner">
     <span style="font-size: 1.15rem;">🎯</span>
-    <span><strong>Targeting Roles:</strong> Quantitative Researcher/Analyst &bull; Data Scientist &bull; Scientific Software Engineer &bull; Materials R&D Engineer</span>
+    <span><strong>Target Roles:</strong> Materials Scientist &middot; R&D Engineer &middot; Metrology Scientist &middot; Data Scientist &middot; Applied Scientist</span>
   </div>
   
+  {% comment %}
   <div class="proof-strip">
     <span class="proof-item">Postdoctoral Researcher @ ORNL</span>
     <span class="proof-item">Ph.D. Physics @ Brown</span>
@@ -150,8 +154,10 @@ classes: wide
     <span class="proof-item">Synchrotron & Neutron Scattering</span>
     <span class="proof-item">Python / C++ (HPC & Sparse Methods)</span>
   </div>
+  {% endcomment %}
 </div>
 
+{% comment %}
 <div class="core-grid">
   <!-- Pillar 1: Research -->
   <div class="core-card">
@@ -182,29 +188,16 @@ classes: wide
       <a href="/software/" style="text-decoration: none; font-weight: 600; color: #4facfe; font-size: 0.92rem;">View Packages & Tools →</a>
     </div>
   </div>
-
-  <!-- Pillar 3: Notes -->
-  <div class="core-card">
-    <h3><i class="fas fa-brain"></i> Data Science & ML</h3>
-    <p>Applying machine learning, statistical modeling, and optimization (like PINNs) to solve differential equations and fit data.</p>
-    <div class="card-footer">
-      <div class="tag-container">
-        <span class="mini-tag">Scientific ML</span>
-        <span class="mini-tag">PyTorch</span>
-        <span class="mini-tag">Model Validation</span>
-        <span class="mini-tag">Optimization</span>
-      </div>
-      <a href="/learning-notes/" style="text-decoration: none; font-weight: 600; color: #4facfe; font-size: 0.92rem;">Explore Notes & Tutorials →</a>
-    </div>
-  </div>
 </div>
+{% endcomment %}
 
-<hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.08); margin: 2.5rem 0;">
+
 
 ### Recent Highlights
-* **[Publication]** First-author **Nature Communications (2026)** work linking a magnetostructural transformation to Weyl physics in Mn<sub>3</sub>Sn.
-* **[Research]** **JACS (2024)** study revealing coupled antiferromagnetism and local symmetry breaking in kagome (Fe,Co)Sn.
-* **[Tools]** Advanced Python/C++ analysis workflows for RMC modeling, local structure, phonon dynamics, and magnetic correlations.
+* [**[Software]**](/software/) **Neutron diffuse scattering tools for 3D-ΔPDF analysis released:** Developed a Python-based workflow for 3D-ΔPDF reconstruction and visualization, supporting analysis of local disorder and short-range correlations in complex materials.
+* [**[Publication]**](/publications/) First-author **Nature Communications (2026)** study on Mn<sub>3</sub>Ga, revealing an intrinsic topological phase transition at room temperature driven by a magnetostructural transformation.
+* [**[Software]**](/software/) **Released rmcph:** a data-processing pipeline and GUI for calculating phonon spectra from total scattering measurements and RMC model ensembles, with integrated tools for phonon processing and visualization.
+* [**[Publication]**](/publications/) First-author **JACS (2024)** study on kagome (Fe,Co)Sn, revealing coupling between short-range local disorder and a long-range antiferromagnetic transition.
 
 <p align="center" style="margin-top: 3.5rem;">
   <a href="/assets/resume.pdf" class="btn btn--primary">Download Full CV</a>

@@ -154,8 +154,8 @@ header:
         <span class="tag">Thin Films</span>
       </div>
     </div>
-    <div class="project-figure">
-      <img src="/assets/images/ToC_JACS.png" alt="Advanced Materials">
+    <div class="project-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
+      <span>[Advanced Materials Image]</span>
     </div>
   </div>
 
@@ -174,8 +174,8 @@ header:
         <span class="tag">Diffuse Scattering</span>
       </div>
     </div>
-    <div class="project-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
-      <span>[Characterization Image]</span>
+    <div class="project-figure">
+      <img src="/assets/images/ToC_JACS.png" alt="Materials Characterization">
     </div>
   </div>
 
@@ -202,7 +202,7 @@ header:
   <div class="project-card">
     <div class="project-content">
       <div class="project-header">
-        <span class="project-title">Materials Synthesis, Thin Films & Experimental Systems</span>
+        <span class="project-title">Synthesis & Experimental Systems</span>
       </div>
       <p class="project-description">
         Hands-on experience with crystal growth, inert-atmosphere synthesis, MBE thin-film growth, UHV systems, custom sample environments, cryogenic/high-pressure setups, and experimental integration.
@@ -234,8 +234,8 @@ header:
         <span class="tag">HPC</span>
       </div>
     </div>
-    <div class="project-figure">
-      <img src="/assets/images/phonon-concept.svg" alt="Scientific Computing">
+    <div class="project-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
+      <span>[Scientific Computing Image]</span>
     </div>
   </div>
 
