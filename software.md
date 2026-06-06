@@ -146,7 +146,7 @@ header:
         <a href="https://github.com/drthyang/rmc-phonon-dynamics" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
       <p class="software-description">
-        A computational framework for extracting phonon density of states and inelastic neutron scattering (INS) spectra directly from Reverse Monte Carlo structural models.
+        A computational framework for calculating phonon bands, eigen vectors and inelastic neutron scattering (INS) spectra directly from Reverse Monte Carlo models.
       </p>
       <ul class="case-list">
         <li><strong>Problem:</strong> infer dynamic information from static total-scattering models of disordered materials.</li>
