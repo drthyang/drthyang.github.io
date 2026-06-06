@@ -169,12 +169,12 @@ header:
         <a href="https://github.com/drthyang/neutron-diffuse" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
       <p class="software-description">
-        A Python toolkit for cleaning 3D reciprocal-space neutron diffuse scattering volumes and preparing them for 3D-ΔPDF analysis.
+        A Python toolkit for processing 3D reciprocal-space neutron diffuse scattering data and preparing it for 3D-ΔPDF analysis.
       </p>
       <ul class="case-list">
-        <li><strong>Problem:</strong> isolate weak diffuse signals by systematically removing powder-ring backgrounds and Bragg peaks from raw volumetric scattering data.</li>
-        <li><strong>Engineering:</strong> multi-stage data pipelines, intelligent Bragg punching and backfilling, reciprocal-space masking, and interactive GUI QA viewers.</li>
-        <li><strong>Value:</strong> transforms raw diffuse scattering measurements into clean 3D-ΔPDFs for advanced structural modeling.</li>
+        <li><strong>Problem:</strong> Weak diffuse signals are often obscured by powder-ring backgrounds, Bragg peaks, and other artifacts in raw volumetric scattering data.</li>
+        <li><strong>Approach:</strong> The toolkit uses multi-stage processing workflows, Bragg peak removal and backfilling, reciprocal-space masking, background cleaning, and interactive GUI-based quality checks.</li>
+        <li><strong>Value:</strong> It converts raw diffuse scattering volumes into cleaner 3D-ΔPDF-ready datasets, enabling more reliable analysis of local structural disorder, short-range magnetic correlations, and structure&ndash;property relationships in complex materials.</li>
       </ul>
       <div class="software-tags">
         <span class="tag">Python</span><span class="tag">Neutron Scattering</span><span class="tag">Data Pipeline</span><span class="tag">3D-ΔPDF</span>
