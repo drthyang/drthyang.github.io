@@ -154,7 +154,7 @@ header:
         <li><strong>Value:</strong> It connects total-scattering-derived structural models with phonon dynamics and INS observables, enabling comparison between disordered atomistic models and experimental vibrational spectra with substantially improved computational throughput.</li>
       </ul>
       <div class="software-tags">
-        <span class="tag">Python</span><span class="tag">C++ Kernels</span><span class="tag">Sparse Methods</span><span class="tag">Lattice Dynamics</span>
+        <span class="tag">Python</span><span class="tag">C++</span><span class="tag">GUI</span><span class="tag">RMC Modeling</span><span class="tag">Phonons</span><span class="tag">INS</span><span class="tag">GPU Acceleration</span>
       </div>
     </div>
     <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
@@ -177,7 +177,7 @@ header:
         <li><strong>Value:</strong> It converts raw diffuse scattering volumes into cleaner 3D-ΔPDF-ready datasets, enabling more reliable analysis of local structural disorder, short-range magnetic correlations, and structure&ndash;property relationships in complex materials.</li>
       </ul>
       <div class="software-tags">
-        <span class="tag">Python</span><span class="tag">Neutron Scattering</span><span class="tag">Data Pipeline</span><span class="tag">3D-ΔPDF</span>
+        <span class="tag">Python</span><span class="tag">Neutron Scattering</span><span class="tag">Diffuse Scattering</span><span class="tag">3D-ΔPDF</span><span class="tag">Data Processing</span><span class="tag">GUI</span>
       </div>
     </div>
     <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
