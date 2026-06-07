@@ -192,15 +192,15 @@ header:
         <a href="https://github.com/drthyang/rmc-toolkits" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
       <p class="software-description">
-        A post-processing suite for RMCprofile simulations featuring 3D atom-position visualization (Mayavi) and an interactive KDE slice viewer for atomic densities.
+        A Python post-processing suite for RMCProfile simulations, featuring automated diagnostics, 3D atom-position visualization with Mayavi, and an interactive KDE slice viewer for real-space atomic density analysis.
       </p>
       <ul class="case-list">
-        <li><strong>Problem:</strong> reduce manual analysis friction across PDF, S(Q), Bragg, and 3D real-space density outputs.</li>
-        <li><strong>Engineering:</strong> scripted CLI plotting, automated batch diagnostics, and interactive UI for complex spatial density visualization.</li>
-        <li><strong>Value:</strong> turns expert-only RMC analysis into a fast, visual, and highly reproducible pipeline.</li>
+        <li><strong>Problem:</strong> RMC analysis often requires manual inspection across PDF, S(Q), Bragg profiles, atom configurations, and 3D real-space density outputs, making the workflow slow and difficult to reproduce.</li>
+        <li><strong>Approach:</strong> The toolkit combines CLI-based plotting, automated batch diagnostics, simulation-output parsing, 3D visualization, and interactive density-slice viewers for efficient exploration of complex RMC results.</li>
+        <li><strong>Value:</strong> It turns expert-level RMC post-processing into a faster, more visual, and more reproducible workflow for analyzing local structure, disorder, and atomistic correlations in complex materials.</li>
       </ul>
       <div class="software-tags">
-        <span class="tag">Python</span><span class="tag">Automation</span><span class="tag">Mayavi</span><span class="tag">Simulation Pipelines</span>
+        <span class="tag">Python</span><span class="tag">RMCProfile</span><span class="tag">PDF Analysis</span><span class="tag">3D Visualization</span><span class="tag">Mayavi</span><span class="tag">KDE</span><span class="tag">Automation</span>
       </div>
     </div>
     <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
