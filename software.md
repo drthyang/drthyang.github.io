@@ -165,7 +165,7 @@ header:
   <div class="software-card">
     <div class="software-content">
       <div class="software-header">
-        <span class="software-title">Neutron Diffuse Toolkit</span>
+        <span class="software-title">3D-ΔPDF Neutron Diffuse Scattering Toolkit</span>
         <a href="https://github.com/drthyang/neutron-diffuse" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
       <p class="software-description">
