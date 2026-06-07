@@ -100,8 +100,6 @@ classes: wide
     color: #b0b0b0;
     line-height: 1.6;
     margin-bottom: 1.5rem;
-    text-align: justify;
-    text-justify: inter-word;
   }
 
   /* Tag/Link Container alignment */
@@ -134,10 +132,10 @@ classes: wide
   <h1 class="hero-title">Experimental & Computational Materials Scientist</h1>
   <p class="hero-subtitle">Quantum Materials &middot; Characterization & Metrology &middot; Structure&ndash;Property Analysis &middot; Scientific Computing</p>
   
-  <p style="font-size: 1.1rem; line-height: 1.8; color: #b0b0b0; text-align: justify; text-justify: inter-word; margin-bottom: 1rem;">
+  <p style="font-size: 1.1rem; line-height: 1.8; color: #b0b0b0; margin-bottom: 1rem;">
       I am an experimental and computational materials scientist specializing in quantum and functional materials. My work combines neutron and synchrotron scattering, advanced characterization, surface/interface science, and physics-based modeling to understand how structure, disorder, magnetism, interfaces, and defects control material behavior.
   </p>
-  <p style="font-size: 1.1rem; line-height: 1.8; color: #b0b0b0; text-align: justify; text-justify: inter-word; margin-bottom: 0;">
+  <p style="font-size: 1.1rem; line-height: 1.8; color: #b0b0b0; margin-bottom: 0;">
       I bring hands-on experience in national-lab experiments, crystal synthesis, STM/MBE surface science, local-structure analysis, Reverse Monte Carlo modeling, DFT, phonon calculations, and Python-based scientific workflows for complex materials data.
   </p>
 
