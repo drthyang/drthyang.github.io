@@ -1,5 +1,6 @@
 _notes
 _site
 .DS_Store
-#.claude/.claude/
+**/.DS_Store
 .claude/
+.maintenance/tmp/
