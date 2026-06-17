@@ -160,8 +160,8 @@ header:
         <span class="tag">Python</span><span class="tag">C++</span><span class="tag">GUI</span><span class="tag">RMC Modeling</span><span class="tag">Phonons</span><span class="tag">INS</span><span class="tag">GPU Acceleration</span>
       </div>
     </div>
-    <div class="software-figure">
-      <img src="/assets/images/rmc-phonon-app.png" alt="RMC Phonon Dynamics Web App Interface" />
+    <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
+      <span>[Phonon DOS Image]</span>
     </div>
   </div>
 
@@ -209,8 +209,8 @@ header:
         <span class="tag">Python</span><span class="tag">RMCProfile</span><span class="tag">PDF Analysis</span><span class="tag">3D Visualization</span><span class="tag">Mayavi</span><span class="tag">KDE</span><span class="tag">Automation</span>
       </div>
     </div>
-    <div class="software-figure">
-      <img src="/assets/images/rmc-toolkits-app.png" alt="RMC Toolkits Web App Interface" />
+    <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
+      <span>[RMC Fits Image]</span>
     </div>
   </div>
 
