@@ -143,7 +143,10 @@ header:
     <div class="software-content">
       <div class="software-header">
         <span class="software-title">RMC Phonon Dynamics</span>
-        <a href="https://github.com/drthyang/rmc-phonon-dynamics" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <div style="display: flex; gap: 8px;">
+          <a href="https://drthyang.github.io/rmc-phonon-dynamics/viz/rmcph.html" class="software-link" target="_blank" rel="noopener noreferrer">Phonon Viewer</a>
+          <a href="https://github.com/drthyang/rmc-phonon-dynamics" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
       </div>
       <p class="software-description">
         A computational framework for calculating phonon bands, eigenvectors, and inelastic neutron scattering spectra directly from Reverse Monte Carlo model ensembles.
@@ -189,7 +192,10 @@ header:
     <div class="software-content">
       <div class="software-header">
         <span class="software-title">RMC Toolkits</span>
-        <a href="https://github.com/drthyang/rmc-toolkits" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <div style="display: flex; gap: 8px;">
+          <a href="https://drthyang.github.io/rmc-toolkits/" class="software-link" target="_blank" rel="noopener noreferrer">Web App</a>
+          <a href="https://github.com/drthyang/rmc-toolkits" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
       </div>
       <p class="software-description">
         A Python post-processing suite for RMCProfile simulations, featuring automated diagnostics, 3D atom-position visualization with Mayavi, and an interactive KDE slice viewer for real-space atomic density analysis.
