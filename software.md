@@ -168,11 +168,11 @@ header:
   <div class="software-card">
     <div class="software-content">
       <div class="software-header">
-        <span class="software-title">3D-ΔPDF Neutron Diffuse Scattering Toolkit</span>
+        <span class="software-title">Comprehensive 3D-ΔPDF & Diffuse Scattering Suite</span>
         <a href="https://github.com/drthyang/neutron-diffuse" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
       <p class="software-description">
-        A Python toolkit for processing 3D reciprocal-space neutron diffuse scattering data and preparing it for 3D-ΔPDF analysis.
+        A comprehensive Python suite for advanced 3D reciprocal-space neutron diffuse scattering data processing, featuring background removal, Bragg punch/backfill, 3D-ΔPDF generation, and inverse 3D-FFT for robust consistency checks.
       </p>
       <ul class="case-list">
         <li><strong>Problem:</strong> Weak diffuse signals are often obscured by powder-ring backgrounds, Bragg peaks, and other artifacts in raw volumetric scattering data.</li>
