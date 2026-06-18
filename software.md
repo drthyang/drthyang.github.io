@@ -198,15 +198,15 @@ header:
         </div>
       </div>
       <p class="software-description">
-        A Python post-processing suite for RMCProfile simulations, featuring automated diagnostics, 3D atom-position visualization with Mayavi, and an interactive KDE slice viewer for real-space atomic density analysis.
+        A comprehensive post-processing suite and web dashboard for RMCProfile and STOG outputs, featuring interactive plots, live data monitoring, and 3D atomic density visualization.
       </p>
       <ul class="case-list">
-        <li><strong>Problem:</strong> RMC analysis often requires manual inspection across PDF, S(Q), Bragg profiles, atom configurations, and 3D real-space density outputs, making the workflow slow and difficult to reproduce.</li>
-        <li><strong>Approach:</strong> The toolkit combines CLI-based plotting, automated batch diagnostics, simulation-output parsing, 3D visualization, and interactive density-slice viewers for efficient exploration of complex RMC results.</li>
-        <li><strong>Value:</strong> It turns expert-level RMC post-processing into a faster, more visual, and more reproducible workflow for analyzing local structure, disorder, and atomistic correlations in complex materials.</li>
+        <li><strong>Problem:</strong> Interpreting RMC outputs is traditionally a fragmented and manual process. Researchers must juggle disconnected static plots, text logs, and external 3D viewers, creating a major bottleneck in validating structural models of complex materials.</li>
+        <li><strong>Approach:</strong> The framework pairs a Python backend with a React/Vite frontend to deliver live folder monitoring, browser-native SVG charting, and a Three.js-powered interactive KDE slice viewer.</li>
+        <li><strong>Value:</strong> It turns expert-level RMC post-processing into a faster, highly visual, and reproducible workflow for analyzing local structure, disorder, and atomistic correlations.</li>
       </ul>
       <div class="software-tags">
-        <span class="tag">Python</span><span class="tag">RMCProfile</span><span class="tag">PDF Analysis</span><span class="tag">3D Visualization</span><span class="tag">Mayavi</span><span class="tag">KDE</span><span class="tag">Automation</span>
+        <span class="tag">Python</span><span class="tag">React/Vite</span><span class="tag">Flask</span><span class="tag">Three.js</span><span class="tag">RMCProfile</span><span class="tag">KDE</span><span class="tag">Dashboard</span>
       </div>
     </div>
     <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
