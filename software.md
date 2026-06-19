@@ -63,10 +63,12 @@ header:
   .software-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 12px;
     border-bottom: 1px solid #f0f0f0;
     padding-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
   .software-title {
@@ -113,8 +115,8 @@ header:
     margin-right: 4px;
   }
 
-  /* Tag Styling (Kept exactly as you liked) */
-  .project-tags {
+  /* Tag Styling */
+  .software-tags {
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
