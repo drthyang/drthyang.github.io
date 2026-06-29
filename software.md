@@ -146,7 +146,7 @@ header:
       <div class="software-header">
         <span class="software-title">RMC Phonon Dynamics</span>
         <div style="display: flex; gap: 8px;">
-          <a href="https://drthyang.github.io/rmc-phonon-dynamics/viz/rmcph.html" class="software-link" target="_blank" rel="noopener noreferrer">Phonon Viewer</a>
+          <a href="https://drthyang.github.io/rmc-phonon-dynamics/" class="software-link" target="_blank" rel="noopener noreferrer">Web App</a>
           <a href="https://github.com/drthyang/rmc-phonon-dynamics" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
