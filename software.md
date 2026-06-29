@@ -171,7 +171,10 @@ header:
     <div class="software-content">
       <div class="software-header">
         <span class="software-title">Diffuse Scattering & 3D-ΔPDF</span>
-        <a href="https://github.com/drthyang/neutron-diffuse" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <div style="display: flex; gap: 8px;">
+          <a href="https://drthyang.github.io/nebula3d/" class="software-link" target="_blank" rel="noopener noreferrer">Web Demo</a>
+          <a href="https://github.com/drthyang/neutron-diffuse" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
       </div>
       <p class="software-description">
         A comprehensive Python suite for advanced 3D reciprocal-space neutron diffuse scattering data processing, featuring background removal, Bragg punch/backfill, 3D-ΔPDF generation, and inverse 3D-FFT for robust consistency checks.
