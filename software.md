@@ -141,6 +141,10 @@ header:
 
 <div class="software-container">
 
+  <p class="software-description" style="margin: 0 0 0.5rem 0; max-width: 920px;">
+    Browser-first research tools for RMC analysis, neutron diffuse scattering, and phonon dynamics. These projects emphasize local data privacy, interactive visualization, and deployable workflows that can run directly from GitHub Pages when the science allows it.
+  </p>
+
   <div class="software-card">
     <div class="software-content">
       <div class="software-header">
@@ -151,15 +155,15 @@ header:
         </div>
       </div>
       <p class="software-description">
-        A computational framework for calculating phonon bands, eigenvectors, and inelastic neutron scattering spectra directly from Reverse Monte Carlo model ensembles.
+        A fully client-side phonon analysis app for RMCProfile ensembles. Open the hosted page, select a local run folder, and compute phonon band structures, animated 3D modes, simulated INS S(|Q|,E), and phonon DOS directly in the browser.
       </p>
       <ul class="case-list">
-        <li><strong>Problem:</strong> Static total-scattering models capture local structural disorder but do not directly provide lattice-dynamical information. The goal is to extract physically meaningful phonon behavior from disordered atomistic configurations constrained by experimental scattering data.</li>
-        <li><strong>Approach:</strong> The framework combines Python/C++ numerical workflows for large-supercell calculations, GPU acceleration with JAX, real/imaginary kernel decomposition, and sparse-matrix-based operations to improve computational efficiency.</li>
-        <li><strong>Value:</strong> It connects total-scattering-derived structural models with phonon dynamics and INS observables, enabling comparison between disordered atomistic models and experimental vibrational spectra with substantially improved computational throughput.</li>
+        <li><strong>Problem:</strong> RMC ensembles encode experimentally constrained local disorder, but translating those configurations into lattice-dynamical insight usually requires separate scripts, backends, or model assumptions.</li>
+        <li><strong>Approach:</strong> The app extracts displacement-covariance phonons from the selected ensemble, runs the S(k) diagonalization on the user's machine with WebGPU, and keeps all files local through the browser folder picker.</li>
+        <li><strong>Value:</strong> It turns RMC-derived structure into interactive dynamics: dispersion curves, soft-mode highlighting, 3D eigenvector animation, INS maps, DOS, fit-quality overlays, and phonopy-compatible exports without installing a scientific stack.</li>
       </ul>
       <div class="software-tags">
-        <span class="tag">Python</span><span class="tag">C++</span><span class="tag">GUI</span><span class="tag">RMC Modeling</span><span class="tag">Phonons</span><span class="tag">INS</span><span class="tag">GPU Acceleration</span>
+        <span class="tag">React/Vite</span><span class="tag">WebGPU</span><span class="tag">RMCProfile</span><span class="tag">Phonons</span><span class="tag">INS</span><span class="tag">Client-side</span><span class="tag">GitHub Pages</span>
       </div>
     </div>
     <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
@@ -170,22 +174,22 @@ header:
   <div class="software-card">
     <div class="software-content">
       <div class="software-header">
-        <span class="software-title">Diffuse Scattering & 3D-ΔPDF</span>
+        <span class="software-title">nebula3D</span>
         <div style="display: flex; gap: 8px;">
-          <a href="https://drthyang.github.io/nebula3d/" class="software-link" target="_blank" rel="noopener noreferrer">Web Demo</a>
-          <a href="https://github.com/drthyang/neutron-diffuse" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://drthyang.github.io/nebula3d/" class="software-link" target="_blank" rel="noopener noreferrer">Web App</a>
+          <a href="https://github.com/drthyang/nebula3d" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
       <p class="software-description">
-        A comprehensive Python suite for advanced 3D reciprocal-space neutron diffuse scattering data processing, featuring background removal, Bragg punch/backfill, 3D-ΔPDF generation, and inverse 3D-FFT for robust consistency checks.
+        A Python toolkit and hosted browser console for cleaning 3D reciprocal-space neutron diffuse scattering volumes and preparing 3D-ΔPDF analysis products from Mantid-style HKL data.
       </p>
       <ul class="case-list">
-        <li><strong>Problem:</strong> Weak diffuse signals are often obscured by powder-ring backgrounds, Bragg peaks, and other artifacts in raw volumetric scattering data.</li>
-        <li><strong>Approach:</strong> The toolkit uses multi-stage processing workflows, Bragg peak removal and backfilling, reciprocal-space masking, background cleaning, and interactive GUI-based quality checks.</li>
-        <li><strong>Value:</strong> It converts raw diffuse scattering volumes into cleaner 3D-ΔPDF-ready datasets, enabling more reliable analysis of local structural disorder, short-range magnetic correlations, and structure&ndash;property relationships in complex materials.</li>
+        <li><strong>Problem:</strong> Weak diffuse signals can be buried under powder-ring backgrounds, sharp Bragg and satellite peaks, radial pedestals, and transform artifacts before 3D-ΔPDF interpretation even begins.</li>
+        <li><strong>Approach:</strong> The workflow unifies ring subtraction, Bragg/satellite punching, q-shell backfill, radial-background flattening, 3D-ΔPDF transforms, inverse-FFT consistency checks, and multi-view visual QA.</li>
+        <li><strong>Value:</strong> It provides both full-resolution native workflows and a GitHub Pages web app that can run real pipeline stages client-side via Pyodide for modest volumes, making cleanup decisions inspectable and reproducible.</li>
       </ul>
       <div class="software-tags">
-        <span class="tag">Python</span><span class="tag">Neutron Scattering</span><span class="tag">Diffuse Scattering</span><span class="tag">3D-ΔPDF</span><span class="tag">Data Processing</span><span class="tag">GUI</span>
+        <span class="tag">Python</span><span class="tag">React</span><span class="tag">Pyodide</span><span class="tag">Neutron Scattering</span><span class="tag">Diffuse Scattering</span><span class="tag">3D-ΔPDF</span><span class="tag">GitHub Pages</span>
       </div>
     </div>
     <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
@@ -203,15 +207,15 @@ header:
         </div>
       </div>
       <p class="software-description">
-        A comprehensive post-processing suite and web dashboard for RMCProfile and STOG outputs, featuring interactive plots, live data monitoring, and 3D atomic density visualization.
+        A browser-hosted dashboard and Python package for RMCProfile, STOG, and EXAFS outputs. Select a run folder locally and inspect refinement plots, live updates, KDE slices, and folded 3D structure views without uploading data.
       </p>
       <ul class="case-list">
-        <li><strong>Problem:</strong> Interpreting RMC outputs is traditionally a fragmented and manual process. Researchers must juggle disconnected static plots, text logs, and external 3D viewers, creating a major bottleneck in validating structural models of complex materials.</li>
-        <li><strong>Approach:</strong> The framework pairs a Python backend with a React/Vite frontend to deliver live folder monitoring, browser-native SVG charting, and a Three.js-powered interactive KDE slice viewer.</li>
-        <li><strong>Value:</strong> It turns expert-level RMC post-processing into a faster, highly visual, and reproducible workflow for analyzing local structure, disorder, and atomistic correlations.</li>
+        <li><strong>Problem:</strong> RMC validation often sprawls across CSV outputs, text logs, structure files, static figures, and separate viewers, slowing the feedback loop during refinement.</li>
+        <li><strong>Approach:</strong> The toolkit combines a static React/Vite app, optional Flask backend, reusable Python parsers, browser-native SVG charts, Three.js structure views, and WebGPU-accelerated KDE with CPU fallback.</li>
+        <li><strong>Value:</strong> It makes RMC post-processing portable and visual: live data monitoring, EXAFS-aware plotting, figure export, .rmc6f conversion, model summaries, density slices, and 3D inspection from a privacy-preserving web workflow.</li>
       </ul>
       <div class="software-tags">
-        <span class="tag">Python</span><span class="tag">React/Vite</span><span class="tag">Flask</span><span class="tag">Three.js</span><span class="tag">RMCProfile</span><span class="tag">KDE</span><span class="tag">Dashboard</span>
+        <span class="tag">Python</span><span class="tag">React/Vite</span><span class="tag">Flask</span><span class="tag">Three.js</span><span class="tag">WebGPU</span><span class="tag">RMCProfile</span><span class="tag">EXAFS</span><span class="tag">Dashboard</span>
       </div>
     </div>
     <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
