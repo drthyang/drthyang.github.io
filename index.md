@@ -204,8 +204,7 @@ classes: wide
   <div class="proof-strip">
     <span class="proof-item">Postdoc @ ORNL (Spallation Neutron Source)</span>
     <span class="proof-item">Ph.D. Physics @ Brown</span>
-    <span class="proof-item">First-author: Nat. Commun. &middot; JACS</span>
-    <span class="proof-item">10+ beamtime proposals as PI</span>
+    <span class="proof-item">First-author: Nature Communications &middot; JACS</span>
     <span class="proof-item">Open-source scientific software</span>
   </div>
 </div>
