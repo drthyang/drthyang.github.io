@@ -293,6 +293,5 @@ classes: wide
 * [**[Software]**](/software/) **Released rmcph:** a data-processing pipeline and GUI for calculating phonon spectra from total scattering measurements and RMC model ensembles, with integrated tools for phonon processing and visualization.
 
 <div class="cta-row">
-  <a href="/assets/resume.pdf" class="btn btn--primary">Download Full CV</a>
-  <a href="/publications/" class="btn btn--inverse">View Publications</a>
+  <a href="/publications/" class="btn btn--primary">View Publications</a>
 </div>

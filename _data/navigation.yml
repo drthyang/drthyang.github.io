@@ -9,5 +9,6 @@ main:
 #    url: /learning-notes/
   - title: "Publications"
     url: /publications/    
-  - title: "CV"
-    url: /assets/resume.pdf
+# CV link disabled until the PDF is ready to publish
+#  - title: "CV"
+#    url: /assets/resume.pdf
