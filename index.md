@@ -82,6 +82,33 @@ classes: wide
     margin: 0 0 1.3rem;
   }
 
+  /* Pillar Strip */
+  .pillar-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+  }
+  .pillar-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-left: 3px solid rgba(79, 172, 254, 0.55);
+    border-radius: 6px;
+    padding: 1rem 1.1rem;
+  }
+  .pillar-card h4 {
+    margin: 0 0 0.45rem;
+    color: #fff;
+    font-size: 0.98rem;
+    font-weight: 700;
+  }
+  .pillar-card p {
+    margin: 0;
+    color: #a8b6c2;
+    font-size: 0.86rem;
+    line-height: 1.55;
+  }
+
   /* App Card Grid */
   .app-grid {
     display: grid;
@@ -163,10 +190,10 @@ classes: wide
 
 <div class="hero-summary">
   <h1 class="hero-title">Experimental & Computational Materials Scientist</h1>
-  <p class="hero-subtitle">Quantum Materials &middot; Characterization & Metrology &middot; Structure&ndash;Property Analysis &middot; Scientific Computing</p>
+  <p class="hero-subtitle">Quantum Materials &middot; Synthesis & Crystal Growth &middot; Characterization & Metrology &middot; Scientific Computing</p>
 
   <p class="hero-lede">
-      I study how structure, disorder, magnetism, interfaces, and defects control the behavior of quantum and functional materials — combining neutron and synchrotron scattering, STM/MBE surface science, crystal synthesis, DFT and phonon modeling, Reverse Monte Carlo analysis, and Python-based scientific workflows to connect atomic-scale measurements with physical models.
+      I study how structure, disorder, magnetism, interfaces, and defects control the behavior of quantum and functional materials — working across the full chain from crystal growth and solid-state synthesis, through neutron/synchrotron scattering and STM/MBE surface science, to DFT and phonon modeling, Reverse Monte Carlo analysis, and Python-based scientific workflows.
   </p>
 
   <div class="target-roles-banner">
@@ -180,6 +207,28 @@ classes: wide
     <span class="proof-item">First-author: Nat. Commun. &middot; JACS</span>
     <span class="proof-item">10+ beamtime proposals as PI</span>
     <span class="proof-item">Open-source scientific software</span>
+  </div>
+</div>
+
+<h2 class="home-section-title">⚗️ From synthesis to software</h2>
+<p class="home-section-sub">I work across the full materials pipeline — the same person who grows the crystal can model it, measure it, and ship the analysis tools.</p>
+
+<div class="pillar-grid">
+  <div class="pillar-card">
+    <h4>Synthesis & Growth</h4>
+    <p>Single-crystal growth (flux/CVT), polycrystalline synthesis, multi-zone furnaces, inert-atmosphere glovebox, high-pressure sample prep, MBE thin films with in-situ RHEED.</p>
+  </div>
+  <div class="pillar-card">
+    <h4>Characterization</h4>
+    <p>Neutron & synchrotron diffraction, total scattering/PDF, diffuse & inelastic scattering, STM/SP-STM, AFM, low-temperature & high-pressure environments.</p>
+  </div>
+  <div class="pillar-card">
+    <h4>Modeling</h4>
+    <p>DFT (Quantum ESPRESSO, VASP), Phonopy phonon calculations, Reverse Monte Carlo, Rietveld & magnetic refinement, symmetry analysis.</p>
+  </div>
+  <div class="pillar-card">
+    <h4>Scientific Software</h4>
+    <p>Python/HPC analysis pipelines, reproducible workflows, and browser-based tools (Pyodide, WebGPU, React) — see the live apps below.</p>
   </div>
 </div>
 
