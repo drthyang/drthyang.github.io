@@ -198,7 +198,7 @@ classes: wide
 
   <div class="target-roles-banner">
     <span style="font-size: 1.15rem;">🎯</span>
-    <span><strong>Target Roles:</strong> Materials Scientist &middot; R&D Engineer &middot; Metrology Scientist &middot; Data Scientist &middot; Applied Scientist</span>
+    <span><strong>Target Roles:</strong> Materials Scientist &middot; R&D / Metrology Engineer &middot; Applied Scientist &middot; AI/ML Scientist &middot; AI for Science / Materials Informatics &middot; Quantum Technology Applications</span>
   </div>
 
   <div class="proof-strip">
@@ -253,7 +253,7 @@ classes: wide
 
   <div class="core-card">
     <h3>rmc-toolkits</h3>
-    <p>Dashboard for RMCProfile/STOG refinements — live run monitoring, interactive charts, space-group detection, a 3D structure view, and a WebGPU-accelerated KDE up to ~100&times; faster.</p>
+    <p>Dashboard for RMCProfile/STOG refinements — live run monitoring, interactive charts, space-group detection, a 3D structure view, and WebGPU-accelerated KDE density slices.</p>
     <div class="card-footer">
       <div class="tag-container">
         <span class="mini-tag">WebGPU</span>
@@ -269,7 +269,7 @@ classes: wide
 
   <div class="core-card">
     <h3>rmc-phonon-dynamics</h3>
-    <p>Phonon band structures, DOS, animated 3D modes, and simulated INS spectra extracted directly from RMC ensembles — computed on your GPU via WebGPU compute shaders.</p>
+    <p>Phonon band structures, DOS, animated 3D modes, and simulated INS spectra extracted directly from RMC ensembles — with WebGPU compute shaders delivering the main ~100&times; speedup for phonon analysis.</p>
     <div class="card-footer">
       <div class="tag-container">
         <span class="mini-tag">WebGPU</span>
