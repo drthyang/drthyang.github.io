@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">High-pressure instrumentation concept</title>
+  <desc id="desc">A simplified diamond anvil cell schematic with an X-ray beam passing through the sample chamber, annotated with pressure and temperature capabilities.</desc>
+  <rect width="900" height="520" fill="#090d12"/>
+  <rect x="34" y="34" width="832" height="452" rx="18" fill="#111820" stroke="#2d3c48"/>
+  <text x="62" y="82" fill="#ffffff" font-family="Arial, sans-serif" font-size="30" font-weight="700">Custom High-Pressure XRD Capability</text>
+
+  <!-- Upper anvil support -->
+  <rect x="200" y="120" width="220" height="60" rx="8" fill="#1a2430" stroke="#2d3c48" stroke-width="3"/>
+  <!-- Upper diamond -->
+  <path d="M240 180 L380 180 L322 258 L298 258 Z" fill="#0e1620" stroke="#4facfe" stroke-width="4"/>
+  <!-- Gasket -->
+  <rect x="216" y="258" width="76" height="16" fill="#2d3c48"/>
+  <rect x="328" y="258" width="76" height="16" fill="#2d3c48"/>
+  <!-- Sample chamber -->
+  <circle cx="310" cy="266" r="9" fill="#ffcc66"/>
+  <!-- Lower diamond -->
+  <path d="M240 352 L380 352 L322 274 L298 274 Z" fill="#0e1620" stroke="#4facfe" stroke-width="4"/>
+  <!-- Lower anvil support -->
+  <rect x="200" y="352" width="220" height="60" rx="8" fill="#1a2430" stroke="#2d3c48" stroke-width="3"/>
+
+  <!-- X-ray beam -->
+  <path d="M90 266 H296" stroke="#ffcc66" stroke-width="4" stroke-dasharray="12 8"/>
+  <path d="M324 266 H470" stroke="#ffcc66" stroke-width="4" stroke-dasharray="12 8"/>
+  <path d="M324 266 L468 208 M324 266 L468 324" stroke="#ffcc66" stroke-width="3" opacity="0.6"/>
+  <text x="90" y="246" fill="#b0b0b0" font-family="Arial, sans-serif" font-size="18">X-ray beam</text>
+
+  <!-- Cryostat outline -->
+  <rect x="160" y="104" width="340" height="324" rx="24" fill="none" stroke="#2d3c48" stroke-width="3" stroke-dasharray="10 8"/>
+  <text x="176" y="452" fill="#b0b0b0" font-family="Arial, sans-serif" font-size="18">cryostat + DAC integration</text>
+
+  <!-- Annotations -->
+  <text x="560" y="185" fill="#b0b0b0" font-family="Arial, sans-serif" font-size="20">Diamond anvil cell,</text>
+  <text x="560" y="215" fill="#b0b0b0" font-family="Arial, sans-serif" font-size="20">EDM gaskets, custom</text>
+  <text x="560" y="245" fill="#b0b0b0" font-family="Arial, sans-serif" font-size="20">3D-printed fixtures</text>
+  <text x="560" y="300" fill="#4facfe" font-family="Arial, sans-serif" font-size="22" font-weight="700">&gt;10 GPa</text>
+  <text x="560" y="335" fill="#4facfe" font-family="Arial, sans-serif" font-size="22" font-weight="700">low temperature</text>
+  <text x="560" y="385" fill="#b0b0b0" font-family="Arial, sans-serif" font-size="18">designed, built, and</text>
+  <text x="560" y="410" fill="#b0b0b0" font-family="Arial, sans-serif" font-size="18">commissioned in-house</text>
+</svg>

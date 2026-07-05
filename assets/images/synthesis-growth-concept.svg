@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Crystal growth and thin-film synthesis concept</title>
+  <desc id="desc">A sealed-tube crystal growth ampoule in a temperature gradient next to an MBE thin-film schematic with RHEED streaks.</desc>
+  <rect width="900" height="520" fill="#090d12"/>
+  <rect x="34" y="34" width="832" height="452" rx="18" fill="#111820" stroke="#2d3c48"/>
+  <text x="62" y="82" fill="#ffffff" font-family="Arial, sans-serif" font-size="30" font-weight="700">Synthesis &amp; Thin-Film Growth</text>
+
+  <!-- Furnace block -->
+  <rect x="80" y="130" width="340" height="120" rx="14" fill="#1a2430" stroke="#2d3c48" stroke-width="3"/>
+  <!-- Sealed ampoule -->
+  <rect x="110" y="168" width="280" height="44" rx="22" fill="#0e1620" stroke="#4facfe" stroke-width="4"/>
+  <!-- Source powder -->
+  <circle cx="152" cy="190" r="6" fill="#ffcc66"/><circle cx="168" cy="196" r="5" fill="#ffcc66"/>
+  <circle cx="160" cy="182" r="5" fill="#ffcc66"/>
+  <!-- Transport arrow -->
+  <path d="M195 190 H305" stroke="#ffcc66" stroke-width="3" stroke-dasharray="8 6"/>
+  <path d="M305 190 l-12 -7 v14 Z" fill="#ffcc66"/>
+  <!-- Grown crystal -->
+  <path d="M330 202 l14 -26 l16 8 l-6 22 Z" fill="#4facfe"/>
+  <!-- Temperature gradient -->
+  <path d="M110 290 H390" stroke="#2d3c48" stroke-width="3"/>
+  <text x="102" y="322" fill="#ffcc66" font-family="Arial, sans-serif" font-size="18">T hot</text>
+  <text x="342" y="322" fill="#4facfe" font-family="Arial, sans-serif" font-size="18">T cold</text>
+  <text x="80" y="368" fill="#b0b0b0" font-family="Arial, sans-serif" font-size="18">sealed-tube / flux growth,</text>
+  <text x="80" y="394" fill="#b0b0b0" font-family="Arial, sans-serif" font-size="18">multi-zone furnaces, glovebox</text>
+
+  <!-- MBE panel -->
+  <rect x="500" y="130" width="320" height="200" rx="14" fill="#0e1620" stroke="#2d3c48" stroke-width="3"/>
+  <!-- Substrate -->
+  <rect x="540" y="278" width="240" height="18" fill="#2d3c48"/>
+  <!-- Film layers -->
+  <rect x="540" y="262" width="240" height="12" fill="#4facfe" opacity="0.85"/>
+  <rect x="540" y="250" width="170" height="12" fill="#4facfe" opacity="0.45"/>
+  <!-- Deposition flux arrows -->
+  <g stroke="#ffcc66" stroke-width="3">
+    <path d="M580 170 V236"/><path d="M640 170 V236"/><path d="M700 170 V236"/><path d="M760 170 V236"/>
+  </g>
+  <g fill="#ffcc66">
+    <path d="M580 244 l-7 -12 h14 Z"/><path d="M640 244 l-7 -12 h14 Z"/>
+    <path d="M700 244 l-7 -12 h14 Z"/><path d="M760 244 l-7 -12 h14 Z"/>
+  </g>
+  <!-- RHEED streaks -->
+  <g fill="#4facfe">
+    <rect x="836" y="150" width="5" height="44" rx="2"/>
+    <rect x="836" y="210" width="5" height="44" rx="2"/>
+    <rect x="836" y="270" width="5" height="44" rx="2"/>
+  </g>
+  <text x="500" y="368" fill="#b0b0b0" font-family="Arial, sans-serif" font-size="18">MBE / sputtering under UHV,</text>
+  <text x="500" y="394" fill="#b0b0b0" font-family="Arial, sans-serif" font-size="18">in-situ RHEED monitoring</text>
+  <text x="80" y="446" fill="#4facfe" font-family="Arial, sans-serif" font-size="20" font-weight="700">from bulk single crystals to epitaxial films</text>
+</svg>
