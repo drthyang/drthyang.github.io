@@ -207,7 +207,6 @@ header:
       <span class="stat">First-author: Nat. Commun. &amp; JACS</span>
       <span class="stat">8 SNS/HFIR instruments</span>
       <span class="stat">10+ beamtime proposals as PI/lead</span>
-      <span class="stat">ACNS Poster Award — #1 of 30+</span>
     </div>
   </div>
 
