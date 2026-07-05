@@ -153,28 +153,28 @@ classes: wide
       <span class="timeline-role">Postdoctoral Research Fellow</span><br>
       <span class="timeline-org">Oak Ridge National Laboratory</span><span class="timeline-dates">2023 – Present</span>
       <p class="timeline-desc">
-        Neutron-scattering studies of topological and correlated quantum materials across 9 SNS/HFIR instruments; open-source analysis software and Python/HPC workflows.
+        Neutron scattering on quantum materials; open-source analysis software.
       </p>
     </div>
     <div class="timeline-entry">
       <span class="timeline-role">Ph.D. in Physics (Condensed Matter)</span><br>
       <span class="timeline-org">Brown University</span><span class="timeline-dates">2015 – 2023</span>
       <p class="timeline-desc">
-        Spin-orbital physics of lacunar spinels; built a high-pressure (&gt;10 GPa), low-temperature XRD capability and crystal-synthesis workflows for a new quantum-materials lab.
+        Spin-orbital physics of lacunar spinels; built a high-pressure, low-temperature XRD capability.
       </p>
     </div>
     <div class="timeline-entry">
       <span class="timeline-role">Research Assistant</span><br>
       <span class="timeline-org">Academia Sinica</span><span class="timeline-dates">2013 – 2015</span>
       <p class="timeline-desc">
-        DFT and NEGF quantum-transport modeling of metal-organic systems, in collaboration with STM experimental groups.
+        DFT and quantum-transport modeling of metal-organic systems.
       </p>
     </div>
     <div class="timeline-entry">
       <span class="timeline-role">M.Sc. in Physics (Condensed Matter)</span><br>
       <span class="timeline-org">National Taiwan University</span><span class="timeline-dates">2010 – 2012</span>
       <p class="timeline-desc">
-        MBE thin-film growth under UHV and atomic-scale surface magnetism by spin-polarized STM.
+        MBE thin-film growth and spin-polarized STM under UHV.
       </p>
     </div>
   </div>
@@ -193,12 +193,5 @@ classes: wide
     <span class="skill-tag">JAX / GPU Acceleration</span>
     <span class="skill-tag">Machine Learning</span>
   </div>
-
-  <div class="about-header">Recognition</div>
-  <ul>
-    <li>Invited Speaker, American Crystallographic Association Annual Meeting (2025)</li>
-    <li>Representative, ORNL Neutron Science Division DOE Research Highlight (2025)</li>
-    <li>Invited Reviewer, <em>Nature Communications</em></li>
-  </ul>
 
 </div>
