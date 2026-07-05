@@ -205,7 +205,7 @@ header:
     </p>
     <div class="stat-row">
       <span class="stat">First-author: Nat. Commun. &amp; JACS</span>
-      <span class="stat">8 SNS/HFIR instruments</span>
+      <span class="stat">9 SNS/HFIR instruments</span>
       <span class="stat">10+ beamtime proposals as PI/lead</span>
     </div>
   </div>
@@ -291,7 +291,7 @@ header:
         <span class="project-title">Neutron &amp; Synchrotron Scattering</span>
       </div>
       <p class="project-description">
-        Design and execution of scattering campaigns across 8 SNS and HFIR instruments — POWGEN, NOMAD, CORELLI, ARCS, CNCS, SEQUOIA, TOPAZ, and DEMAND — plus synchrotron X-ray work at APS, NSLS-II, and CHESS. Techniques span powder and single-crystal diffraction, total scattering/PDF, diffuse scattering, and inelastic neutron scattering under low-temperature, magnetic-field, and specialized sample environments. Authored 10+ successful peer-reviewed beamtime proposals as PI or lead contributor.
+        Design and execution of scattering campaigns across 9 SNS and HFIR instruments — including POWGEN, NOMAD, CORELLI, ARCS, CNCS, SEQUOIA, TOPAZ, and DEMAND — plus synchrotron X-ray work at APS, NSLS-II, and CHESS. Techniques span powder and single-crystal diffraction, total scattering/PDF, diffuse scattering, and inelastic neutron scattering under low-temperature, magnetic-field, and specialized sample environments. Authored 10+ successful peer-reviewed beamtime proposals as PI or lead contributor.
       </p>
       <div class="project-tags">
         <span class="tag">Neutron Scattering</span>
