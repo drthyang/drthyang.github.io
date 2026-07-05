@@ -99,6 +99,12 @@ header:
     line-height: 1.6;
     margin-bottom: 15px;
   }
+  .software-subtitle {
+    color: #4facfe;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: -4px 0 12px 0;
+  }
   .case-list {
     margin: 0 0 16px 0;
     padding: 0;
@@ -148,38 +154,15 @@ header:
   <div class="software-card">
     <div class="software-content">
       <div class="software-header">
-        <span class="software-title">RMC Phonon Dynamics</span>
-        <div style="display: flex; gap: 8px;">
-          <a href="https://drthyang.github.io/rmc-phonon-dynamics/" class="software-link" target="_blank" rel="noopener noreferrer">Web App</a>
-          <a href="https://github.com/drthyang/rmc-phonon-dynamics" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </div>
-      </div>
-      <p class="software-description">
-        A fully client-side phonon analysis app for RMCProfile ensembles. Open the hosted page, select a local run folder, and compute phonon band structures, animated 3D modes, simulated INS S(|Q|,E), and phonon DOS directly in the browser.
-      </p>
-      <ul class="case-list">
-        <li><strong>Problem:</strong> RMC ensembles encode experimentally constrained local disorder, but translating those configurations into lattice-dynamical insight usually requires separate scripts, backends, or model assumptions.</li>
-        <li><strong>Approach:</strong> The app extracts displacement-covariance phonons from the selected ensemble, runs the S(k) diagonalization on the user's machine with WebGPU, and keeps all files local through the browser folder picker.</li>
-        <li><strong>Value:</strong> It turns RMC-derived structure into interactive dynamics: dispersion curves, soft-mode highlighting, 3D eigenvector animation, INS maps, DOS, fit-quality overlays, and phonopy-compatible exports without installing a scientific stack.</li>
-      </ul>
-      <div class="software-tags">
-        <span class="tag">React/Vite</span><span class="tag">WebGPU</span><span class="tag">RMCProfile</span><span class="tag">Phonons</span><span class="tag">INS</span><span class="tag">Client-side</span><span class="tag">GitHub Pages</span>
-      </div>
-    </div>
-    <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
-      <span>[Phonon DOS Image]</span>
-    </div>
-  </div>
-
-  <div class="software-card">
-    <div class="software-content">
-      <div class="software-header">
-        <span class="software-title">nebula3D</span>
+        <span class="software-title">NEBULA3D</span>
         <div style="display: flex; gap: 8px;">
           <a href="https://drthyang.github.io/nebula3d/" class="software-link" target="_blank" rel="noopener noreferrer">Web App</a>
           <a href="https://github.com/drthyang/nebula3d" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
+      <p class="software-subtitle">
+        Neutron Elastic Background Utilities for Local Analysis &amp; 3D-delta PDF.
+      </p>
       <p class="software-description">
         A Python toolkit and hosted browser console for cleaning 3D reciprocal-space neutron diffuse scattering volumes and preparing 3D-ΔPDF analysis products from Mantid-style HKL data.
       </p>
@@ -207,19 +190,45 @@ header:
         </div>
       </div>
       <p class="software-description">
-        A browser-hosted dashboard and Python package for RMCProfile, STOG, and EXAFS outputs. Select a run folder locally and inspect refinement plots, live updates, KDE slices, and folded 3D structure views without uploading data.
+        A no-install browser dashboard for RMCProfile, STOG, and EXAFS outputs. Select a local run folder to inspect refinement charts, KDE slices, folded 3D structures, and AI-guided summaries of model and fit details without uploading data.
       </p>
       <ul class="case-list">
-        <li><strong>Problem:</strong> RMC validation often sprawls across CSV outputs, text logs, structure files, static figures, and separate viewers, slowing the feedback loop during refinement.</li>
-        <li><strong>Approach:</strong> The toolkit combines a static React/Vite app, optional Flask backend, reusable Python parsers, browser-native SVG charts, Three.js structure views, and WebGPU-accelerated KDE with CPU fallback.</li>
-        <li><strong>Value:</strong> It makes RMC post-processing portable and visual: live data monitoring, EXAFS-aware plotting, figure export, .rmc6f conversion, model summaries, density slices, and 3D inspection from a privacy-preserving web workflow.</li>
+        <li><strong>Problem:</strong> RMC validation spans plots, logs, structures, and fit metrics that are hard to inspect together during refinement.</li>
+        <li><strong>Approach:</strong> The React/Vite app reads run folders locally, auto-detects outputs, renders interactive charts, and connects KDE, slab, and Three.js structure views.</li>
+        <li><strong>Value:</strong> Live monitoring, figure export, EXAFS-aware plotting, WebGPU KDE, and an AI assistant help users understand model details, fit quality, and refinement diagnostics in one private dashboard.</li>
       </ul>
       <div class="software-tags">
-        <span class="tag">Python</span><span class="tag">React/Vite</span><span class="tag">Flask</span><span class="tag">Three.js</span><span class="tag">WebGPU</span><span class="tag">RMCProfile</span><span class="tag">EXAFS</span><span class="tag">Dashboard</span>
+        <span class="tag">React/Vite</span><span class="tag">Python</span><span class="tag">AI Assistant</span><span class="tag">RMCProfile</span><span class="tag">EXAFS</span><span class="tag">WebGPU KDE</span><span class="tag">Three.js</span><span class="tag">Live Monitoring</span>
       </div>
     </div>
     <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
       <span>[RMC Fits Image]</span>
+    </div>
+  </div>
+
+  <div class="software-card">
+    <div class="software-content">
+      <div class="software-header">
+        <span class="software-title">RMC Phonon Dynamics</span>
+        <div style="display: flex; gap: 8px;">
+          <a href="https://drthyang.github.io/rmc-phonon-dynamics/" class="software-link" target="_blank" rel="noopener noreferrer">Web App</a>
+          <a href="https://github.com/drthyang/rmc-phonon-dynamics" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+      <p class="software-description">
+        A fully client-side phonon analysis app for RMCProfile ensembles. Open the hosted page, select a local run folder, and compute phonon band structures, animated 3D modes, simulated INS S(|Q|,E), and phonon DOS directly in the browser.
+      </p>
+      <ul class="case-list">
+        <li><strong>Problem:</strong> RMC ensembles encode experimentally constrained local disorder, but translating those configurations into lattice-dynamical insight usually requires separate scripts, backends, or model assumptions.</li>
+        <li><strong>Approach:</strong> The app extracts displacement-covariance phonons from the selected ensemble, runs the S(k) diagonalization on the user's machine with WebGPU, and keeps all files local through the browser folder picker.</li>
+        <li><strong>Value:</strong> It turns RMC-derived structure into interactive dynamics: dispersion curves, soft-mode highlighting, 3D eigenvector animation, INS maps, DOS, fit-quality overlays, and phonopy-compatible exports without installing a scientific stack.</li>
+      </ul>
+      <div class="software-tags">
+        <span class="tag">React/Vite</span><span class="tag">WebGPU</span><span class="tag">RMCProfile</span><span class="tag">Phonons</span><span class="tag">INS</span><span class="tag">Client-side</span><span class="tag">GitHub Pages</span>
+      </div>
+    </div>
+    <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
+      <span>[Phonon DOS Image]</span>
     </div>
   </div>
 
