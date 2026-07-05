@@ -201,12 +201,4 @@ classes: wide
     <li>Invited Reviewer, <em>Nature Communications</em></li>
   </ul>
 
-  <div class="about-header">Education</div>
-  <ul>
-    <li><strong>Ph.D. in Physics</strong> — Brown University, 2023</li>
-    <li><strong>M.Sc. in Physics</strong> — National Taiwan University, 2012</li>
-    <li><strong>B.Sc. in Physics</strong> — National Chung Hsing University, 2010</li>
-    <li><strong>Machine Learning Specialization</strong> — DeepLearning.AI & Stanford Online, 2025</li>
-  </ul>
-
 </div>
