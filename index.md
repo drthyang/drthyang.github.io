@@ -94,7 +94,8 @@ classes: wide
   /* Pillar Strip */
   .pillar-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 1fr;
     gap: 1rem;
     margin-bottom: 2.5rem;
   }
@@ -114,8 +115,17 @@ classes: wide
   .pillar-card p {
     margin: 0;
     color: #a8b6c2;
-    font-size: 0.86rem;
-    line-height: 1.55;
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+  .pillar-card .pillar-proof {
+    margin-top: 0.75rem;
+    color: #d2e7ff;
+    font-size: 0.82rem;
+    line-height: 1.5;
+  }
+  .pillar-proof strong {
+    color: #ffffff;
   }
   .pillar-card {
     display: flex;
@@ -208,58 +218,68 @@ classes: wide
     flex-wrap: wrap;
     margin-top: 3rem;
   }
+
+  @media (max-width: 768px) {
+    .pillar-grid {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>
 
 <div class="hero-summary">
   <h1 class="hero-title">Experimental & Computational Materials Scientist</h1>
-  <p class="hero-subtitle">Quantum Materials &middot; Synthesis & Crystal Growth &middot; Characterization & Metrology &middot; Scientific Computing & AI</p>
+  <p class="hero-subtitle">Quantum Materials &middot; Scattering & Metrology &middot; Disorder Modeling &middot; Scientific Software & AI</p>
 
   <p class="hero-lede">
-      I study how structure, disorder, magnetism, interfaces, and defects control the behavior of quantum and functional materials — working across the full chain from crystal growth and solid-state synthesis, through neutron/synchrotron scattering and STM/MBE surface science, to DFT and phonon modeling, Reverse Monte Carlo analysis, and Python-based scientific workflows with LLM-assisted analysis built in.
+      I connect sample preparation, neutron/synchrotron/STM measurements, physics-based modeling, and deployable analysis software. My niche is owning the path from material and measurement design to reproducible Python/browser/LLM workflows that turn complex scattering data into defensible structure-property insight.
   </p>
 
   <div class="target-roles-banner">
     <span style="font-size: 1.15rem;">🎯</span>
-    <span><strong>Target Roles:</strong> Materials Scientist &middot; R&D / Metrology Engineer &middot; Applied Scientist &middot; AI/ML Scientist &middot; AI for Science / Materials Informatics &middot; Quantum Technology Applications</span>
+    <span><strong>Target Roles:</strong> AI for Science / Materials Informatics &middot; Computational Materials Scientist &middot; Neutron/Scattering Data Scientist &middot; Materials R&D / Metrology Scientist</span>
   </div>
 
   <div class="proof-strip">
     <span class="proof-item">Postdoc @ ORNL (Spallation Neutron Source)</span>
-    <span class="proof-item">Ph.D. Physics @ Brown</span>
     <a class="proof-item" href="/publications/">First-author: Nature Communications &middot; JACS →</a>
-    <span class="proof-item">Open-source scientific software</span>
-    <span class="proof-item">LLM-integrated analysis tools</span>
+    <span class="proof-item">Neutron, synchrotron & STM measurements</span>
+    <span class="proof-item">Open-source Python/WebGPU tools</span>
+    <span class="proof-item">Local-first LLM analysis workflows</span>
   </div>
 </div>
 
-<h2 class="home-section-title">⚗️ From synthesis to software</h2>
-<p class="home-section-sub">I work across the full materials pipeline — the same person who grows the crystal can model it, measure it, and ship the analysis tools.</p>
+<h2 class="home-section-title">Capability map</h2>
+<p class="home-section-sub">Sample → signal → model → software: a connected toolkit for turning hard materials data into decisions.</p>
 
 <div class="pillar-grid">
   <div class="pillar-card">
-    <h4>Synthesis & Growth</h4>
-    <p>Single-crystal growth (flux/CVT), polycrystalline synthesis, multi-zone furnaces, inert-atmosphere glovebox, high-pressure sample prep, MBE thin films with in-situ RHEED.</p>
+    <h4>Synthesis & Sample Prep</h4>
+    <p>Prepare crystals, polycrystalline samples, and thin films; tune synthesis routes; handle air-sensitive workflows; and screen sample quality before beamtime or surface measurements.</p>
+    <p class="pillar-proof"><strong>Proof:</strong> Flux/CVT growth, glovebox synthesis, MBE prep.</p>
     <a class="pillar-link" href="/research/">Research projects →</a>
   </div>
   <div class="pillar-card">
-    <h4>Characterization</h4>
-    <p>Neutron & synchrotron diffraction, total scattering/PDF, diffuse & inelastic scattering, STM/SP-STM, AFM, low-temperature & high-pressure environments.</p>
+    <h4>Scattering & Metrology</h4>
+    <p>Design neutron, synchrotron, and STM measurements, then convert diffraction, PDF, diffuse, inelastic, low-temperature, and high-pressure data into structure-property constraints.</p>
+    <p class="pillar-proof"><strong>Proof:</strong> ORNL/SNS; neutron, synchrotron, STM studies.</p>
     <a class="pillar-link" href="/publications/">Publications →</a>
   </div>
   <div class="pillar-card">
-    <h4>Modeling</h4>
-    <p>DFT (Quantum ESPRESSO, VASP), Phonopy phonon calculations, Reverse Monte Carlo, Rietveld & magnetic refinement, symmetry analysis.</p>
+    <h4>Modeling & Interpretation</h4>
+    <p>Use DFT, phonons, Reverse Monte Carlo, Rietveld/magnetic refinement, and symmetry analysis to test mechanisms for disorder, magnetism, topology, and lattice dynamics.</p>
+    <p class="pillar-proof"><strong>Proof:</strong> Nature Communications, JACS, PRB/PRR studies.</p>
     <a class="pillar-link" href="/publications/">Publications →</a>
   </div>
   <div class="pillar-card">
-    <h4>Software & AI/LLM</h4>
-    <p>Python/HPC analysis pipelines, browser-based tools (Pyodide, WebGPU, React), and LLM/agent engineering — agent skills for multi-step analysis, retrieval-grounded reasoning over experimental data, local-first inference (Ollama/LM Studio), and evaluation harnesses.</p>
+    <h4>Scientific Software & AI</h4>
+    <p>Build Python/HPC and browser-first tools with Pyodide/WebGPU/React, plus LLM agents for analysis review, retrieval-grounded reasoning, local inference, and evaluation.</p>
+    <p class="pillar-proof"><strong>Proof:</strong> nebula3d, rmc-toolkits, rmc-phonon-dynamics.</p>
     <a class="pillar-link" href="/software/">Packages & tools →</a>
   </div>
 </div>
 
-<h2 class="home-section-title">🔬 Live scientific web apps</h2>
-<p class="home-section-sub">Zero install — each app runs its full analysis pipeline in your browser. Your data never leaves your device.</p>
+<h2 class="home-section-title">Scientific software I ship</h2>
+<p class="home-section-sub">Browser-first research tools for neutron/RMC/phonon analysis: local data, inspectable workflows, and reproducible outputs.</p>
 
 <div class="app-grid">
   <div class="core-card">

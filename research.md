@@ -202,16 +202,16 @@ header:
   <div class="project-card">
     <div class="project-content">
       <div class="project-header">
-        <span class="project-title">Synthesis & Experimental Systems</span>
+        <span class="project-title">Synthesis & Measurement Environments</span>
       </div>
       <p class="project-description">
-        Hands-on experience with crystal growth, inert-atmosphere synthesis, MBE thin-film growth, UHV systems, custom sample environments, cryogenic/high-pressure setups, and experimental integration.
+        Hands-on experience with crystal growth, inert-atmosphere synthesis, MBE thin-film preparation, UHV systems, custom sample environments, cryogenic measurements, high-pressure measurements, and experimental integration.
       </p>
       <div class="project-tags">
-        <span class="tag">MBE</span>
+        <span class="tag">MBE Thin Films</span>
         <span class="tag">Crystal Growth</span>
         <span class="tag">UHV Systems</span>
-        <span class="tag">Cryogenics</span>
+        <span class="tag">High-Pressure Measurements</span>
       </div>
     </div>
     <div class="project-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
