@@ -231,7 +231,7 @@ classes: wide
   <p class="hero-subtitle">Quantum Materials &middot; Scattering & Metrology &middot; Disorder Modeling &middot; Scientific Software & AI</p>
 
   <p class="hero-lede">
-      I connect sample preparation, neutron/synchrotron/STM measurements, physics-based modeling, and deployable analysis software. My niche is owning the path from material and measurement design to reproducible Python/browser/LLM workflows that turn complex scattering data into defensible structure-property insight.
+      I connect sample preparation, neutron/synchrotron/STM measurements, physics-based modeling, and deployable analysis software. My niche is owning the path from material and measurement design to reproducible Python/browser/LLM workflows that turn complex scattering data into defensible structure-property insight. Increasingly I am building toward <strong>agentic AI for materials</strong> — turning these tools into an agent-ready layer that can run scientific workflows, read scientific files, inspect intermediate results, and help decide what to try next.
   </p>
 
   <div class="target-roles-banner">
@@ -272,16 +272,32 @@ classes: wide
   </div>
   <div class="pillar-card">
     <h4>Scientific Software & AI</h4>
-    <p>Build Python/HPC and browser-first tools with Pyodide/WebGPU/React, plus LLM agents for analysis review, retrieval-grounded reasoning, local inference, and evaluation.</p>
-    <p class="pillar-proof"><strong>Proof:</strong> nebula3d, rmc-toolkits, rmc-phonon-dynamics.</p>
+    <p>Build Python/HPC and browser-first tools with Pyodide/WebGPU/React, plus LLM agents for analysis review, retrieval-grounded reasoning, local inference, and evaluation — with a growing push toward agent-ready scientific toolchains.</p>
+    <p class="pillar-proof"><strong>Proof:</strong> web-refinement, nebula3d, rmc-toolkits; agentic-AI prototypes (matdiscover, scattering-ai-sdk).</p>
     <a class="pillar-link" href="/software/">Packages & tools →</a>
   </div>
 </div>
 
 <h2 class="home-section-title">Scientific software I ship</h2>
-<p class="home-section-sub">Browser-first research tools for neutron/RMC/phonon analysis: local data, inspectable workflows, and reproducible outputs.</p>
+<p class="home-section-sub">Browser-first research tools for structure refinement and neutron/RMC/phonon analysis, built toward agent-ready workflows: local data, inspectable steps, and reproducible outputs.</p>
 
 <div class="app-grid">
+  <div class="core-card">
+    <h3>web-refinement</h3>
+    <p>AI-native crystal &amp; magnetic structure refinement in the browser — single-crystal and powder on one least-squares engine, with a pure, tested TypeScript core built so the same functions that back the UI can be exposed as agent tools and skills.</p>
+    <div class="card-footer">
+      <div class="tag-container">
+        <span class="mini-tag">Rietveld</span>
+        <span class="mini-tag">Magnetic</span>
+        <span class="mini-tag">Agent-Ready</span>
+      </div>
+      <div class="card-links">
+        <a class="launch" href="https://drthyang.github.io/web-refinement/">Launch ▶</a>
+        <a href="https://github.com/drthyang/web-refinement">GitHub</a>
+      </div>
+    </div>
+  </div>
+
   <div class="core-card">
     <h3>nebula3d</h3>
     <p>Cleans 3D reciprocal-space neutron diffuse-scattering volumes and computes 3D-&Delta;PDF maps — the complete Python pipeline runs client-side via Pyodide, with an optional AI reasoning review where a local or cloud LLM grades the reduction quality.</p>
@@ -334,7 +350,9 @@ classes: wide
 <h2 class="home-section-title">📌 Recent highlights</h2>
 
 * [**[Publication]**](/publications/) First-author **Nature Communications (2026)** study on Mn<sub>3</sub>Ga, revealing an intrinsic topological phase transition at room temperature driven by a magnetostructural transformation.
+* [**[Software]**](/software/) **web-refinement — an AI-native refinement workbench:** browser-based single-crystal and powder refinement for crystal and magnetic structures, with a pure, tested core designed to double as tools and skills for research agents.
 * [**[Software]**](/software/) **scattering-ai-sdk (early development):** an agentic AI layer for scattering science — modular agent skills, retrieval-grounded LLM reasoning, and evaluation harnesses, running fully offline with local models.
+* [**[Software]**](/software/) **matdiscover (exploratory):** a closed-loop prototype testing whether an LLM agent can help drive materials screening with physics-grounded surrogates, benchmarked against non-LLM baselines — an early direction I am actively exploring.
 * [**[Software]**](/software/) **Neutron diffuse scattering tools for 3D-ΔPDF analysis released:** Developed a Python-based workflow for 3D-ΔPDF reconstruction and visualization, supporting analysis of local disorder and short-range correlations in complex materials.
 * [**[Publication]**](/publications/) First-author **JACS (2024)** study on kagome (Fe,Co)Sn, revealing coupling between short-range local disorder and a long-range antiferromagnetic transition.
 * [**[Software]**](/software/) **Released rmcph:** a data-processing pipeline and GUI for calculating phonon spectra from total scattering measurements and RMC model ensembles, with integrated tools for phonon processing and visualization.

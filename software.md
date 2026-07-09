@@ -148,7 +148,7 @@ header:
 <div class="software-container">
 
   <p class="software-description" style="margin: 0 0 0.5rem 0; max-width: 920px;">
-    Browser-first research tools for RMC analysis, neutron diffuse scattering, and phonon dynamics. These projects emphasize local data privacy, interactive visualization, and deployable workflows that can run directly from GitHub Pages when the science allows it.
+    Browser-first research tools for structure refinement, RMC analysis, neutron diffuse scattering, and phonon dynamics, plus early experiments in agentic AI for materials. These projects emphasize local data privacy, interactive visualization, and deployable workflows that can run directly from GitHub Pages when the science allows it.
   </p>
 
   <div class="software-card">
@@ -229,6 +229,61 @@ header:
     </div>
     <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
       <span>[Phonon DOS Image]</span>
+    </div>
+  </div>
+
+  <div class="software-card">
+    <div class="software-content">
+      <div class="software-header">
+        <span class="software-title">Web Refinement Workbench</span>
+        <div style="display: flex; gap: 8px;">
+          <a href="https://drthyang.github.io/web-refinement/" class="software-link" target="_blank" rel="noopener noreferrer">Web App</a>
+          <a href="https://github.com/drthyang/web-refinement" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+      <p class="software-subtitle">
+        Browser-native crystal &amp; magnetic structure refinement, built to be driven by people and AI agents alike.
+      </p>
+      <p class="software-description">
+        A zero-install workbench that refines nuclear and magnetic structures from single-crystal and powder data in one shared least-squares engine, with a pure, tested TypeScript core designed to double as an agent tool and skill layer.
+      </p>
+      <ul class="case-list">
+        <li><strong>Problem:</strong> Starting a Rietveld or single-crystal refinement usually means choosing among several mature but heavy packages, each with its own data formats, workflows, and magnetic formalism, and some effectively Windows-only.</li>
+        <li><strong>Approach:</strong> One browser app unifies single-crystal and powder, X-ray and neutron (constant-wavelength and time-of-flight), and nuclear and magnetic structures on a Levenberg–Marquardt engine with symmetry-adapted constrained parameters, a magnetic space-group and propagation-vector workflow, and a 3D structure and moment viewer.</li>
+        <li><strong>Value:</strong> Nothing to install and data stays local; every scientific function is pure, tested TypeScript, so the same code that backs the UI can be exposed as agent tools, with fit quality judged by F<sub>obs</sub> vs F<sub>calc</sub> and residual plots rather than a single R-factor.</li>
+      </ul>
+      <div class="software-tags">
+        <span class="tag">TypeScript/React</span><span class="tag">Vite</span><span class="tag">Rietveld</span><span class="tag">Single-Crystal</span><span class="tag">Magnetic Structures</span><span class="tag">Three.js</span><span class="tag">Agent-Ready Core</span><span class="tag">GitHub Pages</span>
+      </div>
+    </div>
+    <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
+      <span>[Refinement Workbench]</span>
+    </div>
+  </div>
+
+  <div class="software-card">
+    <div class="software-content">
+      <div class="software-header">
+        <span class="software-title">matdiscover — Agentic AI for Materials <span style="font-weight: 400; color: #888;">(exploratory)</span></span>
+        <a href="https://github.com/drthyang/agentic-ai-materials" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+      <p class="software-subtitle">
+        An early, exploratory prototype — a research direction I am actively learning in, not a finished tool.
+      </p>
+      <p class="software-description">
+        A closed-loop experiment in whether an LLM agent can usefully drive materials screening: it states a hypothesis, proposes candidate compositions, screens them with physics-grounded surrogate models, reflects in a lab notebook, and iterates, running on local models by default.
+      </p>
+      <ul class="case-list">
+        <li><strong>Question:</strong> Can an LLM agent that uses real domain tools, not just chat, meaningfully help decide which materials to try next, and can that help be measured rather than asserted?</li>
+        <li><strong>Approach:</strong> A proposer LLM and an independent critic drive deterministic tools — charge-balance filters, CHGNet relaxation, convex-hull stability, MEGNet band gaps — with budgets enforced in code and every candidate logged to ground truth.</li>
+        <li><strong>Honest status:</strong> A prototype under active development. Each campaign is benchmarked against non-LLM baselines (random and similarity) at equal compute, so "the agent helps" stays a claim with a control group, and often only a modest one. Treat the results as exploratory.</li>
+      </ul>
+      <div class="software-tags">
+        <span class="tag">Python</span><span class="tag">LLM Agents</span><span class="tag">Ollama</span><span class="tag">CHGNet</span><span class="tag">Materials Project</span><span class="tag">Exploratory</span>
+      </div>
+    </div>
+    <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
+      <span>[Discovery Loop]</span>
     </div>
   </div>
 
