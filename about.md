@@ -95,7 +95,7 @@ classes: wide
 <div class="about-container">
 
   <p>
-    I am an experimental and computational materials scientist currently working as a Postdoctoral Researcher at Oak Ridge National Laboratory. My work sits at the intersection of advanced materials R&D, atomic-scale characterization, and physics-based modeling, with a focus on understanding how structure, disorder, magnetism, interfaces, and defects control material behavior.
+    I am an experimental and computational materials scientist working at the intersection of <span class="highlight">AI for Science</span> and materials physics, currently a Postdoctoral Researcher at Oak Ridge National Laboratory. I build ML and LLM tools grounded in real materials R&D, atomic-scale characterization, and physics-based modeling, with a focus on understanding how structure, disorder, magnetism, interfaces, and defects control material behavior.
   </p>
   <p>
     I specialize in designing and executing complex neutron and synchrotron scattering experiments, analyzing high-dimensional experimental datasets, and building computational workflows that translate noisy measurements into validated physical insight. My background spans quantum materials, magnetic and topological systems, thin films, metal-organic interfaces, STM/MBE surface science, crystal synthesis, local-structure analysis, DFT, Reverse Monte Carlo modeling, and Python/HPC-based scientific computing.
@@ -103,7 +103,7 @@ classes: wide
 
   <div class="about-header">Industry Direction</div>
   <p>
-    I am interested in industry roles where materials expertise, experimental problem-solving, and data-driven modeling support the development of next-generation technologies. My strongest fit is in materials R&D, quantum device materials, semiconductor-adjacent materials, advanced metrology, and scientific computing for complex physical systems.
+    I am interested in roles where materials expertise, experimental problem-solving, and AI-driven modeling support the development of next-generation technologies. My strongest fit is in AI for Science / materials informatics, materials R&D, quantum device materials, semiconductor-adjacent materials, advanced metrology, and scientific computing for complex physical systems.
   </p>
   <p>
     My goal is to translate deep research experience into practical R&D impact: connecting atomic-scale structure, disorder, interfaces, and defects to device-relevant material behavior, while building reproducible workflows that make complex characterization data more actionable for research and engineering teams.

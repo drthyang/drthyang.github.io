@@ -148,8 +148,37 @@ header:
 <div class="software-container">
 
   <p class="software-description" style="margin: 0 0 0.5rem 0; max-width: 920px;">
-    Browser-first research tools for RMC analysis, neutron diffuse scattering, and phonon dynamics. These projects emphasize local data privacy, interactive visualization, and deployable workflows that can run directly from GitHub Pages when the science allows it.
+    Browser-first research tools for crystal &amp; magnetic structure refinement, RMC analysis, neutron diffuse scattering, and phonon dynamics. These projects emphasize local data privacy, interactive visualization, and deployable workflows that can run directly from GitHub Pages when the science allows it.
   </p>
+
+  <div class="software-card">
+    <div class="software-content">
+      <div class="software-header">
+        <span class="software-title">MATERIA Workbench</span>
+        <div style="display: flex; gap: 8px;">
+          <a href="https://drthyang.github.io/web-refinement/" class="software-link" target="_blank" rel="noopener noreferrer">Web App</a>
+          <a href="https://github.com/drthyang/web-refinement" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+      <p class="software-subtitle">
+        An AI-native foundation for materials science — crystal &amp; magnetic structure refinement that runs entirely in the browser.
+      </p>
+      <p class="software-description">
+        A public-beta workbench that unifies single-crystal and powder, X-ray and neutron (CW and TOF), nuclear and magnetic refinement on one Levenberg&ndash;Marquardt engine &mdash; and exposes the same pure scientific core to LLM agents as MCP tools, so an agent can drive the refinement loop the way an expert does.
+      </p>
+      <ul class="case-list">
+        <li><strong>Problem:</strong> Starting a refinement today means picking among several deep package ecosystems, each with its own formats, instrument files, and magnetic formalism &mdash; and the expert judgment loop (free only symmetry-allowed parameters, watch correlations, judge residuals) stays locked in human hands.</li>
+        <li><strong>Approach:</strong> Every scientific capability is pure, tested TypeScript (585 tests, validated against GSAS-II) behind a guided workflow: auto-detected CIF/mCIF, hkl, GSAS and FullProf data/instrument formats; symmetry-constrained least squares; and an end-to-end magnetic workflow from peak detection through k-vector search to Shubnikov-group moment refinement.</li>
+        <li><strong>Value:</strong> Nothing to install and data never leaves the machine; the engine reports correlations, SVD near-null directions, and at-bound flags &mdash; not just wR &mdash; and an MCP server exposes parse &rarr; build &rarr; refine &rarr; assess &rarr; suggest &rarr; interpret so agents can reason about a fit, not just run it.</li>
+      </ul>
+      <div class="software-tags">
+        <span class="tag">TypeScript</span><span class="tag">React/Vite</span><span class="tag">Rietveld</span><span class="tag">Single Crystal</span><span class="tag">Magnetic Symmetry</span><span class="tag">MCP / Agent Tools</span><span class="tag">Web Workers</span><span class="tag">Client-side</span>
+      </div>
+    </div>
+    <div class="software-figure">
+      <img src="/assets/images/materia-workbench.png" alt="MATERIA Workbench — a converged two-phase Mn3Ga + MnO time-of-flight Rietveld refinement with observed/calculated/difference curves and the symmetry-allowed parameter table">
+    </div>
+  </div>
 
   <div class="software-card">
     <div class="software-content">
@@ -183,7 +212,7 @@ header:
   <div class="software-card">
     <div class="software-content">
       <div class="software-header">
-        <span class="software-title">RMC Toolkits</span>
+        <span class="software-title">RMCProfile Monitor</span>
         <div style="display: flex; gap: 8px;">
           <a href="https://drthyang.github.io/rmc-toolkits/" class="software-link" target="_blank" rel="noopener noreferrer">Web App</a>
           <a href="https://github.com/drthyang/rmc-toolkits" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>

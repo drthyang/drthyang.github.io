@@ -1,8 +1,8 @@
 # Site Settings
 title: "Tsung-Han Yang"  # Keeps the browser tab clean
-masthead_title: "Research Portfolio <br> <span style='font-size:0.7em; font-weight:normal;'>Quantum Physicist • Materials Scientist • AI for Science</span>"
+masthead_title: "Research Portfolio <br> <span style='font-size:0.7em; font-weight:normal;'>AI for Science • Quantum Physicist • Materials Scientist</span>"
 name: "Tsung-Han Yang, Ph.D."
-description: "Postdoctoral Researcher at ORNL | Quantum Materials | Advanced Characterization & Modeling"
+description: "Postdoctoral Researcher at ORNL | AI for Science | Quantum Materials | Scattering, Modeling & Scientific Software"
 url: "https://drthyang.github.io"
 baseurl: ""
 

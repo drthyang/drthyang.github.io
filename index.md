@@ -144,7 +144,8 @@ classes: wide
   /* App Card Grid */
   .app-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 1fr;
     gap: 1.2rem;
     margin-bottom: 2.5rem;
   }
@@ -219,6 +220,11 @@ classes: wide
     margin-top: 3rem;
   }
 
+  @media (max-width: 900px) {
+    .app-grid {
+      grid-template-columns: 1fr;
+    }
+  }
   @media (max-width: 768px) {
     .pillar-grid {
       grid-template-columns: 1fr;
@@ -227,16 +233,16 @@ classes: wide
 </style>
 
 <div class="hero-summary">
-  <h1 class="hero-title">Experimental & Computational Materials Scientist</h1>
-  <p class="hero-subtitle">Quantum Materials &middot; Scattering & Metrology &middot; Disorder Modeling &middot; Scientific Software & AI</p>
+  <h1 class="hero-title">AI for Science &times; Materials Physics</h1>
+  <p class="hero-subtitle">Physics-Grounded ML & LLM Agents &middot; Scattering Data &middot; Disorder Modeling &middot; Scientific Software</p>
 
   <p class="hero-lede">
-      I connect sample preparation, neutron/synchrotron/STM measurements, physics-based modeling, and deployable analysis software. My niche is owning the path from material and measurement design to reproducible Python/browser/LLM workflows that turn complex scattering data into defensible structure-property insight.
+      I build ML and LLM tools that turn complex scattering data into discovery — grounded in real materials physics, from sample preparation and neutron/synchrotron/STM measurements to physics-based modeling. My niche is owning the path from material and measurement design to reproducible Python/browser/LLM workflows that produce defensible, structure-property insight rather than black-box predictions.
   </p>
 
   <div class="target-roles-banner">
     <span style="font-size: 1.15rem;">🎯</span>
-    <span><strong>Target Roles:</strong> AI for Science / Materials Informatics &middot; Computational Materials Scientist &middot; Neutron/Scattering Data Scientist &middot; Materials R&D / Metrology Scientist</span>
+    <span><strong>Target Roles:</strong> AI for Science / Materials Informatics &middot; Experimental/Computational Materials Scientist &middot; Materials R&D / Metrology Scientist</span>
   </div>
 
   <div class="proof-strip">
@@ -273,17 +279,33 @@ classes: wide
   <div class="pillar-card">
     <h4>Scientific Software & AI</h4>
     <p>Build Python/HPC and browser-first tools with Pyodide/WebGPU/React, plus LLM agents for analysis review, retrieval-grounded reasoning, local inference, and evaluation.</p>
-    <p class="pillar-proof"><strong>Proof:</strong> nebula3d, rmc-toolkits, rmc-phonon-dynamics.</p>
+    <p class="pillar-proof"><strong>Proof:</strong> MATERIA, NEBULA3D, RMCProfile Monitor, rmc-phonon-dynamics.</p>
     <a class="pillar-link" href="/software/">Packages & tools →</a>
   </div>
 </div>
 
 <h2 class="home-section-title">Scientific software I ship</h2>
-<p class="home-section-sub">Browser-first research tools for neutron/RMC/phonon analysis: local data, inspectable workflows, and reproducible outputs.</p>
+<p class="home-section-sub">Browser-first research tools for structure refinement and neutron/RMC/phonon analysis: local data, inspectable workflows, and reproducible outputs.</p>
 
 <div class="app-grid">
   <div class="core-card">
-    <h3>nebula3d</h3>
+    <h3>MATERIA</h3>
+    <p>An AI-native workbench for crystal &amp; magnetic structure refinement in the browser — single-crystal + powder, X-ray + neutron, nuclear + magnetic on one engine, with the pure core exposed to LLM agents as MCP tools that assess fits and suggest next steps.</p>
+    <div class="card-footer">
+      <div class="tag-container">
+        <span class="mini-tag">Rietveld</span>
+        <span class="mini-tag">Magnetic Symmetry</span>
+        <span class="mini-tag">MCP Agents</span>
+      </div>
+      <div class="card-links">
+        <a class="launch" href="https://drthyang.github.io/web-refinement/">Launch ▶</a>
+        <a href="https://github.com/drthyang/web-refinement">GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="core-card">
+    <h3>NEBULA3D</h3>
     <p>Cleans 3D reciprocal-space neutron diffuse-scattering volumes and computes 3D-&Delta;PDF maps — the complete Python pipeline runs client-side via Pyodide, with an optional AI reasoning review where a local or cloud LLM grades the reduction quality.</p>
     <div class="card-footer">
       <div class="tag-container">
@@ -299,7 +321,7 @@ classes: wide
   </div>
 
   <div class="core-card">
-    <h3>rmc-toolkits</h3>
+    <h3>RMCProfile Monitor</h3>
     <p>Dashboard for RMCProfile/STOG refinements — live monitoring, space-group detection, WebGPU KDE slices, plus a built-in LLM assistant (local via Ollama/LM Studio or cloud) that reasons over your run and watches convergence.</p>
     <div class="card-footer">
       <div class="tag-container">
@@ -333,6 +355,7 @@ classes: wide
 
 <h2 class="home-section-title">📌 Recent highlights</h2>
 
+* [**[Software]**](/software/) **MATERIA Workbench (public beta):** a browser-native, AI-native workbench for crystal & magnetic structure refinement — single-crystal and powder, X-ray and neutron, nuclear and magnetic on one engine — with MCP agent tools that let LLMs assess fits and drive the expert refinement loop.
 * [**[Publication]**](/publications/) First-author **Nature Communications (2026)** study on Mn<sub>3</sub>Ga, revealing an intrinsic topological phase transition at room temperature driven by a magnetostructural transformation.
 * [**[Software]**](/software/) **scattering-ai-sdk (early development):** an agentic AI layer for scattering science — modular agent skills, retrieval-grounded LLM reasoning, and evaluation harnesses, running fully offline with local models.
 * [**[Software]**](/software/) **Neutron diffuse scattering tools for 3D-ΔPDF analysis released:** Developed a Python-based workflow for 3D-ΔPDF reconstruction and visualization, supporting analysis of local disorder and short-range correlations in complex materials.
