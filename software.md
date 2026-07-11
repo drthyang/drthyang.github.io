@@ -261,6 +261,33 @@ header:
     </div>
   </div>
 
+  <div class="software-card">
+    <div class="software-content">
+      <div class="software-header">
+        <span class="software-title">matdiscover — Agentic AI for Materials <span style="font-weight: 400; color: #888;">(exploratory)</span></span>
+        <a href="https://github.com/drthyang/agentic-ai-materials" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+      <p class="software-subtitle">
+        An early, exploratory prototype — a research direction I am actively learning in, not a finished tool.
+      </p>
+      <p class="software-description">
+        A closed-loop experiment in whether an LLM agent can usefully drive materials screening: it states a hypothesis, proposes candidate compositions, screens them with physics-grounded surrogate models, reflects in a lab notebook, and iterates, running on local models by default.
+      </p>
+      <ul class="case-list">
+        <li><strong>Question:</strong> Can an LLM agent that uses real domain tools, not just chat, meaningfully help decide which materials to try next, and can that help be measured rather than asserted?</li>
+        <li><strong>Approach:</strong> A proposer LLM and an independent critic drive deterministic tools — charge-balance filters, CHGNet relaxation, convex-hull stability, MEGNet band gaps — with budgets enforced in code and every candidate logged to ground truth.</li>
+        <li><strong>Honest status:</strong> A prototype under active development. Each campaign is benchmarked against non-LLM baselines (random and similarity) at equal compute, so "the agent helps" stays a claim with a control group, and often only a modest one. Treat the results as exploratory.</li>
+      </ul>
+      <div class="software-tags">
+        <span class="tag">Python</span><span class="tag">LLM Agents</span><span class="tag">Ollama</span><span class="tag">CHGNet</span><span class="tag">Materials Project</span><span class="tag">Exploratory</span>
+      </div>
+    </div>
+    <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
+      <span>[Discovery Loop]</span>
+    </div>
+  </div>
+
+
   {% comment %}
   <div class="software-card">
     <div class="software-content">
