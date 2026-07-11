@@ -132,6 +132,13 @@ classes: wide
     </p>
   </div>
 
+  <div class="strength-card">
+    <span class="strength-title">AI for Science — ML & LLM Agent Tooling</span>
+    <p style="margin-bottom: 0;">
+      I build ML and LLM tools grounded in real materials R&D rather than black-box prediction. This includes browser-first scientific apps (Pyodide/WebGPU/React), LLM agents exposed to a pure scientific core through <span class="highlight">MCP tools</span> that assess fits and suggest next steps, retrieval-grounded reasoning, local/offline inference, and evaluation harnesses that benchmark agent behavior against non-LLM baselines. Shipped in <span class="highlight">MATERIA</span>, <span class="highlight">NEBULA3D</span>, and <span class="highlight">RMCProfile Monitor</span>, with <span class="highlight">matdiscover</span> as an exploratory closed-loop materials-screening agent.
+    </p>
+  </div>
+
   <div class="about-header">Technical Stack</div>
   
   <div class="skill-group">
@@ -179,6 +186,21 @@ classes: wide
       <span class="skill-tag">Phonon Calculations</span>
       <span class="skill-tag">Magnetic / Crystallographic Refinement</span>
       <span class="skill-tag">Model Validation</span>
+    </div>
+  </div>
+
+  <div class="skill-group">
+    <span class="skill-label">AI / ML & LLM Tooling</span>
+    <div class="skill-grid">
+      <span class="skill-tag">Machine Learning</span>
+      <span class="skill-tag">LLM Agents</span>
+      <span class="skill-tag">MCP / Agent Tools</span>
+      <span class="skill-tag">Retrieval-Grounded Reasoning (RAG)</span>
+      <span class="skill-tag">Local / Offline Inference (Ollama / LM Studio)</span>
+      <span class="skill-tag">Evaluation Harnesses</span>
+      <span class="skill-tag">Physics-Grounded Surrogate Models</span>
+      <span class="skill-tag">Browser-First ML (Pyodide / WebGPU)</span>
+      <span class="skill-tag">React / TypeScript</span>
     </div>
   </div>
 
