@@ -168,7 +168,7 @@ header:
       </p>
       <ul class="case-list">
         <li><strong>Problem:</strong> Starting a refinement today means picking among several deep package ecosystems, each with its own formats, instrument files, and magnetic formalism &mdash; and the expert judgment loop (free only symmetry-allowed parameters, watch correlations, judge residuals) stays locked in human hands.</li>
-        <li><strong>Approach:</strong> Every scientific capability is pure, tested TypeScript (585 tests, validated against GSAS-II) behind a guided workflow: auto-detected CIF/mCIF, hkl, GSAS and FullProf data/instrument formats; symmetry-constrained least squares; and an end-to-end magnetic workflow from peak detection through k-vector search to Shubnikov-group moment refinement.</li>
+        <li><strong>Approach:</strong> Every scientific capability is pure, tested TypeScript (750 tests, validated against GSAS-II) behind a guided workflow: auto-detected CIF/mCIF, hkl, GSAS and FullProf data/instrument formats; symmetry-constrained least squares; and an end-to-end magnetic workflow from peak detection through k-vector search to Shubnikov-group moment refinement.</li>
         <li><strong>Value:</strong> Nothing to install and data never leaves the machine; the engine reports correlations, SVD near-null directions, and at-bound flags &mdash; not just wR &mdash; and an MCP server exposes parse &rarr; build &rarr; refine &rarr; assess &rarr; suggest &rarr; interpret so agents can reason about a fit, not just run it.</li>
       </ul>
       <div class="software-tags">
