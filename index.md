@@ -279,7 +279,7 @@ classes: wide
   <div class="pillar-card">
     <h4>Scientific Software & AI</h4>
     <p>Build Python/HPC and browser-first tools with Pyodide/WebGPU/React, plus LLM agents for analysis review, retrieval-grounded reasoning, local inference, and evaluation.</p>
-    <p class="pillar-proof"><strong>Proof:</strong> MATERIA, NEBULA3D, RMCProfile Monitor, rmc-phonon-dynamics.</p>
+    <p class="pillar-proof"><strong>Proof:</strong> MATERIA, NEBULA3D, RMCProfile Workbench, rmc-phonon-dynamics.</p>
     <a class="pillar-link" href="/software/">Packages & tools →</a>
   </div>
 </div>
@@ -322,7 +322,7 @@ classes: wide
   </div>
 
   <div class="core-card">
-    <h3>RMCProfile Monitor</h3>
+    <h3>RMCProfile Workbench</h3>
     <p>Dashboard for RMCProfile/STOG refinements — live monitoring, space-group detection, WebGPU KDE slices, plus a built-in LLM assistant (local via Ollama/LM Studio or cloud) that reasons over your run and watches convergence.</p>
     <div class="card-footer">
       <div class="tag-container">

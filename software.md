@@ -214,7 +214,7 @@ header:
   <div class="software-card">
     <div class="software-content">
       <div class="software-header">
-        <span class="software-title">RMCProfile Monitor</span>
+        <span class="software-title">RMCProfile Workbench</span>
         <div style="display: flex; gap: 8px;">
           <a href="https://drthyang.github.io/rmc-toolkits/" class="software-link" target="_blank" rel="noopener noreferrer">Web App</a>
           <a href="https://github.com/drthyang/rmc-toolkits" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -234,7 +234,7 @@ header:
       </div>
     </div>
     <div class="software-figure">
-      <img src="/assets/images/rmcprofile-displacement-directions.jpg" alt="RMCProfile Monitor — the Displacement Directions view of a GaTa4Se8 RMC run: displacements for a Ta site binned in solid angle on a hex-tiled sphere, with fixed a/b/c axis views alongside and the site ellipsoids in the folded unit cell">
+      <img src="/assets/images/rmcprofile-displacement-directions.jpg" alt="RMCProfile Workbench — the Displacement Directions view of a GaTa4Se8 RMC run: displacements for a Ta site binned in solid angle on a hex-tiled sphere, with fixed a/b/c axis views alongside and the site ellipsoids in the folded unit cell">
     </div>
   </div>
 
