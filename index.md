@@ -290,11 +290,12 @@ classes: wide
 <div class="app-grid">
   <div class="core-card">
     <h3>MATERIA</h3>
-    <p>An AI-native workbench for crystal &amp; magnetic structure refinement in the browser — single-crystal + powder, X-ray + neutron, nuclear + magnetic on one engine, with the pure core exposed to LLM agents as MCP tools that assess fits and suggest next steps.</p>
+    <p>An AI-native workbench for crystal &amp; magnetic structure refinement in the browser — single-crystal + powder, X-ray + neutron, nuclear + magnetic, reciprocal-space + PDF on one engine — which samples the posterior rather than only linearizing it, and exposes its pure core to LLM agents as 33 MCP tools.</p>
     <div class="card-footer">
       <div class="tag-container">
         <span class="mini-tag">Rietveld</span>
-        <span class="mini-tag">Magnetic Symmetry</span>
+        <span class="mini-tag">Symmetry Modes</span>
+        <span class="mini-tag">Bayesian MCMC</span>
         <span class="mini-tag">MCP Agents</span>
       </div>
       <div class="card-links">
@@ -338,7 +339,7 @@ classes: wide
 
   <div class="core-card">
     <h3>rmc-phonon-dynamics</h3>
-    <p>Phonon band structures, DOS, animated 3D modes, and simulated INS spectra extracted directly from RMC ensembles — with WebGPU compute shaders delivering the main ~100&times; speedup for phonon analysis.</p>
+    <p>Phonon band structures, DOS, animated 3D modes, and simulated INS spectra extracted directly from RMC ensembles — bands and the S(Q,E)-derived DOS now share one meV energy axis, so computed dispersion and measured spectrum read against each other. WebGPU compute shaders deliver the main ~100&times; speedup.</p>
     <div class="card-footer">
       <div class="tag-container">
         <span class="mini-tag">WebGPU</span>
@@ -355,10 +356,10 @@ classes: wide
 
 <h2 class="home-section-title">📌 Recent highlights</h2>
 
-* [**[Software]**](/software/) **MATERIA Workbench (public beta):** a browser-native, AI-native workbench for crystal & magnetic structure refinement — single-crystal and powder, X-ray and neutron, nuclear and magnetic on one engine — with MCP agent tools that let LLMs assess fits and drive the expert refinement loop.
+* [**[Software]**](/software/) **MATERIA Workbench — Bayesian uncertainty and symmetry-mode refinement:** the engine now samples the posterior — ensemble MCMC and gradient-based NUTS — instead of only linearizing it, matching the linearized esds to 1% on the Ni PDF golden. It also fits real-space distortion modes from an isotropy-subgroup tree, with a magnetic-PDF track validated against `diffpy.mpdf` — all of it reachable by LLM agents through the 33-tool MCP surface.
 * [**[Publication]**](/publications/) First-author **Nature Communications (2026)** study on Mn<sub>3</sub>Ga, revealing an intrinsic topological phase transition at room temperature driven by a magnetostructural transformation.
 * [**[Software]**](/software/) **scattering-ai-sdk (early development):** an agentic AI layer for scattering science — modular agent skills, retrieval-grounded LLM reasoning, and evaluation harnesses, running fully offline with local models.
-* [**[Software]**](/software/) **matdiscover (exploratory):** a closed-loop prototype testing whether an LLM agent can help drive materials screening with physics-grounded surrogates, benchmarked against non-LLM baselines — an early direction I am actively exploring.
+* [**[Software]**](/software/) **Athanor (exploratory):** a closed-loop prototype testing whether an LLM agent can help drive materials screening with physics-grounded surrogates, benchmarked against non-LLM baselines — an early direction I am actively exploring.
 * [**[Software]**](/software/) **Neutron diffuse scattering tools for 3D-ΔPDF analysis released:** Developed a Python-based workflow for 3D-ΔPDF reconstruction and visualization, supporting analysis of local disorder and short-range correlations in complex materials.
 * [**[Publication]**](/publications/) First-author **JACS (2024)** study on kagome (Fe,Co)Sn, revealing coupling between short-range local disorder and a long-range antiferromagnetic transition.
 * [**[Software]**](/software/) **Released rmcph:** a data-processing pipeline and GUI for calculating phonon spectra from total scattering measurements and RMC model ensembles, with integrated tools for phonon processing and visualization.
