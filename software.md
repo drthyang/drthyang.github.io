@@ -164,15 +164,17 @@ header:
         An AI-native foundation for materials science — crystal &amp; magnetic structure refinement that runs entirely in the browser.
       </p>
       <p class="software-description">
-        A public-beta workbench that unifies single-crystal and powder, X-ray and neutron (CW and TOF), nuclear and magnetic refinement on one Levenberg&ndash;Marquardt engine &mdash; and exposes the same pure scientific core to LLM agents as MCP tools, so an agent can drive the refinement loop the way an expert does.
+        A public-beta workbench that unifies single-crystal and powder, X-ray and neutron (CW and TOF), nuclear and magnetic refinement &mdash; in reciprocal space and in real space &mdash; on one Levenberg&ndash;Marquardt engine, and exposes the same pure scientific core to LLM agents as MCP tools, so an agent can drive the refinement loop the way an expert does.
       </p>
       <ul class="case-list">
         <li><strong>Problem:</strong> Starting a refinement today means picking among several deep package ecosystems, each with its own formats, instrument files, and magnetic formalism &mdash; and the expert judgment loop (free only symmetry-allowed parameters, watch correlations, judge residuals) stays locked in human hands.</li>
-        <li><strong>Approach:</strong> Every scientific capability is pure, tested TypeScript (750 tests, validated against GSAS-II) behind a guided workflow: auto-detected CIF/mCIF, hkl, GSAS and FullProf data/instrument formats; symmetry-constrained least squares; and an end-to-end magnetic workflow from peak detection through k-vector search to Shubnikov-group moment refinement.</li>
-        <li><strong>Value:</strong> Nothing to install and data never leaves the machine; the engine reports correlations, SVD near-null directions, and at-bound flags &mdash; not just wR &mdash; and an MCP server exposes parse &rarr; build &rarr; refine &rarr; assess &rarr; suggest &rarr; interpret so agents can reason about a fit, not just run it.</li>
+        <li><strong>Approach:</strong> Every scientific capability is pure, tested TypeScript (1111 tests in CI, validated against GSAS-II) behind a guided workflow: auto-detected CIF/mCIF, hkl, GSAS and FullProf data/instrument formats; symmetry-constrained least squares; and an end-to-end magnetic workflow from peak detection through k-vector search to Shubnikov-group moment refinement.</li>
+        <li><strong>Beyond the average structure:</strong> Real-space PDF refinement adds symmetry-mode fitting &mdash; &Gamma; irrep decomposition, an isotropy-subgroup tree, and the full translationengleiche (B&auml;rnighausen) subgroup lattice, with each mode's eigenvector drawn on the 3D model &mdash; plus a magnetic-PDF track validated against <code>diffpy.mpdf</code> and the published mPDF tutorial cases.</li>
+        <li><strong>Uncertainty you can question:</strong> The engine samples the posterior rather than only linearizing it &mdash; affine-invariant ensemble MCMC and a gradient-based NUTS sampler, with R&#770;/ESS diagnostics and credible intervals. On the Ni PDF golden, posterior widths match the linearized esds to 1%. Approach after <a href="https://doi.org/10.1038/srep31625" target="_blank" rel="noopener noreferrer">Fancher et al. (2016)</a>; reporting per <a href="https://doi.org/10.1107/S1600576722011426" target="_blank" rel="noopener noreferrer">McCluskey et al. (2023)</a>.</li>
+        <li><strong>Value:</strong> Nothing to install and data never leaves the machine; the engine reports correlations, SVD near-null directions, and at-bound flags &mdash; not just wR &mdash; and 33 contract-tested MCP tools expose parse &rarr; build &rarr; refine &rarr; assess &rarr; sample_posterior &rarr; suggest &rarr; interpret so agents can reason about a fit, not just run it.</li>
       </ul>
       <div class="software-tags">
-        <span class="tag">TypeScript</span><span class="tag">React/Vite</span><span class="tag">Rietveld</span><span class="tag">Single Crystal</span><span class="tag">Magnetic Symmetry</span><span class="tag">MCP / Agent Tools</span><span class="tag">Web Workers</span><span class="tag">Client-side</span>
+        <span class="tag">TypeScript</span><span class="tag">React/Vite</span><span class="tag">Rietveld</span><span class="tag">Single Crystal</span><span class="tag">PDF / mPDF</span><span class="tag">Symmetry Modes</span><span class="tag">Bayesian MCMC</span><span class="tag">Magnetic Symmetry</span><span class="tag">MCP / Agent Tools</span><span class="tag">Client-side</span>
       </div>
     </div>
     <div class="software-figure">
@@ -224,14 +226,15 @@ header:
       <ul class="case-list">
         <li><strong>Problem:</strong> RMC validation spans plots, logs, structures, and fit metrics that are hard to inspect together during refinement.</li>
         <li><strong>Approach:</strong> The React/Vite app reads run folders locally, auto-detects outputs, renders interactive charts, and connects KDE, slab, and Three.js structure views.</li>
+        <li><strong>Reading the displacement cloud two ways:</strong> PCA thermal ellipsoids report each principal axis as the crystallographic direction [u v w] it runs along, while a Displacement Directions map bins the same displacements in solid angle on a hex-tiled sphere &mdash; exposing discrete hop directions and &plusmn;u asymmetry that an anisotropic U tensor averages away.</li>
         <li><strong>Value:</strong> Live monitoring, figure export, EXAFS-aware plotting, WebGPU KDE, and an AI assistant help users understand model details, fit quality, and refinement diagnostics in one private dashboard.</li>
       </ul>
       <div class="software-tags">
-        <span class="tag">React/Vite</span><span class="tag">Python</span><span class="tag">AI Assistant</span><span class="tag">RMCProfile</span><span class="tag">EXAFS</span><span class="tag">WebGPU KDE</span><span class="tag">Three.js</span><span class="tag">Live Monitoring</span>
+        <span class="tag">React/Vite</span><span class="tag">Python</span><span class="tag">AI Assistant</span><span class="tag">RMCProfile</span><span class="tag">EXAFS</span><span class="tag">WebGPU KDE</span><span class="tag">PCA / Displacement Directions</span><span class="tag">Three.js</span><span class="tag">Live Monitoring</span>
       </div>
     </div>
-    <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
-      <span>[RMC Fits Image]</span>
+    <div class="software-figure">
+      <img src="/assets/images/rmcprofile-displacement-directions.jpg" alt="RMCProfile Monitor — the Displacement Directions view of a GaTa4Se8 RMC run: displacements for a Ta site binned in solid angle on a hex-tiled sphere, with fixed a/b/c axis views alongside and the site ellipsoids in the folded unit cell">
     </div>
   </div>
 
@@ -250,7 +253,7 @@ header:
       <ul class="case-list">
         <li><strong>Problem:</strong> RMC ensembles encode experimentally constrained local disorder, but translating those configurations into lattice-dynamical insight usually requires separate scripts, backends, or model assumptions.</li>
         <li><strong>Approach:</strong> The app extracts displacement-covariance phonons from the selected ensemble, runs the S(k) diagonalization on the user's machine with WebGPU, and keeps all files local through the browser folder picker.</li>
-        <li><strong>Value:</strong> It turns RMC-derived structure into interactive dynamics: dispersion curves, soft-mode highlighting, 3D eigenvector animation, INS maps, DOS, fit-quality overlays, and phonopy-compatible exports without installing a scientific stack.</li>
+        <li><strong>Value:</strong> It turns RMC-derived structure into interactive dynamics: dispersion curves, soft-mode highlighting, 3D eigenvector animation, INS maps, DOS, fit-quality overlays, and phonopy-compatible exports without installing a scientific stack &mdash; with the S(Q,E)-derived DOS and the band structure sharing one energy axis in meV, so a computed dispersion and a measured spectrum can be read against each other directly.</li>
       </ul>
       <div class="software-tags">
         <span class="tag">React/Vite</span><span class="tag">WebGPU</span><span class="tag">RMCProfile</span><span class="tag">Phonons</span><span class="tag">INS</span><span class="tag">Client-side</span><span class="tag">GitHub Pages</span>
@@ -264,7 +267,7 @@ header:
   <div class="software-card">
     <div class="software-content">
       <div class="software-header">
-        <span class="software-title">matdiscover — Agentic AI for Materials <span style="font-weight: 400; color: #888;">(exploratory)</span></span>
+        <span class="software-title">Athanor — Agentic AI for Materials <span style="font-weight: 400; color: #888;">(exploratory)</span></span>
         <a href="https://github.com/drthyang/agentic-ai-materials" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
       <p class="software-subtitle">
@@ -287,32 +290,5 @@ header:
     </div>
   </div>
 
-
-  {% comment %}
-  <div class="software-card">
-    <div class="software-content">
-      <div class="software-header">
-        <span class="software-title">Magnetic Pair Distribution Function</span>
-        <a href="https://github.com/drthyang/mPDF-analysis-visualization" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </div>
-      <p class="software-description">
-        An analytical workflow for extracting short-range magnetic correlations from total neutron scattering data. This project extends the <code>diffpy.mpdf</code> package (developed by 
-        <a href="https://doi.org/10.1107/S1600576722007257" target="_blank" rel="noopener noreferrer">Dr. Benjamin Frandsen</a>) 
-        into a modular system for streamlined calculations.
-      </p>
-      <ul class="case-list">
-        <li><strong>Problem:</strong> interpret diffuse magnetic signals that are not captured by average-structure diffraction alone.</li>
-        <li><strong>Engineering:</strong> modular analysis scripts, parameterized calculations, model comparison, and visualization of short-range spin correlations.</li>
-        <li><strong>Value:</strong> supports model comparison for complex magnetic disorder in quantum materials.</li>
-      </ul>
-      <div class="software-tags">
-        <span class="tag">Python</span><span class="tag">mPDF</span><span class="tag">Signal Extraction</span><span class="tag">Model Validation</span>
-      </div>
-    </div>
-    <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
-      <span>[Magnetic PDF Image]</span>
-    </div>
-  </div>
-  {% endcomment %}
 
 </div>
