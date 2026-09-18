@@ -161,20 +161,18 @@ header:
         </div>
       </div>
       <p class="software-subtitle">
-        An AI-native foundation for materials science — crystal &amp; magnetic structure refinement that runs entirely in the browser.
+        Crystal and magnetic structure refinement that runs entirely in the browser.
       </p>
       <p class="software-description">
-        A public-beta workbench that unifies single-crystal and powder, X-ray and neutron (CW and TOF), nuclear and magnetic refinement &mdash; in reciprocal space and in real space &mdash; on one Levenberg&ndash;Marquardt engine, and exposes the same pure scientific core to LLM agents as MCP tools, so an agent can drive the refinement loop the way an expert does.
+        A public-beta workbench for powder, single-crystal, and pair-distribution-function refinement with X-ray or neutron data, on one engine.
       </p>
       <ul class="case-list">
-        <li><strong>Problem:</strong> Starting a refinement today means picking among several deep package ecosystems, each with its own formats, instrument files, and magnetic formalism &mdash; and the expert judgment loop (free only symmetry-allowed parameters, watch correlations, judge residuals) stays locked in human hands.</li>
-        <li><strong>Approach:</strong> Every scientific capability is pure, tested TypeScript (1111 tests in CI, validated against GSAS-II) behind a guided workflow: auto-detected CIF/mCIF, hkl, GSAS and FullProf data/instrument formats; symmetry-constrained least squares; and an end-to-end magnetic workflow from peak detection through k-vector search to Shubnikov-group moment refinement.</li>
-        <li><strong>Beyond the average structure:</strong> Real-space PDF refinement adds symmetry-mode fitting &mdash; &Gamma; irrep decomposition, an isotropy-subgroup tree, and the full translationengleiche (B&auml;rnighausen) subgroup lattice, with each mode's eigenvector drawn on the 3D model &mdash; plus a magnetic-PDF track validated against <code>diffpy.mpdf</code> and the published mPDF tutorial cases.</li>
-        <li><strong>Uncertainty you can question:</strong> The engine samples the posterior rather than only linearizing it &mdash; affine-invariant ensemble MCMC and a gradient-based NUTS sampler, with R&#770;/ESS diagnostics and credible intervals. On the Ni PDF golden, posterior widths match the linearized esds to 1%. Approach after <a href="https://doi.org/10.1038/srep31625" target="_blank" rel="noopener noreferrer">Fancher et al. (2016)</a>; reporting per <a href="https://doi.org/10.1107/S1600576722011426" target="_blank" rel="noopener noreferrer">McCluskey et al. (2023)</a>.</li>
-        <li><strong>Value:</strong> Nothing to install and data never leaves the machine; the engine reports correlations, SVD near-null directions, and at-bound flags &mdash; not just wR &mdash; and 33 contract-tested MCP tools expose parse &rarr; build &rarr; refine &rarr; assess &rarr; sample_posterior &rarr; suggest &rarr; interpret so agents can reason about a fit, not just run it.</li>
+        <li><strong>Problem:</strong> Refinement means choosing among several specialist packages, each with its own formats and conventions &mdash; a steep start before a first fit.</li>
+        <li><strong>Approach:</strong> A tested TypeScript core (1,300+ tests), validated against GSAS-II, behind a guided workflow from data import to refined nuclear and magnetic structures.</li>
+        <li><strong>Value:</strong> Nothing to install and data stays local. Fits report correlations and uncertainties, not just an agreement factor, and the same core is available to LLM agents through MCP.</li>
       </ul>
       <div class="software-tags">
-        <span class="tag">TypeScript</span><span class="tag">React/Vite</span><span class="tag">Rietveld</span><span class="tag">Single Crystal</span><span class="tag">PDF / mPDF</span><span class="tag">Symmetry Modes</span><span class="tag">Bayesian MCMC</span><span class="tag">Magnetic Symmetry</span><span class="tag">MCP / Agent Tools</span><span class="tag">Client-side</span>
+        <span class="tag">TypeScript</span><span class="tag">Rietveld</span><span class="tag">Single Crystal</span><span class="tag">PDF</span><span class="tag">Magnetic Structures</span><span class="tag">MCP Agent Tools</span>
       </div>
     </div>
     <div class="software-figure">
@@ -195,15 +193,15 @@ header:
         Neutron Elastic Background Utilities for Local Analysis &amp; 3D-delta PDF.
       </p>
       <p class="software-description">
-        A Python toolkit and hosted browser console for cleaning 3D reciprocal-space neutron diffuse scattering volumes and preparing 3D-ΔPDF analysis products from Mantid-style HKL data.
+        A Python toolkit and browser app that cleans 3D neutron diffuse-scattering data and computes 3D-ΔPDF maps.
       </p>
       <ul class="case-list">
-        <li><strong>Problem:</strong> Weak diffuse signals can be buried under powder-ring backgrounds, sharp Bragg and satellite peaks, radial pedestals, and transform artifacts before 3D-ΔPDF interpretation even begins.</li>
-        <li><strong>Approach:</strong> The workflow unifies ring subtraction, Bragg/satellite punching, q-shell backfill, radial-background flattening, 3D-ΔPDF transforms, inverse-FFT consistency checks, and multi-view visual QA.</li>
-        <li><strong>Value:</strong> It provides both full-resolution native workflows and a GitHub Pages web app that can run real pipeline stages client-side via Pyodide for modest volumes, making cleanup decisions inspectable and reproducible.</li>
+        <li><strong>Problem:</strong> Weak diffuse signal is often buried under powder rings, Bragg peaks, and background before any 3D-ΔPDF interpretation can begin.</li>
+        <li><strong>Approach:</strong> One reproducible pipeline for background removal, peak masking, and the ΔPDF transform, with visual checks at each step.</li>
+        <li><strong>Value:</strong> Runs natively at full resolution or in the browser via Pyodide, so every cleanup decision is inspectable and repeatable.</li>
       </ul>
       <div class="software-tags">
-        <span class="tag">Python</span><span class="tag">React</span><span class="tag">Pyodide</span><span class="tag">Neutron Scattering</span><span class="tag">Diffuse Scattering</span><span class="tag">3D-ΔPDF</span><span class="tag">GitHub Pages</span>
+        <span class="tag">Python</span><span class="tag">Pyodide</span><span class="tag">Neutron Scattering</span><span class="tag">Diffuse Scattering</span><span class="tag">3D-ΔPDF</span>
       </div>
     </div>
     <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
@@ -221,16 +219,15 @@ header:
         </div>
       </div>
       <p class="software-description">
-        A no-install browser dashboard for RMCProfile, STOG, and EXAFS outputs. Select a local run folder to inspect refinement charts, KDE slices, folded 3D structures, and AI-guided summaries of model and fit details without uploading data.
+        A no-install browser dashboard for RMCProfile: open a local run folder to review fits, structures, and atomic displacements without uploading data.
       </p>
       <ul class="case-list">
-        <li><strong>Problem:</strong> RMC validation spans plots, logs, structures, and fit metrics that are hard to inspect together during refinement.</li>
-        <li><strong>Approach:</strong> The React/Vite app reads run folders locally, auto-detects outputs, renders interactive charts, and connects KDE, slab, and Three.js structure views.</li>
-        <li><strong>Reading the displacement cloud two ways:</strong> PCA thermal ellipsoids report each principal axis as the crystallographic direction [u v w] it runs along, while a Displacement Directions map bins the same displacements in solid angle on a hex-tiled sphere &mdash; exposing discrete hop directions and &plusmn;u asymmetry that an anisotropic U tensor averages away.</li>
-        <li><strong>Value:</strong> Live monitoring, figure export, EXAFS-aware plotting, WebGPU KDE, and an AI assistant help users understand model details, fit quality, and refinement diagnostics in one private dashboard.</li>
+        <li><strong>Problem:</strong> Judging an RMC refinement means reading plots, logs, structures, and fit metrics that live in separate files and tools.</li>
+        <li><strong>Approach:</strong> Reads a run folder in place and brings fits, density maps, displacement analysis, and 3D structures into one view.</li>
+        <li><strong>Value:</strong> Live monitoring while a run writes, figure export, and an optional AI assistant that helps interpret the fit.</li>
       </ul>
       <div class="software-tags">
-        <span class="tag">React/Vite</span><span class="tag">Python</span><span class="tag">AI Assistant</span><span class="tag">RMCProfile</span><span class="tag">EXAFS</span><span class="tag">WebGPU KDE</span><span class="tag">PCA / Displacement Directions</span><span class="tag">Three.js</span><span class="tag">Live Monitoring</span>
+        <span class="tag">React</span><span class="tag">RMCProfile</span><span class="tag">WebGPU</span><span class="tag">Three.js</span><span class="tag">AI Assistant</span><span class="tag">Live Monitoring</span>
       </div>
     </div>
     <div class="software-figure">
@@ -248,15 +245,15 @@ header:
         </div>
       </div>
       <p class="software-description">
-        A fully client-side phonon analysis app for RMCProfile ensembles. Open the hosted page, select a local run folder, and compute phonon band structures, animated 3D modes, simulated INS S(|Q|,E), and phonon DOS directly in the browser.
+        A browser app that computes phonon band structures, animated modes, simulated neutron spectra, and DOS from RMCProfile ensembles.
       </p>
       <ul class="case-list">
-        <li><strong>Problem:</strong> RMC ensembles encode experimentally constrained local disorder, but translating those configurations into lattice-dynamical insight usually requires separate scripts, backends, or model assumptions.</li>
-        <li><strong>Approach:</strong> The app extracts displacement-covariance phonons from the selected ensemble, runs the S(k) diagonalization on the user's machine with WebGPU, and keeps all files local through the browser folder picker.</li>
-        <li><strong>Value:</strong> It turns RMC-derived structure into interactive dynamics: dispersion curves, soft-mode highlighting, 3D eigenvector animation, INS maps, DOS, fit-quality overlays, and phonopy-compatible exports without installing a scientific stack &mdash; with the S(Q,E)-derived DOS and the band structure sharing one energy axis in meV, so a computed dispersion and a measured spectrum can be read against each other directly.</li>
+        <li><strong>Problem:</strong> RMC models capture measured local disorder, but turning them into lattice dynamics usually takes separate scripts and a computing backend.</li>
+        <li><strong>Approach:</strong> Extracts phonons directly from the ensemble and runs the heavy linear algebra on the user's GPU &mdash; a ~100&times; speedup from WebGPU.</li>
+        <li><strong>Value:</strong> Interactive dispersion curves, mode animation, and simulated INS with phonopy-compatible export &mdash; no scientific stack to install.</li>
       </ul>
       <div class="software-tags">
-        <span class="tag">React/Vite</span><span class="tag">WebGPU</span><span class="tag">RMCProfile</span><span class="tag">Phonons</span><span class="tag">INS</span><span class="tag">Client-side</span><span class="tag">GitHub Pages</span>
+        <span class="tag">React</span><span class="tag">WebGPU</span><span class="tag">RMCProfile</span><span class="tag">Phonons</span><span class="tag">INS</span>
       </div>
     </div>
     <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
@@ -274,15 +271,15 @@ header:
         An early, exploratory prototype — a research direction I am actively learning in, not a finished tool.
       </p>
       <p class="software-description">
-        A closed-loop experiment in whether an LLM agent can usefully drive materials screening: it states a hypothesis, proposes candidate compositions, screens them with physics-grounded surrogate models, reflects in a lab notebook, and iterates, running on local models by default.
+        A closed-loop experiment: an LLM agent proposes candidate materials, screens them with physics-based models, and iterates on the results &mdash; on local models by default.
       </p>
       <ul class="case-list">
-        <li><strong>Question:</strong> Can an LLM agent that uses real domain tools, not just chat, meaningfully help decide which materials to try next, and can that help be measured rather than asserted?</li>
-        <li><strong>Approach:</strong> A proposer LLM and an independent critic drive deterministic tools — charge-balance filters, CHGNet relaxation, convex-hull stability, MEGNet band gaps — with budgets enforced in code and every candidate logged to ground truth.</li>
-        <li><strong>Honest status:</strong> A prototype under active development. Each campaign is benchmarked against non-LLM baselines (random and similarity) at equal compute, so "the agent helps" stays a claim with a control group, and often only a modest one. Treat the results as exploratory.</li>
+        <li><strong>Question:</strong> Can an LLM agent using real domain tools help decide which materials to try next &mdash; measurably, not anecdotally?</li>
+        <li><strong>Approach:</strong> A proposer and an independent critic drive deterministic tools (CHGNet relaxation, convex-hull stability, band-gap models), with every candidate logged.</li>
+        <li><strong>Honest status:</strong> An early prototype. Results are compared against non-LLM baselines and should be treated as exploratory.</li>
       </ul>
       <div class="software-tags">
-        <span class="tag">Python</span><span class="tag">LLM Agents</span><span class="tag">Ollama</span><span class="tag">CHGNet</span><span class="tag">Materials Project</span><span class="tag">Exploratory</span>
+        <span class="tag">Python</span><span class="tag">LLM Agents</span><span class="tag">Ollama</span><span class="tag">CHGNet</span><span class="tag">Materials Project</span>
       </div>
     </div>
     <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
