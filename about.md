@@ -119,6 +119,45 @@ classes: wide
     color: #d9ecff;
     font-weight: 500;
   }
+  .skill-group {
+    margin-bottom: 1.2rem;
+  }
+  .skill-label {
+    display: block;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 0.55rem;
+  }
+
+  /* Strength Cards */
+  .strength-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 20px 25px;
+    margin-bottom: 1.5rem;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+  .strength-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(79, 172, 254, 0.5);
+    background: rgba(255, 255, 255, 0.05);
+  }
+  .strength-title {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    gap: 10px;
+  }
+  .strength-title::before {
+    content: "▹";
+    color: #4facfe;
+    font-size: 1.2rem;
+  }
 
   /* Highlight specific words */
   .highlight {
@@ -130,13 +169,13 @@ classes: wide
 <div class="about-container">
 
   <p>
-    I am an experimental and computational materials scientist with <span class="highlight">15+ years of experience</span>, currently a Postdoctoral Researcher at Oak Ridge National Laboratory. I study how structure, disorder, and magnetism control the behavior of quantum materials — designing neutron and synchrotron scattering experiments, building the instruments and sample environments they need, and writing the software that turns noisy measurements into validated physical insight.
+    I am an experimental and computational materials scientist with <span class="highlight">15+ years of experience</span>, working at the intersection of <span class="highlight">AI for Science</span> and materials physics, currently a Postdoctoral Researcher at Oak Ridge National Laboratory. I build ML and LLM tools grounded in real materials R&D, atomic-scale characterization, and physics-based modeling, with a focus on understanding how structure, disorder, magnetism, interfaces, and defects control material behavior.
+  </p>
+  <p>
+    I specialize in designing and executing complex neutron and synchrotron scattering experiments, analyzing high-dimensional experimental datasets, and building computational workflows that translate noisy measurements into validated physical insight. My background spans quantum materials, magnetic and topological systems, thin films, metal-organic interfaces, STM/MBE surface science, crystal synthesis, local-structure analysis, DFT, Reverse Monte Carlo modeling, and Python/HPC-based scientific computing.
   </p>
   <p>
     That full-chain approach — synthesis, instrumentation, measurement, modeling, software — is the thread through my career: I have published <span class="highlight">first-author work in Nature Communications and JACS</span>, authored 10+ successful beamtime proposals as PI or lead contributor, built a high-pressure XRD capability from the ground up, and released three open-source scientific software packages.
-  </p>
-  <p>
-    I am now looking toward industry R&D roles where this mix of hands-on experimentation, prototyping, and data-driven modeling helps develop next-generation technologies — materials R&D, quantum device materials, advanced metrology, and scientific computing for complex physical systems.
   </p>
 
   <div class="about-links">
@@ -179,19 +218,123 @@ classes: wide
     </div>
   </div>
 
-  <div class="about-header">Toolbox</div>
-  <div class="skill-grid">
-    <span class="skill-tag">Neutron & Synchrotron Scattering</span>
-    <span class="skill-tag">PDF / Diffuse / Inelastic</span>
-    <span class="skill-tag">Crystal Growth</span>
-    <span class="skill-tag">Diamond Anvil Cells</span>
-    <span class="skill-tag">MBE / UHV / STM</span>
-    <span class="skill-tag">DFT (Quantum ESPRESSO / VASP)</span>
-    <span class="skill-tag">Phonopy</span>
-    <span class="skill-tag">RMCProfile</span>
-    <span class="skill-tag">Python / HPC</span>
-    <span class="skill-tag">JAX / GPU Acceleration</span>
-    <span class="skill-tag">Machine Learning</span>
+  <div class="about-header">Industry Direction</div>
+  <p>
+    I am interested in roles where materials expertise, experimental problem-solving, and AI-driven modeling support the development of next-generation technologies. My strongest fit is in AI for Science / materials informatics, materials R&D, quantum device materials, semiconductor-adjacent materials, advanced metrology, and scientific computing for complex physical systems.
+  </p>
+  <p>
+    My goal is to translate deep research experience into practical R&D impact: connecting atomic-scale structure, disorder, interfaces, and defects to device-relevant material behavior, while building reproducible workflows that make complex characterization data more actionable for research and engineering teams.
+  </p>
+
+  <div class="about-header">Technical Strengths</div>
+  
+  <div class="strength-card">
+    <span class="strength-title">Experimental Materials Research & Project Execution</span>
+    <p style="margin-bottom: 0;">
+      I design and execute neutron and synchrotron scattering experiments on quantum, magnetic, topological, and strongly correlated materials. My work includes proposal development, beamline execution, sample-environment planning, data-quality troubleshooting, and coordination with facility scientists and collaborators under time-sensitive experimental conditions.
+    </p>
+  </div>
+
+  <div class="strength-card">
+    <span class="strength-title">Materials Characterization, Synthesis & Experimental Systems</span>
+    <p style="margin-bottom: 0;">
+      My hands-on experience includes neutron/X-ray diffraction, total scattering/PDF, diffuse scattering, inelastic neutron scattering, STM/SP-STM, MBE thin-film growth, UHV systems, crystal synthesis, inert-atmosphere handling, cryogenic/high-pressure measurements, and custom experimental setup integration. I use these methods to connect structure, disorder, interfaces, magnetism, and defects to material behavior.
+    </p>
+  </div>
+
+  <div class="strength-card">
+    <span class="strength-title">Computational Modeling & Scientific Software</span>
+    <p style="margin-bottom: 0;">
+      I develop Python/C++ workflows for scientific data analysis, inverse modeling, and materials simulation. My work includes Reverse Monte Carlo analysis, PDF modeling, magnetic refinement, DFT, phonon calculations, symmetry analysis, HPC workflows, and reproducible experiment–simulation comparison.
+    </p>
+  </div>
+
+  <div class="strength-card">
+    <span class="strength-title">AI for Science — ML & LLM Agent Tooling</span>
+    <p style="margin-bottom: 0;">
+      I build ML and LLM tools grounded in real materials R&D rather than black-box prediction. This includes browser-first scientific apps (Pyodide/WebGPU/React), LLM agents exposed to a pure scientific core through <span class="highlight">MCP tools</span> that assess fits, sample posteriors, and suggest next steps, retrieval-grounded reasoning, local/offline inference, and evaluation harnesses that benchmark agent behavior against non-LLM baselines. Shipped in <span class="highlight">MATERIA</span>, <span class="highlight">NEBULA3D</span>, and <span class="highlight">RMCProfile Workbench</span>, with <span class="highlight">Athanor</span> as an exploratory closed-loop materials-screening agent.
+    </p>
+  </div>
+
+  <div class="about-header">Technical Stack</div>
+  
+  <div class="skill-group">
+    <span class="skill-label">Materials Characterization & Metrology</span>
+    <div class="skill-grid">
+      <span class="skill-tag">Neutron Scattering</span>
+      <span class="skill-tag">Synchrotron X-ray Scattering</span>
+      <span class="skill-tag">X-ray Diffraction</span>
+      <span class="skill-tag">Total Scattering / PDF</span>
+      <span class="skill-tag">Diffuse Scattering</span>
+      <span class="skill-tag">Inelastic Neutron Scattering</span>
+      <span class="skill-tag">STM / SP-STM</span>
+      <span class="skill-tag">Surface Characterization</span>
+      <span class="skill-tag">Low-Temperature / High-Pressure Measurements</span>
+    </div>
+  </div>
+
+  <div class="skill-group">
+    <span class="skill-label">Materials Synthesis & Experimental Systems</span>
+    <div class="skill-grid">
+      <span class="skill-tag">Crystal Growth</span>
+      <span class="skill-tag">Solid-State Synthesis</span>
+      <span class="skill-tag">Inert-Atmosphere Handling</span>
+      <span class="skill-tag">MBE Thin-Film Growth</span>
+      <span class="skill-tag">UHV Systems</span>
+      <span class="skill-tag">Diamond Anvil Cells</span>
+      <span class="skill-tag">Cryogenic Sample Environments</span>
+      <span class="skill-tag">High-Pressure Sample Environments</span>
+      <span class="skill-tag">Custom Experimental Setup Integration</span>
+      <span class="skill-tag">National-Lab Beamtime Execution</span>
+    </div>
+  </div>
+
+  <div class="skill-group">
+    <span class="skill-label">Scientific Computing & Modeling</span>
+    <div class="skill-grid">
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">C/C++</span>
+      <span class="skill-tag">NumPy / SciPy / Pandas</span>
+      <span class="skill-tag">scikit-learn</span>
+      <span class="skill-tag">RMC / PDF Modeling</span>
+      <span class="skill-tag">Monte Carlo Methods</span>
+      <span class="skill-tag">Inverse Modeling</span>
+      <span class="skill-tag">Numerical Optimization</span>
+      <span class="skill-tag">DFT (Quantum ESPRESSO / VASP)</span>
+      <span class="skill-tag">Phonon Calculations (Phonopy)</span>
+      <span class="skill-tag">Magnetic / Crystallographic Refinement</span>
+      <span class="skill-tag">Model Validation</span>
+    </div>
+  </div>
+
+  <div class="skill-group">
+    <span class="skill-label">AI / ML & LLM Tooling</span>
+    <div class="skill-grid">
+      <span class="skill-tag">Machine Learning</span>
+      <span class="skill-tag">LLM Agents</span>
+      <span class="skill-tag">MCP / Agent Tools</span>
+      <span class="skill-tag">Retrieval-Grounded Reasoning (RAG)</span>
+      <span class="skill-tag">Local / Offline Inference (Ollama / LM Studio)</span>
+      <span class="skill-tag">Evaluation Harnesses</span>
+      <span class="skill-tag">Physics-Grounded Surrogate Models</span>
+      <span class="skill-tag">Browser-First ML (Pyodide / WebGPU)</span>
+      <span class="skill-tag">JAX / GPU Acceleration</span>
+      <span class="skill-tag">React / TypeScript</span>
+    </div>
+  </div>
+
+  <div class="skill-group">
+    <span class="skill-label">Data & Research Workflows</span>
+    <div class="skill-grid">
+      <span class="skill-tag">HPC / SLURM</span>
+      <span class="skill-tag">Linux / Bash</span>
+      <span class="skill-tag">Git / GitHub</span>
+      <span class="skill-tag">Reproducible Scientific Workflows</span>
+      <span class="skill-tag">Signal Extraction</span>
+      <span class="skill-tag">Scientific Visualization</span>
+      <span class="skill-tag">Automated Analysis Pipelines</span>
+      <span class="skill-tag">Experiment–Simulation Comparison</span>
+    </div>
   </div>
 
 </div>

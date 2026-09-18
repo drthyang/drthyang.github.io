@@ -99,6 +99,12 @@ header:
     line-height: 1.6;
     margin-bottom: 15px;
   }
+  .software-subtitle {
+    color: #4facfe;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: -4px 0 12px 0;
+  }
   .case-list {
     margin: 0 0 16px 0;
     padding: 0;
@@ -142,8 +148,92 @@ header:
 <div class="software-container">
 
   <p class="software-description" style="margin: 0 0 0.5rem 0; max-width: 920px;">
-    Browser-first research tools for RMC analysis, neutron diffuse scattering, and phonon dynamics. These projects emphasize local data privacy, interactive visualization, and deployable workflows that can run directly from GitHub Pages when the science allows it.
+    Browser-first research tools for crystal &amp; magnetic structure refinement, RMC analysis, neutron diffuse scattering, and phonon dynamics. These projects emphasize local data privacy, interactive visualization, and deployable workflows that can run directly from GitHub Pages when the science allows it.
   </p>
+
+  <div class="software-card">
+    <div class="software-content">
+      <div class="software-header">
+        <span class="software-title">MATERIA Workbench</span>
+        <div style="display: flex; gap: 8px;">
+          <a href="https://drthyang.github.io/web-refinement/" class="software-link" target="_blank" rel="noopener noreferrer">Web App</a>
+          <a href="https://github.com/drthyang/web-refinement" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+      <p class="software-subtitle">
+        Crystal and magnetic structure refinement that runs entirely in the browser.
+      </p>
+      <p class="software-description">
+        A public-beta workbench for powder, single-crystal, and pair-distribution-function refinement with X-ray or neutron data, on one engine.
+      </p>
+      <ul class="case-list">
+        <li><strong>Problem:</strong> Refinement means choosing among several specialist packages, each with its own formats and conventions &mdash; a steep start before a first fit.</li>
+        <li><strong>Approach:</strong> A tested TypeScript core (1,300+ tests), validated against GSAS-II, behind a guided workflow from data import to refined nuclear and magnetic structures.</li>
+        <li><strong>Value:</strong> Nothing to install and data stays local. Fits report correlations and uncertainties, not just an agreement factor, and the same core is available to LLM agents through MCP.</li>
+      </ul>
+      <div class="software-tags">
+        <span class="tag">TypeScript</span><span class="tag">Rietveld</span><span class="tag">Single Crystal</span><span class="tag">PDF</span><span class="tag">Magnetic Structures</span><span class="tag">MCP Agent Tools</span>
+      </div>
+    </div>
+    <div class="software-figure">
+      <img src="/assets/images/materia-workbench.png" alt="MATERIA Workbench — a converged two-phase Mn3Ga + MnO time-of-flight Rietveld refinement with observed/calculated/difference curves and the symmetry-allowed parameter table">
+    </div>
+  </div>
+
+  <div class="software-card">
+    <div class="software-content">
+      <div class="software-header">
+        <span class="software-title">NEBULA3D</span>
+        <div style="display: flex; gap: 8px;">
+          <a href="https://drthyang.github.io/nebula3d/" class="software-link" target="_blank" rel="noopener noreferrer">Web App</a>
+          <a href="https://github.com/drthyang/nebula3d" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+      <p class="software-subtitle">
+        Neutron Elastic Background Utilities for Local Analysis &amp; 3D-delta PDF.
+      </p>
+      <p class="software-description">
+        A Python toolkit and browser app that cleans 3D neutron diffuse-scattering data and computes 3D-ΔPDF maps.
+      </p>
+      <ul class="case-list">
+        <li><strong>Problem:</strong> Weak diffuse signal is often buried under powder rings, Bragg peaks, and background before any 3D-ΔPDF interpretation can begin.</li>
+        <li><strong>Approach:</strong> One reproducible pipeline for background removal, peak masking, and the ΔPDF transform, with visual checks at each step.</li>
+        <li><strong>Value:</strong> Runs natively at full resolution or in the browser via Pyodide, so every cleanup decision is inspectable and repeatable.</li>
+      </ul>
+      <div class="software-tags">
+        <span class="tag">Python</span><span class="tag">Pyodide</span><span class="tag">Neutron Scattering</span><span class="tag">Diffuse Scattering</span><span class="tag">3D-ΔPDF</span>
+      </div>
+    </div>
+    <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
+      <span>[3D Diffuse Viewer]</span>
+    </div>
+  </div>
+
+  <div class="software-card">
+    <div class="software-content">
+      <div class="software-header">
+        <span class="software-title">RMCProfile Workbench</span>
+        <div style="display: flex; gap: 8px;">
+          <a href="https://drthyang.github.io/rmc-toolkits/" class="software-link" target="_blank" rel="noopener noreferrer">Web App</a>
+          <a href="https://github.com/drthyang/rmc-toolkits" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+      <p class="software-description">
+        A no-install browser dashboard for RMCProfile: open a local run folder to review fits, structures, and atomic displacements without uploading data.
+      </p>
+      <ul class="case-list">
+        <li><strong>Problem:</strong> Judging an RMC refinement means reading plots, logs, structures, and fit metrics that live in separate files and tools.</li>
+        <li><strong>Approach:</strong> Reads a run folder in place and brings fits, density maps, displacement analysis, and 3D structures into one view.</li>
+        <li><strong>Value:</strong> Live monitoring while a run writes, figure export, and an optional AI assistant that helps interpret the fit.</li>
+      </ul>
+      <div class="software-tags">
+        <span class="tag">React</span><span class="tag">RMCProfile</span><span class="tag">WebGPU</span><span class="tag">Three.js</span><span class="tag">AI Assistant</span><span class="tag">Live Monitoring</span>
+      </div>
+    </div>
+    <div class="software-figure">
+      <img src="/assets/images/rmcprofile-displacement-directions.jpg" alt="RMCProfile Workbench — the Displacement Directions view of a GaTa4Se8 RMC run: displacements for a Ta site binned in solid angle on a hex-tiled sphere, with fixed a/b/c axis views alongside and the site ellipsoids in the folded unit cell">
+    </div>
+  </div>
 
   <div class="software-card">
     <div class="software-content">
@@ -155,15 +245,15 @@ header:
         </div>
       </div>
       <p class="software-description">
-        A fully client-side phonon analysis app for RMCProfile ensembles. Open the hosted page, select a local run folder, and compute phonon band structures, animated 3D modes, simulated INS S(|Q|,E), and phonon DOS directly in the browser.
+        A browser app that computes phonon band structures, animated modes, simulated neutron spectra, and DOS from RMCProfile ensembles.
       </p>
       <ul class="case-list">
-        <li><strong>Problem:</strong> RMC ensembles encode experimentally constrained local disorder, but translating those configurations into lattice-dynamical insight usually requires separate scripts, backends, or model assumptions.</li>
-        <li><strong>Approach:</strong> The app extracts displacement-covariance phonons from the selected ensemble, runs the S(k) diagonalization on the user's machine with WebGPU, and keeps all files local through the browser folder picker.</li>
-        <li><strong>Value:</strong> It turns RMC-derived structure into interactive dynamics: dispersion curves, soft-mode highlighting, 3D eigenvector animation, INS maps, DOS, fit-quality overlays, and phonopy-compatible exports without installing a scientific stack.</li>
+        <li><strong>Problem:</strong> RMC models capture measured local disorder, but turning them into lattice dynamics usually takes separate scripts and a computing backend.</li>
+        <li><strong>Approach:</strong> Extracts phonons directly from the ensemble and runs the heavy linear algebra on the user's GPU &mdash; a ~100&times; speedup from WebGPU.</li>
+        <li><strong>Value:</strong> Interactive dispersion curves, mode animation, and simulated INS with phonopy-compatible export &mdash; no scientific stack to install.</li>
       </ul>
       <div class="software-tags">
-        <span class="tag">React/Vite</span><span class="tag">WebGPU</span><span class="tag">RMCProfile</span><span class="tag">Phonons</span><span class="tag">INS</span><span class="tag">Client-side</span><span class="tag">GitHub Pages</span>
+        <span class="tag">React</span><span class="tag">WebGPU</span><span class="tag">RMCProfile</span><span class="tag">Phonons</span><span class="tag">INS</span>
       </div>
     </div>
     <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
@@ -174,80 +264,28 @@ header:
   <div class="software-card">
     <div class="software-content">
       <div class="software-header">
-        <span class="software-title">nebula3D</span>
-        <div style="display: flex; gap: 8px;">
-          <a href="https://drthyang.github.io/nebula3d/" class="software-link" target="_blank" rel="noopener noreferrer">Web App</a>
-          <a href="https://github.com/drthyang/nebula3d" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </div>
+        <span class="software-title">Athanor — Agentic AI for Materials <span style="font-weight: 400; color: #888;">(exploratory)</span></span>
+        <a href="https://github.com/drthyang/agentic-ai-materials" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
+      <p class="software-subtitle">
+        An early, exploratory prototype — a research direction I am actively learning in, not a finished tool.
+      </p>
       <p class="software-description">
-        A Python toolkit and hosted browser console for cleaning 3D reciprocal-space neutron diffuse scattering volumes and preparing 3D-ΔPDF analysis products from Mantid-style HKL data.
+        A closed-loop experiment: an LLM agent proposes candidate materials, screens them with physics-based models, and iterates on the results &mdash; on local models by default.
       </p>
       <ul class="case-list">
-        <li><strong>Problem:</strong> Weak diffuse signals can be buried under powder-ring backgrounds, sharp Bragg and satellite peaks, radial pedestals, and transform artifacts before 3D-ΔPDF interpretation even begins.</li>
-        <li><strong>Approach:</strong> The workflow unifies ring subtraction, Bragg/satellite punching, q-shell backfill, radial-background flattening, 3D-ΔPDF transforms, inverse-FFT consistency checks, and multi-view visual QA.</li>
-        <li><strong>Value:</strong> It provides both full-resolution native workflows and a GitHub Pages web app that can run real pipeline stages client-side via Pyodide for modest volumes, making cleanup decisions inspectable and reproducible.</li>
+        <li><strong>Question:</strong> Can an LLM agent using real domain tools help decide which materials to try next &mdash; measurably, not anecdotally?</li>
+        <li><strong>Approach:</strong> A proposer and an independent critic drive deterministic tools (CHGNet relaxation, convex-hull stability, band-gap models), with every candidate logged.</li>
+        <li><strong>Honest status:</strong> An early prototype. Results are compared against non-LLM baselines and should be treated as exploratory.</li>
       </ul>
       <div class="software-tags">
-        <span class="tag">Python</span><span class="tag">React</span><span class="tag">Pyodide</span><span class="tag">Neutron Scattering</span><span class="tag">Diffuse Scattering</span><span class="tag">3D-ΔPDF</span><span class="tag">GitHub Pages</span>
+        <span class="tag">Python</span><span class="tag">LLM Agents</span><span class="tag">Ollama</span><span class="tag">CHGNet</span><span class="tag">Materials Project</span>
       </div>
     </div>
     <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
-      <span>[3D Diffuse Viewer]</span>
+      <span>[Discovery Loop]</span>
     </div>
   </div>
 
-  <div class="software-card">
-    <div class="software-content">
-      <div class="software-header">
-        <span class="software-title">RMC Toolkits</span>
-        <div style="display: flex; gap: 8px;">
-          <a href="https://drthyang.github.io/rmc-toolkits/" class="software-link" target="_blank" rel="noopener noreferrer">Web App</a>
-          <a href="https://github.com/drthyang/rmc-toolkits" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </div>
-      </div>
-      <p class="software-description">
-        A browser-hosted dashboard and Python package for RMCProfile, STOG, and EXAFS outputs. Select a run folder locally and inspect refinement plots, live updates, KDE slices, and folded 3D structure views without uploading data.
-      </p>
-      <ul class="case-list">
-        <li><strong>Problem:</strong> RMC validation often sprawls across CSV outputs, text logs, structure files, static figures, and separate viewers, slowing the feedback loop during refinement.</li>
-        <li><strong>Approach:</strong> The toolkit combines a static React/Vite app, optional Flask backend, reusable Python parsers, browser-native SVG charts, Three.js structure views, and WebGPU-accelerated KDE with CPU fallback.</li>
-        <li><strong>Value:</strong> It makes RMC post-processing portable and visual: live data monitoring, EXAFS-aware plotting, figure export, .rmc6f conversion, model summaries, density slices, and 3D inspection from a privacy-preserving web workflow.</li>
-      </ul>
-      <div class="software-tags">
-        <span class="tag">Python</span><span class="tag">React/Vite</span><span class="tag">Flask</span><span class="tag">Three.js</span><span class="tag">WebGPU</span><span class="tag">RMCProfile</span><span class="tag">EXAFS</span><span class="tag">Dashboard</span>
-      </div>
-    </div>
-    <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
-      <span>[RMC Fits Image]</span>
-    </div>
-  </div>
-
-  {% comment %}
-  <div class="software-card">
-    <div class="software-content">
-      <div class="software-header">
-        <span class="software-title">Magnetic Pair Distribution Function</span>
-        <a href="https://github.com/drthyang/mPDF-analysis-visualization" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </div>
-      <p class="software-description">
-        An analytical workflow for extracting short-range magnetic correlations from total neutron scattering data. This project extends the <code>diffpy.mpdf</code> package (developed by 
-        <a href="https://doi.org/10.1107/S1600576722007257" target="_blank" rel="noopener noreferrer">Dr. Benjamin Frandsen</a>) 
-        into a modular system for streamlined calculations.
-      </p>
-      <ul class="case-list">
-        <li><strong>Problem:</strong> interpret diffuse magnetic signals that are not captured by average-structure diffraction alone.</li>
-        <li><strong>Engineering:</strong> modular analysis scripts, parameterized calculations, model comparison, and visualization of short-range spin correlations.</li>
-        <li><strong>Value:</strong> supports model comparison for complex magnetic disorder in quantum materials.</li>
-      </ul>
-      <div class="software-tags">
-        <span class="tag">Python</span><span class="tag">mPDF</span><span class="tag">Signal Extraction</span><span class="tag">Model Validation</span>
-      </div>
-    </div>
-    <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
-      <span>[Magnetic PDF Image]</span>
-    </div>
-  </div>
-  {% endcomment %}
 
 </div>

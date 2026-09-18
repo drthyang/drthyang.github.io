@@ -1,3 +1,0 @@
-bundle exec ruby fix_ssl.rb serve
-
-bundle exec jekyll serve

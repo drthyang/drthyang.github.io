@@ -68,6 +68,15 @@ classes: wide
     font-size: 0.88rem;
     font-weight: 600;
   }
+  a.proof-item {
+    text-decoration: none;
+    transition: background 0.2s ease, border-color 0.2s ease;
+  }
+  a.proof-item:hover {
+    background: rgba(79, 172, 254, 0.2);
+    border-color: rgba(79, 172, 254, 0.7);
+    color: #ffffff;
+  }
 
   /* Section headers */
   .home-section-title {
@@ -85,7 +94,8 @@ classes: wide
   /* Pillar Strip */
   .pillar-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 1fr;
     gap: 1rem;
     margin-bottom: 2.5rem;
   }
@@ -105,14 +115,37 @@ classes: wide
   .pillar-card p {
     margin: 0;
     color: #a8b6c2;
-    font-size: 0.86rem;
-    line-height: 1.55;
+    font-size: 0.9rem;
+    line-height: 1.65;
   }
+  .pillar-card .pillar-proof {
+    margin-top: 0.75rem;
+    color: #d2e7ff;
+    font-size: 0.82rem;
+    line-height: 1.5;
+  }
+  .pillar-proof strong {
+    color: #ffffff;
+  }
+  .pillar-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .pillar-link {
+    margin-top: auto;
+    padding-top: 0.7rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #4facfe;
+    text-decoration: none;
+  }
+  .pillar-link:hover { text-decoration: underline; }
 
   /* App Card Grid */
   .app-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 1fr;
     gap: 1.2rem;
     margin-bottom: 2.5rem;
   }
@@ -186,63 +219,99 @@ classes: wide
     flex-wrap: wrap;
     margin-top: 3rem;
   }
+
+  @media (max-width: 900px) {
+    .app-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (max-width: 768px) {
+    .pillar-grid {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>
 
 <div class="hero-summary">
-  <h1 class="hero-title">Experimental & Computational Materials Scientist</h1>
-  <p class="hero-subtitle">Quantum Materials &middot; Synthesis & Crystal Growth &middot; Characterization & Metrology &middot; Scientific Computing</p>
+  <h1 class="hero-title">AI for Science &times; Materials Physics</h1>
+  <p class="hero-subtitle">Physics-Grounded ML & LLM Agents &middot; Scattering Data &middot; Disorder Modeling &middot; Scientific Software</p>
 
   <p class="hero-lede">
-      I study how structure, disorder, magnetism, interfaces, and defects control the behavior of quantum and functional materials — working across the full chain from crystal growth and solid-state synthesis, through neutron/synchrotron scattering and STM/MBE surface science, to DFT and phonon modeling, Reverse Monte Carlo analysis, and Python-based scientific workflows.
+      I build ML and LLM tools that turn complex scattering data into discovery — grounded in real materials physics, from sample preparation and neutron/synchrotron/STM measurements to physics-based modeling. My niche is owning the path from material and measurement design to reproducible Python/browser/LLM workflows that produce defensible, structure-property insight rather than black-box predictions.
   </p>
 
   <div class="target-roles-banner">
     <span style="font-size: 1.15rem;">🎯</span>
-    <span><strong>Target Roles:</strong> Materials Scientist &middot; R&D / Metrology Engineer &middot; Applied Scientist &middot; AI/ML Scientist &middot; AI for Science / Materials Informatics &middot; Quantum Technology Applications</span>
+    <span><strong>Target Roles:</strong> AI for Science / Materials Informatics &middot; Experimental/Computational Materials Scientist &middot; Materials R&D / Metrology Scientist</span>
   </div>
 
   <div class="proof-strip">
     <span class="proof-item">Postdoc @ ORNL (Spallation Neutron Source)</span>
-    <span class="proof-item">Ph.D. Physics @ Brown</span>
-    <span class="proof-item">First-author: Nature Communications &middot; JACS</span>
-    <span class="proof-item">Open-source scientific software</span>
+    <a class="proof-item" href="/publications/">First-author: Nature Communications &middot; JACS →</a>
+    <span class="proof-item">Neutron, synchrotron & STM measurements</span>
+    <span class="proof-item">Open-source Python/WebGPU tools</span>
+    <span class="proof-item">Local-first LLM analysis workflows</span>
   </div>
 </div>
 
-<h2 class="home-section-title">⚗️ From synthesis to software</h2>
-<p class="home-section-sub">I work across the full materials pipeline — the same person who grows the crystal can model it, measure it, and ship the analysis tools.</p>
+<h2 class="home-section-title">Capability map</h2>
+<p class="home-section-sub">Sample → signal → model → software: a connected toolkit for turning hard materials data into decisions.</p>
 
 <div class="pillar-grid">
   <div class="pillar-card">
-    <h4>Synthesis & Growth</h4>
-    <p>Single-crystal growth (flux/CVT), polycrystalline synthesis, multi-zone furnaces, inert-atmosphere glovebox, high-pressure sample prep, MBE thin films with in-situ RHEED.</p>
+    <h4>Synthesis & Sample Prep</h4>
+    <p>Prepare crystals, polycrystalline samples, and thin films; tune synthesis routes; handle air-sensitive workflows; and screen sample quality before beamtime or surface measurements.</p>
+    <p class="pillar-proof"><strong>Proof:</strong> Flux/CVT growth, glovebox synthesis, MBE prep.</p>
+    <a class="pillar-link" href="/research/">Research projects →</a>
   </div>
   <div class="pillar-card">
-    <h4>Characterization</h4>
-    <p>Neutron & synchrotron diffraction, total scattering/PDF, diffuse & inelastic scattering, STM/SP-STM, AFM, low-temperature & high-pressure environments.</p>
+    <h4>Scattering & Metrology</h4>
+    <p>Design neutron, synchrotron, and STM measurements, then convert diffraction, PDF, diffuse, inelastic, low-temperature, and high-pressure data into structure-property constraints.</p>
+    <p class="pillar-proof"><strong>Proof:</strong> ORNL/SNS; neutron, synchrotron, STM studies.</p>
+    <a class="pillar-link" href="/publications/">Publications →</a>
   </div>
   <div class="pillar-card">
-    <h4>Modeling</h4>
-    <p>DFT (Quantum ESPRESSO, VASP), Phonopy phonon calculations, Reverse Monte Carlo, Rietveld & magnetic refinement, symmetry analysis.</p>
+    <h4>Modeling & Interpretation</h4>
+    <p>Use DFT, phonons, Reverse Monte Carlo, Rietveld/magnetic refinement, and symmetry analysis to test mechanisms for disorder, magnetism, topology, and lattice dynamics.</p>
+    <p class="pillar-proof"><strong>Proof:</strong> Nature Communications, JACS, PRB/PRR studies.</p>
+    <a class="pillar-link" href="/publications/">Publications →</a>
   </div>
   <div class="pillar-card">
-    <h4>Scientific Software</h4>
-    <p>Python/HPC analysis pipelines, reproducible workflows, and browser-based tools (Pyodide, WebGPU, React) — see the live apps below.</p>
+    <h4>Scientific Software & AI</h4>
+    <p>Build Python/HPC and browser-first tools with Pyodide/WebGPU/React, plus LLM agents for analysis review, retrieval-grounded reasoning, local inference, and evaluation.</p>
+    <p class="pillar-proof"><strong>Proof:</strong> MATERIA, NEBULA3D, RMCProfile Workbench, rmc-phonon-dynamics.</p>
+    <a class="pillar-link" href="/software/">Packages & tools →</a>
   </div>
 </div>
 
-<h2 class="home-section-title">🔬 Live scientific web apps</h2>
-<p class="home-section-sub">Zero install — each app runs its full analysis pipeline in your browser. Your data never leaves your device.</p>
+<h2 class="home-section-title">Scientific software I ship</h2>
+<p class="home-section-sub">Browser-first research tools for structure refinement and neutron/RMC/phonon analysis: local data, inspectable workflows, and reproducible outputs.</p>
 
 <div class="app-grid">
   <div class="core-card">
-    <h3>nebula3d</h3>
-    <p>Cleans 3D reciprocal-space neutron diffuse-scattering volumes and computes 3D-&Delta;PDF maps — the complete Python pipeline runs client-side via Pyodide at full float64 resolution.</p>
+    <h3>MATERIA</h3>
+    <p>Crystal &amp; magnetic structure refinement in the browser — powder, single-crystal, and PDF on one engine, validated against GSAS-II, with its core available to LLM agents as MCP tools.</p>
+    <div class="card-footer">
+      <div class="tag-container">
+        <span class="mini-tag">Rietveld</span>
+        <span class="mini-tag">PDF</span>
+        <span class="mini-tag">MCP Agents</span>
+      </div>
+      <div class="card-links">
+        <a class="launch" href="https://drthyang.github.io/web-refinement/">Launch ▶</a>
+        <a href="https://github.com/drthyang/web-refinement">GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="core-card">
+    <h3>NEBULA3D</h3>
+    <p>Cleans 3D reciprocal-space neutron diffuse-scattering volumes and computes 3D-&Delta;PDF maps — the complete Python pipeline runs client-side via Pyodide, with an optional AI reasoning review where a local or cloud LLM grades the reduction quality.</p>
     <div class="card-footer">
       <div class="tag-container">
         <span class="mini-tag">Pyodide</span>
         <span class="mini-tag">3D-&Delta;PDF</span>
-        <span class="mini-tag">Diffuse Scattering</span>
+        <span class="mini-tag">LLM Review</span>
       </div>
       <div class="card-links">
         <a class="launch" href="https://drthyang.github.io/nebula3d/">Launch ▶</a>
@@ -252,13 +321,13 @@ classes: wide
   </div>
 
   <div class="core-card">
-    <h3>rmc-toolkits</h3>
-    <p>Dashboard for RMCProfile/STOG refinements — live run monitoring, interactive charts, space-group detection, a 3D structure view, and WebGPU-accelerated KDE density slices.</p>
+    <h3>RMCProfile Workbench</h3>
+    <p>Dashboard for RMCProfile/STOG refinements — live monitoring, space-group detection, WebGPU KDE slices, plus a built-in LLM assistant (local via Ollama/LM Studio or cloud) that reasons over your run and watches convergence.</p>
     <div class="card-footer">
       <div class="tag-container">
+        <span class="mini-tag">Local LLM</span>
         <span class="mini-tag">WebGPU</span>
         <span class="mini-tag">RMCProfile</span>
-        <span class="mini-tag">React</span>
       </div>
       <div class="card-links">
         <a class="launch" href="https://drthyang.github.io/rmc-toolkits/">Launch ▶</a>
@@ -269,7 +338,7 @@ classes: wide
 
   <div class="core-card">
     <h3>rmc-phonon-dynamics</h3>
-    <p>Phonon band structures, DOS, animated 3D modes, and simulated INS spectra extracted directly from RMC ensembles — with WebGPU compute shaders delivering the main ~100&times; speedup for phonon analysis.</p>
+    <p>Phonon band structures, DOS, animated 3D modes, and simulated INS spectra extracted directly from RMC ensembles — with WebGPU compute shaders delivering a ~100&times; speedup.</p>
     <div class="card-footer">
       <div class="tag-container">
         <span class="mini-tag">WebGPU</span>
@@ -286,7 +355,10 @@ classes: wide
 
 <h2 class="home-section-title">📌 Recent highlights</h2>
 
+* [**[Software]**](/software/) **MATERIA Workbench (public beta):** crystal & magnetic structure refinement in the browser — powder, single-crystal, and PDF on one engine, validated against GSAS-II and usable by LLM agents through MCP tools.
 * [**[Publication]**](/publications/) First-author **Nature Communications (2026)** study on Mn<sub>3</sub>Ga, revealing an intrinsic topological phase transition at room temperature driven by a magnetostructural transformation.
+* [**[Software]**](/software/) **scattering-ai-sdk (early development):** an agentic AI layer for scattering science — modular agent skills, retrieval-grounded LLM reasoning, and evaluation harnesses, running fully offline with local models.
+* [**[Software]**](/software/) **Athanor (exploratory):** a closed-loop prototype testing whether an LLM agent can help drive materials screening with physics-grounded surrogates, benchmarked against non-LLM baselines — an early direction I am actively exploring.
 * [**[Software]**](/software/) **Neutron diffuse scattering tools for 3D-ΔPDF analysis released:** Developed a Python-based workflow for 3D-ΔPDF reconstruction and visualization, supporting analysis of local disorder and short-range correlations in complex materials.
 * [**[Publication]**](/publications/) First-author **JACS (2024)** study on kagome (Fe,Co)Sn, revealing coupling between short-range local disorder and a long-range antiferromagnetic transition.
 * [**[Software]**](/software/) **Released rmcph:** a data-processing pipeline and GUI for calculating phonon spectra from total scattering measurements and RMC model ensembles, with integrated tools for phonon processing and visualization.

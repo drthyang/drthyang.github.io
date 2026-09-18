@@ -6,10 +6,9 @@ classes: wide
 ---
 
 {% comment %} 
-  Strict sorting: First we sort by year, then reverse it.
-  If years are equal, Jekyll maintains the original order from the YAML file.
+  Strict sorting: sort by full date, then reverse it (newest first).
 {% endcomment %}
-{% assign pubs = site.data.publications | sort: 'year' | reverse %}
+{% assign pubs = site.data.publications | sort: 'date' | reverse %}
 
 <style>
   .pub-list { 

@@ -1,6 +1,6 @@
 ---
 layout: splash
-title: "Materials R&D & Scientific Computing"
+title: "Research — AI for Science × Quantum Materials"
 author_profile: true
 classes: wide
 header:
@@ -24,16 +24,16 @@ header:
     border-bottom: 1px solid #333;
   }
 
-  .research-intro p {
-    font-size: 1.1rem;
+  /* Intro lede */
+  .research-lede {
+    font-size: 1.08rem;
+    line-height: 1.75;
     color: #b0b0b0;
-    line-height: 1.7;
-    max-width: 900px;
-    margin: 0 0 1.5rem 0;
+    max-width: 62rem;
+    margin: 0 0 1.5rem;
   }
-
-  .research-intro p strong {
-    color: #e0e0e0;
+  .research-lede strong {
+    color: #ffffff;
   }
 
   .stat-row {
@@ -71,15 +71,18 @@ header:
     padding-left: 4px;
   }
 
-  /* The Project Card (Now a wrapper for the grid) */
+  /* The Project Card (text + figure grid) */
   .project-card {
-    margin-bottom: 4rem; /* More space between projects */
+    margin-bottom: 4rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid #333;
     display: grid;
     grid-template-columns: 1fr 350px; /* Text takes rest, Image is 350px fixed */
-    gap: 40px; /* Space between text and image */
+    gap: 40px;
     align-items: start;
+  }
+  .project-card:last-of-type {
+    border-bottom: none;
   }
 
   /* Left Column: Text Content */
@@ -93,16 +96,27 @@ header:
     width: 100%;
     border-radius: 8px;
     overflow: hidden;
-    background: #000; /* Placeholder background */
+    background: #000;
     border: 1px solid #333;
     box-shadow: 0 4px 12px rgba(0,0,0,0.5);
   }
 
-  .project-figure img {
+  .project-figure img,
+  .project-figure video {
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
+  }
+
+  /* Kicker: small numbered theme label */
+  .project-kicker {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #4facfe;
+    margin-bottom: 8px;
   }
 
   /* Header Styling */
@@ -123,10 +137,11 @@ header:
     margin: 0;
   }
 
-  /* Link Styling (Kept exactly as you liked) */
+  /* Link Styling */
   .project-links-wrapper {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
   }
 
   .project-link {
@@ -154,19 +169,34 @@ header:
     line-height: 1.6;
     margin-bottom: 20px;
   }
-
-  .project-description em {
-    color: #d0d0d0;
-    font-style: normal;
-    font-weight: 600;
+  .project-description strong {
+    color: #ffffff;
+  }
+  .project-description a {
+    color: #4facfe;
+    text-decoration: none;
+  }
+  .project-description a:hover {
+    text-decoration: underline;
   }
 
-  /* Tag Styling (Kept exactly as you liked) */
+  /* Outcome line: anchors each theme to concrete results */
+  .project-outcome {
+    font-size: 0.92rem;
+    color: #d2e7ff;
+    line-height: 1.6;
+    margin: -8px 0 20px;
+  }
+  .project-outcome strong {
+    color: #ffffff;
+  }
+
+  /* Tag Styling */
   .project-tags {
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
-    margin-top: auto; /* Pushes tags to bottom if needed */
+    margin-top: auto;
   }
 
   .tag {
@@ -178,10 +208,19 @@ header:
     border: 1px solid #444;
   }
 
+  /* CTA row */
+  .research-cta-row {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+
   /* Mobile Responsive: Stack text over image */
   @media (max-width: 900px) {
     .project-card {
-      grid-template-columns: 1fr; /* Single column */
+      grid-template-columns: 1fr;
       gap: 20px;
     }
 
@@ -200,8 +239,8 @@ header:
 <div class="research-container">
 
   <div class="research-intro">
-    <p>
-      I work across the full chain of quantum-materials research — from <strong>synthesis and custom instrumentation</strong> to <strong>neutron and synchrotron scattering</strong> to <strong>physics-based modeling and scientific software</strong>. My path spans 15+ years: MBE thin-film growth and spin-polarized STM in Taiwan, DFT and quantum-transport modeling at Academia Sinica, building a high-pressure crystallography capability during my Ph.D. at Brown, and now leading neutron-scattering investigations of topological and correlated materials at Oak Ridge National Laboratory.
+    <p class="research-lede">
+      My research connects two things usually done by different people: <strong>a decade of hands-on quantum-materials experiments</strong> and <strong>AI systems that assist the expert judgment those experiments require</strong>. Every claim below is grounded in instruments I have operated and analysis loops I have run by hand — before teaching an agent to help.
     </p>
     <div class="stat-row">
       <span class="stat">First-author: Nat. Commun. &amp; JACS</span>
@@ -215,80 +254,131 @@ header:
 
   <div class="project-card">
     <div class="project-content">
+      <div class="project-kicker">01 &middot; Current Focus</div>
       <div class="project-header">
-        <span class="project-title">Kagome Magnets &amp; Topological Materials</span>
+        <span class="project-title">Agentic AI for Science</span>
         <div class="project-links-wrapper">
-          <a href="/publications/" class="project-link">Publications</a>
+          <a class="project-link" href="https://drthyang.github.io/web-refinement/" target="_blank" rel="noopener noreferrer">MATERIA ▶</a>
+          <a class="project-link" href="/software/">All Tools</a>
         </div>
       </div>
       <p class="project-description">
-        How does local structure control topology? I discovered an intrinsic Weyl phase transition driven by a magnetostructural transformation in a kagome magnet (<em>Nat. Commun. 2026</em>) and showed that antiferromagnetism and local symmetry breaking emerge simultaneously in (Fe,Co)Sn (<em>JACS 2024</em>). Ongoing work connects local symmetry breaking to the anomalous Hall effect in Mn<sub>3</sub>Sn. This research was featured in a DOE research highlight for the ORNL Neutron Science Division.
+        The expert loop in scattering analysis — freeing parameters, judging residuals, grading a reduction, watching convergence — never got automated. I study how much of it LLM agents can help with when given real domain tools instead of chat: <a href="https://drthyang.github.io/web-refinement/" target="_blank" rel="noopener noreferrer">MATERIA</a> exposes a refinement engine to agents as MCP tools, <a href="https://drthyang.github.io/nebula3d/" target="_blank" rel="noopener noreferrer">NEBULA3D</a> has an LLM grade reduction quality, <a href="https://drthyang.github.io/rmc-toolkits/" target="_blank" rel="noopener noreferrer">RMCProfile Workbench</a> reasons over live runs, and Athanor benchmarks agent-driven screening against non-LLM baselines. All of it is independent, personal open-source work.
+      </p>
+      <p class="project-outcome">
+        <strong>Grounding principles:</strong> physics-based tools the agent must call, uncertainty it can quantify, local-first models, evaluation against baselines — not demos.
       </p>
       <div class="project-tags">
-        <span class="tag">Weyl Semimetals</span>
-        <span class="tag">Kagome Lattice</span>
+        <span class="tag">LLM Agents</span>
+        <span class="tag">MCP Tools</span>
+        <span class="tag">Local-First Inference</span>
+        <span class="tag">Evaluation & Baselines</span>
+      </div>
+    </div>
+    <div class="project-figure">
+      <img src="/assets/images/materia-architecture.svg" alt="MATERIA architecture: web app UI, MCP agent server, and web workers sit on shared parsers and visualization, all calling a pure TypeScript scientific core of eight modules validated by more than 1,300 tests">
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-content">
+      <div class="project-kicker">02 &middot; Quantum Materials</div>
+      <div class="project-header">
+        <span class="project-title">Topology &times; Magnetism in Kagome Metals</span>
+        <div class="project-links-wrapper">
+          <a class="project-link" href="https://doi.org/10.1038/s41467-026-71683-7" target="_blank" rel="noopener noreferrer">Nat. Commun.</a>
+          <a class="project-link" href="/publications/">Publications</a>
+        </div>
+      </div>
+      <p class="project-description">
+        Kagome magnets host Weyl nodes and anomalous transport that the lattice can in principle switch — if you find a material where the switch operates. My first-author <strong>Nature Communications (2026)</strong> study of Mn<sub>3</sub>Ga found exactly that: an intrinsic topological Weyl phase transition driven by a magnetostructural transformation near room temperature. Ongoing work connects correlated disorder to the anomalous Hall response in the breathing kagome lattice Mn<sub>3</sub>Sn (<strong>preprint, under review</strong>). This research was featured in a DOE research highlight for the ORNL Neutron Science Division.
+      </p>
+      <p class="project-outcome">
+        <strong>Why it matters:</strong> a room-temperature, lattice-coupled route to switching topological states — the mechanism antiferromagnetic spintronics needs.
+      </p>
+      <div class="project-tags">
+        <span class="tag">Kagome Magnets</span>
+        <span class="tag">Weyl Topology</span>
+        <span class="tag">Magnetostructural Transition</span>
         <span class="tag">Neutron Diffraction</span>
-        <span class="tag">Symmetry Analysis</span>
       </div>
     </div>
     <div class="project-figure">
-      <img src="/assets/images/prl-mn3sn-concept.svg" alt="Kagome magnetic correlations and anomalous Hall transport concept">
+      <img src="/assets/images/mn3ga-weyl-transition.png" alt="Mn3Ga summary figure: the magnetostructural transition between two kagome antiferromagnetic spin structures (top) drives a reorganization of Weyl nodes in the Brillouin zone — a topological Weyl phase transition (bottom)">
     </div>
   </div>
 
   <div class="project-card">
     <div class="project-content">
+      <div class="project-kicker">03 &middot; Quantum Materials</div>
       <div class="project-header">
-        <span class="project-title">Lacunar Spinels &amp; Spin-Orbital Physics</span>
+        <span class="project-title">Hidden Local Order Beyond the Average Structure</span>
         <div class="project-links-wrapper">
-          <a href="/publications/" class="project-link">Publications</a>
+          <a class="project-link" href="https://doi.org/10.1021/jacs.4c09387" target="_blank" rel="noopener noreferrer">JACS</a>
+          <a class="project-link" href="/publications/">Publications</a>
         </div>
       </div>
       <p class="project-description">
-        My Ph.D. work established how molecular spin-orbital degrees of freedom shape the GaM<sub>4</sub>X<sub>8</sub> cluster Mott insulators: Jahn-Teller-driven quadrupolar ordering and spin-orbital dimer formation in GaNb<sub>4</sub>Se<sub>8</sub> (<em>PRB 2024</em>) and bond ordering with molecular spin-orbital fluctuations in GaTa<sub>4</sub>Se<sub>8</sub> (<em>PRR 2022</em>). Using a high-pressure XRD capability I built in-house, I also tracked structural evolution across the pressure-induced superconducting transition in this family.
+        Average structures hide the physics. Using PDF, diffuse scattering, and large-box RMC modeling, I resolve what conventional crystallography misses: local symmetry breaking emerging <em>with</em> antiferromagnetic order in kagome (Fe,Co)Sn (<strong>JACS 2024</strong>), quadrupolar ordering and spin-orbital dimers in GaNb<sub>4</sub>Se<sub>8</sub> (<strong>PRB 2024</strong>), and bond ordering in the cluster Mott insulator GaTa<sub>4</sub>Se<sub>8</sub> (<strong>PRR 2022</strong>). The same toolkit drives ongoing work on high-entropy spinel ferrites, rare-earth compounds, and field- and temperature-dependent magnetic structures.
+      </p>
+      <p class="project-outcome">
+        <strong>The thread:</strong> disorder is not noise — quantifying it is what turns a structure into a mechanism.
       </p>
       <div class="project-tags">
-        <span class="tag">Spin-Orbital Coupling</span>
-        <span class="tag">Jahn-Teller Physics</span>
-        <span class="tag">Cluster Mott Insulators</span>
-        <span class="tag">High Pressure</span>
-      </div>
-    </div>
-    <div class="project-figure">
-      <img src="/assets/images/PRR_GTS.png" alt="Bond ordering and spin-orbital fluctuations in GaTa4Se8">
-    </div>
-  </div>
-
-  <div class="project-card">
-    <div class="project-content">
-      <div class="project-header">
-        <span class="project-title">Disordered &amp; High-Entropy Magnetic Materials</span>
-        <div class="project-links-wrapper">
-          <a href="/publications/" class="project-link">Publications</a>
-        </div>
-      </div>
-      <p class="project-description">
-        Disorder is not noise — it is often where the physics lives. I design scattering strategies for high-entropy spinel ferrites, rare-earth compounds, and field/temperature-dependent magnetic structures, using total scattering/PDF, diffuse scattering, 3D-ΔPDF, and reverse Monte Carlo modeling to extract short-range correlations and hidden local order that conventional crystallography averages away.
-      </p>
-      <div class="project-tags">
-        <span class="tag">High-Entropy Materials</span>
-        <span class="tag">Local Disorder</span>
+        <span class="tag">PDF / 3D-&Delta;PDF</span>
         <span class="tag">Diffuse Scattering</span>
-        <span class="tag">Magnetic Structure</span>
+        <span class="tag">RMC Modeling</span>
+        <span class="tag">Local Symmetry Breaking</span>
+        <span class="tag">High-Entropy Materials</span>
       </div>
     </div>
     <div class="project-figure">
-      <img src="/assets/images/mpdf-correlations.svg" alt="Magnetic pair distribution function and spin correlations concept">
+      <img src="/assets/images/ToC_JACS.png" alt="JACS study: local symmetry breaking coupled to antiferromagnetic order in kagome (Fe,Co)Sn">
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-content">
+      <div class="project-kicker">04 &middot; Method Development</div>
+      <div class="project-header">
+        <span class="project-title">From Static Ensembles to Lattice Dynamics</span>
+        <div class="project-links-wrapper">
+          <a class="project-link" href="https://drthyang.github.io/rmc-phonon-dynamics/" target="_blank" rel="noopener noreferrer">Phonon App ▶</a>
+          <a class="project-link" href="https://github.com/drthyang/rmc-phonon-dynamics" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+      <p class="project-description">
+        RMC ensembles encode experimentally constrained disorder — but only as static snapshots. I extract dynamics from them: phonon bands, DOS, and simulated INS computed directly from ensembles, ~100&times; faster with WebGPU, plus 3D-&Delta;PDF pipelines where every cleanup decision is inspectable. Everything ships as browser tools — your own data, nothing to install.
+      </p>
+      <p class="project-outcome">
+        <strong>Outcome:</strong> measured total scattering to phonon spectra, no separate simulation backend — published as working, open-source software.
+      </p>
+      <div class="project-tags">
+        <span class="tag">RMC Ensembles</span>
+        <span class="tag">Phonons & INS</span>
+        <span class="tag">3D-&Delta;PDF Pipelines</span>
+        <span class="tag">WebGPU</span>
+      </div>
+    </div>
+    <div class="project-figure">
+      <video autoplay loop muted playsinline poster="/assets/images/phonon-concept.svg" aria-label="Animated phonon eigenvector mode extracted from an RMC ensemble, rendered in 3D">
+        <source src="/assets/images/phonon-mode.webm" type="video/webm">
+        <source src="/assets/images/phonon-mode.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
 
   <h2 class="section-heading">Capabilities &amp; Instrumentation</h2>
-  <p class="section-subtitle">The experimental and computational toolkit behind the science</p>
+  <p class="section-subtitle">The experimental and computational toolkit behind the science — knowing where data comes from, and how it breaks, is what separates physics-grounded models from black boxes</p>
 
   <div class="project-card">
     <div class="project-content">
+      <div class="project-kicker">05 &middot; Measurement</div>
       <div class="project-header">
         <span class="project-title">Neutron &amp; Synchrotron Scattering</span>
+        <div class="project-links-wrapper">
+          <a class="project-link" href="/publications/">Publications</a>
+        </div>
       </div>
       <p class="project-description">
         Design and execution of scattering campaigns across 9 SNS and HFIR instruments — including POWGEN, NOMAD, CORELLI, ARCS, CNCS, SEQUOIA, TOPAZ, and DEMAND — plus synchrotron X-ray work at APS, NSLS-II, and CHESS. Techniques span powder and single-crystal diffraction, total scattering/PDF, diffuse scattering, and inelastic neutron scattering under low-temperature, magnetic-field, and specialized sample environments. Authored 10+ successful peer-reviewed beamtime proposals as PI or lead contributor.
@@ -301,12 +391,13 @@ header:
       </div>
     </div>
     <div class="project-figure">
-      <img src="/assets/images/ToC_JACS.png" alt="Neutron scattering study of a kagome magnet">
+      <img src="/assets/images/PRR_GTS.png" alt="Scattering data from synchrotron and neutron measurements of GaTa4Se8">
     </div>
   </div>
 
   <div class="project-card">
     <div class="project-content">
+      <div class="project-kicker">06 &middot; Instrumentation</div>
       <div class="project-header">
         <span class="project-title">Instrumentation &amp; Prototyping</span>
       </div>
@@ -327,6 +418,7 @@ header:
 
   <div class="project-card">
     <div class="project-content">
+      <div class="project-kicker">07 &middot; Synthesis</div>
       <div class="project-header">
         <span class="project-title">Synthesis &amp; Thin-Film Growth</span>
       </div>
@@ -347,14 +439,15 @@ header:
 
   <div class="project-card">
     <div class="project-content">
+      <div class="project-kicker">08 &middot; Modeling</div>
       <div class="project-header">
         <span class="project-title">Computational &amp; Physics-Based Modeling</span>
         <div class="project-links-wrapper">
-          <a href="/software/" class="project-link">Related Tools</a>
+          <a class="project-link" href="/software/">Related Tools</a>
         </div>
       </div>
       <p class="project-description">
-        DFT with Quantum ESPRESSO and VASP, phonon calculations with Phonopy, reverse Monte Carlo modeling with RMCProfile, Rietveld and magnetic structure refinement, NEGF quantum transport, and symmetry analysis with ISODISTORT/FINDSYM/Bilbao tools — all connected through reproducible Python/HPC workflows that validate physical models against high-fidelity experimental observables. This experiment–simulation loop is packaged into open-source scientific software.
+        DFT with Quantum ESPRESSO and VASP, phonon calculations with Phonopy, reverse Monte Carlo modeling with RMCProfile, Rietveld and magnetic structure refinement, NEGF quantum transport, and symmetry analysis with ISODISTORT/FINDSYM/Bilbao tools — all connected through reproducible Python/HPC workflows that validate physical models against high-fidelity experimental observables. This experiment–simulation loop is what the <a href="/software/">open-source tools</a> above package for other researchers.
       </p>
       <div class="project-tags">
         <span class="tag">DFT / Phonopy</span>
@@ -364,8 +457,13 @@ header:
       </div>
     </div>
     <div class="project-figure">
-      <img src="/assets/images/phonon-concept.svg" alt="Phonon dynamics and density of states concept">
+      <img src="/assets/images/mpdf-correlations.svg" alt="Magnetic pair distribution function and spin correlations concept">
     </div>
+  </div>
+
+  <div class="research-cta-row">
+    <a href="/software/" class="btn btn--primary">Explore the Software</a>
+    <a href="/publications/" class="btn btn--primary">View Publications</a>
   </div>
 
 </div>
