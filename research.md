@@ -211,7 +211,7 @@ header:
         </div>
       </div>
       <p class="project-description">
-        The expert loop in scattering analysis — freeing parameters, judging residuals, grading a reduction, watching convergence — never got automated. I study how much of it LLM agents can help with when given real domain tools instead of chat: <a href="https://drthyang.github.io/web-refinement/" target="_blank" rel="noopener noreferrer">MATERIA</a> exposes a refinement engine to agents as 33 contract-tested MCP tools — including one that samples the posterior, so an agent reasons about credible intervals rather than a scalar residual — <a href="https://drthyang.github.io/nebula3d/" target="_blank" rel="noopener noreferrer">NEBULA3D</a> has an LLM grade reduction quality, <a href="https://drthyang.github.io/rmc-toolkits/" target="_blank" rel="noopener noreferrer">RMCProfile Workbench</a> reasons over live runs, and Athanor benchmarks agent-driven screening against non-LLM baselines. All of it is independent, personal open-source work.
+        The expert loop in scattering analysis — freeing parameters, judging residuals, grading a reduction, watching convergence — never got automated. I study how much of it LLM agents can help with when given real domain tools instead of chat: <a href="https://drthyang.github.io/web-refinement/" target="_blank" rel="noopener noreferrer">MATERIA</a> exposes a refinement engine to agents as MCP tools, <a href="https://drthyang.github.io/nebula3d/" target="_blank" rel="noopener noreferrer">NEBULA3D</a> has an LLM grade reduction quality, <a href="https://drthyang.github.io/rmc-toolkits/" target="_blank" rel="noopener noreferrer">RMCProfile Workbench</a> reasons over live runs, and Athanor benchmarks agent-driven screening against non-LLM baselines. All of it is independent, personal open-source work.
       </p>
       <p class="project-outcome">
         <strong>Grounding principles:</strong> physics-based tools the agent must call, uncertainty it can quantify, local-first models, evaluation against baselines — not demos.
@@ -224,7 +224,7 @@ header:
       </div>
     </div>
     <div class="project-figure">
-      <img src="/assets/images/materia-architecture.svg" alt="MATERIA architecture: web app UI, MCP agent server, and web workers sit on shared parsers and visualization, all calling a pure TypeScript scientific core of eight modules validated by 1111 tests">
+      <img src="/assets/images/materia-architecture.svg" alt="MATERIA architecture: web app UI, MCP agent server, and web workers sit on shared parsers and visualization, all calling a pure TypeScript scientific core of eight modules validated by more than 1,300 tests">
     </div>
   </div>
 
