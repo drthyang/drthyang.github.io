@@ -53,7 +53,8 @@ header:
     justify-content: center;
   }
 
-  .software-figure img {
+  .software-figure img,
+  .software-figure video {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Ensures image fills the box without stretching */
@@ -285,8 +286,11 @@ header:
         <span class="tag">React</span><span class="tag">WebGPU</span><span class="tag">RMCProfile</span><span class="tag">Phonons</span><span class="tag">INS</span>
       </div>
     </div>
-    <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
-      <span>[Phonon DOS Image]</span>
+    <div class="software-figure" style="background: #000;">
+      <video autoplay loop muted playsinline poster="/assets/images/phonon-concept.svg" aria-label="Animated phonon eigenvector mode extracted from an RMC ensemble, rendered in 3D">
+        <source src="/assets/images/phonon-mode.webm" type="video/webm">
+        <source src="/assets/images/phonon-mode.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
 
