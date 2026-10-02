@@ -233,8 +233,8 @@ header:
         <span class="tag">Python</span><span class="tag">Pyodide</span><span class="tag">Neutron Scattering</span><span class="tag">Diffuse Scattering</span><span class="tag">3D-ΔPDF</span>
       </div>
     </div>
-    <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
-      <span>[3D Diffuse Viewer]</span>
+    <div class="software-figure">
+      <img src="/assets/images/nebula3d-delta-pdf.jpg" alt="NEBULA3D 3D-ΔPDF view of a synthetic rock-salt dataset: three linked orthogonal real-space cuts through the difference pair-distribution function, with window, contrast and colormap controls">
     </div>
   </div>
 
