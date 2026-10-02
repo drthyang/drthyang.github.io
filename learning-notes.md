@@ -1,4 +1,5 @@
 ---
+published: false  # unpublished 2026-10-02; content is stale
 layout: splash
 title: "Learning Notes"
 author_profile: true
