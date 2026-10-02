@@ -211,7 +211,7 @@ header:
         </div>
       </div>
       <p class="project-description">
-        The expert loop in scattering analysis — freeing parameters, judging residuals, grading a reduction, watching convergence — never got automated. I study how much of it LLM agents can help with when given real domain tools instead of chat: <a href="https://drthyang.github.io/web-refinement/" target="_blank" rel="noopener noreferrer">MATERIA</a> exposes a refinement engine to agents as MCP tools, <a href="https://drthyang.github.io/nebula3d/" target="_blank" rel="noopener noreferrer">NEBULA3D</a> has an LLM grade reduction quality, <a href="https://drthyang.github.io/rmc-toolkits/" target="_blank" rel="noopener noreferrer">RMCProfile Workbench</a> reasons over live runs, and Athanor benchmarks agent-driven screening against non-LLM baselines. All of it is independent, personal open-source work.
+        The expert loop in scattering analysis — freeing parameters, judging residuals, grading a reduction, watching convergence — never got automated. I study how much of it LLM agents can help with when given real domain tools instead of chat: <a href="https://drthyang.github.io/web-refinement/" target="_blank" rel="noopener noreferrer">MATERIA</a> exposes a refinement engine to agents as MCP tools, <a href="https://drthyang.github.io/nebula3d/" target="_blank" rel="noopener noreferrer">NEBULA3D</a> has an LLM grade reduction quality, <a href="https://drthyang.github.io/rmc-toolkits/" target="_blank" rel="noopener noreferrer">RMCProfile Workbench</a> adds an experimental assistant for live runs, and Athanor benchmarks agent-driven screening against non-LLM baselines. All of it is independent, personal open-source work.
       </p>
       <p class="project-outcome">
         <strong>Grounding principles:</strong> physics-based tools the agent must call, uncertainty it can quantify, local-first models, evaluation against baselines — not demos.
@@ -224,7 +224,7 @@ header:
       </div>
     </div>
     <div class="project-figure">
-      <img src="/assets/images/materia-architecture.svg" alt="MATERIA architecture: web app UI, MCP agent server, and web workers sit on shared parsers and visualization, all calling a pure TypeScript scientific core of eight modules validated by more than 1,300 tests">
+      <img src="/assets/images/materia-architecture.svg" alt="MATERIA architecture: web app UI, MCP agent server, and web workers sit on shared parsers and visualization, all calling a pure TypeScript scientific core of thirteen modules validated by more than 1,400 tests">
     </div>
   </div>
 
@@ -235,14 +235,15 @@ header:
         <span class="project-title">Topology &times; Magnetism in Kagome Metals</span>
         <div class="project-links-wrapper">
           <a class="project-link" href="https://doi.org/10.1038/s41467-026-71683-7" target="_blank" rel="noopener noreferrer">Nat. Commun.</a>
+          <a class="project-link" href="https://arxiv.org/abs/2609.09699" target="_blank" rel="noopener noreferrer">Preprint</a>
           <a class="project-link" href="/publications/">Publications</a>
         </div>
       </div>
       <p class="project-description">
-        Kagome magnets host Weyl nodes and anomalous transport that the lattice can in principle switch — if you find a material where the switch operates. My first-author <strong>Nature Communications (2026)</strong> study of Mn<sub>3</sub>Ga found exactly that: an intrinsic topological Weyl phase transition driven by a magnetostructural transformation near room temperature.
+        Kagome magnets host Weyl nodes and anomalous transport that the lattice can in principle switch — if you find a material where the switch operates. My first-author <strong>Nature Communications (2026)</strong> study of Mn<sub>3</sub>Ga found exactly that: an intrinsic topological Weyl phase transition driven by a magnetostructural transformation near room temperature. A new preprint on Mn<sub>3</sub>Sn (<strong>arXiv 2026</strong>) adds the disorder side: correlated local distortions enable an anomalous Hall response that the average symmetry forbids.
       </p>
       <p class="project-outcome">
-        <strong>Why it matters:</strong> a room-temperature, lattice-coupled route to switching topological states — the mechanism antiferromagnetic spintronics needs.
+        <strong>Why it matters:</strong> a lattice-coupled route between distinct Weyl states near room temperature — a potential pathway toward antiferromagnetic spintronics.
       </p>
       <div class="project-tags">
         <span class="tag">Kagome Magnets</span>
@@ -267,7 +268,7 @@ header:
         </div>
       </div>
       <p class="project-description">
-        Average structures hide the physics. Using PDF, diffuse scattering, and large-box RMC modeling, I resolve what conventional crystallography misses: local symmetry breaking emerging <em>with</em> antiferromagnetic order in kagome (Fe,Co)Sn (<strong>JACS 2024</strong>), quadrupolar ordering and spin-orbital dimers in GaNb<sub>4</sub>Se<sub>8</sub> (<strong>PRB 2024</strong>), and bond ordering in the cluster Mott insulator GaTa<sub>4</sub>Se<sub>8</sub> (<strong>PRR 2022</strong>).
+        Average structures hide the physics. Using PDF, diffuse scattering, large-box RMC modeling, and symmetry-mode analysis, I resolve the distortions behind emergent order: local symmetry breaking emerging <em>with</em> antiferromagnetic order in kagome (Co,Fe)Sn (<strong>JACS 2024</strong>), quadrupolar ordering and spin-orbital dimers in GaNb<sub>4</sub>Se<sub>8</sub> (<strong>PRB 2024</strong>), and bond ordering in the cluster Mott insulator GaTa<sub>4</sub>Se<sub>8</sub> (<strong>PRR 2022</strong>).
       </p>
       <p class="project-outcome">
         <strong>The thread:</strong> disorder is not noise — quantifying it is what turns a structure into a mechanism.
@@ -280,7 +281,7 @@ header:
       </div>
     </div>
     <div class="project-figure">
-      <img src="/assets/images/ToC_JACS.png" alt="JACS study: local symmetry breaking coupled to antiferromagnetic order in kagome (Fe,Co)Sn">
+      <img src="/assets/images/ToC_JACS.png" alt="JACS study: local symmetry breaking coupled to antiferromagnetic order in kagome (Co,Fe)Sn">
     </div>
   </div>
 
@@ -295,10 +296,10 @@ header:
         </div>
       </div>
       <p class="project-description">
-        RMC ensembles encode experimentally constrained disorder — but only as static snapshots. I extract dynamics from them: phonon bands, DOS, and simulated INS computed directly from ensembles, ~100&times; faster with WebGPU, plus 3D-&Delta;PDF pipelines where every cleanup decision is inspectable. Everything ships as browser tools — your own data, nothing to install.
+        RMC ensembles encode experimentally constrained disorder — but only as static snapshots. I extract dynamics from them: harmonic phonon bands, DOS, and simulated INS inferred from the ensembles and GPU-accelerated with WebGPU, plus 3D-&Delta;PDF pipelines where every cleanup decision is inspectable. Everything ships as browser tools — your own data, nothing to install.
       </p>
       <p class="project-outcome">
-        <strong>Outcome:</strong> measured total scattering to phonon spectra, no separate simulation backend — published as working, open-source software.
+        <strong>Outcome:</strong> phonon spectra from RMC models of measured total scattering, with no separate simulation backend — released as working, open-source software.
       </p>
       <div class="project-tags">
         <span class="tag">RMC Ensembles</span>
@@ -326,7 +327,7 @@ header:
         </div>
       </div>
       <p class="project-description">
-        I have owned every step of the pipeline. Synthesis: flux and vapor-transport crystals, inert-atmosphere chemistry, MBE thin films. Measurement: neutron and synchrotron experiments designed and run at ORNL's Spallation Neutron Source and other national facilities, plus STM/SP-STM down to single molecules — under cryogenic, high-pressure, and UHV conditions.
+        I have worked hands-on at every step of the pipeline. Synthesis: flux and vapor-transport crystals, inert-atmosphere chemistry, MBE thin films. Measurement: neutron and synchrotron experiments designed and run at ORNL's Spallation Neutron Source and other national facilities, plus STM/SP-STM down to single molecules — under cryogenic, high-pressure, and UHV conditions.
       </p>
       <p class="project-outcome">
         <strong>Why it matters for AI:</strong> knowing where data comes from — and how it breaks — separates physics-grounded models from black boxes.

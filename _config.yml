@@ -8,6 +8,23 @@ baseurl: ""
 
 permalink: pretty
 
+# Keep internal notes and helper scripts out of the public build.
+# Jekyll 3.x replaces (not extends) the default list, so the defaults are repeated here.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - AGENTS.md
+  - CLAUDE.md
+  - TODO.md
+  - improvement-plans/
+  - fix_ssl.rb
+  - preview_cmd
+
 # Read CSS
 custom_css:
   - /assets/css/custom.css
