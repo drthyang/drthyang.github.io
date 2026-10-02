@@ -237,7 +237,7 @@ classes: wide
   <p class="hero-subtitle">Physics-Grounded ML & LLM Agents &middot; Scattering Data &middot; Disorder Modeling &middot; Scientific Software</p>
 
   <p class="hero-lede">
-      I build ML and LLM tools that turn complex scattering data into discovery — grounded in real materials physics, from sample preparation and neutron/synchrotron/STM measurements to physics-based modeling. My niche is owning the path from material and measurement design to reproducible Python/browser/LLM workflows that produce defensible, structure-property insight rather than black-box predictions.
+      I build ML and LLM tools for analyzing complex scattering data — grounded in real materials physics, from sample preparation and neutron/synchrotron/STM measurements to physics-based modeling. My niche is owning the path from material and measurement design to reproducible Python/browser/LLM workflows that produce defensible, structure-property insight rather than black-box predictions.
   </p>
 
   <div class="target-roles-banner">
@@ -279,7 +279,7 @@ classes: wide
   <div class="pillar-card">
     <h4>Scientific Software & AI</h4>
     <p>Build Python/HPC and browser-first tools with Pyodide/WebGPU/React, plus LLM agents for analysis review, retrieval-grounded reasoning, local inference, and evaluation.</p>
-    <p class="pillar-proof"><strong>Proof:</strong> MATERIA, NEBULA3D, RMCProfile Workbench, rmc-phonon-dynamics.</p>
+    <p class="pillar-proof"><strong>Proof:</strong> MATERIA, NEBULA3D, RMCProfile Workbench, RMC Phonon Dynamics.</p>
     <a class="pillar-link" href="/software/">Packages & tools →</a>
   </div>
 </div>
@@ -290,7 +290,7 @@ classes: wide
 <div class="app-grid">
   <div class="core-card">
     <h3>MATERIA</h3>
-    <p>Crystal &amp; magnetic structure refinement in the browser — powder, single-crystal, and PDF on one engine, validated against GSAS-II, with its core available to LLM agents as MCP tools.</p>
+    <p>Crystal &amp; magnetic structure refinement in the browser — powder, single-crystal, and PDF on one engine, cross-checked against GSAS-II, FullProf, and PDFfit2, with its core available to LLM agents as MCP tools.</p>
     <div class="card-footer">
       <div class="tag-container">
         <span class="mini-tag">Rietveld</span>
@@ -322,7 +322,7 @@ classes: wide
 
   <div class="core-card">
     <h3>RMCProfile Workbench</h3>
-    <p>Dashboard for RMCProfile/STOG refinements — live monitoring, space-group detection, WebGPU KDE slices, plus a built-in LLM assistant (local via Ollama/LM Studio or cloud) that reasons over your run and watches convergence.</p>
+    <p>Dashboard for RMCProfile/STOG refinements — live monitoring, space-group detection, WebGPU KDE slices, plus an experimental LLM assistant (local via Ollama/LM Studio, or cloud) that answers questions about your run.</p>
     <div class="card-footer">
       <div class="tag-container">
         <span class="mini-tag">Local LLM</span>
@@ -337,8 +337,8 @@ classes: wide
   </div>
 
   <div class="core-card">
-    <h3>rmc-phonon-dynamics</h3>
-    <p>Phonon band structures, DOS, animated 3D modes, and simulated INS spectra extracted directly from RMC ensembles — with WebGPU compute shaders delivering a ~100&times; speedup.</p>
+    <h3>RMC Phonon Dynamics</h3>
+    <p>Harmonic phonon band structures, DOS, animated 3D modes, and simulated INS spectra inferred from RMC ensembles — GPU-accelerated in the browser with WebGPU.</p>
     <div class="card-footer">
       <div class="tag-container">
         <span class="mini-tag">WebGPU</span>
@@ -355,13 +355,14 @@ classes: wide
 
 <h2 class="home-section-title">📌 Recent highlights</h2>
 
-* [**[Software]**](/software/) **MATERIA Workbench (public beta):** crystal & magnetic structure refinement in the browser — powder, single-crystal, and PDF on one engine, validated against GSAS-II and usable by LLM agents through MCP tools.
-* [**[Publication]**](/publications/) First-author **Nature Communications (2026)** study on Mn<sub>3</sub>Ga, revealing an intrinsic topological phase transition at room temperature driven by a magnetostructural transformation.
-* [**[Software]**](/software/) **scattering-ai-sdk (early development):** an agentic AI layer for scattering science — modular agent skills, retrieval-grounded LLM reasoning, and evaluation harnesses, running fully offline with local models.
-* [**[Software]**](/software/) **Athanor (exploratory):** a closed-loop prototype testing whether an LLM agent can help drive materials screening with physics-grounded surrogates, benchmarked against non-LLM baselines — an early direction I am actively exploring.
-* [**[Software]**](/software/) **Neutron diffuse scattering tools for 3D-ΔPDF analysis released:** Developed a Python-based workflow for 3D-ΔPDF reconstruction and visualization, supporting analysis of local disorder and short-range correlations in complex materials.
-* [**[Publication]**](/publications/) First-author **JACS (2024)** study on kagome (Fe,Co)Sn, revealing coupling between short-range local disorder and a long-range antiferromagnetic transition.
-* [**[Software]**](/software/) **Released rmcph:** a data-processing pipeline and GUI for calculating phonon spectra from total scattering measurements and RMC model ensembles, with integrated tools for phonon processing and visualization.
+* [**[Preprint]**](https://arxiv.org/abs/2609.09699) First-author **arXiv preprint (2026, under review)** on Mn<sub>3</sub>Sn, showing that correlated local disorder enables an anomalous Hall response forbidden by the average crystal and magnetic symmetry.
+* [**[Software]**](/software/) **MATERIA Workbench (public beta):** crystal & magnetic structure refinement in the browser — powder, single-crystal, and PDF on one engine, cross-checked against GSAS-II, FullProf, and PDFfit2, and usable by LLM agents through MCP tools.
+* [**[Publication]**](/publications/) First-author **Nature Communications (2026)** study on Mn<sub>3</sub>Ga, revealing an intrinsic topological Weyl phase transition near room temperature driven by a magnetostructural transformation.
+* [**[Software]**](https://github.com/drthyang/scattering-ai-sdk) **scattering-ai-sdk (early-stage):** an agentic AI layer for scattering science — modular agent skills, retrieval-grounded LLM reasoning, and evaluation harnesses, running fully offline with local models.
+* [**[Software]**](/software/) **Athanor (exploratory):** a closed-loop prototype testing whether an LLM agent can help drive materials screening with physics-grounded surrogates, compared against non-LLM baselines — an early direction I am actively exploring.
+* [**[Software]**](/software/) **NEBULA3D released:** a Python workflow, also runnable in the browser, for cleaning 3D neutron diffuse-scattering data and computing 3D-ΔPDF maps of local disorder and short-range correlations.
+* [**[Publication]**](/publications/) First-author **JACS (2024)** study on kagome (Co,Fe)Sn, revealing coupling between short-range local disorder and a long-range antiferromagnetic transition.
+* [**[Software]**](/software/) **RMC Phonon Dynamics released:** a browser app that infers harmonic phonon spectra from RMC model ensembles fitted to total-scattering data, with interactive dispersion, mode, and INS views.
 
 <div class="cta-row">
   <a href="/publications/" class="btn btn--primary">View Publications</a>

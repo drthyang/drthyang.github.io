@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 790" role="img" aria-labelledby="title desc">
   <title id="title">MATERIA architecture</title>
-  <desc id="desc">Three shells — web app UI, MCP agent server, and web workers — sit on shared parsers and visualization utilities, all calling a pure TypeScript scientific core of eight modules, validated by more than 1,300 tests.</desc>
+  <desc id="desc">Three shells — web app UI, MCP agent server, and web workers — sit on shared parsers and visualization utilities, all calling a pure TypeScript scientific core of thirteen modules, validated by more than 1,400 tests.</desc>
 
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
@@ -18,7 +18,7 @@
 
     <rect x="314" y="20" width="272" height="96" rx="10" fill="#10233c" stroke="#4facfe" stroke-opacity="0.75" stroke-width="1.8"/>
     <text x="450" y="58" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="27" font-weight="700" fill="#eaf4ff">MCP agent server</text>
-    <text x="450" y="90" text-anchor="middle" font-family="'SF Mono', Menlo, monospace" font-size="18" fill="#6fb7f0">src/mcp &#183; 37-tool registry</text>
+    <text x="450" y="90" text-anchor="middle" font-family="'SF Mono', Menlo, monospace" font-size="18" fill="#6fb7f0">src/mcp &#183; 39-tool registry</text>
 
     <rect x="608" y="20" width="272" height="96" rx="10" fill="#10233c" stroke="#4facfe" stroke-opacity="0.75" stroke-width="1.8"/>
     <text x="744" y="58" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="27" font-weight="700" fill="#eaf4ff">Web workers</text>
@@ -79,9 +79,10 @@
     <text x="758" y="496" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="25" font-weight="700" fill="#86e8bb">export</text>
     <text x="758" y="528" text-anchor="middle" font-family="'SF Mono', Menlo, monospace" font-size="17" fill="#8fb3a5">CIF, mCIF, bundles</text>
   </g>
+  <text x="450" y="598" text-anchor="middle" font-family="'SF Mono', Menlo, monospace" font-size="19" fill="#8fb3a5">+ pdf &#183; totalscattering &#183; absorption &#183; project &#183; math</text>
 
   <!-- Validation layer -->
   <rect x="20" y="650" width="860" height="112" rx="10" fill="#151b23" stroke="#39424e" stroke-width="1.6"/>
-  <text x="450" y="696" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="27" font-weight="700" fill="#e2e9f0">Validation layer &#8212; 1,300+ tests</text>
-  <text x="450" y="730" text-anchor="middle" font-family="'SF Mono', Menlo, monospace" font-size="19" fill="#8b98a5">golden GSAS-II datasets &#183; MCP contract shapes &#183; doc-sync</text>
+  <text x="450" y="696" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="27" font-weight="700" fill="#e2e9f0">Validation layer &#8212; 1,400+ tests</text>
+  <text x="450" y="730" text-anchor="middle" font-family="'SF Mono', Menlo, monospace" font-size="19" fill="#8b98a5">GSAS-II, FullProf, PDFfit2 references &#183; MCP contracts &#183; doc-sync</text>
 </svg>

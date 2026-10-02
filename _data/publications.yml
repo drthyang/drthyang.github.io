@@ -17,18 +17,18 @@
   type: "Journal"
   links:
     doi: "10.1038/s41467-026-71683-7"
-    arxiv: ""
+    arxiv: "2603.20610"
     pdf: ""
 
-- title: "Simultaneous Development of Antiferromagnetism and Local Symmetry Breaking in a Kagome Magnet (Fe<sub>0.55</sub>Co<sub>0.45</sub>)Sn"
-  authors: "T.-H. Yang, G. Shan, Y. Zhang, D. Olds, W. Meier, M. B. Stone, B. C. Sales, A. D. Christianson, and Q. Zhang"
+- title: "Simultaneous Development of Antiferromagnetism and Local Symmetry Breaking in a Kagome Magnet (Co<sub>0.45</sub>Fe<sub>0.55</sub>)Sn"
+  authors: "T.-H. Yang, S. Gao, Y. Zhang, D. Olds, W. Meier, M. B. Stone, B. C. Sales, A. D. Christianson, and Q. Zhang"
   venue: "J. Am. Chem. Soc. 146, 34374"
   year: 2024
   date: 2024-12-04
   type: "Journal"
   links:
     doi: "10.1021/jacs.4c09387"
-    arxiv: ""
+    arxiv: "2411.19464"
     pdf: ""
 
 - title: "Jahn-Teller Driven Quadrupolar Ordering and Spin-orbital Dimer Formation in GaNb<sub>4</sub>Se<sub>8</sub>"
@@ -39,7 +39,7 @@
   type: "Journal"
   links:
     doi: "10.1103/PhysRevB.109.144101"
-    arxiv: ""
+    arxiv: "2401.04671"
     pdf: ""
 
 - title: "Bond Ordering and Molecular Spin-orbital Fluctuations in the Cluster Mott Insulator GaTa<sub>4</sub>Se<sub>8</sub>"
@@ -50,7 +50,7 @@
   type: "Journal"
   links:
     doi: "10.1103/PhysRevResearch.4.033123"
-    arxiv: ""
+    arxiv: "2206.07738"
     pdf: ""
 
 - title: "Tuning Molecule-Substrate Coupling via Deposition of Metal Adatoms"
@@ -65,7 +65,7 @@
     pdf: ""
 
 - title: "Spin-Dependent Molecule Symmetry at a Pentacene-Co Spinterface"
-  authors: "Y.-H. Chu, C.-H. Hsu, C.-I. Lu, H.-H. Yang, T.-H. Yang, C.-H. Luo, K.-J. Yang, S.-H. Hsu, C.-C. Kaun, G. Hoffmann, and M.-T. Lin"
+  authors: "Y.-H. Chu, C.-H. Hsu, C.-I. Lu, H.-H. Yang, T.-H. Yang, C.-H. Luo, K.-J. Yang, S.-H. Hsu, G. Hoffmann, C.-C. Kaun, and M.-T. Lin"
   venue: "ACS Nano 9, 7027"
   year: 2015
   date: 2015-06-17

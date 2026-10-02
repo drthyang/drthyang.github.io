@@ -168,7 +168,7 @@ header:
       </p>
       <ul class="case-list">
         <li><strong>Problem:</strong> Refinement means choosing among several specialist packages, each with its own formats and conventions &mdash; a steep start before a first fit.</li>
-        <li><strong>Approach:</strong> A tested TypeScript core (1,300+ tests), validated against GSAS-II, behind a guided workflow from data import to refined nuclear and magnetic structures.</li>
+        <li><strong>Approach:</strong> A tested TypeScript core (1,400+ tests), cross-checked against GSAS-II, FullProf, and PDFfit2, behind a guided workflow from data import to refined nuclear and magnetic structures.</li>
         <li><strong>Value:</strong> Nothing to install and data stays local. Fits report correlations and uncertainties, not just an agreement factor, and the same core is available to LLM agents through MCP.</li>
       </ul>
       <div class="software-tags">
@@ -190,15 +190,15 @@ header:
         </div>
       </div>
       <p class="software-subtitle">
-        Neutron Elastic Background Utilities for Local Analysis &amp; 3D-delta PDF.
+        Neutron Elastic Background Utility for Local Analysis and 3D-ΔPDF.
       </p>
       <p class="software-description">
         A Python toolkit and browser app that cleans 3D neutron diffuse-scattering data and computes 3D-ΔPDF maps.
       </p>
       <ul class="case-list">
         <li><strong>Problem:</strong> Weak diffuse signal is often buried under powder rings, Bragg peaks, and background before any 3D-ΔPDF interpretation can begin.</li>
-        <li><strong>Approach:</strong> One reproducible pipeline for background removal, peak masking, and the ΔPDF transform, with visual checks at each step.</li>
-        <li><strong>Value:</strong> Runs natively at full resolution or in the browser via Pyodide, so every cleanup decision is inspectable and repeatable.</li>
+        <li><strong>Approach:</strong> One reproducible pipeline &mdash; powder-ring subtraction, Bragg-peak removal and backfill, background flattening, and the ΔPDF transform &mdash; with visual checks at each step.</li>
+        <li><strong>Value:</strong> The same pipeline runs natively or entirely in the browser via Pyodide, so every cleanup decision is inspectable and repeatable.</li>
       </ul>
       <div class="software-tags">
         <span class="tag">Python</span><span class="tag">Pyodide</span><span class="tag">Neutron Scattering</span><span class="tag">Diffuse Scattering</span><span class="tag">3D-ΔPDF</span>
@@ -224,7 +224,7 @@ header:
       <ul class="case-list">
         <li><strong>Problem:</strong> Judging an RMC refinement means reading plots, logs, structures, and fit metrics that live in separate files and tools.</li>
         <li><strong>Approach:</strong> Reads a run folder in place and brings fits, density maps, displacement analysis, and 3D structures into one view.</li>
-        <li><strong>Value:</strong> Live monitoring while a run writes, figure export, and an optional AI assistant that helps interpret the fit.</li>
+        <li><strong>Value:</strong> Live monitoring while a run writes, figure export, and an optional, experimental AI assistant that helps interpret the fit.</li>
       </ul>
       <div class="software-tags">
         <span class="tag">React</span><span class="tag">RMCProfile</span><span class="tag">WebGPU</span><span class="tag">Three.js</span><span class="tag">AI Assistant</span><span class="tag">Live Monitoring</span>
@@ -245,12 +245,12 @@ header:
         </div>
       </div>
       <p class="software-description">
-        A browser app that computes phonon band structures, animated modes, simulated neutron spectra, and DOS from RMCProfile ensembles.
+        A browser app that infers harmonic phonon band structures, animated modes, simulated neutron spectra, and DOS from RMCProfile ensembles.
       </p>
       <ul class="case-list">
         <li><strong>Problem:</strong> RMC models capture measured local disorder, but turning them into lattice dynamics usually takes separate scripts and a computing backend.</li>
-        <li><strong>Approach:</strong> Extracts phonons directly from the ensemble and runs the heavy linear algebra on the user's GPU &mdash; a ~100&times; speedup from WebGPU.</li>
-        <li><strong>Value:</strong> Interactive dispersion curves, mode animation, and simulated INS with phonopy-compatible export &mdash; no scientific stack to install.</li>
+        <li><strong>Approach:</strong> Derives phonons from the ensemble's displacement correlations and runs the heavy linear algebra on the user's GPU via WebGPU.</li>
+        <li><strong>Value:</strong> Interactive dispersion curves, mode animation, and simulated INS with phonopy-style export &mdash; no scientific stack to install.</li>
       </ul>
       <div class="software-tags">
         <span class="tag">React</span><span class="tag">WebGPU</span><span class="tag">RMCProfile</span><span class="tag">Phonons</span><span class="tag">INS</span>
@@ -271,12 +271,12 @@ header:
         An early, exploratory prototype — a research direction I am actively learning in, not a finished tool.
       </p>
       <p class="software-description">
-        A closed-loop experiment: an LLM agent proposes candidate materials, screens them with physics-based models, and iterates on the results &mdash; on local models by default.
+        A closed-loop experiment: an LLM agent proposes candidate materials, screens them with physics-grounded surrogate models, and iterates on the results &mdash; on local models by default.
       </p>
       <ul class="case-list">
         <li><strong>Question:</strong> Can an LLM agent using real domain tools help decide which materials to try next &mdash; measurably, not anecdotally?</li>
         <li><strong>Approach:</strong> A proposer and an independent critic drive deterministic tools (CHGNet relaxation, convex-hull stability, band-gap models), with every candidate logged.</li>
-        <li><strong>Honest status:</strong> An early prototype. Results are compared against non-LLM baselines and should be treated as exploratory.</li>
+        <li><strong>Honest status:</strong> An early prototype. Compared against non-LLM baselines under the same cap on relaxations, not matched on total compute &mdash; results are exploratory.</li>
       </ul>
       <div class="software-tags">
         <span class="tag">Python</span><span class="tag">LLM Agents</span><span class="tag">Ollama</span><span class="tag">CHGNet</span><span class="tag">Materials Project</span>

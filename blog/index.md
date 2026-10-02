@@ -12,6 +12,6 @@ header:
 ---
 
 # Welcome to my digital notebook
-Here I document my work in **condensed matter physics**, **data science**, and **scientific computing**. You will find tutorials on Python, RMCProfile, and notes from my daily research.
+Short notes on my work in **condensed matter physics**, **scattering**, and **scientific computing**.
 
 ---
