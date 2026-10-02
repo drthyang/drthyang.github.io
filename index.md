@@ -355,6 +355,7 @@ classes: wide
 
 <h2 class="home-section-title">📌 Recent highlights</h2>
 
+* [**[Software]**](/software/) **NeXus Viewer released:** a browser viewer for 3D neutron scattering volumes — reciprocal-space slices, symmetry averaging, and artifact masking — that hands the cleaned volume straight to NEBULA3D for 3D-ΔPDF analysis.
 * [**[Preprint]**](https://arxiv.org/abs/2609.09699) First-author **arXiv preprint (2026, under review)** on Mn<sub>3</sub>Sn, showing that correlated local disorder enables an anomalous Hall response forbidden by the average crystal and magnetic symmetry.
 * [**[Software]**](/software/) **MATERIA Workbench (public beta):** crystal & magnetic structure refinement in the browser — powder, single-crystal, and PDF on one engine, cross-checked against GSAS-II, FullProf, and PDFfit2, and usable by LLM agents through MCP tools.
 * [**[Publication]**](/publications/) First-author **Nature Communications (2026)** study on Mn<sub>3</sub>Ga, revealing an intrinsic topological Weyl phase transition near room temperature driven by a magnetostructural transformation.

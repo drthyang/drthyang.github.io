@@ -183,6 +183,35 @@ header:
   <div class="software-card">
     <div class="software-content">
       <div class="software-header">
+        <span class="software-title">NeXus Viewer</span>
+        <div style="display: flex; gap: 8px;">
+          <a href="https://drthyang.github.io/neutron-nexus-viewer/" class="software-link" target="_blank" rel="noopener noreferrer">Web App</a>
+          <a href="https://github.com/drthyang/neutron-nexus-viewer" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+      <p class="software-subtitle">
+        Quick looks at 3D neutron scattering volumes, in the browser.
+      </p>
+      <p class="software-description">
+        A no-install viewer for Mantid MDHistoWorkspace and 3D NXdata files, with reciprocal-space slices, line cuts, symmetry averaging, and artifact masking &mdash; then one click hands the cleaned volume to NEBULA3D.
+      </p>
+      <ul class="case-list">
+        <li><strong>Problem:</strong> A first look at a 3D single-crystal volume usually means opening Mantid or writing one-off scripts.</li>
+        <li><strong>Approach:</strong> Slices drawn in true reciprocal geometry from the UB matrix, and symmetry averaging applied exactly on the bin grid for any Laue class, with a check that the operations fit the cell.</li>
+        <li><strong>Value:</strong> Opens a 401&sup3; volume in about 2 s with data kept local, compares two temperatures side by side, and exports a symmetrized, masked volume straight into NEBULA3D&#39;s 3D-ΔPDF pipeline.</li>
+      </ul>
+      <div class="software-tags">
+        <span class="tag">JavaScript</span><span class="tag">h5wasm</span><span class="tag">NeXus / Mantid</span><span class="tag">Symmetry Averaging</span><span class="tag">Diffuse Scattering</span>
+      </div>
+    </div>
+    <div class="software-figure">
+      <img src="/assets/images/nexus-viewer.jpg" alt="NeXus Viewer comparing a synthetic crystal at 300 K and 10 K: HK and HL slices split along the diagonal, with 6/mmm symmetry averaging applied, showing diffuse short-range-order scattering at 300 K condensing into superlattice peaks at 10 K">
+    </div>
+  </div>
+
+  <div class="software-card">
+    <div class="software-content">
+      <div class="software-header">
         <span class="software-title">NEBULA3D</span>
         <div style="display: flex; gap: 8px;">
           <a href="https://drthyang.github.io/nebula3d/" class="software-link" target="_blank" rel="noopener noreferrer">Web App</a>
