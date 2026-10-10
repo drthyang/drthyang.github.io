@@ -169,9 +169,9 @@ header:
       </p>
       <ul class="case-list">
         <li><strong>Problem:</strong> Refinement means choosing among several specialist packages, each with its own formats and conventions &mdash; a steep start before a first fit.</li>
-        <li><strong>Approach:</strong> A tested TypeScript core (1,800+ tests), cross-checked against GSAS-II, FullProf, and PDFfit2, behind a guided workflow from data import to refined nuclear and magnetic structures.</li>
+        <li><strong>Approach:</strong> A tested TypeScript core (1,700+ tests), cross-checked against GSAS-II, FullProf, and PDFfit2, behind a guided workflow from data import to refined nuclear and magnetic structures.</li>
         <li><strong>Value:</strong> Nothing to install and data stays local. Fits report correlations and uncertainties, not just an agreement factor.</li>
-        <li><strong>AI agent:</strong> An in-app Agent (Claude, or a local model on Ollama or LM Studio) with 42 tools reads the live fit and works through the page&#39;s own controls. <em>Ask first</em> puts each change on an approval card, <em>Auto</em> works through the method&#39;s stages on its own, and every change is an undoable History step; the refinement engine, not the model, sets every value. It reads five agent skills on demand, its method rules are enforced in code, ten eval scenarios written from real failures replay in CI, and it can check an unconvincing number with a Bayesian posterior. The same core is open to other agents as 40 MCP tools.</li>
+        <li><strong>AI agent:</strong> An in-app Agent (Claude or a local model) works the fit through the page&#39;s own controls; you approve each change and can undo it, and the engine, not the model, computes every refined value. The same core is open to other agents as MCP tools.</li>
       </ul>
       <div class="software-tags">
         <span class="tag">TypeScript</span><span class="tag">Rietveld</span><span class="tag">Single Crystal</span><span class="tag">PDF</span><span class="tag">Magnetic Structures</span><span class="tag">AI Agent</span><span class="tag">MCP Agent Tools</span>
@@ -230,7 +230,7 @@ header:
         <li><strong>Problem:</strong> Weak diffuse signal is often buried under powder rings, Bragg peaks, and background before any 3D-ΔPDF interpretation can begin.</li>
         <li><strong>Approach:</strong> One reproducible pipeline &mdash; powder-ring subtraction, Bragg-peak removal and backfill, background flattening, and the ΔPDF transform &mdash; with visual checks at each step, symmetry averaging so the ΔPDF keeps the declared symmetry, and UB refinement from Bragg-peak positions.</li>
         <li><strong>Value:</strong> The same pipeline runs natively or entirely in the browser via Pyodide, so every cleanup decision is inspectable and repeatable; 570+ Python and 300+ web tests.</li>
-        <li><strong>AI agent:</strong> NEBULA Pilot, a panel beside every page, connects to a local or cloud model that works through 22 tools: it grades each stage from deterministic, unit-tested metrics, checks the ΔPDF against the crystal&#39;s symmetry and the measured coverage, and can run and tune the pipeline stage by stage &mdash; choosing only from a checked catalog, with a hard-limit veto. It writes a measured analysis report (HTML/PDF or Markdown).</li>
+        <li><strong>AI agent:</strong> NEBULA Pilot, on a local or cloud model, grades each stage from unit-tested metrics, tunes the pipeline within hard limits, and writes a measured analysis report.</li>
       </ul>
       <div class="software-tags">
         <span class="tag">Python</span><span class="tag">Pyodide</span><span class="tag">Neutron Scattering</span><span class="tag">Diffuse Scattering</span><span class="tag">3D-ΔPDF</span><span class="tag">AI Agent</span>
@@ -257,7 +257,7 @@ header:
         <li><strong>Problem:</strong> Judging an RMC refinement means reading plots, logs, structures, and fit metrics that live in separate files and tools.</li>
         <li><strong>Approach:</strong> Reads a run folder in place and brings fits, density maps, displacement analysis, and 3D structures into one view.</li>
         <li><strong>Value:</strong> Live monitoring while a run writes, and figure export.</li>
-        <li><strong>AI agent:</strong> An optional AI Copilot on every page answers questions about the run by calling seven of the Workbench&#39;s own analyses through tool calls, checks each result with deterministic checks before using it, and ends with an Outcome verdict on whether the question was answered. Beta: built and tested with scripted model replies; real-model testing has just begun.</li>
+        <li><strong>AI agent (in development):</strong> An AI Copilot that answers questions about the run by calling the Workbench&#39;s own analyses and checking each result; on two local models, 5 and 4 of 6 answers were fully right. Not yet in the live app.</li>
       </ul>
       <div class="software-tags">
         <span class="tag">React</span><span class="tag">RMCProfile</span><span class="tag">WebGPU</span><span class="tag">Three.js</span><span class="tag">AI Copilot</span><span class="tag">Live Monitoring</span>
@@ -315,7 +315,7 @@ header:
       <ul class="case-list">
         <li><strong>Problem:</strong> Planning a beamtime means working out, instrument by instrument, which reflections a setting records and what the data will resolve.</li>
         <li><strong>Approach:</strong> Instrument geometry from Mantid&#39;s instrument definitions and measured peak widths, with every formula and data source documented; geometry and relative Bragg intensities only.</li>
-        <li><strong>AI agent:</strong> The same calculations are 26 tools for AI agents, served over MCP, including hand-offs that write inputs for MATERIA, NEBULA3D, and the NeXus Viewer.</li>
+        <li><strong>AI agent (in development):</strong> The same calculations as 26 MCP tools for AI agents, including hand-offs that write inputs for MATERIA, NEBULA3D, and the NeXus Viewer.</li>
       </ul>
       <div class="software-tags">
         <span class="tag">TypeScript</span><span class="tag">Experiment Planning</span><span class="tag">TOPAZ / CORELLI</span><span class="tag">NOMAD / POWGEN</span><span class="tag">MCP Agent Tools</span>

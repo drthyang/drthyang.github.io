@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 790" role="img" aria-labelledby="title desc">
   <title id="title">MATERIA architecture</title>
-  <desc id="desc">Four shells — the web app UI, the in-app Agent, the MCP agent server, and web workers — sit on shared parsers and visualization utilities, all calling a pure TypeScript scientific core of thirteen modules, validated by more than 1,800 tests.</desc>
+  <desc id="desc">Four shells — the web app UI, the in-app Agent, the MCP agent server, and web workers — sit on shared parsers and visualization utilities, all calling a pure TypeScript scientific core of thirteen modules, validated by more than 1,700 tests.</desc>
 
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
@@ -18,11 +18,11 @@
 
     <rect x="239" y="20" width="203" height="96" rx="10" fill="#10233c" stroke="#4facfe" stroke-opacity="0.75" stroke-width="1.8"/>
     <text x="340.5" y="58" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#eaf4ff">In-app Agent</text>
-    <text x="340.5" y="90" text-anchor="middle" font-family="'SF Mono', Menlo, monospace" font-size="15" fill="#6fb7f0">src/agent &#183; 42 tools</text>
+    <text x="340.5" y="90" text-anchor="middle" font-family="'SF Mono', Menlo, monospace" font-size="15" fill="#6fb7f0">src/agent &#183; chat</text>
 
     <rect x="458" y="20" width="203" height="96" rx="10" fill="#10233c" stroke="#4facfe" stroke-opacity="0.75" stroke-width="1.8"/>
     <text x="559.5" y="58" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#eaf4ff">MCP server</text>
-    <text x="559.5" y="90" text-anchor="middle" font-family="'SF Mono', Menlo, monospace" font-size="15" fill="#6fb7f0">src/mcp &#183; 40 tools</text>
+    <text x="559.5" y="90" text-anchor="middle" font-family="'SF Mono', Menlo, monospace" font-size="15" fill="#6fb7f0">src/mcp &#183; stdio</text>
 
     <rect x="677" y="20" width="203" height="96" rx="10" fill="#10233c" stroke="#4facfe" stroke-opacity="0.75" stroke-width="1.8"/>
     <text x="778.5" y="58" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#eaf4ff">Web workers</text>
@@ -88,6 +88,6 @@
 
   <!-- Validation layer -->
   <rect x="20" y="650" width="860" height="112" rx="10" fill="#151b23" stroke="#39424e" stroke-width="1.6"/>
-  <text x="450" y="696" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="27" font-weight="700" fill="#e2e9f0">Validation layer &#8212; 1,800+ tests</text>
-  <text x="450" y="730" text-anchor="middle" font-family="'SF Mono', Menlo, monospace" font-size="17" fill="#8b98a5">GSAS-II, FullProf, PDFfit2 references &#183; MCP contracts &#183; agent evals</text>
+  <text x="450" y="696" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="27" font-weight="700" fill="#e2e9f0">Validation layer &#8212; 1,700+ tests</text>
+  <text x="450" y="730" text-anchor="middle" font-family="'SF Mono', Menlo, monospace" font-size="17" fill="#8b98a5">GSAS-II, FullProf, PDFfit2 references &#183; MCP contracts &#183; agent tests</text>
 </svg>
