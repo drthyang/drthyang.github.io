@@ -135,7 +135,7 @@ classes: wide
   <div class="strength-card">
     <span class="strength-title">AI for Science — ML & LLM Agent Tooling</span>
     <p style="margin-bottom: 0;">
-      I build ML and LLM tools grounded in real materials R&D rather than black-box prediction. This includes browser-first scientific apps (Pyodide/WebGPU/React), LLM agents exposed to a pure scientific core through <span class="highlight">MCP tools</span> that assess fits, sample posteriors, and suggest next steps, retrieval-grounded reasoning, local/offline inference, and evaluation harnesses that benchmark agent behavior against non-LLM baselines. Shipped in <span class="highlight">MATERIA</span>, <span class="highlight">NEBULA3D</span>, and <span class="highlight">RMCProfile Workbench</span>, with <span class="highlight">Athanor</span> as an exploratory closed-loop materials-screening agent.
+      I build ML and LLM tools grounded in real materials R&D rather than black-box prediction: browser-first scientific apps (Pyodide/WebGPU/React), and AI agents that work through those apps&#39; own analyses, in-app or over <span class="highlight">MCP tools</span>, on local or cloud models. Live in <span class="highlight">MATERIA</span> and <span class="highlight">NEBULA3D</span>; <span class="highlight">RMCProfile Workbench</span>&#39;s AI Copilot and <span class="highlight">NEXPLAN</span>&#39;s MCP tools are in development, with <span class="highlight">Athanor</span> as an exploratory materials-screening agent. One design runs through all of them (<a href="/agents/">AI agents for scattering analysis</a>).
     </p>
   </div>
 
@@ -197,6 +197,7 @@ classes: wide
       <span class="skill-tag">MCP / Agent Tools</span>
       <span class="skill-tag">Retrieval-Grounded Reasoning (RAG)</span>
       <span class="skill-tag">Local / Offline Inference (Ollama / LM Studio)</span>
+      <span class="skill-tag">Agent Skills &amp; Eval Suites</span>
       <span class="skill-tag">Evaluation Harnesses</span>
       <span class="skill-tag">Physics-Grounded Surrogate Models</span>
       <span class="skill-tag">Browser-First ML (Pyodide / WebGPU)</span>

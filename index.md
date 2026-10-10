@@ -250,7 +250,7 @@ classes: wide
     <a class="proof-item" href="/publications/">First-author: Nature Communications &middot; JACS →</a>
     <span class="proof-item">Neutron, synchrotron & STM measurements</span>
     <span class="proof-item">Open-source Python/WebGPU tools</span>
-    <span class="proof-item">Local-first LLM analysis workflows</span>
+    <span class="proof-item">Tool-using LLM agents, local-first</span>
   </div>
 </div>
 
@@ -278,24 +278,24 @@ classes: wide
   </div>
   <div class="pillar-card">
     <h4>Scientific Software & AI</h4>
-    <p>Build Python/HPC and browser-first tools with Pyodide/WebGPU/React, plus LLM agents for analysis review, retrieval-grounded reasoning, local inference, and evaluation.</p>
+    <p>Build Python/HPC and browser-first tools with Pyodide/WebGPU/React, plus AI agents on top of them, with numbers and guardrails in tested code.</p>
     <p class="pillar-proof"><strong>Proof:</strong> MATERIA, NEBULA3D, RMCProfile Workbench, RMC Phonon Dynamics.</p>
     <a class="pillar-link" href="/software/">Packages & tools →</a>
   </div>
 </div>
 
 <h2 class="home-section-title">Scientific software I ship</h2>
-<p class="home-section-sub">Browser-first research tools for structure refinement and neutron/RMC/phonon analysis: local data, inspectable workflows, and reproducible outputs.</p>
+<p class="home-section-sub">Browser-first research tools for structure refinement and neutron/RMC/phonon analysis: local data, inspectable workflows, and reproducible outputs. <a href="/agents/" style="color: #4facfe; text-decoration: none; font-weight: 600;">How their AI agents are built →</a></p>
 
 <div class="app-grid">
   <div class="core-card">
     <h3>MATERIA</h3>
-    <p>Crystal &amp; magnetic structure refinement in the browser — powder, single-crystal, and PDF on one engine, cross-checked against GSAS-II, FullProf, and PDFfit2, with its core available to LLM agents as MCP tools.</p>
+    <p>Crystal &amp; magnetic structure refinement in the browser — powder, single-crystal, and PDF on one engine, cross-checked against GSAS-II, FullProf, and PDFfit2, with an in-app AI Agent that works the fit through the page&#39;s own controls.</p>
     <div class="card-footer">
       <div class="tag-container">
         <span class="mini-tag">Rietveld</span>
         <span class="mini-tag">PDF</span>
-        <span class="mini-tag">MCP Agents</span>
+        <span class="mini-tag">AI Agent</span>
       </div>
       <div class="card-links">
         <a class="launch" href="https://drthyang.github.io/web-refinement/">Launch ▶</a>
@@ -306,12 +306,12 @@ classes: wide
 
   <div class="core-card">
     <h3>NEBULA3D</h3>
-    <p>Cleans 3D reciprocal-space neutron diffuse-scattering volumes and computes 3D-&Delta;PDF maps — the complete Python pipeline runs client-side via Pyodide, with an optional AI reasoning review where a local or cloud LLM grades the reduction quality.</p>
+    <p>Cleans 3D neutron diffuse-scattering volumes and computes 3D-&Delta;PDF maps in the browser via Pyodide, with NEBULA Pilot, an AI agent that grades and tunes each stage within hard limits.</p>
     <div class="card-footer">
       <div class="tag-container">
         <span class="mini-tag">Pyodide</span>
         <span class="mini-tag">3D-&Delta;PDF</span>
-        <span class="mini-tag">LLM Review</span>
+        <span class="mini-tag">AI Agent</span>
       </div>
       <div class="card-links">
         <a class="launch" href="https://drthyang.github.io/nebula3d/">Launch ▶</a>
@@ -322,10 +322,10 @@ classes: wide
 
   <div class="core-card">
     <h3>RMCProfile Workbench</h3>
-    <p>Dashboard for RMCProfile/STOG refinements — live monitoring, space-group detection, WebGPU KDE slices, plus an experimental LLM assistant (local via Ollama/LM Studio, or cloud) that answers questions about your run.</p>
+    <p>Dashboard for RMCProfile/STOG refinements — live monitoring, space-group detection, WebGPU KDE slices, and an AI Copilot in development that answers questions by running the dashboard&#39;s own analyses.</p>
     <div class="card-footer">
       <div class="tag-container">
-        <span class="mini-tag">Local LLM</span>
+        <span class="mini-tag">AI Copilot</span>
         <span class="mini-tag">WebGPU</span>
         <span class="mini-tag">RMCProfile</span>
       </div>
@@ -356,10 +356,11 @@ classes: wide
 <h2 class="home-section-title">📌 Recent highlights</h2>
 
 * [**[Preprint]**](https://arxiv.org/abs/2609.09699) First-author **arXiv preprint (2026, under review)** on Mn<sub>3</sub>Sn, showing that correlated local disorder enables an anomalous Hall response forbidden by the average crystal and magnetic symmetry.
-* [**[Software]**](/software/) **MATERIA Workbench (public beta):** crystal & magnetic structure refinement in the browser — powder, single-crystal, and PDF on one engine, cross-checked against GSAS-II, FullProf, and PDFfit2, and usable by LLM agents through MCP tools.
+* [**[AI Agents]**](/agents/) **AI agents for scattering analysis:** one design across my scattering tools &mdash; agents on tested scientific cores, with numbers and guardrails in code. Early, solo work, with its limits stated.
+* [**[Software]**](/software/) **MATERIA Workbench (public beta):** crystal & magnetic structure refinement in the browser, cross-checked against GSAS-II, FullProf, and PDFfit2, with an in-app AI Agent whose changes you approve and can undo.
 * [**[Publication]**](/publications/) First-author **Nature Communications (2026)** study on Mn<sub>3</sub>Ga, revealing an intrinsic topological Weyl phase transition near room temperature driven by a magnetostructural transformation.
-* [**[Software]**](/software/) **Athanor (exploratory):** a closed-loop prototype testing whether an LLM agent can help drive materials screening with physics-grounded surrogates, compared against non-LLM baselines — an early direction I am actively exploring.
-* [**[Software]**](/software/) **NEBULA3D released:** a Python workflow, also runnable in the browser, for cleaning 3D neutron diffuse-scattering data and computing 3D-ΔPDF maps of local disorder and short-range correlations.
+* [**[Software]**](/software/) **Athanor (exploratory):** a closed-loop prototype testing whether an LLM agent can help drive materials screening, compared against non-LLM baselines.
+* [**[Software]**](/software/) **NEBULA3D released:** cleans 3D neutron diffuse-scattering data and computes 3D-ΔPDF maps of local disorder, in Python or the browser &mdash; now with NEBULA Pilot, an AI agent that grades and tunes the reduction.
 * [**[Publication]**](/publications/) First-author **JACS (2024)** study on kagome (Co,Fe)Sn, revealing coupling between short-range local disorder and a long-range antiferromagnetic transition.
 * [**[Software]**](/software/) **RMC Phonon Dynamics released:** a browser app that infers harmonic phonon spectra from RMC model ensembles fitted to total-scattering data, with interactive dispersion, mode, and INS views.
 

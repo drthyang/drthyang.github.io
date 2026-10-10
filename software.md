@@ -149,7 +149,7 @@ header:
 <div class="software-container">
 
   <p class="software-description" style="margin: 0 0 0.5rem 0; max-width: 920px;">
-    Browser-first research tools for crystal &amp; magnetic structure refinement, RMC analysis, neutron diffuse scattering, and phonon dynamics. These projects emphasize local data privacy, interactive visualization, and deployable workflows that can run directly from GitHub Pages when the science allows it.
+    Browser-first research tools for crystal &amp; magnetic structure refinement, RMC analysis, neutron diffuse scattering, phonon dynamics, and experiment planning, several with AI agents that work through the tools&#39; own analyses (<a href="/agents/" style="color: #4facfe;">how the agents are built</a>). These projects emphasize local data privacy, interactive visualization, and deployable workflows that can run directly from GitHub Pages when the science allows it.
   </p>
 
   <div class="software-card">
@@ -169,11 +169,12 @@ header:
       </p>
       <ul class="case-list">
         <li><strong>Problem:</strong> Refinement means choosing among several specialist packages, each with its own formats and conventions &mdash; a steep start before a first fit.</li>
-        <li><strong>Approach:</strong> A tested TypeScript core (1,400+ tests), cross-checked against GSAS-II, FullProf, and PDFfit2, behind a guided workflow from data import to refined nuclear and magnetic structures.</li>
-        <li><strong>Value:</strong> Nothing to install and data stays local. Fits report correlations and uncertainties, not just an agreement factor, and the same core is available to LLM agents through MCP.</li>
+        <li><strong>Approach:</strong> A tested TypeScript core (1,700+ tests), cross-checked against GSAS-II, FullProf, and PDFfit2, behind a guided workflow from data import to refined nuclear and magnetic structures.</li>
+        <li><strong>Value:</strong> Nothing to install and data stays local. Fits report correlations and uncertainties, not just an agreement factor.</li>
+        <li><strong>AI agent:</strong> An in-app Agent (Claude or a local model) works the fit through the page&#39;s own controls; you approve each change and can undo it, and the engine, not the model, computes every refined value. The same core is open to other agents as MCP tools.</li>
       </ul>
       <div class="software-tags">
-        <span class="tag">TypeScript</span><span class="tag">Rietveld</span><span class="tag">Single Crystal</span><span class="tag">PDF</span><span class="tag">Magnetic Structures</span><span class="tag">MCP Agent Tools</span>
+        <span class="tag">TypeScript</span><span class="tag">Rietveld</span><span class="tag">Single Crystal</span><span class="tag">PDF</span><span class="tag">Magnetic Structures</span><span class="tag">AI Agent</span><span class="tag">MCP Agent Tools</span>
       </div>
     </div>
     <div class="software-figure">
@@ -223,15 +224,16 @@ header:
         Neutron Elastic Background Utility for Local Analysis and 3D-ΔPDF.
       </p>
       <p class="software-description">
-        A Python toolkit and browser app that cleans 3D neutron diffuse-scattering data and computes 3D-ΔPDF maps.
+        A Python toolkit and browser app that cleans 3D neutron or X-ray diffuse-scattering volumes and computes 3D-ΔPDF maps.
       </p>
       <ul class="case-list">
         <li><strong>Problem:</strong> Weak diffuse signal is often buried under powder rings, Bragg peaks, and background before any 3D-ΔPDF interpretation can begin.</li>
-        <li><strong>Approach:</strong> One reproducible pipeline &mdash; powder-ring subtraction, Bragg-peak removal and backfill, background flattening, and the ΔPDF transform &mdash; with visual checks at each step.</li>
-        <li><strong>Value:</strong> The same pipeline runs natively or entirely in the browser via Pyodide, so every cleanup decision is inspectable and repeatable.</li>
+        <li><strong>Approach:</strong> One reproducible pipeline &mdash; powder-ring subtraction, Bragg-peak removal and backfill, background flattening, and the ΔPDF transform &mdash; with visual checks at each step, symmetry averaging so the ΔPDF keeps the declared symmetry, and UB refinement from Bragg-peak positions.</li>
+        <li><strong>Value:</strong> The same pipeline runs natively or entirely in the browser via Pyodide, so every cleanup decision is inspectable and repeatable; 570+ Python and 300+ web tests.</li>
+        <li><strong>AI agent:</strong> NEBULA Pilot, on a local or cloud model, grades each stage from unit-tested metrics, tunes the pipeline within hard limits, and writes a measured analysis report.</li>
       </ul>
       <div class="software-tags">
-        <span class="tag">Python</span><span class="tag">Pyodide</span><span class="tag">Neutron Scattering</span><span class="tag">Diffuse Scattering</span><span class="tag">3D-ΔPDF</span>
+        <span class="tag">Python</span><span class="tag">Pyodide</span><span class="tag">Neutron Scattering</span><span class="tag">Diffuse Scattering</span><span class="tag">3D-ΔPDF</span><span class="tag">AI Agent</span>
       </div>
     </div>
     <div class="software-figure">
@@ -254,10 +256,11 @@ header:
       <ul class="case-list">
         <li><strong>Problem:</strong> Judging an RMC refinement means reading plots, logs, structures, and fit metrics that live in separate files and tools.</li>
         <li><strong>Approach:</strong> Reads a run folder in place and brings fits, density maps, displacement analysis, and 3D structures into one view.</li>
-        <li><strong>Value:</strong> Live monitoring while a run writes, figure export, and an optional, experimental AI assistant that helps interpret the fit.</li>
+        <li><strong>Value:</strong> Live monitoring while a run writes, and figure export.</li>
+        <li><strong>AI agent (in development):</strong> An AI Copilot that answers questions about the run by calling the Workbench&#39;s own analyses and checking each result; on two local models, 5 and 4 of 6 answers were fully right. Not yet in the live app.</li>
       </ul>
       <div class="software-tags">
-        <span class="tag">React</span><span class="tag">RMCProfile</span><span class="tag">WebGPU</span><span class="tag">Three.js</span><span class="tag">AI Assistant</span><span class="tag">Live Monitoring</span>
+        <span class="tag">React</span><span class="tag">RMCProfile</span><span class="tag">WebGPU</span><span class="tag">Three.js</span><span class="tag">AI Copilot</span><span class="tag">Live Monitoring</span>
       </div>
     </div>
     <div class="software-figure">
@@ -291,6 +294,35 @@ header:
         <source src="/assets/images/phonon-mode.webm" type="video/webm">
         <source src="/assets/images/phonon-mode.mp4" type="video/mp4">
       </video>
+    </div>
+  </div>
+
+  <div class="software-card">
+    <div class="software-content">
+      <div class="software-header">
+        <span class="software-title">NEXPLAN <span style="font-weight: 400; color: #888;">(work in progress)</span></span>
+        <div style="display: flex; gap: 8px;">
+          <a href="https://drthyang.github.io/nexplan/" class="software-link" target="_blank" rel="noopener noreferrer">Web App</a>
+          <a href="https://github.com/drthyang/nexplan" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+      <p class="software-subtitle">
+        Neutron Experiment Planner: plan diffraction measurements from a crystal structure, in the browser.
+      </p>
+      <p class="software-description">
+        A no-install planner for SNS diffraction experiments: reflections and structure factors from a CIF, powder patterns of NOMAD and POWGEN banks, TOPAZ and CORELLI measurement plans, and MDNorm binning.
+      </p>
+      <ul class="case-list">
+        <li><strong>Problem:</strong> Planning a beamtime means working out, instrument by instrument, which reflections a setting records and what the data will resolve.</li>
+        <li><strong>Approach:</strong> Instrument geometry from Mantid&#39;s instrument definitions and measured peak widths, with every formula and data source documented; geometry and relative Bragg intensities only.</li>
+        <li><strong>AI agent (in development):</strong> The same calculations as 26 MCP tools for AI agents, including hand-offs that write inputs for MATERIA, NEBULA3D, and the NeXus Viewer.</li>
+      </ul>
+      <div class="software-tags">
+        <span class="tag">TypeScript</span><span class="tag">Experiment Planning</span><span class="tag">TOPAZ / CORELLI</span><span class="tag">NOMAD / POWGEN</span><span class="tag">MCP Agent Tools</span>
+      </div>
+    </div>
+    <div class="software-figure" style="padding: 20px; text-align: center; color: #b0b0b0; border: 1px dashed #4facfe;">
+      <span>[Experiment Planner]</span>
     </div>
   </div>
 
