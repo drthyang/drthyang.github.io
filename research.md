@@ -206,15 +206,16 @@ header:
       <div class="project-header">
         <span class="project-title">Agentic AI for Science</span>
         <div class="project-links-wrapper">
+          <a class="project-link" href="/agents/">AI Agents</a>
           <a class="project-link" href="https://drthyang.github.io/web-refinement/" target="_blank" rel="noopener noreferrer">MATERIA ▶</a>
           <a class="project-link" href="/software/">All Tools</a>
         </div>
       </div>
       <p class="project-description">
-        The expert loop in scattering analysis — freeing parameters, judging residuals, grading a reduction, watching convergence — never got automated. I study how much of it LLM agents can help with when given real domain tools instead of chat: <a href="https://drthyang.github.io/web-refinement/" target="_blank" rel="noopener noreferrer">MATERIA</a>&#39;s in-app Agent works a live refinement through the page&#39;s own controls &mdash; changes the user approves and can undo, method skills it reads when needed, eval scenarios from its past mistakes run in CI &mdash; and the same engine is open to other agents as MCP tools; NEBULA Pilot in <a href="https://drthyang.github.io/nebula3d/" target="_blank" rel="noopener noreferrer">NEBULA3D</a> grades a reduction and tunes it stage by stage within fixed limits; <a href="https://drthyang.github.io/rmc-toolkits/" target="_blank" rel="noopener noreferrer">RMCProfile Workbench</a>&#39;s AI Copilot runs its analyses through tool calls and checks each result; <a href="https://drthyang.github.io/nexplan/" target="_blank" rel="noopener noreferrer">NEXPLAN</a> serves experiment planning as MCP tools; and Athanor benchmarks agent-driven screening against non-LLM baselines. All of it is independent, personal open-source work.
+        The expert loop in scattering analysis — freeing parameters, judging residuals, grading a reduction, watching convergence — never got automated. I study how much of it LLM agents can help with when given real domain tools instead of chat, with <a href="/agents/">one design in every tool</a>: the agent sits on a tested scientific core, numbers and rules live in code, and failures on real data become eval scenarios. <a href="https://drthyang.github.io/web-refinement/" target="_blank" rel="noopener noreferrer">MATERIA</a>&#39;s in-app Agent (42 tools, five agent skills) works a live refinement through the page&#39;s own controls, with changes the user approves and can undo, and the same engine is open to other agents as 40 MCP tools; NEBULA Pilot in <a href="https://drthyang.github.io/nebula3d/" target="_blank" rel="noopener noreferrer">NEBULA3D</a> grades a reduction through 22 tools, tunes it stage by stage within hard limits, and writes a measured report; <a href="https://drthyang.github.io/rmc-toolkits/" target="_blank" rel="noopener noreferrer">RMCProfile Workbench</a>&#39;s AI Copilot (beta) runs its analyses through tool calls and checks each result; <a href="https://drthyang.github.io/nexplan/" target="_blank" rel="noopener noreferrer">NEXPLAN</a> serves experiment planning as 26 MCP tools that hand off to the others; and Athanor benchmarks agent-driven screening against non-LLM baselines. All of it is independent, personal open-source work.
       </p>
       <p class="project-outcome">
-        <strong>Grounding principles:</strong> physics-based tools the agent must call, actions a person can review, uncertainty it can quantify, local-first models, evaluation against baselines and past failures — not demos.
+        <strong>Grounding principles:</strong> physics-based tools the agent must call, numbers and guardrails in code, actions a person can review, uncertainty it can quantify, local-first models, evals written from real failures and comparisons against baselines — not demos.
       </p>
       <div class="project-tags">
         <span class="tag">LLM Agents</span>
@@ -224,7 +225,7 @@ header:
       </div>
     </div>
     <div class="project-figure">
-      <img src="/assets/images/materia-architecture.svg" alt="MATERIA architecture: web app UI, MCP agent server, and web workers sit on shared parsers and visualization, all calling a pure TypeScript scientific core of thirteen modules validated by more than 1,400 tests">
+      <img src="/assets/images/materia-architecture.svg" alt="MATERIA architecture: the web app UI, the in-app Agent, the MCP agent server, and web workers sit on shared parsers and visualization, all calling a pure TypeScript scientific core of thirteen modules validated by more than 1,800 tests">
     </div>
   </div>
 

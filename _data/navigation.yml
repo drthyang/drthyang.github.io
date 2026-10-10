@@ -3,6 +3,8 @@ main:
     url: /about/
   - title: "Research"
     url: /research/
+  - title: "AI Agents"
+    url: /agents/
   - title: "Packages & Tools"
     url: /software/
 #  - title: "Notes"

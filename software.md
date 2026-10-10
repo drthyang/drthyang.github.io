@@ -149,7 +149,7 @@ header:
 <div class="software-container">
 
   <p class="software-description" style="margin: 0 0 0.5rem 0; max-width: 920px;">
-    Browser-first research tools for crystal &amp; magnetic structure refinement, RMC analysis, neutron diffuse scattering, phonon dynamics, and experiment planning, several with AI agents that work through the tools&#39; own analyses. These projects emphasize local data privacy, interactive visualization, and deployable workflows that can run directly from GitHub Pages when the science allows it.
+    Browser-first research tools for crystal &amp; magnetic structure refinement, RMC analysis, neutron diffuse scattering, phonon dynamics, and experiment planning, several with AI agents that work through the tools&#39; own analyses (<a href="/agents/" style="color: #4facfe;">how the agents are built</a>). These projects emphasize local data privacy, interactive visualization, and deployable workflows that can run directly from GitHub Pages when the science allows it.
   </p>
 
   <div class="software-card">
@@ -169,9 +169,9 @@ header:
       </p>
       <ul class="case-list">
         <li><strong>Problem:</strong> Refinement means choosing among several specialist packages, each with its own formats and conventions &mdash; a steep start before a first fit.</li>
-        <li><strong>Approach:</strong> A tested TypeScript core (1,700+ tests), cross-checked against GSAS-II, FullProf, and PDFfit2, behind a guided workflow from data import to refined nuclear and magnetic structures.</li>
+        <li><strong>Approach:</strong> A tested TypeScript core (1,800+ tests), cross-checked against GSAS-II, FullProf, and PDFfit2, behind a guided workflow from data import to refined nuclear and magnetic structures.</li>
         <li><strong>Value:</strong> Nothing to install and data stays local. Fits report correlations and uncertainties, not just an agreement factor.</li>
-        <li><strong>AI agent:</strong> An in-app Agent (Claude, or a local model on Ollama or LM Studio) reads the live fit and works through the page&#39;s own controls. You approve each change unless you turn on auto-approve, every change can be undone, and the refinement engine, not the model, sets every value. It follows method skills it reads when needed, and eval scenarios built from its past mistakes run in CI. The same core is open to other agents as 40 MCP tools.</li>
+        <li><strong>AI agent:</strong> An in-app Agent (Claude, or a local model on Ollama or LM Studio) with 42 tools reads the live fit and works through the page&#39;s own controls. <em>Ask first</em> puts each change on an approval card, <em>Auto</em> works through the method&#39;s stages on its own, and every change is an undoable History step; the refinement engine, not the model, sets every value. It reads five agent skills on demand, its method rules are enforced in code, ten eval scenarios written from real failures replay in CI, and it can check an unconvincing number with a Bayesian posterior. The same core is open to other agents as 40 MCP tools.</li>
       </ul>
       <div class="software-tags">
         <span class="tag">TypeScript</span><span class="tag">Rietveld</span><span class="tag">Single Crystal</span><span class="tag">PDF</span><span class="tag">Magnetic Structures</span><span class="tag">AI Agent</span><span class="tag">MCP Agent Tools</span>
@@ -224,13 +224,13 @@ header:
         Neutron Elastic Background Utility for Local Analysis and 3D-ΔPDF.
       </p>
       <p class="software-description">
-        A Python toolkit and browser app that cleans 3D neutron diffuse-scattering data and computes 3D-ΔPDF maps.
+        A Python toolkit and browser app that cleans 3D neutron or X-ray diffuse-scattering volumes and computes 3D-ΔPDF maps.
       </p>
       <ul class="case-list">
         <li><strong>Problem:</strong> Weak diffuse signal is often buried under powder rings, Bragg peaks, and background before any 3D-ΔPDF interpretation can begin.</li>
-        <li><strong>Approach:</strong> One reproducible pipeline &mdash; powder-ring subtraction, Bragg-peak removal and backfill, background flattening, and the ΔPDF transform &mdash; with visual checks at each step.</li>
-        <li><strong>Value:</strong> The same pipeline runs natively or entirely in the browser via Pyodide, so every cleanup decision is inspectable and repeatable.</li>
-        <li><strong>AI agent:</strong> NEBULA Pilot, a panel beside every page, connects to a local or cloud model that grades each stage from metrics computed in the browser, measures the cuts it needs, and can run and tune the pipeline stage by stage &mdash; choosing only among a fixed set of settings, within hard limits.</li>
+        <li><strong>Approach:</strong> One reproducible pipeline &mdash; powder-ring subtraction, Bragg-peak removal and backfill, background flattening, and the ΔPDF transform &mdash; with visual checks at each step, symmetry averaging so the ΔPDF keeps the declared symmetry, and UB refinement from Bragg-peak positions.</li>
+        <li><strong>Value:</strong> The same pipeline runs natively or entirely in the browser via Pyodide, so every cleanup decision is inspectable and repeatable; 570+ Python and 300+ web tests.</li>
+        <li><strong>AI agent:</strong> NEBULA Pilot, a panel beside every page, connects to a local or cloud model that works through 22 tools: it grades each stage from deterministic, unit-tested metrics, checks the ΔPDF against the crystal&#39;s symmetry and the measured coverage, and can run and tune the pipeline stage by stage &mdash; choosing only from a checked catalog, with a hard-limit veto. It writes a measured analysis report (HTML/PDF or Markdown).</li>
       </ul>
       <div class="software-tags">
         <span class="tag">Python</span><span class="tag">Pyodide</span><span class="tag">Neutron Scattering</span><span class="tag">Diffuse Scattering</span><span class="tag">3D-ΔPDF</span><span class="tag">AI Agent</span>
@@ -257,7 +257,7 @@ header:
         <li><strong>Problem:</strong> Judging an RMC refinement means reading plots, logs, structures, and fit metrics that live in separate files and tools.</li>
         <li><strong>Approach:</strong> Reads a run folder in place and brings fits, density maps, displacement analysis, and 3D structures into one view.</li>
         <li><strong>Value:</strong> Live monitoring while a run writes, and figure export.</li>
-        <li><strong>AI agent:</strong> An optional AI Copilot on every page answers questions about the run by calling the Workbench&#39;s own analyses through tool calls, checks each result before using it, and ends with a verdict on whether the question was answered. Beta: built and tested, not yet tried with real models.</li>
+        <li><strong>AI agent:</strong> An optional AI Copilot on every page answers questions about the run by calling seven of the Workbench&#39;s own analyses through tool calls, checks each result with deterministic checks before using it, and ends with an Outcome verdict on whether the question was answered. Beta: built and tested with scripted model replies; real-model testing has just begun.</li>
       </ul>
       <div class="software-tags">
         <span class="tag">React</span><span class="tag">RMCProfile</span><span class="tag">WebGPU</span><span class="tag">Three.js</span><span class="tag">AI Copilot</span><span class="tag">Live Monitoring</span>
