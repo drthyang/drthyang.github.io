@@ -226,7 +226,7 @@ excerpt: "One design for AI agents in five scattering tools: agents over tested 
 </style>
 
 <p class="ag-lede">
-  Since mid-2026 I have been adding AI agents to the scattering software I build. Five tools share one design: <strong>the agent works on top of a tested scientific core, calls the same code the buttons call, and never supplies a number of its own.</strong>
+  I have been adding AI agents to the scattering software I build. Five tools share one design: <strong>the agent works on top of a tested scientific core, calls the same code the buttons call, and never supplies a number of its own.</strong>
 </p>
 
 <h2 class="ag-section-title">One pattern</h2>
@@ -376,7 +376,7 @@ excerpt: "One design for AI agents in five scattering tools: agents over tested 
     -->
     <li><strong>A handful of datasets.</strong> The validation rounds cover a few real datasets, not a benchmark.</li>
     <li><strong>Drafts and betas.</strong> Two of MATERIA&#39;s five skills are first drafts; the AI Copilot is a beta; NEXPLAN is a work in progress; Athanor is exploratory.</li>
-    <li><strong>Solo and recent.</strong> Personal open-source work by one developer, built since mid-2026; not peer reviewed.</li>
+    <li><strong>Solo work.</strong> Personal open-source work by one developer; not peer reviewed.</li>
     <li><strong>A person decides.</strong> Guardrails limit what an agent can change, not whether its explanation is right. Check anything you publish against established tools.</li>
   </ul>
 </div>
