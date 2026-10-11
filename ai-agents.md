@@ -357,8 +357,8 @@ excerpt: "One design for the AI agents in my scattering tools: agents on tested 
   <div class="ag-case">
     <div class="ag-case-kicker">NEBULA3D &middot; a measured 6/mmm volume</div>
     <h4>Does the ΔPDF keep the crystal&#39;s symmetry?</h4>
-    <p class="ag-case-stat">12.6% RMS → agree to rounding</p>
-    <p>A symmetry check exposed a pipeline defect: six-fold partners differed by 12.6% RMS. Now they agree to rounding, a fix to the pipeline, not an agent result.</p>
+    <p class="ag-case-stat">Six-fold partners → agree to rounding</p>
+    <p>A symmetry check exposed a pipeline defect: six-fold partners in the ΔPDF no longer agreed. Now they agree to rounding, a fix to the pipeline, not an agent result.</p>
   </div>
 
   <div class="ag-case">
