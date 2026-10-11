@@ -374,15 +374,8 @@ excerpt: "One design for the AI agents in my scattering tools: agents on tested 
 
 <div class="ag-limits">
   <ul>
-    <li><strong>No real-model eval pass rates yet.</strong> MATERIA&#39;s eval scenarios replay in CI with a scripted model; the AI Copilot&#39;s real-model test is a six-question spot check.</li>
-    <!--
-      REAL-MODEL EVAL RESULTS GO HERE (not published yet).
-      When MATERIA's or NEBULA Pilot's eval scenarios have been run against real models
-      (npm run eval:agent in each repo; NEBULA3D's runs from web/), add a card or bullet with:
-      model names and versions, local or cloud, pass rate per scenario, number of runs, and
-      the date. The AI Copilot's 2026-10-10 spot check (rmc-toolkits, src/llm/README.md) is
-      already a case study above. Until then, state no pass rates.
-    -->
+    <li><strong>Tested on real models,</strong> on scenarios written from real failures, 3 runs each. NEBULA Pilot passed 27/27 with Claude Sonnet 5.5 and Haiku 5.5, and locally 17/27 with qwen3:32b and 15/27 with gemma4:26b (2026-10-10). MATERIA&#39;s Agent, in its development version (2026-10-11), passed 38/45 with Sonnet 5.5 and 36/45 with Haiku 5.5 on 15 powder and PDF scenarios. The RMCProfile Copilot&#39;s real-model test is still a spot check. These test my own scenarios; they are not accuracy claims.</li>
+    <!-- Sources: nebula3d docs/evals.md (main); web-refinement docs/AGENT_EVALS.md (claude/agent-skills, runs at 2eec39d). Update when MATERIA's branch is released. -->
     <li><strong>A handful of datasets.</strong> The validation rounds cover a few real datasets, not a benchmark.</li>
     <li><strong>Not all released.</strong> MATERIA&#39;s newest Agent work (its three case studies) and NEXPLAN&#39;s MCP tools are on development branches, not yet in the live apps. Athanor is exploratory.</li>
     <li><strong>Solo work.</strong> Personal open-source work by one developer; not peer reviewed.</li>
