@@ -169,7 +169,7 @@ header:
       </p>
       <ul class="case-list">
         <li><strong>Problem:</strong> Refinement means choosing among several specialist packages, each with its own formats and conventions &mdash; a steep start before a first fit.</li>
-        <li><strong>Approach:</strong> A tested TypeScript core (1,700+ tests), cross-checked against GSAS-II, FullProf, and PDFfit2, behind a guided workflow from data import to refined nuclear and magnetic structures.</li>
+        <li><strong>Approach:</strong> A tested TypeScript core (1,700+ tests), cross-checked against GSAS-II and PDFfit2, behind a guided workflow from data import to refined nuclear and magnetic structures.</li>
         <li><strong>Value:</strong> Nothing to install and data stays local. Fits report correlations and uncertainties, not just an agreement factor.</li>
         <li><strong>AI agent:</strong> An in-app Agent (Claude or a local model) works the fit through the page&#39;s own controls; you approve each change and can undo it, and the engine, not the model, computes every refined value. The same core is open to other agents as MCP tools.</li>
       </ul>
@@ -257,7 +257,7 @@ header:
         <li><strong>Problem:</strong> Judging an RMC refinement means reading plots, logs, structures, and fit metrics that live in separate files and tools.</li>
         <li><strong>Approach:</strong> Reads a run folder in place and brings fits, density maps, displacement analysis, and 3D structures into one view.</li>
         <li><strong>Value:</strong> Live monitoring while a run writes, and figure export.</li>
-        <li><strong>AI agent (in development):</strong> An AI Copilot that answers questions about the run by calling the Workbench&#39;s own analyses and checking each result; on two local models, 5 and 4 of 6 answers were fully right. Not yet in the live app.</li>
+        <li><strong>AI agent (beta):</strong> An AI Copilot that answers questions about the run by calling the Workbench&#39;s own analyses and checking each result; on two local models, 5 and 4 of 6 answers were fully right.</li>
       </ul>
       <div class="software-tags">
         <span class="tag">React</span><span class="tag">RMCProfile</span><span class="tag">WebGPU</span><span class="tag">Three.js</span><span class="tag">AI Copilot</span><span class="tag">Live Monitoring</span>

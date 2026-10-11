@@ -296,7 +296,7 @@ excerpt: "One design for the AI agents in my scattering tools: agents on tested 
   <div class="ag-tool">
     <div class="ag-tool-head">
       <span class="ag-tool-name">RMCProfile Workbench</span>
-      <span class="ag-tool-agent">AI Copilot (in development)</span>
+      <span class="ag-tool-agent">AI Copilot (beta)</span>
     </div>
     <p>A chatbox on every page, on a local or cloud model, that answers questions about a reverse Monte Carlo run by calling the Workbench&#39;s own analyses; deterministic checks read each result. The Workbench is live; the Copilot is not deployed yet.</p>
     <div class="ag-tool-links">
@@ -384,7 +384,7 @@ excerpt: "One design for the AI agents in my scattering tools: agents on tested 
       already a case study above. Until then, state no pass rates.
     -->
     <li><strong>A handful of datasets.</strong> The validation rounds cover a few real datasets, not a benchmark.</li>
-    <li><strong>Not all released.</strong> MATERIA&#39;s newest Agent work (its three case studies), the AI Copilot and NEXPLAN&#39;s MCP tools are on development branches, not yet in the live apps. Athanor is exploratory.</li>
+    <li><strong>Not all released.</strong> MATERIA&#39;s newest Agent work (its three case studies) and NEXPLAN&#39;s MCP tools are on development branches, not yet in the live apps. Athanor is exploratory.</li>
     <li><strong>Solo work.</strong> Personal open-source work by one developer; not peer reviewed.</li>
     <li><strong>A person decides.</strong> Guardrails limit what an agent can change, not whether its explanation is right. Check anything you publish against established tools.</li>
   </ul>

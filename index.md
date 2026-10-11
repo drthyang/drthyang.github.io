@@ -290,7 +290,7 @@ classes: wide
 <div class="app-grid">
   <div class="core-card">
     <h3>MATERIA</h3>
-    <p>Crystal &amp; magnetic structure refinement in the browser — powder, single-crystal, and PDF on one engine, cross-checked against GSAS-II, FullProf, and PDFfit2, with an in-app AI Agent that works the fit through the page&#39;s own controls.</p>
+    <p>Crystal &amp; magnetic structure refinement in the browser — powder, single-crystal, and PDF on one engine, cross-checked against GSAS-II and PDFfit2, with an in-app AI Agent that works the fit through the page&#39;s own controls.</p>
     <div class="card-footer">
       <div class="tag-container">
         <span class="mini-tag">Rietveld</span>
@@ -322,7 +322,7 @@ classes: wide
 
   <div class="core-card">
     <h3>RMCProfile Workbench</h3>
-    <p>Dashboard for RMCProfile/STOG refinements — live monitoring, space-group detection, WebGPU KDE slices, and an AI Copilot in development that answers questions by running the dashboard&#39;s own analyses.</p>
+    <p>Dashboard for RMCProfile/STOG refinements — live monitoring, space-group detection, WebGPU KDE slices, and an AI Copilot (beta) that answers questions by running the dashboard&#39;s own analyses.</p>
     <div class="card-footer">
       <div class="tag-container">
         <span class="mini-tag">AI Copilot</span>
@@ -357,7 +357,7 @@ classes: wide
 
 * [**[Preprint]**](https://arxiv.org/abs/2609.09699) First-author **arXiv preprint (2026, under review)** on Mn<sub>3</sub>Sn, showing that correlated local disorder enables an anomalous Hall response forbidden by the average crystal and magnetic symmetry.
 * [**[AI Agents]**](/agents/) **AI agents for scattering analysis:** one design across my scattering tools &mdash; agents on tested scientific cores, with numbers and guardrails in code. Early, solo work, with its limits stated.
-* [**[Software]**](/software/) **MATERIA Workbench (public beta):** crystal & magnetic structure refinement in the browser, cross-checked against GSAS-II, FullProf, and PDFfit2, with an in-app AI Agent whose changes you approve and can undo.
+* [**[Software]**](/software/) **MATERIA Workbench (public beta):** crystal & magnetic structure refinement in the browser, cross-checked against GSAS-II and PDFfit2, with an in-app AI Agent whose changes you approve and can undo.
 * [**[Publication]**](/publications/) First-author **Nature Communications (2026)** study on Mn<sub>3</sub>Ga, revealing an intrinsic topological Weyl phase transition near room temperature driven by a magnetostructural transformation.
 * [**[Software]**](/software/) **Athanor (exploratory):** a closed-loop prototype testing whether an LLM agent can help drive materials screening, compared against non-LLM baselines.
 * [**[Software]**](/software/) **NEBULA3D released:** cleans 3D neutron diffuse-scattering data and computes 3D-ΔPDF maps of local disorder, in Python or the browser &mdash; now with NEBULA Pilot, an AI agent that grades and tunes the reduction.
