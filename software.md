@@ -157,8 +157,8 @@ header:
       <div class="software-header">
         <span class="software-title">MATERIA Workbench</span>
         <div style="display: flex; gap: 8px;">
-          <a href="https://drthyang.github.io/web-refinement/" class="software-link" target="_blank" rel="noopener noreferrer">Web App</a>
-          <a href="https://github.com/drthyang/web-refinement" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://drthyang.github.io/materia-platform/" class="software-link" target="_blank" rel="noopener noreferrer">Web App</a>
+          <a href="https://github.com/drthyang/materia-platform" class="software-link" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
       <p class="software-subtitle">

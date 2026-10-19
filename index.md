@@ -298,8 +298,8 @@ classes: wide
         <span class="mini-tag">AI Agent</span>
       </div>
       <div class="card-links">
-        <a class="launch" href="https://drthyang.github.io/web-refinement/">Launch ▶</a>
-        <a href="https://github.com/drthyang/web-refinement">GitHub</a>
+        <a class="launch" href="https://drthyang.github.io/materia-platform/">Launch ▶</a>
+        <a href="https://github.com/drthyang/materia-platform">GitHub</a>
       </div>
     </div>
   </div>

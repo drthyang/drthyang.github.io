@@ -276,8 +276,8 @@ excerpt: "One design for the AI agents in my scattering tools: agents on tested 
     </div>
     <p>An Agent beside a powder or PDF fit, on Claude or a local model, that works through the page&#39;s own controls. You approve each change or let it run in <em>Auto</em>; every change can be undone, and the engine, not the model, computes the refined values. An MCP server opens the same core to other agents.</p>
     <div class="ag-tool-links">
-      <a href="https://drthyang.github.io/web-refinement/" target="_blank" rel="noopener noreferrer">Launch ▶</a>
-      <a href="https://github.com/drthyang/web-refinement" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://drthyang.github.io/materia-platform/" target="_blank" rel="noopener noreferrer">Launch ▶</a>
+      <a href="https://github.com/drthyang/materia-platform" target="_blank" rel="noopener noreferrer">GitHub</a>
     </div>
   </div>
 
@@ -375,7 +375,7 @@ excerpt: "One design for the AI agents in my scattering tools: agents on tested 
 <div class="ag-limits">
   <ul>
     <li><strong>Tested on real models,</strong> on scenarios written from real failures, 3 runs each. NEBULA Pilot passed 27/27 with Claude Sonnet 5.5 and Haiku 5.5, and locally 17/27 with qwen3:32b and 15/27 with gemma4:26b (2026-10-10). MATERIA&#39;s Agent, in its development version (2026-10-11), passed 38/45 with Sonnet 5.5 and 36/45 with Haiku 5.5 on 15 powder and PDF scenarios. The RMCProfile Copilot&#39;s real-model test is still a spot check. These test my own scenarios; they are not accuracy claims.</li>
-    <!-- Sources: nebula3d docs/evals.md (main); web-refinement docs/AGENT_EVALS.md (claude/agent-skills, runs at 2eec39d). Update when MATERIA's branch is released. -->
+    <!-- Sources: nebula3d docs/evals.md (main); materia-platform docs/AGENT_EVALS.md (claude/agent-skills, runs at 2eec39d). Update when MATERIA's branch is released. -->
     <li><strong>A handful of datasets.</strong> The validation rounds cover a few real datasets, not a benchmark.</li>
     <li><strong>Not all released.</strong> MATERIA&#39;s newest Agent work (its three case studies) and NEXPLAN&#39;s MCP tools are on development branches, not yet in the live apps. Athanor is exploratory.</li>
     <li><strong>Solo work.</strong> Personal open-source work by one developer; not peer reviewed.</li>
