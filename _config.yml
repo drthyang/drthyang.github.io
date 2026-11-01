@@ -89,6 +89,11 @@ defaults:
     values:
       layout: single
       author_profile: true # This fills the empty space on the left!
+  # Verification files stay served but out of the sitemap.
+  - scope:
+      path: "google*.html"
+    values:
+      sitemap: false
 
 # Navigation Links (Top Header)
 footer:
