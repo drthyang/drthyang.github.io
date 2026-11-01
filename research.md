@@ -7,6 +7,7 @@ header:
   overlay_image: /assets/images/maria-oleacu-M-TI91UdTxs-unsplash.jpg
   overlay_filter: 0.0
   caption: "Photo by [Maria Oleacu](https://unsplash.com/@mari_oleacu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/a-black-and-white-photo-of-sand-and-water-M-TI91UdTxs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
+description: "Research by Tsung-Han Yang: LLM agents for scattering analysis, topology and magnetism in kagome metals, hidden local order beyond the average structure, and lattice dynamics from RMC models."
 ---
 
 <style>
@@ -212,7 +213,7 @@ header:
         </div>
       </div>
       <p class="project-description">
-        The expert loop in scattering analysis — freeing parameters, judging residuals, grading a reduction — never got automated. I study how much of it LLM agents can help with when given real domain tools instead of chat, with <a href="/agents/">one design across my tools</a>: the agent sits on a tested scientific core, and numbers and rules live in code. It is live in <a href="https://drthyang.github.io/materia-platform/" target="_blank" rel="noopener noreferrer">MATERIA</a> and <a href="https://drthyang.github.io/nebula3d/" target="_blank" rel="noopener noreferrer">NEBULA3D</a>; <a href="https://drthyang.github.io/rmc-toolkits/" target="_blank" rel="noopener noreferrer">RMCProfile Workbench</a>&#39;s AI Copilot and <a href="https://drthyang.github.io/nexplan/" target="_blank" rel="noopener noreferrer">NEXPLAN</a>&#39;s MCP tools are in development; Athanor tests agent-driven screening against non-LLM baselines. All of it is independent, personal open-source work.
+        The expert loop in scattering analysis — freeing parameters, judging residuals, grading a reduction — never got automated. I study how much of it LLM agents can help with when given real domain tools instead of chat, with <a href="/agents/">one design across my tools</a>: the agent sits on a tested scientific core, and numbers and rules live in code. It is live in <a href="https://drthyang.github.io/materia-platform/" target="_blank" rel="noopener noreferrer">MATERIA</a>, <a href="https://drthyang.github.io/nebula3d/" target="_blank" rel="noopener noreferrer">NEBULA3D</a>, <a href="https://drthyang.github.io/rmc-toolkits/" target="_blank" rel="noopener noreferrer">RMCProfile Workbench</a> (AI Copilot, beta) and <a href="https://drthyang.github.io/nexplan/" target="_blank" rel="noopener noreferrer">NEXPLAN</a> (MCP tools); Athanor tests agent-driven screening against non-LLM baselines. All of it is independent, personal open-source work.
       </p>
       <p class="project-outcome">
         <strong>Grounding principles:</strong> physics-based tools the agent must call, numbers and guardrails in code, actions a person can review, local-first models, and evals from real failures — not demos.

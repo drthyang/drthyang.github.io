@@ -7,6 +7,7 @@ header:
   overlay_image: /assets/images/josh-redd-u_RiRTA_TtY-unsplash.jpg
   overlay_filter: 0.0
   caption: "Photo by [Josh Redd](https://unsplash.com/@joshredd?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/gold-and-black-leather-textile-u_RiRTA_TtY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
+description: "Browser-based research tools by Tsung-Han Yang: MATERIA Workbench for crystal and magnetic structure refinement, NEBULA3D for 3D-ΔPDF, RMCProfile Workbench, RMC Phonon Dynamics, NeXus Viewer and NEXPLAN."
 ---
 
 <style>
@@ -315,7 +316,7 @@ header:
       <ul class="case-list">
         <li><strong>Problem:</strong> Planning a beamtime means working out, instrument by instrument, which reflections a setting records and what the data will resolve.</li>
         <li><strong>Approach:</strong> Instrument geometry from Mantid&#39;s instrument definitions and measured peak widths, with every formula and data source documented; geometry and relative Bragg intensities only.</li>
-        <li><strong>AI agent (in development):</strong> The same calculations as 26 MCP tools for AI agents, including hand-offs that write inputs for MATERIA, NEBULA3D, and the NeXus Viewer.</li>
+        <li><strong>AI agent:</strong> The same calculations as 26 MCP tools for AI agents, including hand-offs that write inputs for MATERIA, NEBULA3D, and the NeXus Viewer.</li>
       </ul>
       <div class="software-tags">
         <span class="tag">TypeScript</span><span class="tag">Experiment Planning</span><span class="tag">TOPAZ / CORELLI</span><span class="tag">NOMAD / POWGEN</span><span class="tag">MCP Agent Tools</span>

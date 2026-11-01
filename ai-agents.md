@@ -310,7 +310,7 @@ excerpt: "One design for the AI agents in my scattering tools: agents on tested 
       <span class="ag-tool-name">NEXPLAN <span>(work in progress)</span></span>
       <span class="ag-tool-agent">26 MCP tools</span>
     </div>
-    <p>My personal SNS experiment planner serves its calculations to agents (on a development branch), with hand-off tools that write the next tool&#39;s inputs: an instrument file for MATERIA, symmetry operations and Bragg positions for NEBULA3D and the NeXus Viewer.</p>
+    <p>My personal SNS experiment planner serves its calculations to agents as MCP tools, with hand-off tools that write the next tool&#39;s inputs: an instrument file for MATERIA, symmetry operations and Bragg positions for NEBULA3D and the NeXus Viewer.</p>
     <div class="ag-tool-links">
       <a href="https://drthyang.github.io/nexplan/" target="_blank" rel="noopener noreferrer">Launch ▶</a>
       <a href="https://github.com/drthyang/nexplan" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -374,10 +374,10 @@ excerpt: "One design for the AI agents in my scattering tools: agents on tested 
 
 <div class="ag-limits">
   <ul>
-    <li><strong>Tested on real models,</strong> on scenarios written from real failures, 3 runs each. NEBULA Pilot passed 27/27 with Claude Sonnet 5.5 and Haiku 5.5, and locally 17/27 with qwen3:32b and 15/27 with gemma4:26b (2026-10-10). MATERIA&#39;s Agent, in its development version (2026-10-11), passed 38/45 with Sonnet 5.5 and 36/45 with Haiku 5.5 on 15 powder and PDF scenarios. The RMCProfile Copilot&#39;s real-model test is still a spot check. These test my own scenarios; they are not accuracy claims.</li>
-    <!-- Sources: nebula3d docs/evals.md (main); materia-platform docs/AGENT_EVALS.md (claude/agent-skills, runs at 2eec39d). Update when MATERIA's branch is released. -->
+    <li><strong>Tested on real models,</strong> on scenarios written from real failures, 3 runs each. NEBULA Pilot passed 27/27 with Claude Sonnet 5.5 and Haiku 5.5, and locally 17/27 with qwen3:32b and 15/27 with gemma4:26b (2026-10-10). MATERIA&#39;s Agent (2026-10-11) passed 38/45 with Sonnet 5.5 and 36/45 with Haiku 5.5 on 15 powder and PDF scenarios. The RMCProfile Copilot&#39;s real-model test is still a spot check. These test my own scenarios; they are not accuracy claims.</li>
+    <!-- Sources: nebula3d docs/evals.md (main); materia-platform docs/AGENT_EVALS.md (runs at 2eec39d, merged to main in PR #42). -->
     <li><strong>A handful of datasets.</strong> The validation rounds cover a few real datasets, not a benchmark.</li>
-    <li><strong>Not all released.</strong> MATERIA&#39;s newest Agent work (its three case studies) and NEXPLAN&#39;s MCP tools are on development branches, not yet in the live apps. Athanor is exploratory.</li>
+    <li><strong>Exploratory work.</strong> Athanor is an early prototype.</li>
     <li><strong>Solo work.</strong> Personal open-source work by one developer; not peer reviewed.</li>
     <li><strong>A person decides.</strong> Guardrails limit what an agent can change, not whether its explanation is right. Check anything you publish against established tools.</li>
   </ul>

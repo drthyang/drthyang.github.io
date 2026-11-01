@@ -9,6 +9,7 @@ header:
   overlay_image: /assets/images/jakob-owens-WnPZeEbya50-unsplash.jpg
   overlay_filter: 0.1 # Darkens image by 50% so white text pops
   caption: "Photo by [Jakob Owens](https://unsplash.com/@jakobowens1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/top-view-photo-of-rippling-body-of-water-WnPZeEbya50?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
+description: "Short research notes by Tsung-Han Yang on condensed matter physics, scattering and scientific computing."
 ---
 
 # Welcome to my digital notebook
