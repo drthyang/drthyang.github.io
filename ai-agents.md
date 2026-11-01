@@ -348,10 +348,10 @@ excerpt: "One design for the AI agents in my scattering tools: agents on tested 
   </div>
 
   <div class="ag-case">
-    <div class="ag-case-kicker">MATERIA &middot; neutron powder, 150 K</div>
-    <h4>Cr₂WO₆: do the two cations differ?</h4>
-    <p class="ag-case-stat">P = 0.90</p>
-    <p>The Agent&#39;s Bayesian check gave B(W) &gt; B(Cr) a probability of only 0.90, so one tied B is the defensible model.</p>
+    <div class="ag-case-kicker">MATERIA &middot; neutron powder, unpublished data</div>
+    <h4>High-entropy AWO₄: what is the magnetic structure?</h4>
+    <p class="ag-case-stat">Same answer in every live run</p>
+    <p>The Agent found the propagation vector, ranked the candidate magnetic space groups, and refined the moments with the nuclear model held. Repeated runs found the same k-vector, group and moment.</p>
   </div>
 
   <div class="ag-case">
