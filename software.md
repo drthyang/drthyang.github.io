@@ -316,7 +316,7 @@ description: "Browser-based research tools by Tsung-Han Yang: MATERIA Workbench 
       <ul class="case-list">
         <li><strong>Problem:</strong> Planning a beamtime means working out, instrument by instrument, which reflections a setting records and what the data will resolve.</li>
         <li><strong>Approach:</strong> Instrument geometry from Mantid&#39;s instrument definitions and measured peak widths, with every formula and data source documented; geometry and relative Bragg intensities only.</li>
-        <li><strong>AI agent (in development):</strong> The same calculations as 26 MCP tools for AI agents, including hand-offs that write inputs for MATERIA, NEBULA3D, and the NeXus Viewer.</li>
+        <li><strong>AI agent:</strong> The same calculations as 26 MCP tools for AI agents, including hand-offs that write inputs for MATERIA, NEBULA3D, and the NeXus Viewer.</li>
       </ul>
       <div class="software-tags">
         <span class="tag">TypeScript</span><span class="tag">Experiment Planning</span><span class="tag">TOPAZ / CORELLI</span><span class="tag">NOMAD / POWGEN</span><span class="tag">MCP Agent Tools</span>
