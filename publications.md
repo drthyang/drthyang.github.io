@@ -3,6 +3,7 @@ layout: archive
 title: "Publications"
 author_profile: true
 classes: wide
+description: "Publications by Tsung-Han Yang on kagome magnets, Weyl topology, local symmetry breaking and correlated disorder, including first-author papers in Nature Communications and JACS."
 ---
 
 {% comment %} 

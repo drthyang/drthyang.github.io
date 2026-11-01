@@ -2,6 +2,8 @@
 layout: single
 author_profile: true
 classes: wide
+seo_title: "Tsung-Han Yang, Ph.D. — AI for Science × Materials Physics"
+description: "Tsung-Han Yang, Ph.D.: materials physicist building physics-grounded ML and LLM-agent tools for scattering data, and browser apps for structure refinement, diffuse scattering and RMC analysis."
 ---
 
 <style>

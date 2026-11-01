@@ -5,17 +5,15 @@
 
 ## Backlog
 
-### Content fixes
-- [ ] Verify Nat. Commun. DOI `10.1038/s41467-026-71683-7` once paper is officially published
-
 ### Style fixes
 - [ ] Replace SVG concept visuals with final paper figures or project screenshots when available
 
 ### Enhancements
-- [ ] Add arxiv links to publications that have preprints (`_data/publications.yml` — all `arxiv` fields are currently empty)
 - [ ] Recent Highlights section on `index.md` is hardcoded — consider pulling from `_data/` or front matter so it stays in sync with publications
 
 ## Done
+- [x] SEO pass (2026-11-01): per-page descriptions, homepage title, Person + publication JSON-LD, share image, compressed header photos, clean post URLs, llms.txt
+- [x] arXiv links filled in; Nat. Commun. DOI resolves
 - [x] Added local concept visuals for research, software, and learning-notes cards
 - [x] Rewrote the homepage for stronger industry-facing positioning
 - [x] Added industry direction and categorized technical stack to `about.md`
