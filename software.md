@@ -172,7 +172,7 @@ description: "Browser-based research tools by Tsung-Han Yang: MATERIA Workbench 
         <li><strong>Problem:</strong> Refinement means choosing among several specialist packages, each with its own formats and conventions &mdash; a steep start before a first fit.</li>
         <li><strong>Approach:</strong> A tested TypeScript core (1,700+ tests), cross-checked against GSAS-II and PDFfit2, behind a guided workflow from data import to refined nuclear and magnetic structures.</li>
         <li><strong>Value:</strong> Nothing to install and data stays local. Fits report correlations and uncertainties, not just an agreement factor.</li>
-        <li><strong>AI agent:</strong> An in-app Agent (Claude or a local model) works the fit through the page&#39;s own controls; you approve each change and can undo it, and the engine, not the model, computes every refined value. The same core is open to other agents as MCP tools.</li>
+        <li><strong>AI agent:</strong> MATERIA Copilot (Claude or a local model) works the fit through the page&#39;s own controls; you approve each change and can undo it, and the engine, not the model, computes every refined value. The same core is open to other agents as MCP tools.</li>
       </ul>
       <div class="software-tags">
         <span class="tag">TypeScript</span><span class="tag">Rietveld</span><span class="tag">Single Crystal</span><span class="tag">PDF</span><span class="tag">Magnetic Structures</span><span class="tag">AI Agent</span><span class="tag">MCP Agent Tools</span>

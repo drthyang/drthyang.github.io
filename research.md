@@ -226,7 +226,7 @@ description: "Research by Tsung-Han Yang: LLM agents for scattering analysis, to
       </div>
     </div>
     <div class="project-figure">
-      <img src="/assets/images/materia-architecture.svg" alt="MATERIA architecture: the web app UI, the in-app Agent, the MCP agent server, and web workers sit on shared parsers and visualization, all calling a pure TypeScript scientific core of thirteen modules validated by more than 1,700 tests">
+      <img src="/assets/images/materia-architecture.svg" alt="MATERIA architecture: the web app UI, MATERIA Copilot, the MCP agent server, and web workers sit on shared parsers and visualization, all calling a pure TypeScript scientific core of thirteen modules validated by more than 1,700 tests">
     </div>
   </div>
 
